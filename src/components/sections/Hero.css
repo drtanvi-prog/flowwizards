@@ -1,0 +1,305 @@
+/* ── "business" highlight box ─────────────────── */
+@keyframes hwBoxBiz {
+
+   0%,
+   21% {
+      transform: scaleX(0);
+      opacity: 0;
+      transform-origin: right center;
+   }
+
+   21.5% {
+      transform: scaleX(.02);
+      opacity: 1;
+      transform-origin: right center;
+      animation-timing-function: linear;
+   }
+
+   30% {
+      transform: scaleX(1);
+      opacity: 1;
+      transform-origin: right center;
+   }
+
+   82% {
+      transform: scaleX(1);
+      opacity: 1;
+      transform-origin: right center;
+      animation-timing-function: ease-in;
+   }
+
+   89% {
+      transform: scaleX(0);
+      opacity: 0;
+      transform-origin: right center;
+   }
+
+   100% {
+      transform: scaleX(0);
+      opacity: 0;
+      transform-origin: right center;
+   }
+}
+
+.hw-box-business {
+   animation: hwBoxBiz 14s linear infinite;
+}
+
+.hw-txt-business {
+   color: #1A1A1A;
+}
+
+/* ── "everyone" highlight box ─────────────────── */
+@keyframes hwBoxEve {
+
+   0%,
+   53% {
+      transform: scaleX(0);
+      opacity: 0;
+      transform-origin: left center;
+   }
+
+   53.5% {
+      transform: scaleX(.02);
+      opacity: 1;
+      transform-origin: left center;
+      animation-timing-function: linear;
+   }
+
+   62% {
+      transform: scaleX(1);
+      opacity: 1;
+      transform-origin: left center;
+   }
+
+   82% {
+      transform: scaleX(1);
+      opacity: 1;
+      transform-origin: left center;
+      animation-timing-function: ease-in;
+   }
+
+   89% {
+      transform: scaleX(0);
+      opacity: 0;
+      transform-origin: left center;
+   }
+
+   100% {
+      transform: scaleX(0);
+      opacity: 0;
+      transform-origin: left center;
+   }
+}
+
+.hw-box-everyone {
+   animation: hwBoxEve 14s linear infinite;
+}
+
+.hw-txt-everyone {
+   color: #1A1A1A;
+}
+
+/* ── Ruben cursor ───────────────────── */
+@keyframes curRuben {
+
+   0%,
+   10% {
+      transform: translate(420px, -210px);
+      opacity: 0;
+      animation-timing-function: cubic-bezier(.16, 1, .3, 1);
+   }
+
+   21% {
+      transform: translate(65px, 0);
+      opacity: 1;
+   }
+
+   21.5% {
+      transform: translate(65px, 0);
+      opacity: 1;
+      animation-timing-function: linear;
+   }
+
+   30% {
+      transform: translate(-250px, 0);
+      opacity: 1;
+      animation-timing-function: ease-in-out;
+   }
+
+   58% {
+      transform: translate(-242px, -7px);
+      opacity: 1;
+   }
+
+   63% {
+      transform: translate(-250px, 0);
+      opacity: 1;
+   }
+
+   82% {
+      transform: translate(-250px, 0);
+      opacity: 1;
+      animation-timing-function: cubic-bezier(.7, 0, .84, 0);
+   }
+
+   90% {
+      transform: translate(-500px, 260px);
+      opacity: 0;
+   }
+
+   91%,
+   100% {
+      transform: translate(420px, -210px);
+      opacity: 0;
+   }
+}
+
+.cur-ruben {
+   animation: curRuben 14s linear infinite;
+}
+
+/* ── James cursor ───────────────────── */
+@keyframes curJames {
+
+   0%,
+   40% {
+      transform: translate(-420px, 230px);
+      opacity: 0;
+      animation-timing-function: cubic-bezier(.16, 1, .3, 1);
+   }
+
+   53% {
+      transform: translate(-55px, 0);
+      opacity: 1;
+   }
+
+   53.5% {
+      transform: translate(-55px, 0);
+      opacity: 1;
+      animation-timing-function: linear;
+   }
+
+   62% {
+      transform: translate(280px, 0);
+      opacity: 1;
+      animation-timing-function: ease-in-out;
+   }
+
+   74% {
+      transform: translate(287px, -6px);
+      opacity: 1;
+   }
+
+   79% {
+      transform: translate(280px, 0);
+      opacity: 1;
+   }
+
+   82% {
+      transform: translate(280px, 0);
+      opacity: 1;
+      animation-timing-function: cubic-bezier(.7, 0, .84, 0);
+   }
+
+   90% {
+      transform: translate(500px, -230px);
+      opacity: 0;
+   }
+
+   91%,
+   100% {
+      transform: translate(-420px, 230px);
+      opacity: 0;
+   }
+}
+
+.cur-james {
+   animation: curJames 14s linear infinite;
+}
+
+/* ── SVG connector lines ── */
+/* pathLength="1" on each path → dasharray/offset values are in [0,1] */
+@keyframes l1Anim {
+
+   0%,
+   62% {
+      stroke-dashoffset: 1;
+      opacity: 0;
+   }
+
+   63% {
+      stroke-dashoffset: 1;
+      opacity: 1;
+      animation-timing-function: ease-out;
+   }
+
+   73% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+   }
+
+   82% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+      animation-timing-function: ease-in;
+   }
+
+   89% {
+      stroke-dashoffset: 1;
+      opacity: 0;
+   }
+
+   100% {
+      stroke-dashoffset: 1;
+      opacity: 0;
+   }
+}
+
+.svgl1 {
+   stroke-dasharray: 1;
+   stroke-dashoffset: 1;
+   animation: l1Anim 14s linear infinite;
+}
+
+@keyframes l2Anim {
+
+   0%,
+   68% {
+      stroke-dashoffset: 1;
+      opacity: 0;
+   }
+
+   69% {
+      stroke-dashoffset: 1;
+      opacity: 1;
+      animation-timing-function: ease-out;
+   }
+
+   80% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+   }
+
+   82% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+      animation-timing-function: ease-in;
+   }
+
+   89% {
+      stroke-dashoffset: 1;
+      opacity: 0;
+   }
+
+   100% {
+      stroke-dashoffset: 1;
+      opacity: 0;
+   }
+}
+
+.svgl2 {
+   stroke-dasharray: 1;
+   stroke-dashoffset: 1;
+   animation: l2Anim 14s linear infinite;
+}

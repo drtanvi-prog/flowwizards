@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import { useState, useRef } from 'react'
 import {
    Sun, UserCog, Code2, GitFork, Users, Megaphone, DollarSign, BarChart2,
    Menu, X, ChevronRight, ChevronLeft,
@@ -85,26 +85,23 @@ const Header = () => {
       <>
          <header
             ref={headerRef}
-            className={`${openDropdown ? 'bg-white' : 'bg-[#FEF6F5]'} sticky top-0 z-100 px-4 xl:px-6 transition-colors duration-200`}
+            className="sticky top-0 z-100 px-8 xl:px-16 transition-colors duration-200"
+            style={{ backgroundColor: openDropdown ? '#ffffff' : '#FEF6F5' }}
          >
-            <div className="max-w-7xl mx-auto flex items-center justify-between h-20 xl:h-25">
+            <div className="max-w-360 mx-auto flex items-center justify-between h-20 xl:h-25 w-full">
 
                {/* Logo */}
                <a href="/" className="select-none no-underline">
                   <img src={logo} alt="Flow Wizards" className="h-10 xl:h-12 w-auto object-contain" />
                </a>
 
-               {/* Desktop Navigation */}
-               <div className="hidden xl:block">
+               {/* Desktop Nav + CTA — grouped on the right */}
+               <div className="hidden xl:flex items-center gap-12">
                   <Navbar
                      openDropdown={openDropdown}
                      onNavMouseEnter={handleNavEnter}
                      onNavMouseLeave={scheduleClose}
                   />
-               </div>
-
-               {/* Desktop CTA */}
-               <div className="hidden xl:block">
                   <Button variant="primary" size="md">
                      Schedule a complimentary call
                   </Button>
@@ -117,7 +114,7 @@ const Header = () => {
                   </Button>
                   <button
                      onClick={() => setMobileOpen(true)}
-                     className="w-8 h-8 bg-[#ff4f00] text-white rounded-md flex items-center justify-center shrink-0"
+                     className="w-8 h-8 bg-[#ff4f00] text-white rounded-md flex items-center justify-center shrink-0 cursor-pointer"
                   >
                      <Menu size={18} />
                   </button>
@@ -161,7 +158,7 @@ const Header = () => {
             <div className="flex items-center justify-between px-4 py-4 shrink-0 bg-[#FEF6F5]">
                {mobileSubmenu ? (
                   <button
-                     className="flex items-center gap-1 text-[#1A1A1A] font-semibold text-sm"
+                     className="flex items-center gap-1 text-[#1A1A1A] font-semibold text-sm cursor-pointer"
                      onClick={() => setMobileSubmenu(null)}
                   >
                      <ChevronLeft size={18} />
@@ -178,7 +175,7 @@ const Header = () => {
                   </Button>
                   <button
                      onClick={closeMobile}
-                     className="w-8 h-8 bg-[#ff4f00] text-white rounded-md flex items-center justify-center shrink-0"
+                     className="w-8 h-8 bg-[#ff4f00] text-white rounded-md flex items-center justify-center shrink-0 cursor-pointer"
                   >
                      <X size={18} />
                   </button>
