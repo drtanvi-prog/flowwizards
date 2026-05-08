@@ -1,0 +1,8 @@
+.t-track {
+  cursor: grab;
+  user-select: none;
+}
+
+.t-track:active {
+  cursor: grabbing;
+}

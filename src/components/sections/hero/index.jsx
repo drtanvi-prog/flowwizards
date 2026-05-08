@@ -144,7 +144,7 @@ const Hero = () => {
             {/* Body copy */}
             <motion.p
                {...fadeUp(0.32)}
-               className="text-[13px] sm:text-[15px] lg:text-[17px] text-[#4A4A4A] max-w-[90vw] sm:max-w-xl leading-relaxed m-0"
+               className="text-[13px] sm:text-[15px] lg:text-[17px] text-[#4A4A4A] max-w-[78vw] sm:max-w-xl leading-relaxed m-0"
             >
                <strong className="text-[#1A1A1A]">Your software tools should help you work smarter.</strong>{' '}
                Or you risk getting lost in the noise. We'll fine-tune your tech stack so you can
@@ -152,8 +152,8 @@ const Hero = () => {
             </motion.p>
 
             {/* CTA */}
-            <motion.div {...fadeUp(0.44)} className="mt-2 w-full sm:w-auto">
-               <Button variant="secondary" size="md" className="w-full sm:w-auto">
+            <motion.div {...fadeUp(0.44)} className="mt-2">
+               <Button variant="secondary" size="md">
                   Schedule a free discovery session
                </Button>
             </motion.div>
