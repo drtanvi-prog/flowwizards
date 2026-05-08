@@ -1,12 +1,17 @@
 import { motion } from 'framer-motion'
 import PremiumQuoteStack from '../quotes'
+import imgCashApp from '../../../assets/trusted-platform/cash-app.jpg'
+import imgSodexo from '../../../assets/trusted-platform/sodexo.jpg'
+import imgFullFocus from '../../../assets/trusted-platform/full-focus.jpg'
+import imgIHeartMedia from '../../../assets/trusted-platform/iheart-media.jpg'
+import imgDiscovery from '../../../assets/trusted-platform/discovery.jpg'
 
 const brands = [
-   { name: 'Cash App', img: '/src/assets/trusted-platform/cash-app.jpg' },
-   { name: 'Sodexo', img: '/src/assets/trusted-platform/sodexo.jpg' },
-   { name: 'Full Focus', img: '/src/assets/trusted-platform/full-focus.jpg' },
-   { name: 'iHeart Media', img: '/src/assets/trusted-platform/iheart-media.jpg' },
-   { name: 'Discovery', img: '/src/assets/trusted-platform/discovery.jpg' },
+   { name: 'Cash App', img: imgCashApp },
+   { name: 'Sodexo', img: imgSodexo },
+   { name: 'Full Focus', img: imgFullFocus },
+   { name: 'iHeart Media', img: imgIHeartMedia },
+   { name: 'Discovery', img: imgDiscovery },
 ]
 
 const TrustedSection = () => (

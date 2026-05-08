@@ -45,7 +45,7 @@ export const AutomationDashboard = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
-      className="w-full max-w-sm rounded-2xl p-6 bg-white ml-4 sm:ml-0"
+      className="w-full max-w-full sm:max-w-sm rounded-2xl p-6 bg-white"
       style={{ boxShadow: '0 8px 48px rgba(255,79,0,0.10), 0 2px 12px rgba(0,0,0,0.06)', border: '1.5px solid #FFE8D0' }}
     >
       {/* Header */}
