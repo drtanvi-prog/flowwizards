@@ -1,17 +1,16 @@
 import React from 'react'
+import SmoothScroll from './components/common/SmoothScroll'
 import Header from './components/common/Header'
-import Hero from './components/sections/Hero'
-import TrustedSection from './components/sections/TrustedSection'
-import HowCanWeHelp from './components/sections/HowCanWeHelp'
+import Home from './pages/Home'
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Hero />
-      <TrustedSection />
-      <HowCanWeHelp />
-    </div>
+    <SmoothScroll>
+      <div>
+        <Header />
+        <Home />
+      </div>
+    </SmoothScroll>
   )
 }
 

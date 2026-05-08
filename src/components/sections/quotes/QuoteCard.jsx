@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Quote } from 'lucide-react'
-import { QUOTES } from '../../data/quotesData'
 
 const QuoteCard = ({ q, i }) => {
   const [hovered, setHovered] = useState(false)
@@ -9,11 +8,9 @@ const QuoteCard = ({ q, i }) => {
     <div
       style={{
         position: 'sticky',
-        // Each card sticks 20px lower than the previous, creating the peek stack
         top: `${112 + i * 20}px`,
-        // Later cards sit on top of earlier ones
         zIndex: i + 1,
-        width: 'min(95vw, 1100px)',
+        width: '100%',
         marginBottom: '1.5rem',
       }}
     >
@@ -64,25 +61,4 @@ const QuoteCard = ({ q, i }) => {
   )
 }
 
-const PremiumQuoteStack = ({ quotes = QUOTES }) => (
-  <section
-    className="relative w-full bg-white px-4"
-    style={{ paddingTop: '120px', paddingBottom: '6rem' }}
-  >
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        position: 'relative',
-        zIndex: 1,
-      }}
-    >
-      {quotes.map((q, i) => (
-        <QuoteCard key={i} q={q} i={i} total={quotes.length} />
-      ))}
-    </div>
-  </section>
-)
-
-export default PremiumQuoteStack
+export default QuoteCard

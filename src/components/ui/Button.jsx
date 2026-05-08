@@ -12,9 +12,9 @@ const variants = {
 }
 
 const sizes = {
-   sm: 'px-4 py-3 text-xs',
-   md: 'px-6 py-3 text-base',
-   lg: 'px-8 py-4 text-lg',
+   sm: 'px-3 py-1.5 text-[11px]',
+   md: 'px-5 py-2 text-sm',
+   lg: 'px-7 py-3 text-base',
 }
 
 const Button = ({

@@ -85,14 +85,14 @@ const Header = () => {
       <>
          <header
             ref={headerRef}
-            className="sticky top-0 z-100 px-8 xl:px-16 transition-colors duration-200"
+            className="sticky top-0 z-100 px-6 xl:px-10 transition-colors duration-200"
             style={{ backgroundColor: openDropdown ? '#ffffff' : '#FEF6F5' }}
          >
-            <div className="max-w-360 mx-auto flex items-center justify-between h-20 xl:h-25 w-full">
+            <div className="max-w-[1500px] mx-auto flex items-center justify-between h-20 xl:h-25 w-full">
 
                {/* Logo */}
                <a href="/" className="select-none no-underline">
-                  <img src={logo} alt="Flow Wizards" className="h-10 xl:h-12 w-auto object-contain" />
+                  <img src={logo} alt="Flow Wizards" className="h-10 xl:h-[80px] w-auto object-contain" />
                </a>
 
                {/* Desktop Nav + CTA — grouped on the right */}
@@ -102,7 +102,7 @@ const Header = () => {
                      onNavMouseEnter={handleNavEnter}
                      onNavMouseLeave={scheduleClose}
                   />
-                  <Button variant="primary" size="md">
+                  <Button variant="primary" size="md" className="text-sm! px-5! py-3!">
                      Schedule a complimentary call
                   </Button>
                </div>

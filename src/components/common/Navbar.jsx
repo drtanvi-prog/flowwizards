@@ -26,7 +26,7 @@ const Navbar = ({ openDropdown, onNavMouseEnter, onNavMouseLeave }) => {
             >
                <a
                   href="#"
-                  className={`flex items-center gap-0.75 text-[16px] font-medium transition-colors no-underline ${openDropdown === link.key
+                  className={`flex items-center gap-0.75 text-[15px] font-medium font-roboto transition-colors no-underline ${openDropdown === link.key
                      ? 'text-[#ff4f00]'
                      : 'text-[#2D2D2D] hover:text-[#ff4f00]'
                      }`}
