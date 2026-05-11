@@ -97,7 +97,9 @@ const Testimonials = () => (
               100+ verified reviews
             </span>
           </div>
-          <p style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.25)' }}>
+          <p style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.25)' }}
+            className='hidden md:block'
+          >
             Drag cards to explore ↔
           </p>
         </motion.div>

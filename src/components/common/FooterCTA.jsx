@@ -41,8 +41,8 @@ const FooterCTA = ({ heading }) => (
                transition={{ duration: 0.45, delay: 0.18 }}
                whileHover={{ scale: 1.03 }}
                whileTap={{ scale: 0.97 }}
-               className="px-6 py-3.5 rounded-md font-bold text-white"
-               style={{ background: '#1a1a1a', fontSize: '0.88rem', cursor: 'pointer', border: 'none' }}
+               className="px-3 py-1.5 sm:px-6 sm:py-3.5 rounded-md font-bold text-white text-[11px] sm:text-[0.88rem] whitespace-nowrap"
+               style={{ background: '#1a1a1a', cursor: 'pointer', border: 'none' }}
             >
                Schedule your free discovery session
             </motion.button>

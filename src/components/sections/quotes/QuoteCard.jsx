@@ -56,6 +56,20 @@ const QuoteCard = ({ q, i }) => {
         >
           {q.text}
         </span>
+
+        {q.author && (
+          <span
+            style={{
+              display: 'block',
+              textAlign: 'center',
+              fontSize: '0.85rem',
+              color: '#666',
+              marginTop: '1.25rem',
+            }}
+          >
+            {q.author}
+          </span>
+        )}
       </div>
     </div>
   )

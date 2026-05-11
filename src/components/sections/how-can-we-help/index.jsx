@@ -11,7 +11,7 @@ const HowCanWeHelp = () => {
   const toggle = (id) => setOpenId((prev) => (prev === id ? null : id))
 
   return (
-    <section className="relative py-16 sm:py-24 overflow-hidden bg-white w-full">
+    <section className="relative py-10 sm:py-24 overflow-hidden bg-white w-full">
       {/* Decorative blobs */}
       <div
         className="absolute top-0 right-0 w-80 h-80 rounded-full pointer-events-none"

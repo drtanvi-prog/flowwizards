@@ -23,11 +23,11 @@ const BenefitsSection = ({ image }) => {
     offset: ['start end', 'end start'],
   })
 
-  const blobY     = useTransform(scrollYProgress, [0, 1], [-40, 40])
+  const blobY = useTransform(scrollYProgress, [0, 1], [-40, 40])
   const blobScale = useTransform(scrollYProgress, [0, 0.5, 1], [0.9, 1.05, 0.95])
 
   return (
-    <section ref={sectionRef} className="w-full bg-white py-24 overflow-hidden relative">
+    <section ref={sectionRef} className="w-full bg-white py-10 sm:py-24 overflow-hidden relative">
 
       {/* Top-right background glow */}
       <motion.div
@@ -88,7 +88,7 @@ const BenefitsSection = ({ image }) => {
                     style={{ background: 'linear-gradient(135deg, #ff4f00, #FC6E32)' }}
                   >
                     <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
-                      <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
                   <p className="text-sm font-medium" style={{ color: '#333', lineHeight: 1.55 }}>{text}</p>
@@ -103,11 +103,11 @@ const BenefitsSection = ({ image }) => {
           <div className="flex-1 flex items-center justify-center min-w-0">
             {image
               ? <motion.img src={image} alt="Benefits illustration"
-                  className="w-full max-w-md object-contain"
-                  initial={{ opacity: 0, scale: 0.92 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} />
+                className="w-full max-w-md object-contain"
+                initial={{ opacity: 0, scale: 0.92 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }} />
               : <AutomationDashboard />
             }
           </div>
