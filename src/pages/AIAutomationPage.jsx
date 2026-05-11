@@ -3,10 +3,8 @@ import AIValueProp from '../components/sections/ai-value-prop'
 import AIAutomationCover from '../components/sections/ai-automation-cover'
 import AIAutomationFramework from '../components/sections/ai-automation-framework'
 import AICaseStudies from '../components/sections/ai-case-studies'
-// import AIEngagements from '../components/sections/ai-engagements'
 import PremiumQuoteStack from '../components/sections/quotes'
 import ToolkitSection from '../components/sections/toolkit'
-import FAQSection from '@/components/sections/ai-faq/FAQSection'
 import AICTABanner from '../components/sections/ai-cta-banner'
 import ServicesSection from '../components/sections/services'
 import { useCaseCategories } from '../data/aiUseCasesData'
@@ -70,12 +68,6 @@ const AIAutomationPage = () => (
       mobileCols={3}
       ctaLabel="Explore all integrations"
     />
-    {/* <AIEngagements /> */}
-    <AICTABanner
-      heading="But first, let’s get to know each other."
-      buttonLabel="Book a Discovery Call"
-      showSubtext={false} />
-    <FAQSection />
     <AICTABanner
       heading="AI is just a tool. Better operations are the outcome."
       buttonLabel="It starts with a Discovery Call"
