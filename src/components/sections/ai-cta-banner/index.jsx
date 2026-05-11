@@ -44,7 +44,18 @@ const AICTABanner = ({
         transition={{ duration: 0.45, delay: 0.16, ease }}
         whileHover={{ scale: 1.04 }}
         whileTap={{ scale: 0.97 }}
-        className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md font-bold text-white text-[13px] sm:text-[15px] cursor-pointer border-none"
+        className="
+                  inline-flex items-center gap-1.5
+                  px-3 py-1.5
+                  sm:px-6 sm:py-3.5
+                  rounded-md
+                  font-bold
+                  text-[11px] sm:text-[15px]
+                  text-white
+                  whitespace-nowrap
+                  cursor-pointer
+                 border-none
+                "
         style={{ background: '#1a1a1a' }}
       >
         {buttonLabel}
