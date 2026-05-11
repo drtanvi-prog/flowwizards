@@ -5,7 +5,7 @@ import { ITEMS } from '../../../data/aiServicesAccordionData'
 const ease = [0.22, 1, 0.36, 1]
 
 const DesktopAccordion = ({ activeId, setActiveId }) => {
-  const active = ITEMS.find(i => i.id === activeId)
+  const active = ITEMS.find((x) => x.id === activeId) ?? ITEMS[0]
 
   return (
     <div className="hidden lg:grid grid-cols-[360px_1fr] gap-6 xl:gap-10 items-start">
