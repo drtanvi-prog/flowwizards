@@ -66,7 +66,16 @@ const Footer = () => {
                         unleash the power of automation to simplify their processes, streamline their operations,
                         and scale their profits.
                      </p>
-                     <Button variant="primary" size="md" className="self-start text-sm! px-5! py-3!">
+                     <Button
+                        variant="primary"
+                        size="md"
+                        className="
+                           self-start
+                           text-[11px]! sm:text-sm!
+                           px-3! py-1.5!
+                           sm:px-5! sm:py-3!
+                         "
+                     >
                         Schedule a complimentary call
                      </Button>
                      <div className="flex justify-center mt-2 select-none">
