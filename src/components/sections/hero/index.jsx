@@ -153,7 +153,15 @@ const Hero = () => {
 
             {/* CTA */}
             <motion.div {...fadeUp(0.44)} className="mt-2">
-               <Button variant="secondary" size="md" className="px-5! py-3! text-sm!">
+               <Button
+                  variant="secondary"
+                  size="md"
+                  className="
+                     px-3! py-1.5!
+                     sm:px-5! sm:py-3!
+                     text-[11px]! sm:text-sm!
+                   "
+               >
                   Schedule a free discovery session
                </Button>
             </motion.div>
