@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import {
    Sun, UserCog, Code2, GitFork, Users, Megaphone, DollarSign, BarChart2,
    Menu, X, ChevronRight, ChevronLeft,
@@ -9,10 +10,10 @@ import logo from '../../assets/logo.png'
 
 const dropdownData = {
    services: [
-      { icon: <Sun size={18} strokeWidth={1.8} />, title: 'AI Automation', description: 'Accelerate business growth' },
-      { icon: <UserCog size={18} strokeWidth={1.8} />, title: 'Fractional Chief Automation Officer', description: 'Strategy-led automation, without full-time cost' },
-      { icon: <Code2 size={18} strokeWidth={1.8} />, title: 'Software Optimization', description: 'Select and maximize the right software' },
-      { icon: <GitFork size={18} strokeWidth={1.8} />, title: 'Workflow Automation', description: 'Eliminate bottlenecks and human error' },
+      { icon: <Sun size={18} strokeWidth={1.8} />, title: 'AI Automation', description: 'Accelerate business growth', href: '/ai-automation-services' },
+      { icon: <UserCog size={18} strokeWidth={1.8} />, title: 'Fractional Chief Automation Officer', description: 'Strategy-led automation, without full-time cost', href: '/fractional-chief-automation' },
+      { icon: <Code2 size={18} strokeWidth={1.8} />, title: 'Software Optimization', description: 'Select and maximize the right software', href: '/software-setup-services' },
+      { icon: <GitFork size={18} strokeWidth={1.8} />, title: 'Workflow Automation', description: 'Eliminate bottlenecks and human error', href: '/workflow-automation' },
    ],
    solutions: [
       { icon: <Users size={18} strokeWidth={1.8} />, title: 'CRM Automation', description: 'Streamline your customer relationships' },
@@ -32,24 +33,42 @@ const mobileNavLinks = [
    { label: 'Contact' },
 ]
 
-const DropdownItem = ({ item }) => (
-   <a href="#" className="flex items-start gap-4 px-5 py-4 group no-underline transition-colors">
-      <div className="w-10 h-10 rounded-lg bg-[#f5f5f5] group-hover:bg-[#ff4f00] flex items-center justify-center transition-colors text-[#ff4f00] group-hover:text-white shrink-0">
-         {item.icon}
-      </div>
-      <div className="flex flex-col">
-         <p className="font-semibold text-sm text-[#1A1A1A] group-hover:text-[#ff4f00] m-0 mb-0.5 transition-colors">
-            {item.title}
-         </p>
-         <div className="h-px bg-[#ff4f00] w-0 group-hover:w-full transition-all duration-300 ease-out mb-0.5" />
-         <p className="text-xs text-gray-600 m-0">{item.description}</p>
-      </div>
-   </a>
-)
+const DropdownItem = ({ item, onClose, isActive }) => {
+   const inner = (
+      <>
+         <div className={`w-10 h-10 rounded-lg flex items-center justify-center transition-colors shrink-0
+            ${isActive ? 'bg-[#ff4f00] text-white' : 'bg-[#f5f5f5] text-[#ff4f00] group-hover:bg-[#ff4f00] group-hover:text-white'}`}>
+            {item.icon}
+         </div>
+         <div className="flex flex-col">
+            <p className={`font-semibold text-sm m-0 mb-0.5 transition-colors
+               ${isActive ? 'text-[#ff4f00]' : 'text-[#1A1A1A] group-hover:text-[#ff4f00]'}`}>
+               {item.title}
+            </p>
+            <div className={`h-px bg-[#ff4f00] mb-0.5 transition-all duration-300 ease-out
+               ${isActive ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+            <p className="text-xs text-gray-600 m-0">{item.description}</p>
+         </div>
+      </>
+   )
+   if (item.href) {
+      return (
+         <Link to={item.href} onClick={onClose} className="flex items-start gap-4 px-5 py-4 group no-underline transition-colors">
+            {inner}
+         </Link>
+      )
+   }
+   return (
+      <a href="#" className="flex items-start gap-4 px-5 py-4 group no-underline transition-colors">
+         {inner}
+      </a>
+   )
+}
 
 const PANEL_WIDTH = 420
 
 const Header = () => {
+   const { pathname } = useLocation()
    const [openDropdown, setOpenDropdown] = useState(null)
    const [panelLeft, setPanelLeft] = useState(0)
    const [panelTop, setPanelTop] = useState(0)
@@ -134,7 +153,12 @@ const Header = () => {
                >
                   <div className="py-3 divide-y divide-gray-100">
                      {dropdownData[openDropdown].map((item) => (
-                        <DropdownItem key={item.title} item={item} />
+                        <DropdownItem
+                           key={item.title}
+                           item={item}
+                           onClose={() => setOpenDropdown(null)}
+                           isActive={!!item.href && pathname === item.href}
+                        />
                      ))}
                   </div>
                </div>
@@ -215,21 +239,27 @@ const Header = () => {
                   {mobileSubmenu && (
                      <div className="flex flex-col px-5 pt-4">
                         <div className="border border-[#ff4f00]/20 rounded-xl overflow-hidden bg-white">
-                           {dropdownData[mobileSubmenu].map((item, idx) => (
-                              <a
-                                 key={item.title}
-                                 href="#"
-                                 className={`flex items-start gap-3 px-4 py-4 no-underline ${idx < dropdownData[mobileSubmenu].length - 1 ? 'border-b border-gray-100' : ''}`}
-                              >
-                                 <div className="w-9 h-9 rounded-lg bg-[#fff5f2] flex items-center justify-center text-[#ff4f00] shrink-0">
-                                    {item.icon}
-                                 </div>
-                                 <div>
-                                    <p className="font-semibold text-sm text-[#1A1A1A] m-0">{item.title}</p>
-                                    <p className="text-xs text-gray-500 mt-0.5 m-0">{item.description}</p>
-                                 </div>
-                              </a>
-                           ))}
+                           {dropdownData[mobileSubmenu].map((item, idx) => {
+                              const active = !!item.href && pathname === item.href
+                              const cls = `flex items-start gap-3 px-4 py-4 no-underline ${idx < dropdownData[mobileSubmenu].length - 1 ? 'border-b border-gray-100' : ''}`
+                              const inner = (
+                                 <>
+                                    <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0
+                                       ${active ? 'bg-[#ff4f00] text-white' : 'bg-[#fff5f2] text-[#ff4f00]'}`}>
+                                       {item.icon}
+                                    </div>
+                                    <div>
+                                       <p className={`font-semibold text-sm m-0 ${active ? 'text-[#ff4f00]' : 'text-[#1A1A1A]'}`}>{item.title}</p>
+                                       <p className="text-xs text-gray-500 mt-0.5 m-0">{item.description}</p>
+                                    </div>
+                                 </>
+                              )
+                              return item.href ? (
+                                 <Link key={item.title} to={item.href} className={cls} onClick={closeMobile}>{inner}</Link>
+                              ) : (
+                                 <a key={item.title} href="#" className={cls}>{inner}</a>
+                              )
+                           })}
                         </div>
                      </div>
                   )}

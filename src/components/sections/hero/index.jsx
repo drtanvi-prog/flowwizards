@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import { motion } from 'framer-motion'
 import Button from '../../ui/Button'
 import { Cursor } from './HeroCursors'
@@ -20,7 +20,7 @@ const Hero = () => {
    const eveRef = useRef(null)
    const contentRef = useRef(null)
 
-   const [svg, setSvg] = useState({ vb: '0 0 375 600', l1: '', l2: '' })
+   const svg = { vb: '0 0 375 600', l1: '', l2: '' }
 
    // const recalc = useCallback(() => {
    //    const S  = sectionRef.current?.getBoundingClientRect()
@@ -153,7 +153,7 @@ const Hero = () => {
 
             {/* CTA */}
             <motion.div {...fadeUp(0.44)} className="mt-2">
-               <Button variant="secondary" size="md">
+               <Button variant="secondary" size="md" className="px-5! py-3! text-sm!">
                   Schedule a free discovery session
                </Button>
             </motion.div>

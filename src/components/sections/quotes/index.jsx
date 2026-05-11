@@ -4,7 +4,7 @@ import QuoteCard from './QuoteCard'
 const PremiumQuoteStack = ({ quotes = QUOTES }) => (
   <section
     className="relative w-full bg-white"
-    style={{ paddingTop: '120px', paddingBottom: '6rem' }}
+    style={{ paddingTop: '2rem', paddingBottom: '6rem' }}
   >
     <div className="max-w-360 mx-auto px-8 xl:px-16">
       <div

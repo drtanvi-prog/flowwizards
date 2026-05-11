@@ -18,7 +18,7 @@ const TrustedSection = () => (
    <section className="w-full flex flex-col items-center bg-white">
 
       {/* ── Logo bar ── */}
-      <div className="w-full py-14 px-8 xl:px-16 border-y border-gray-100">
+      <div className="w-full pt-10 pb-4 px-8 xl:px-16 border-t border-gray-100">
          <div className="max-w-360 mx-auto flex flex-col items-center gap-10">
             <motion.p
                initial={{ opacity: 0, y: 12 }}
@@ -74,7 +74,7 @@ const TrustedSection = () => (
       </div>
 
       {/* ── Two-column copy ── */}
-      <div className="w-full max-w-360 mx-auto flex flex-col md:flex-row items-start px-8 xl:px-16 py-16 md:py-28">
+      <div className="w-full max-w-360 mx-auto flex flex-col md:flex-row items-start px-8 xl:px-16 pt-6 pb-6 md:pt-8 md:pb-10">
 
          <div className="w-full md:w-[55%] shrink-0 min-w-0">
             <h3
