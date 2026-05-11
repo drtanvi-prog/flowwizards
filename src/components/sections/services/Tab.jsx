@@ -36,9 +36,19 @@ const Tab = ({ service, isActive, onClick, variant = 'dark' }) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={style}
-      className="inline-flex items-center gap-2 px-4 py-2 rounded-full border font-semibold text-sm whitespace-nowrap transition-all duration-200 cursor-pointer shrink-0"
+      className="
+                inline-flex items-center gap-1.5
+                px-3 py-1.5
+                sm:px-4 sm:py-2
+                rounded-full border
+                font-medium
+                text-xs sm:text-sm
+                whitespace-nowrap
+                transition-all duration-200
+                cursor-pointer shrink-0
+            "
     >
-      {Icon && <Icon size={13} strokeWidth={2.2} />}
+      {Icon && <Icon size={11} strokeWidth={2.2} />}
       {service.label}
     </button>
   )
