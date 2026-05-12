@@ -48,8 +48,15 @@ const ServicePageHero = ({ badge, heading, body, ctaText }) => (
 
       {/* CTA */}
       {ctaText && (
-        <motion.div {...fadeUp(0.38, 14)} className="mt-8 sm:mt-12">
-          <Button variant="secondary" size="lg">{ctaText}</Button>
+        <motion.div {...fadeUp(0.38, 14)} className="mt-8 sm:mt-12 flex md:block items-center justify-center">
+          <Button variant="secondary"
+            size="md"
+            className="
+            sm:px-5! sm:py-3!
+            text-[11px]! sm:text-sm!
+            px-3! py-1.5!
+                   "
+          >{ctaText}</Button>
         </motion.div>
       )}
 

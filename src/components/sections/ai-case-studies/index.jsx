@@ -44,7 +44,7 @@ const cases = [
     problem:
       'GuideMe Japan operates a two-sided marketplace connecting travelers with local guides. As demand grew, onboarding new guides, coordinating schedules, and managing payroll required hours of manual work and constant coordination across tools. Growth wasn\'t breaking the business, but it was stretching the operation thin and slowing execution.',
     built:
-      'Flow Digital automated core operational workflows across onboarding, scheduling, internal coordination, and access to operational data. Key processes that previously required manual steps and back-and-forth were connected into a single, reliable system that handled volume without extra oversight.',
+      'Flow Wizards automated core operational workflows across onboarding, scheduling, internal coordination, and access to operational data. Key processes that previously required manual steps and back-and-forth were connected into a single, reliable system that handled volume without extra oversight.',
     results: [
       '146% increase in sales',
       '166% increase in bookings',
@@ -62,7 +62,7 @@ const cases = [
     problem:
       'A fast-growing e-commerce brand processed thousands of monthly orders, but product details were buried inside unstructured descriptions. Operations teams manually extracted, cleaned, and reformatted order data before production could begin. As order volume increased, this manual step became a massive bottleneck.',
     built:
-      'Flow Digital implemented AI-driven automation that reads incoming orders, extracts required details, standardizes the data, and routes it directly into production workflows without manual cleanup.',
+      'Flow Wizards implemented AI-driven automation that reads incoming orders, extracts required details, standardizes the data, and routes it directly into production workflows without manual cleanup.',
     results: [
       '128% increase in monthly revenue',
       '55% increase in order volume',

@@ -24,8 +24,7 @@ const ToolkitSection = ({
   mobileCells = MOBILE_CELLS,
   desktopCols = 9,
   mobileCols = 3,
-  ctaLabel = 'View all integrations',
-  ctaHref = '#',
+  disableHover = false,
 }) => {
   const [hoveredId, setHoveredId] = useState(null)
   const [tooltipPos, setTooltipPos] = useState(null)
@@ -38,6 +37,7 @@ const ToolkitSection = ({
   const mobileActiveTool = toolsList.find(t => t.id === mobileActiveId)
 
   const handleCellEnter = (id, e) => {
+    if (disableHover) return;
     setHoveredId(id)
     if (id === 'hubspot') return
     const wrapper = wrapperRef.current
@@ -53,9 +53,10 @@ const ToolkitSection = ({
     setTooltipPos({ left, top: cellMidY })
   }
 
-  const handleCellLeave = () => { setHoveredId(null); setTooltipPos(null) }
+  const handleCellLeave = () => { if (disableHover) return; setHoveredId(null); setTooltipPos(null) }
 
   const handleMobileCellTap = (id, e) => {
+    if (disableHover) return;
     e.stopPropagation()
     if (mobileActiveId === id) { setMobileActiveId(null); setMobileTooltipPos(null); return }
     setMobileActiveId(id)
@@ -172,12 +173,12 @@ const ToolkitSection = ({
                       transition: 'background 0.25s',
                       position: 'relative',
                     }}
-                    onMouseEnter={(e) => handleCellEnter(cell.id, e)}
-                    onMouseLeave={handleCellLeave}
+                    onMouseEnter={disableHover ? undefined : (e) => handleCellEnter(cell.id, e)}
+                    onMouseLeave={disableHover ? undefined : handleCellLeave}
                     whileHover={{ scale: 1.03 }}
                     transition={{ duration: 0.2 }}
                   >
-                    {isHov && (
+                    {isHov && !disableHover && (
                       <motion.div
                         layoutId="activeBar"
                         style={{
@@ -194,7 +195,7 @@ const ToolkitSection = ({
             </div>
 
             <AnimatePresence>
-              {activeTool && tooltipPos && (
+              {!disableHover && activeTool && tooltipPos && (
                 <FloatingTooltip key={activeTool.id} tool={activeTool} pos={tooltipPos} />
               )}
             </AnimatePresence>
@@ -247,7 +248,7 @@ const ToolkitSection = ({
                       transition: 'background 0.2s',
                       position: 'relative',
                     }}
-                    onClick={(e) => handleMobileCellTap(cell.id, e)}
+                    onClick={disableHover ? undefined : (e) => handleMobileCellTap(cell.id, e)}
                   >
                     {isActive && (
                       <div style={{
@@ -262,7 +263,7 @@ const ToolkitSection = ({
             </div>
 
             <AnimatePresence>
-              {mobileActiveTool && mobileTooltipPos && (
+              {!disableHover && mobileActiveTool && mobileTooltipPos && (
                 <FloatingTooltip key={mobileActiveTool.id} tool={mobileActiveTool} pos={mobileTooltipPos} />
               )}
             </AnimatePresence>

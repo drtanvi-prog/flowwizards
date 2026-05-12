@@ -14,7 +14,7 @@ const brands = [
    { name: 'Discovery', img: imgDiscovery },
 ]
 
-const TrustedSection = () => (
+const TrustedSection = ({ hideBottom = false, heading = 'Trusted by big and small' }) => (
    <section className="w-full flex flex-col items-center bg-white">
 
       {/* ── Logo bar ── */}
@@ -27,7 +27,7 @@ const TrustedSection = () => (
                transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                className="text-[15px] sm:text-[17px] md:text-[20px] font-semibold tracking-widest text-[#1E1E1E]"
             >
-               Trusted by big and small
+               {heading}
             </motion.p>
 
             {/* Logos — desktop */}
@@ -73,34 +73,36 @@ const TrustedSection = () => (
          </div>
       </div>
 
-      {/* ── Two-column copy ── */}
-      <div className="w-full max-w-360 mx-auto flex flex-col md:flex-row items-start px-8 xl:px-16 pt-6 pb-6 md:pt-8 md:pb-10">
-
-         <div className="w-full md:w-[55%] shrink-0 min-w-0">
-            <h3
-               className="text-[1.6rem] sm:text-[1.9rem] md:text-[3.2rem] lg:text-[3.8rem] xl:text-[4.2rem] font-bold text-[#1A1A1A] leading-[1.15] m-0"
-               style={{ fontWeight: 800 }}
-            >
-               You know automation is no longer a nice-to-have
-            </h3>
-         </div>
-
-         <div className="w-full md:flex-1 flex md:justify-end mt-8 md:mt-0">
-            <div className="w-full max-w-xs">
-               <p className="text-[15px] text-[#4A4A4A] leading-relaxed mb-5">
-                  If only you knew where to start. Worse still, all the apps that promised to
-                  streamline your business only make things more complicated.
-               </p>
-               <p className="text-[15px] text-[#4A4A4A] leading-relaxed m-0">
-                  The days of siloed processes, lost hours, and less-than-perfect customer
-                  experiences are over.
-               </p>
+      {/* Hide bottom section if hideBottom is true */}
+      {!hideBottom && (
+         <>
+            {/* ── Two-column copy ── */}
+            <div className="w-full max-w-360 mx-auto flex flex-col md:flex-row items-start px-8 xl:px-16 pt-6 pb-6 md:pt-8 md:pb-10">
+               <div className="w-full md:w-[55%] shrink-0 min-w-0">
+                  <h3
+                     className="text-[1.6rem] sm:text-[1.9rem] md:text-[3.2rem] lg:text-[3.8rem] xl:text-[4.2rem] font-bold text-[#1A1A1A] leading-[1.15] m-0"
+                     style={{ fontWeight: 800 }}
+                  >
+                     You know automation is no longer a nice-to-have
+                  </h3>
+               </div>
+               <div className="w-full md:flex-1 flex md:justify-end mt-8 md:mt-0">
+                  <div className="w-full max-w-xs">
+                     <p className="text-[15px] text-[#4A4A4A] leading-relaxed mb-5">
+                        If only you knew where to start. Worse still, all the apps that promised to
+                        streamline your business only make things more complicated.
+                     </p>
+                     <p className="text-[15px] text-[#4A4A4A] leading-relaxed m-0">
+                        The days of siloed processes, lost hours, and less-than-perfect customer
+                        experiences are over.
+                     </p>
+                  </div>
+               </div>
             </div>
-         </div>
-      </div>
-
-      {/* ── Quote stack ── */}
-      <PremiumQuoteStack />
+            {/* ── Quote stack ── */}
+            <PremiumQuoteStack />
+         </>
+      )}
 
    </section>
 )

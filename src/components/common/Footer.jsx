@@ -5,7 +5,7 @@ import FooterCTA from './FooterCTA'
 
 const SOLUTIONS = ['Airtable', 'Jotform', 'Pipedrive', 'Zapier']
 const RESOURCES = ['About Us', 'Blog', 'Contact', 'Brand kit']
-const PORTAL = ['Flow Digital Portal', 'Flow Digital Status']
+const PORTAL = ['Flow Wizards Portal', 'Flow Wizards Status']
 const SOCIALS = ['Instagram', 'X', 'LinkedIn']
 
 const ROW1 = ['Impressum', 'Terms', 'Privacy Policy', 'Cookie Policy']
@@ -37,20 +37,36 @@ const ColHead = ({ children }) => (
 
 const Footer = () => {
    const { pathname } = useLocation()
-   const showCTA = pathname !== '/ai-automation-services'
+   const showCTA = pathname !== '/ai-automation-services' && pathname !== '/workflow-automation'
+
+   let ctaProps = {
+      heading: <>
+         Businesses standing still go with the Flow.{' '}
+         Businesses surging forward go with{' '}
+         Flow.
+      </>,
+      subtext: <>The <span style={{ textDecoration: 'line-through', opacity: 0.7 }}>future</span> present belongs to those who move fastest.<br />See you there?</>,
+      buttonText: 'Schedule your free discovery session',
+   };
+
+   if (pathname === '/fractional-chief-automation') {
+      ctaProps = {
+         heading: <>Get total peace of mind,<br />and scale without the drama</>,
+         subtext: <><b>Bonus:</b> You’ll leave your competitors wondering how you make it look so effortless.</>,
+         buttonText: 'Schedule your free discovery session',
+      };
+   } else if (pathname === '/software-setup-services') {
+      ctaProps = {
+         heading: <>Get ready, get set up...<br />and watch your business grow.</>,
+         subtext: '',
+         buttonText: 'Schedule your free discovery session',
+      };
+   }
 
    return (
       <footer>
          {showCTA && (
-            <FooterCTA
-               heading={
-                  <>
-                     Businesses standing still go with the Flow.{' '}
-                     Businesses surging forward go with{' '}
-                     Flow.
-                  </>
-               }
-            />
+            <FooterCTA {...ctaProps} />
          )}
 
          {/* ── Main Footer ── */}

@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
 import bgFooter from '../../assets/bg-footer.png'
 
-const FooterCTA = ({ heading }) => (
+
+const FooterCTA = ({ heading, subtext, buttonText }) => (
    <section
       className="relative overflow-hidden"
       style={{ background: '#F07020' }}
    >
-
       <div className="relative z-10 max-w-7xl mx-auto px-6 xl:px-16 pt-10 pb-8 sm:pb-16" style={{ minHeight: '0' }}>
          <div className="max-w-lg">
             <motion.h2
@@ -28,10 +28,7 @@ const FooterCTA = ({ heading }) => (
                className="text-white mb-8"
                style={{ fontSize: '0.95rem', lineHeight: 1.7, opacity: 0.88 }}
             >
-               The{' '}
-               <span style={{ textDecoration: 'line-through', opacity: 0.7 }}>future</span>{' '}
-               present belongs to those who move fastest.
-               <br />See you there?
+               {subtext}
             </motion.p>
 
             <motion.button
@@ -44,7 +41,7 @@ const FooterCTA = ({ heading }) => (
                className="px-3 py-1.5 sm:px-6 sm:py-3.5 rounded-md font-bold text-white text-[11px] sm:text-[0.88rem] whitespace-nowrap"
                style={{ background: '#1a1a1a', cursor: 'pointer', border: 'none' }}
             >
-               Schedule your free discovery session
+               {buttonText}
             </motion.button>
          </div>
       </div>

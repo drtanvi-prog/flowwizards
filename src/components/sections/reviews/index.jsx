@@ -53,17 +53,17 @@ const ReviewCard = ({ review, index }) => {
 const defaultReviews = [
   {
     quote:
-      "The team at Flow Digital is the best I've worked with. They handle every challenge with real expertise. Their communication is clear and consistent, they bring fresh ideas, streamline processes, and provide practical solutions. I can't recommend Flow Digital highly enough.",
+      "The team at Flow Wizards is the best I've worked with. They handle every challenge with real expertise. Their communication is clear and consistent, they bring fresh ideas, streamline processes, and provide practical solutions. I can't recommend Flow Wizards highly enough.",
     author: 'Austin Nimmo',
   },
   {
     quote:
-      'Flow Digital did an amazing job setting up my CRM system and automations. They understood exactly what my business needed and made the process seamless from start to finish.',
+      'Flow Wizards did an amazing job setting up my CRM system and automations. They understood exactly what my business needed and made the process seamless from start to finish.',
     author: '- Gavriel F.',
   },
   {
     quote:
-      "Working with Flow Digital has been an absolute game-changer for my business. They stepped in, analyzed all my CRM platforms, and immediately found issues I didn't even realize were costing me money.",
+      "Working with Flow Wizards has been an absolute game-changer for my business. They stepped in, analyzed all my CRM platforms, and immediately found issues I didn't even realize were costing me money.",
     author: '- Barry P.',
   },
   {

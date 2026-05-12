@@ -1,0 +1,17 @@
+export const customTools = [
+  { id: "custom1", name: "Custom1", accentColor: "#FF4A00", description: "Custom tool 1." },
+  { id: "custom2", name: "Custom2", accentColor: "#FF7A59", description: "Custom tool 2." },
+  { id: "custom3", name: "Custom3", accentColor: "#6B46C1", description: "Custom tool 3." },
+  { id: "custom4", name: "Custom4", accentColor: "#356AE6", description: "Custom tool 4." },
+  { id: "custom5", name: "Custom5", accentColor: "#22C55E", description: "Custom tool 5." },
+  { id: "custom6", name: "Custom6", accentColor: "#9333EA", description: "Custom tool 6." },
+  { id: "custom7", name: "Custom7", accentColor: "#16A34A", description: "Custom tool 7." },
+  { id: "custom8", name: "Custom8", accentColor: "#6366F1", description: "Custom tool 8." },
+  { id: "custom9", name: "Custom9", accentColor: "#FF4A00", description: "Custom tool 9." },
+  { id: "custom10", name: "Custom10", accentColor: "#FF7A59", description: "Custom tool 10." },
+  { id: "custom11", name: "Custom11", accentColor: "#6B46C1", description: "Custom tool 11." },
+  { id: "custom12", name: "Custom12", accentColor: "#356AE6", description: "Custom tool 12." },
+  { id: "custom13", name: "Custom13", accentColor: "#22C55E", description: "Custom tool 13." },
+  { id: "custom14", name: "Custom14", accentColor: "#9333EA", description: "Custom tool 14." },
+  { id: "custom15", name: "Custom15", accentColor: "#16A34A", description: "Custom tool 15." },
+];

@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
             transition={{ duration: 0.5 }}
             className="mb-5 flex justify-center sm:justify-start"
           >
-            <Chip>Why choose Flow Digital as your workflow consultants</Chip>
+            <Chip>Why choose Flow Wizards as your workflow consultants</Chip>
           </motion.div>
 
           <motion.h2
