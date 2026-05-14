@@ -28,9 +28,9 @@ const mobileNavLinks = [
    { label: 'Solutions', hasDropdown: true, key: 'solutions' },
    { label: 'Case Studies', href: '/case-studies' },
    { label: 'Pricing', href: '/pricing' },
-   { label: 'About' },
+   { label: 'About', href: '/about' },
    { label: 'Blog', href: '/blog' },
-   { label: 'Contact' },
+   { label: 'Contact', href: '/contact' },
 ]
 
 const DropdownItem = ({ item, onClose, isActive }) => {
