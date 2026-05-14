@@ -1,15 +1,23 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import logoZapier from '@assets/software/s2.svg';
+import logoTypespot from '@assets/software/s3.webp';
+import logoJotform from '@assets/software/s4.webp';
+import logoAirtable from '@assets/software/s5.webp';
+import logoPipedrive from '@assets/software/s6.webp';
+import logoKeep from '@assets/software/s7.webp';
+import logoMonday from '@assets/software/monday.svg';
+import logoGumloop from '@assets/software/Gumloop.svg';
 
 const tools = [
-   { name: 'Zapier', logo: '/src/assets/software/s2.svg' },
-   { name: 'Typespot', logo: '/src/assets/software/s3.webp' },
-   { name: 'Jotform', logo: '/src/assets/software/s4.webp' },
-   { name: 'Airtable', logo: '/src/assets/software/s5.webp' },
-   { name: 'Pipedrive', logo: '/src/assets/software/s6.webp' },
-   { name: 'Keep', logo: '/src/assets/software/s7.webp' },
-   { name: 'Monday.com', logo: '/src/assets/software/monday.svg' },
-   { name: 'Gumloop', logo: '/src/assets/software/Gumloop.svg' },
+   { name: 'Zapier', logo: logoZapier },
+   { name: 'Typespot', logo: logoTypespot },
+   { name: 'Jotform', logo: logoJotform },
+   { name: 'Airtable', logo: logoAirtable },
+   { name: 'Pipedrive', logo: logoPipedrive },
+   { name: 'Keep', logo: logoKeep },
+   { name: 'Monday.com', logo: logoMonday },
+   { name: 'Gumloop', logo: logoGumloop },
 ];
 
 const faqs = [
