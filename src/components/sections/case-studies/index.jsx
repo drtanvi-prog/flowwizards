@@ -2,12 +2,12 @@ import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { caseStudies } from '../../../data/caseStudiesData'
-import Chip from '../../ui/Chip'
+import Chip from '@/components/ui/Chip'
 import CaseStudyCard from './CaseStudyCard'
 
-const SCALES   = [1, 0.84, 0.70]
+const SCALES = [1, 0.84, 0.70]
 const OPACITIES = [1, 0.48, 0.22]
-const BLURS    = [0, 1,    2.5]
+const BLURS = [0, 1, 2.5]
 
 const CaseStudies = () => {
   const [active, setActive] = useState(1)
@@ -20,9 +20,9 @@ const CaseStudies = () => {
     const update = () => {
       const w = window.innerWidth
       setDims({
-        cardW:   w < 640 ? Math.min(340, w - 48) : 380,
-        cardH:   w < 640 ? 400 : 420,
-        offset:  w < 640 ? 148 : w < 1024 ? 235 : 290,
+        cardW: w < 640 ? Math.min(340, w - 48) : 380,
+        cardH: w < 640 ? 400 : 420,
+        offset: w < 640 ? 148 : w < 1024 ? 235 : 290,
       })
     }
     update()

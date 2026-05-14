@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import Chip from '../../ui/Chip';
+import Chip from '@/components/ui/Chip';
 import ShapeEl from '../ai-automation-framework/ShapeEl';
 import WorkflowMobileLayout from './WorkflowMobileLayout';
 

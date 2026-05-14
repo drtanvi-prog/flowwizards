@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 const tools = [
    { name: 'Zapier', logo: '/src/assets/software/s2.svg' },
-   { name: 'HubSpot', logo: '/src/assets/software/s3.webp' },
-   { name: 'Pipedrive', logo: '/src/assets/software/s4.webp' },
+   { name: 'Typespot', logo: '/src/assets/software/s3.webp' },
+   { name: 'Jotform', logo: '/src/assets/software/s4.webp' },
    { name: 'Airtable', logo: '/src/assets/software/s5.webp' },
-   { name: 'Jotform', logo: '/src/assets/software/s6.webp' },
-   { name: 'n8n', logo: '/src/assets/software/s7.webp' },
+   { name: 'Pipedrive', logo: '/src/assets/software/s6.webp' },
+   { name: 'Keep', logo: '/src/assets/software/s7.webp' },
    { name: 'Monday.com', logo: '/src/assets/software/monday.svg' },
    { name: 'Gumloop', logo: '/src/assets/software/Gumloop.svg' },
 ];
@@ -45,8 +45,8 @@ export function ToolsWeAutomate() {
    return (
       <section className="py-14 md:py-20 bg-white text-center">
          <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl font-extrabold mb-2">Our specialists build high-impact workflow automations across nearly 100 of the leading business tools and platforms, including:</h2>
-            <div className="font-bold text-base xs:text-lg md:text-xl mb-6 mt-2">Tools We Automate</div>
+            <h2 className="text-lg xs:text-xl sm:text-xl md:text-2xl font-extrabold mb-2">Our specialists build high-impact workflow automations across nearly 100 of the leading business tools and platforms, including:</h2>
+            <div className="text-base xs:text-lg md:text-xl mb-6 mt-2">Tools We Automate</div>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 md:gap-10 items-center justify-center">
                {tools.map((tool) => (
                   <div key={tool.name} className="flex flex-col items-center">
@@ -74,7 +74,7 @@ export function WorkflowFAQ() {
    return (
       <section className="py-14 md:py-20 bg-white">
          <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-10">Workflow Automation Services FAQ</h2>
+            <h2 className="text-2xl md:text-5xl font-extrabold text-center mb-10">Workflow Automation Services FAQ</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                {faqs.map((faq, i) => (
                   <motion.div
@@ -103,7 +103,7 @@ export function WorkflowFAQ() {
                ))}
             </div>
             <div className="text-center mt-10">
-               <a href="#" className="font-semibold text-[#ff4f00] hover:underline text-lg inline-flex items-center gap-1 transition-colors">
+               <a href="#" className="font-semibold text-[#ff4f00] hover:underline text-base md:text-lg inline-flex items-center gap-1 transition-colors">
                   Book a Free Discovery Call <span aria-hidden>→</span>
                </a>
             </div>

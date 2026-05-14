@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import Chip from '../../ui/Chip'
+import Chip from '@/components/ui/Chip'
 
 const ease = [0.22, 1, 0.36, 1]
 const fadeUp = (delay = 0) => ({

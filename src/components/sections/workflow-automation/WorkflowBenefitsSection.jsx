@@ -96,25 +96,6 @@ const containerVariants = {
    },
 };
 
-const cardVariants = {
-   hidden: {
-      opacity: 0,
-      y: 35,
-      scale: 0.96,
-   },
-
-   show: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-
-      transition: {
-         duration: 0.45,
-         ease: [0.25, 1, 0.5, 1],
-      },
-   },
-};
-
 const WorkflowBenefitsSection = () => {
    return (
       <section className="w-full py-14 md:py-20 bg-white overflow-hidden">
@@ -154,7 +135,7 @@ const WorkflowBenefitsSection = () => {
                   duration: 0.6,
                }}
                className="
-                  text-[2rem]
+                  text-[1.5rem]
                   sm:text-[2.8rem]
                   md:text-[4rem]
                   lg:text-[4rem]
@@ -344,7 +325,7 @@ const WorkflowBenefitsSection = () => {
                         className="
                               relative
                               z-10
-                              text-[1.1rem]
+                              text-[1.2rem]
                               sm:text-[1.2rem]
                               md:text-[1.35rem]
                               leading-[1.35]
@@ -368,7 +349,7 @@ const WorkflowBenefitsSection = () => {
                         className="
                               relative
                               z-10
-                              text-[0.95rem]
+                              text-[0.75rem]
                               sm:text-[1rem]
                               md:text-[1.02rem]
                               leading-[1.8]

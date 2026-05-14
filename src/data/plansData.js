@@ -1,0 +1,83 @@
+export const PLANS = [
+  {
+    name: "1-on-1 Session",
+    color: "#D93D3D",
+    dotColor: "#D93D3D",
+    audience: [
+      "Individuals or teams that need a quick tweak or help with a specific automation challenge (ex. an inefficient workflow or broken integration).",
+      "Teams who want expert opinion and strategy on their workflows and processes.",
+    ],
+    includesLabel: "How it works:",
+    includesContent: {
+      intro: "We offer two types of 1-on-1 sessions:",
+      items: [
+        {
+          title: "1-on-1 Implementation Session",
+          desc: "You share your screen and walk us through the issue. We fix as many issues as we can within the allotted time (75 minutes).",
+        },
+        { or: true },
+        {
+          title: "1-on-1 Strategy Session",
+          desc: "We walk through your workflow and develop a customized strategy tailored to your specific needs.",
+        },
+      ],
+    },
+    price: "$297",
+    priceUnit: "per session",
+    priceSub: "(75 minutes)",
+    cta: "Book a session",
+  },
+  {
+    name: "Hourly Retainers",
+    color: "#E8A020",
+    dotColor: "#E8A020",
+    featured: true,
+    audience: [
+      "Teams that are currently spending too much time on manual labor and want to leverage the power of automation to help make their process more efficient.",
+      "Teams embarking on a specific automation project or initiative who want targeted support for the duration of the project.",
+      "Teams with sporadic or occasional workflow or automation needs who don't want to spend hours upon hours of their own time dealing with setup and maintenance.",
+    ],
+    includesLabel: "Hourly Retainers Include:",
+    includesContent: {
+      items: [
+        { label: "Workflow strategy & design" },
+        { label: "No-code and low-code development" },
+        { label: "API development" },
+        { label: "Document as needed" },
+        { label: "Automation maintenance & fixing" },
+        { label: "Additional hourly work billed separately" },
+      ],
+    },
+    price: "$1,950",
+    pricePrefix: "Hourly Packages start at",
+    cta: "Book a 20 minute discovery Session",
+  },
+  {
+    name: "Fractional CAO (Unlimited Automation)",
+    color: "#F07020",
+    dotColor: "#F07020",
+    audience: [
+      "Teams with a giant wishlist of ongoing, multifaceted automation needs, who want a consistent, reliable partner available to help fuel their growth.",
+      "Teams that want all the benefits of a dedicated Chief Automation Officer, without the exorbitant cost.",
+    ],
+    includesLabel: "This Package Includes:",
+    includesContent: {
+      items: [
+        { groupLabel: "Automation Creation:" },
+        { label: "Customized workflow strategy & design" },
+        { label: "No-code and low-code development" },
+        { label: "API development" },
+        { label: "Document as needed" },
+        { groupLabel: "Support & Maintenance:" },
+        { label: "Dedicated project manager for ongoing support and optimization" },
+        { label: "Proactive monitoring" },
+        { label: "Unlimited maintenance" },
+        { label: "Tasks completed 1 at a time*" },
+        { label: "Automation maintenance & fixing" },
+        { label: "Scheduled Zoom sessions as needed" },
+      ],
+    },
+    taskInfo: "Urgent tasks will be reviewed in one business day.",
+    cta: "Talk to sales",
+  },
+];

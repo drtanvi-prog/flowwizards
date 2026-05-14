@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import Chip from '../../ui/Chip'
+import Chip from '@/components/ui/Chip'
 import { tools as defaultTools } from '../../../data/toolkitData'
 import { FloatingTooltip, TOOLTIP_W, MOBILE_TOOLTIP_W, TOOLTIP_GAP } from './FloatingTooltip'
 import { BADGE_MAP } from './PartnerBadges'
@@ -81,55 +81,61 @@ const ToolkitSection = ({
       <div className="max-w-360 mx-auto px-8 xl:px-16">
 
         {/* Chip */}
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mb-5"
-        >
-          <Chip className="border border-[#ff4f00]">{badge}</Chip>
-        </motion.div>
+        {badge && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mb-5"
+          >
+            <Chip className="border border-[#ff4f00]">{badge}</Chip>
+          </motion.div>
+        )}
 
         {/* Heading row */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-12">
-          <div className="flex-1 min-w-0">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.08 }}
-              className="text-3xl sm:text-4xl md:text-[3rem] font-extrabold text-[#1A1A1A] leading-tight"
-              style={{ letterSpacing: '-0.03em' }}
-            >
-              {heading}
-            </motion.h2>
+        {(heading || subText || descriptionContent) && (
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-12">
+            <div className="flex-1 min-w-0">
+              {heading && (
+                <motion.h2
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.08 }}
+                  className="text-3xl sm:text-4xl md:text-[3rem] font-extrabold text-[#1A1A1A] leading-tight"
+                  style={{ letterSpacing: '-0.03em' }}
+                >
+                  {heading}
+                </motion.h2>
+              )}
 
-            {descriptionContent && (
-              <motion.div
-                initial={{ opacity: 0, y: 12 }}
-                whileInView={{ opacity: 1, y: 0 }}
+              {descriptionContent && (
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.15 }}
+                  className="mt-6"
+                >
+                  {descriptionContent}
+                </motion.div>
+              )}
+            </div>
+
+            {subText && (
+              <motion.p
+                initial={{ opacity: 0, x: 16 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.15 }}
-                className="mt-6"
+                className="text-[14px] text-[#777] max-w-sm leading-relaxed lg:text-right shrink-0"
               >
-                {descriptionContent}
-              </motion.div>
+                {subText}
+              </motion.p>
             )}
           </div>
-
-          {subText && (
-            <motion.p
-              initial={{ opacity: 0, x: 16 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.15 }}
-              className="text-[14px] text-[#777] max-w-sm leading-relaxed lg:text-right shrink-0"
-            >
-              {subText}
-            </motion.p>
-          )}
-        </div>
+        )}
 
         {/* ── Desktop grid ── */}
         <motion.div

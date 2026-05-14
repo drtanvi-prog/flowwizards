@@ -68,7 +68,7 @@ const WorkflowIncludedSection = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center mb-10 md:mb-14 text-[#181818]"
+            className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-center mb-10 md:mb-14 text-[#181818]"
             style={{ letterSpacing: "-0.03em" }}
          >
             What's included in our workflow automation services
@@ -82,12 +82,12 @@ const WorkflowIncludedSection = () => (
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.2 }}
                   variants={cardVariants}
-                  className={`relative rounded-2xl border-2 ${item.border} shadow-md p-7 md:p-8 flex flex-col transition-all duration-300 group hover:shadow-xl hover:scale-[1.025]`}
+                  className={`relative rounded-2xl border-2 ${item.border} shadow-md p-7 md:p-8 flex flex-col items-start transition-all duration-300 group hover:shadow-xl hover:scale-[1.025]`}
                >
-                  <h3 className="font-bold text-lg md:text-xl text-[#181818] mb-3 leading-snug">{item.title}</h3>
-                  <p className="text-base md:text-[1.07rem] text-[#444] opacity-90 leading-relaxed mb-2">{item.desc}</p>
+                  <h3 className="font-bold text-lg md:text-xl text-[#181818] mb-3 leading-snug text-left w-full">{item.title}</h3>
+                  <p className="text-base md:text-[1.07rem] text-[#444] opacity-90 leading-relaxed mb-2 text-left w-full">{item.desc}</p>
                   {item.deliverable && (
-                     <p className="text-xs md:text-sm text-[#222] font-semibold mt-2 opacity-80">{item.deliverable}</p>
+                     <p className="text-xs md:text-sm text-[#222] font-semibold mt-2 opacity-80 text-left w-full">{item.deliverable}</p>
                   )}
                </motion.div>
             ))}

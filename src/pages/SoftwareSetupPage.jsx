@@ -1,12 +1,12 @@
-import ServicePageHero, { SHWord } from '../components/sections/service-page-hero/ServicePageHero';
-import SoftwareSetupSection from '../components/sections/Software-setup-section';
-import ToolkitSection from '../components/sections/toolkit';
-import PremiumFeatureSection from '../components/sections/software-setup/PremiumFeatureSection';
-import ResultsSection from '../components/sections/software-setup/ResultsSection';
-import QuoteSection from '../components/sections/software-setup/QuoteSection';
-import { customTools } from '../data/customToolkitData';
-import { CUSTOM_BADGE_MAP } from '../components/sections/toolkit/CustomBadges';
-import { CUSTOM_CELLS, CUSTOM_MOBILE_CELLS } from '../components/sections/toolkit/customGridConfig';
+import ServicePageHero, { SHWord } from '@/components/sections/service-page-hero/ServicePageHero';
+import SoftwareSetupSection from '@/components/sections/Software-setup-section';
+import ToolkitSection from '@/components/sections/toolkit';
+import PremiumFeatureSection from '@/components/sections/software-setup/PremiumFeatureSection';
+import ResultsSection from '@/components/sections/software-setup/ResultsSection';
+import QuoteSection from '@/components/sections/software-setup/QuoteSection';
+import { customTools } from '@/data/customToolkitData';
+import { CUSTOM_BADGE_MAP } from '@/components/sections/toolkit/CustomBadges';
+import { CUSTOM_CELLS, CUSTOM_MOBILE_CELLS } from '@/components/sections/toolkit/customGridConfig';
 
 const SoftwareSetupPage = () => (
   <>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import Button from '../../ui/Button'
+import Button from '@/components/ui/Button'
 
 const ease = [0.22, 1, 0.36, 1]
 const fadeUp = (delay = 0, y = 28) => ({
@@ -15,18 +15,18 @@ export const SHWord = ({ children }) => (
   </span>
 )
 
-const ServicePageHero = ({ badge, heading, body, ctaText }) => (
+const ServicePageHero = ({ badge, heading, body, ctaText, centered }) => (
   <section className="bg-[#FEF6F5] overflow-hidden px-6 sm:px-10 xl:px-16 pt-6 pb-20 sm:pt-18 sm:pb-28">
-    <div className="max-w-7xl mx-auto">
+    <div className={`max-w-7xl mx-auto ${centered ? 'flex flex-col items-center text-center' : ''}`}>
 
-      {/* Badge: left-aligned, line extends to the right */}
-      <motion.div {...fadeUp(0.05)} className="flex items-center gap-4 mb-7 sm:mb-9">
+      {/* Badge */}
+      <motion.div {...fadeUp(0.05)} className={`flex items-center gap-4 mb-7 sm:mb-9 ${centered ? 'justify-center' : ''}`}>
         <div className="relative z-10 shrink-0 border-[1.5px] border-[#1A1A1A] rounded-lg px-2.5 py-0.5 sm:px-5 sm:py-2 bg-[#FEF6F5]">
           <span className="whitespace-nowrap text-[10px] sm:text-[13px] font-medium text-[#1A1A1A] leading-none">
             {badge}
           </span>
         </div>
-        <div className="hidden sm:block flex-1 h-px bg-[#1A1A1A]" />
+        {!centered && <div className="hidden sm:block flex-1 h-px bg-[#1A1A1A]" />}
       </motion.div>
 
       {/* Heading */}

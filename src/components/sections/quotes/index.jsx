@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { QUOTES } from '../../../data/quotesData'
 import QuoteCard from './QuoteCard'
-import Chip from '../../ui/Chip'
+import Chip from '@/components/ui/Chip'
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 32 },
@@ -17,12 +17,13 @@ const PremiumQuoteStack = ({
   ctaHeading,
   ctaLabel,
   ctaHref = '#',
+  containerClass = 'max-w-360 px-8 xl:px-16',
 }) => (
   <section
     className="relative w-full bg-white"
     style={{ paddingTop: '2rem', paddingBottom: '1.5rem' }}
   >
-    <div className="max-w-360 mx-auto px-8 xl:px-16">
+    <div className={`${containerClass} mx-auto`}>
 
       {/* Optional header */}
       {(badge || heading) && (

@@ -1,9 +1,14 @@
-import ServicePageHero, { SHWord } from '../components/sections/service-page-hero/ServicePageHero'
-import WorkflowBenefitsSection from '../components/sections/workflow-automation/WorkflowBenefitsSection';
-import WorkflowFramework from '../components/sections/workflow-automation/WorkflowFramework';
-import TrustedSection from '../components/sections/trusted';
-import AICTABanner from '../components/sections/ai-cta-banner';
-import { ToolsWeAutomate, WorkflowFAQ } from '../components/sections/workflow-automation/WorkflowToolsAndFAQ';
+import ServicePageHero, { SHWord } from '@/components/sections/service-page-hero/ServicePageHero'
+import WorkflowBenefitsSection from '@/components/sections/workflow-automation/WorkflowBenefitsSection';
+import WorkflowQuoteStack from '@/components/sections/workflow-automation/WorkflowQuoteStack';
+import WorkflowFramework from '@/components/sections/workflow-automation/WorkflowFramework';
+import TrustedSection from '@/components/sections/trusted';
+import CustomIntegrationsSection from '@/components/sections/workflow-automation/CustomIntegrationsSection';
+import AllToolsSection from '@/components/sections/workflow-automation/AllToolsSection';
+import TeamExamplesSection from '@/components/sections/workflow-automation/TeamExamplesSection';
+import AICTABanner from '@/components/sections/ai-cta-banner';
+import { ToolsWeAutomate, WorkflowFAQ } from '@/components/sections/workflow-automation/WorkflowToolsAndFAQ';
+import WorkflowIncludedSection from '@/components/sections/workflow-automation/WorkflowIncludedSection';
 
 const steps = [
   {
@@ -53,6 +58,7 @@ const WorkflowAutomationPage = () => (
       showSubtext={false}
       showImage={false}
     />
+    <WorkflowIncludedSection />
     <WorkflowFramework
       chip="Our Workflow Automation Process"
       heading="Our Workflow Automation Process"
@@ -60,10 +66,20 @@ const WorkflowAutomationPage = () => (
       hideHeading
       hideDescription
       steps={steps}
-
     />
-    {/* <ToolsWeAutomate />
-    <WorkflowFAQ /> */}
+    <ToolsWeAutomate />
+    <WorkflowFAQ />
+    <AllToolsSection />
+    <CustomIntegrationsSection />
+    <TeamExamplesSection />
+    <WorkflowQuoteStack />
+
+    <AICTABanner
+      heading="Ready for results like theirs?"
+      buttonLabel="Book a Free Discovery Call"
+      showSubtext={false}
+      showImage={false}
+    />
   </>
 )
 

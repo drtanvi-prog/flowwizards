@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
-import Chip from '../../ui/Chip'
+import Chip from '@/components/ui/Chip'
 import { services } from '../../../data/howCanWeHelpData'
 import { AccordionItem } from './AccordionItem'
 

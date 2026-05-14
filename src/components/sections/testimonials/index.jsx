@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { testimonials } from '../../../data/testimonialsData'
-import Chip from '../../ui/Chip'
+import Chip from '@/components/ui/Chip'
 import { Stars } from './TestimonialCard'
 import MarqueeRow from './MarqueeRow'
 import './testimonials.css'
@@ -8,7 +8,7 @@ import './testimonials.css'
 const row1 = testimonials
 const row2 = [...testimonials.slice(3), ...testimonials.slice(0, 3)]
 
-const Testimonials = () => (
+const Testimonials = ({ heading }) => (
   <section
     className="relative w-full overflow-hidden py-24 sm:py-32"
     style={{ background: '#0C0C0C' }}
@@ -61,8 +61,9 @@ const Testimonials = () => (
             className="font-extrabold leading-[1.08] text-center sm:text-left"
             style={{ fontSize: 'clamp(1.5rem, 6vw, 3.5rem)', letterSpacing: '-0.035em', color: '#fff' }}
           >
-            <span style={{ color: '#E85C41' }}>"Genius"</span>{' '}
-            automation consultants
+            {heading ?? (
+              <><span style={{ color: '#E85C41' }}>"Genius"</span>{' '}automation consultants</>
+            )}
           </motion.h2>
         </div>
 

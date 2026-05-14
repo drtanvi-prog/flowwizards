@@ -1,4 +1,4 @@
-import Chip from '../../ui/Chip'
+import Chip from '@/components/ui/Chip'
 import { STEPS } from '../../../data/aiFrameworkData'
 import ShapeEl from './ShapeEl'
 

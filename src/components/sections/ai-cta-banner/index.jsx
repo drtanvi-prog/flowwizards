@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import bgFooter from '../../../assets/bg-footer.png'
+import bgFooter from '@assets/bg-footer.png'
 
 const ease = [0.22, 1, 0.36, 1]
 

@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion } from 'framer-motion'
-import Button from '../../ui/Button'
+import Button from '@/components/ui/Button'
 import { Cursor } from './HeroCursors'
 import { HWord } from './HeroHeading'
 import './hero.css'
@@ -135,7 +135,7 @@ const Hero = () => {
                   Become the{' '}
                   <HWord id="business" innerRef={bizRef}>business</HWord>
                </span>
-               <span className="block mt-5 sm:mt-8 lg:mt-10">
+               <span className="block mt-5 sm:mt-4 lg:mt-4">
                   <HWord id="everyone" innerRef={eveRef}>everyone</HWord>
                   {' '}wants to beat
                </span>

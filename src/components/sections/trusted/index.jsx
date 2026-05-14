@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 import PremiumQuoteStack from '../quotes'
-import imgCashApp from '../../../assets/trusted-platform/cash-app.jpg'
-import imgSodexo from '../../../assets/trusted-platform/sodexo.jpg'
-import imgFullFocus from '../../../assets/trusted-platform/full-focus.jpg'
-import imgIHeartMedia from '../../../assets/trusted-platform/iheart-media.jpg'
-import imgDiscovery from '../../../assets/trusted-platform/discovery.jpg'
+import imgCashApp from '@assets/trusted-platform/cash-app.jpg'
+import imgSodexo from '@assets/trusted-platform/sodexo.jpg'
+import imgFullFocus from '@assets/trusted-platform/full-focus.jpg'
+import imgIHeartMedia from '@assets/trusted-platform/iheart-media.jpg'
+import imgDiscovery from "@assets/trusted-platform/discovery.jpg"
 
 const brands = [
    { name: 'Cash App', img: imgCashApp },

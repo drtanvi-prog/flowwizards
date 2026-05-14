@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronRight } from 'lucide-react'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import { reasons } from '../../../data/whyChooseUsData'
-import Chip from '../../ui/Chip'
+import Chip from '@/components/ui/Chip'
 
 import anim1 from '../../../assets/lottie/anim1.lottie?url'
 import anim2 from '../../../assets/lottie/anim2.lottie?url'

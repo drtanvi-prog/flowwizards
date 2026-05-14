@@ -1,11 +1,11 @@
 import ServicePageHero, { SHWord } from '../components/sections/service-page-hero/ServicePageHero'
-import TrustedLogos from '../components/sections/trusted-logos'
-import TheProblemSection from '../components/sections/the-problem'
-import FractionalServiceSection from '../components/sections/fractional-service'
-import FractionalSupportSection from '../components/sections/fractional-service/FractionalSupportSection'
-import CoverageSection from '../components/sections/coverage'
-import ToolsMarqueeSection from '../components/sections/tools-marquee'
-import FAQCreativeSection from '../components/sections/fractional-service/FAQCreativeSection'
+import TrustedLogos from '@/components/sections/trusted-logos'
+import TheProblemSection from '@/components/sections/the-problem'
+import FractionalServiceSection from '@/components/sections/fractional-service'
+import FractionalSupportSection from '@/components/sections/fractional-service/FractionalSupportSection'
+import CoverageSection from '@/components/sections/coverage'
+import ToolsMarqueeSection from '@/components/sections/tools-marquee'
+import FAQCreativeSection from '@/components/sections/fractional-service/FAQCreativeSection'
 
 const FractionalChiefPage = () => (
   <>

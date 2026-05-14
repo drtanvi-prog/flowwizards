@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import anim from '@/assets/lottie/anim1.lottie?url'
-import Chip from '../../ui/Chip'
+import Chip from '@/components/ui/Chip'
 import AIServicesAccordion from '../ai-services-accordion'
 
 const ease = [0.22, 1, 0.36, 1]

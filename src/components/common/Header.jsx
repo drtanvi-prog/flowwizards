@@ -26,10 +26,10 @@ const dropdownData = {
 const mobileNavLinks = [
    { label: 'Services', hasDropdown: true, key: 'services' },
    { label: 'Solutions', hasDropdown: true, key: 'solutions' },
-   { label: 'Case Studies' },
-   { label: 'Pricing' },
+   { label: 'Case Studies', href: '/case-studies' },
+   { label: 'Pricing', href: '/pricing' },
    { label: 'About' },
-   { label: 'Blog' },
+   { label: 'Blog', href: '/blog' },
    { label: 'Contact' },
 ]
 
@@ -104,14 +104,14 @@ const Header = () => {
       <>
          <header
             ref={headerRef}
-            className="sticky top-0 z-100 px-6 xl:px-10 transition-colors duration-200"
+            className="sticky top-0 z-100 px-8 xl:px-16 transition-colors duration-200"
             style={{ backgroundColor: openDropdown ? '#ffffff' : '#FEF6F5' }}
          >
-            <div className="max-w-[1500px] mx-auto flex items-center justify-between h-20 xl:h-25 w-full">
+            <div className="max-w-360 mx-auto flex items-center justify-between h-20 xl:h-25 w-full">
 
                {/* Logo */}
                <a href="/" className="select-none no-underline">
-                  <img src={logo} alt="Flow Wizards" className="h-10 xl:h-[80px] w-auto object-contain" />
+                  <img src={logo} alt="Flow Wizards" className="h-10 xl:h-12 h-[80px]to object-contain" />
                </a>
 
                {/* Desktop Nav + CTA — grouped on the right */}
@@ -121,8 +121,7 @@ const Header = () => {
                      onNavMouseEnter={handleNavEnter}
                      onNavMouseLeave={scheduleClose}
                   />
-                  <Button variant="primary" size="md" className="text-sm! px-5! py-3!">
-                     Schedule a complimentary call
+                  <Button variant="primary" size="md" className="text-sm! px-5! py-3!">                 Schedule a complimentary call
                   </Button>
                </div>
 
@@ -215,18 +214,35 @@ const Header = () => {
                      ${mobileSubmenu ? '-translate-x-full' : 'translate-x-0'}`}
                >
                   <div className="flex flex-col px-5 pt-2">
-                     {mobileNavLinks.map((link) => (
+                     {mobileNavLinks.map((link) => {
+                        const isActive = link.href
+                           ? pathname === link.href
+                           : link.hasDropdown
+                              ? dropdownData[link.key]?.some((item) => item.href && pathname === item.href)
+                              : false
+                        return (
                         <div key={link.label}>
-                           <div
-                              className="flex items-center justify-between py-5 cursor-pointer"
-                              onClick={() => link.hasDropdown && setMobileSubmenu(link.key)}
-                           >
-                              <span className="text-[#1A1A1A] font-semibold text-lg">{link.label}</span>
-                              {link.hasDropdown && <ChevronRight size={20} className="text-[#1A1A1A]" />}
-                           </div>
+                           {link.href ? (
+                              <Link
+                                 to={link.href}
+                                 onClick={closeMobile}
+                                 className="flex items-center justify-between py-5 no-underline"
+                              >
+                                 <span className={`font-semibold text-lg ${isActive ? 'text-[#ff4f00]' : 'text-[#1A1A1A]'}`}>{link.label}</span>
+                              </Link>
+                           ) : (
+                              <div
+                                 className="flex items-center justify-between py-5 cursor-pointer"
+                                 onClick={() => link.hasDropdown && setMobileSubmenu(link.key)}
+                              >
+                                 <span className={`font-semibold text-lg ${isActive ? 'text-[#ff4f00]' : 'text-[#1A1A1A]'}`}>{link.label}</span>
+                                 {link.hasDropdown && <ChevronRight size={20} className={isActive ? 'text-[#ff4f00]' : 'text-[#1A1A1A]'} />}
+                              </div>
+                           )}
                            <hr className="border-gray-300 m-0" />
                         </div>
-                     ))}
+                        )
+                     })}
                      <div className="pb-8" />
                   </div>
                </div>

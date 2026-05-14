@@ -37,7 +37,8 @@ const ColHead = ({ children }) => (
 
 const Footer = () => {
    const { pathname } = useLocation()
-   const showCTA = pathname !== '/ai-automation-services' && pathname !== '/workflow-automation'
+   const HIDE_CTA_PATHS = ['/ai-automation-services', '/workflow-automation', '/case-studies', '/contact']
+   const showCTA = !HIDE_CTA_PATHS.includes(pathname)
 
    let ctaProps = {
       heading: <>
@@ -49,7 +50,13 @@ const Footer = () => {
       buttonText: 'Schedule your free discovery session',
    };
 
-   if (pathname === '/fractional-chief-automation') {
+   if (pathname === '/about') {
+      ctaProps = {
+         heading: <>Now, let's get to <span style={{ opacity: 0.75 }}>know you.</span></>,
+         subtext: '',
+         buttonText: 'Schedule your free discovery session',
+      };
+   } else if (pathname === '/fractional-chief-automation') {
       ctaProps = {
          heading: <>Get total peace of mind,<br />and scale without the drama</>,
          subtext: <><b>Bonus:</b> You’ll leave your competitors wondering how you make it look so effortless.</>,
@@ -61,12 +68,29 @@ const Footer = () => {
          subtext: '',
          buttonText: 'Schedule your free discovery session',
       };
+   } else if (pathname === '/blog' || pathname.startsWith('/blog/')) {
+      ctaProps = {
+         heading: <>
+            Let's make your workflow woes a{' '}
+            <span style={{ opacity: 0.65 }}>distant memory.</span>
+         </>,
+         subtext: '',
+         buttonText: 'Schedule free discovery session',
+         bgColor: '#E84040',
+      };
+   } else if (pathname === '/pricing') {
+      ctaProps = {
+         heading: <>Not sure which package is right for you?{' '}<span style={{ color: '#FFBDAA' }}>Let's talk about it</span></>,
+         subtext: '',
+         buttonText: 'Schedule your free discovery session',
+         bgColor: '#E84040',
+      };
    }
 
    return (
       <footer>
          {showCTA && (
-            <FooterCTA {...ctaProps} />
+            <FooterCTA {...ctaProps} bgColor={ctaProps.bgColor} />
          )}
 
          {/* ── Main Footer ── */}

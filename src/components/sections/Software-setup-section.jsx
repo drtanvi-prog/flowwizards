@@ -1,5 +1,4 @@
 import React from "react";
-
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import anim1 from "../../assets/lottie/anim4.lottie";
 import anim2 from "../../assets/lottie/anim2.lottie";
