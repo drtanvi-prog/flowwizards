@@ -65,7 +65,7 @@ const CustomWorkflowSection = () => {
    }, []);
 
    return (
-      <section className="overflow-hidden py-16 md:py-24">
+      <section className="overflow-hidden py-8 md:py-24">
          <div className="mx-auto max-w-[1150px] px-5 md:px-6">
 
             {/* HEADING */}

@@ -111,7 +111,7 @@ export function WorkflowFAQ() {
                ))}
             </div>
             <div className="text-center mt-10">
-               <a href="#" className="font-semibold text-[#ff4f00] hover:underline text-base md:text-lg inline-flex items-center gap-1 transition-colors">
+               <a href="#" className="font-semibold text-[#ff4f00] hover:underline text-xs sm:text-sm md:text-base inline-flex items-center gap-1 transition-colors">
                   Book a Free Discovery Call <span aria-hidden>→</span>
                </a>
             </div>

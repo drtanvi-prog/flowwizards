@@ -1,11 +1,18 @@
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import Button from '../ui/Button'
 import FooterCTA from './FooterCTA'
 
 const SOLUTIONS = ['Airtable', 'Jotform', 'Pipedrive', 'Zapier']
-const RESOURCES = ['About Us', 'Blog', 'Contact', 'Brand kit']
-const PORTAL = ['Flow Wizards Portal', 'Flow Wizards Status']
+const RESOURCES = [
+   { label: 'About Us', href: '/about' },
+   { label: 'Blog', href: '/blog' },
+   { label: 'Contact', href: '/contact' },
+   { label: 'Brand kit', href: '#' },
+]
+const PORTAL = [
+   { label: 'Tuesday Wizard', href: 'https://tuesdaywizards.com' },
+]
 const SOCIALS = ['Instagram', 'X', 'LinkedIn']
 
 const ROW1 = ['Impressum', 'Terms', 'Privacy Policy', 'Cookie Policy']
@@ -17,17 +24,36 @@ const ROW2 = [
    'Accessibility',
 ]
 
-const NavLink = ({ children }) => (
-   <a
-      href="#"
-      className="transition-colors duration-200"
-      style={{ fontSize: '0.83rem', color: 'rgba(255,255,255,0.85)' }}
-      onMouseEnter={e => (e.target.style.color = '#F07020')}
-      onMouseLeave={e => (e.target.style.color = 'rgba(255,255,255,0.85)')}
-   >
-      {children}
-   </a>
-)
+const linkStyle = {
+   fontSize: '0.83rem',
+   color: 'rgba(255,255,255,0.85)',
+}
+const NavLink = ({ children, href = '#' }) => {
+   const cls = 'transition-colors duration-200'
+   const handlers = {
+      onMouseEnter: e => (e.target.style.color = '#F07020'),
+      onMouseLeave: e => (e.target.style.color = 'rgba(255,255,255,0.85)'),
+   }
+   if (href.startsWith('/')) {
+      return (
+         <Link to={href} className={cls} style={linkStyle} {...handlers}>
+            {children}
+         </Link>
+      )
+   }
+   return (
+      <a
+         href={href}
+         target={href.startsWith('http') ? '_blank' : undefined}
+         rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+         className={cls}
+         style={linkStyle}
+         {...handlers}
+      >
+         {children}
+      </a>
+   )
+}
 
 const ColHead = ({ children }) => (
    <h4 className="font-bold text-white mb-4" style={{ fontSize: '0.85rem', letterSpacing: '0.02em' }}>
@@ -145,12 +171,12 @@ const Footer = () => {
                         <div>
                            <ColHead>Resources</ColHead>
                            <ul className="flex flex-col gap-2.5">
-                              {RESOURCES.map(r => <li key={r}><NavLink>{r}</NavLink></li>)}
+                              {RESOURCES.map(r => <li key={r.label}><NavLink href={r.href}>{r.label}</NavLink></li>)}
                            </ul>
                         </div>
                         <div className="pt-6" style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
                            <ul className="flex flex-col gap-2.5">
-                              {PORTAL.map(p => <li key={p}><NavLink>{p}</NavLink></li>)}
+                              {PORTAL.map(p => <li key={p.label}><NavLink href={p.href}>{p.label}</NavLink></li>)}
                            </ul>
                         </div>
                      </div>
@@ -201,11 +227,11 @@ const Footer = () => {
                   <div className="lg:pl-10">
                      <ColHead>Resources</ColHead>
                      <ul className="flex flex-col gap-2.5">
-                        {RESOURCES.map(r => <li key={r}><NavLink>{r}</NavLink></li>)}
+                        {RESOURCES.map(r => <li key={r.label}><NavLink href={r.href}>{r.label}</NavLink></li>)}
                      </ul>
                      <div className="mt-6 pt-6" style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
                         <ul className="flex flex-col gap-2.5">
-                           {PORTAL.map(p => <li key={p}><NavLink>{p}</NavLink></li>)}
+                           {PORTAL.map(p => <li key={p.label}><NavLink href={p.href}>{p.label}</NavLink></li>)}
                         </ul>
                      </div>
                   </div>

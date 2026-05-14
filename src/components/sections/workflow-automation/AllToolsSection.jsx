@@ -191,7 +191,7 @@ export default function AllToolsSection() {
    const [openIdx, setOpenIdx] = useState(0);
 
    return (
-      <section className="bg-white py-20 pt-8 md:py-28">
+      <section className="bg-white pt-8 pb-10 md:py-28">
 
          <div className="mx-auto max-w-6xl px-4 sm:px-6 md:px-8">
 

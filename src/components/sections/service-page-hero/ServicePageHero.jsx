@@ -9,7 +9,7 @@ const fadeUp = (delay = 0, y = 28) => ({
 })
 
 export const SHWord = ({ children }) => (
-  <span className="shword relative inline-flex px-3 sm:px-5 py-1 sm:py-2 mx-0.5 align-middle">
+  <span className="shword relative inline-flex px-1.5 sm:px-5 py-0.5 sm:py-2 mx-0 sm:mx-0.5 align-baseline">
     <span className="absolute inset-0 rounded-md sm:rounded-xl bg-[#ff4f00] border-2 sm:border-[2.5px] border-[#1A1A1A]" />
     <span className="relative z-10 text-white leading-none">{children}</span>
   </span>
@@ -32,7 +32,7 @@ const ServicePageHero = ({ badge, heading, body, ctaText, centered }) => (
       {/* Heading */}
       <motion.h1
         {...fadeUp(0.15, 36)}
-        className="m-0 font-extrabold text-[#1A1A1A] tracking-tight leading-tight sm:leading-[1.4] text-[1.4rem] sm:text-[2rem] lg:text-[3.2rem] xl:text-[4.5rem]"
+        className="m-0 font-extrabold text-[#1A1A1A] tracking-tight leading-[1.6] sm:leading-[1.4] text-[1.4rem] sm:text-[2rem] lg:text-[3.2rem] xl:text-[4.5rem]"
       >
         {heading}
       </motion.h1>

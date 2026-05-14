@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import { CheckCircle2 } from 'lucide-react'
-import ServicePageHero from '@/components/sections/service-page-hero/ServicePageHero'
+import ServicePageHero, { SHWord } from '@/components/sections/service-page-hero/ServicePageHero'
 import Button from '@/components/ui/Button'
 import anim1 from '@assets/lottie/anim1.lottie'
 
@@ -23,15 +23,7 @@ const ContactPage = () => {
       <>
          <ServicePageHero
             badge="Contact Us"
-            heading={<>
-               Wondering if we can{' '}
-               <span
-                  className="inline-block text-white px-3 sm:px-5 py-1 sm:py-2 mx-0.5 rounded-md sm:rounded-xl align-middle"
-                  style={{ background: '#F07020' }}
-               >
-                  help?
-               </span>
-            </>}
+            heading={<>Wondering if we can <SHWord>help?</SHWord></>}
             body="You can spend the next 3 days wondering, or you could have your automation problems long gone by then. Just get in touch to find out."
          />
 
