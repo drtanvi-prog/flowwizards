@@ -14,6 +14,8 @@ import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
+import AirtableConsultantPage from './pages/AirtableConsultantPage';
+import JotformConsultantPage from './pages/JotformConsultantPage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation()
@@ -45,6 +47,8 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/airtable-consultant" element={<AirtableConsultantPage />} />
+          <Route path="/jotform-consultant" element={<JotformConsultantPage />} />
         </Routes>
       </Layout>
     </SmoothScroll>

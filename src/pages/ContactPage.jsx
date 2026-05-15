@@ -42,7 +42,7 @@ const ContactPage = () => {
                         src={anim1}
                         loop
                         autoplay
-                        style={{ width: '100%', height: '420px' }}
+                        style={{ width: '340px', height: '340px', flexShrink: 0 }}
                      />
                   </motion.div>
 

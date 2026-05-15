@@ -1,12 +1,17 @@
 import { useState, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import {
-   Sun, UserCog, Code2, GitFork, Users, Megaphone, DollarSign, BarChart2,
+   Sun, UserCog, Code2, GitFork,
    Menu, X, ChevronRight, ChevronLeft,
 } from 'lucide-react'
 import Navbar from './Navbar'
 import Button from '../ui/Button'
 import logo from '../../assets/logo.png'
+import logoAirtable from '@assets/software/s8.webp'
+import logoJotform from '@assets/software/s4.webp'
+import logoHubSpot from '@assets/software/s2.svg'
+import logoPipedrive from '@assets/software/s6.webp'
+import logoZapier from '@assets/software/s1.webp'
 
 const dropdownData = {
    services: [
@@ -16,10 +21,11 @@ const dropdownData = {
       { icon: <GitFork size={18} strokeWidth={1.8} />, title: 'Workflow Automation', description: 'Eliminate bottlenecks and human error', href: '/workflow-automation' },
    ],
    solutions: [
-      { icon: <Users size={18} strokeWidth={1.8} />, title: 'CRM Automation', description: 'Streamline your customer relationships' },
-      { icon: <Megaphone size={18} strokeWidth={1.8} />, title: 'Marketing Automation', description: 'Run campaigns on autopilot' },
-      { icon: <DollarSign size={18} strokeWidth={1.8} />, title: 'Sales Automation', description: 'Close more deals with less effort' },
-      { icon: <BarChart2 size={18} strokeWidth={1.8} />, title: 'Reporting & Analytics', description: 'Make data-driven decisions faster' },
+      { logo: logoAirtable, title: 'Airtable', href: '/airtable-consultant' },
+      { logo: logoJotform, title: 'Jotform', href: '/jotform-consultant' },
+      { logo: logoHubSpot, title: 'HubSpot', href: '#' },
+      { logo: logoPipedrive, title: 'Pipedrive', href: '#' },
+      { logo: logoZapier, title: 'Zapier', href: '#' },
    ],
 }
 
@@ -150,16 +156,47 @@ const Header = () => {
                   onMouseEnter={clearClose}
                   onMouseLeave={scheduleClose}
                >
-                  <div className="py-3 divide-y divide-gray-100">
-                     {dropdownData[openDropdown].map((item) => (
-                        <DropdownItem
-                           key={item.title}
-                           item={item}
-                           onClose={() => setOpenDropdown(null)}
-                           isActive={!!item.href && pathname === item.href}
-                        />
-                     ))}
-                  </div>
+                     {openDropdown === 'solutions' ? (
+                     <div className="py-4 px-5">
+                        <p className="text-xs font-bold text-[#ff4f00] uppercase tracking-widest mb-3">By software</p>
+                        <div className="flex flex-col">
+                           {dropdownData.solutions.map((item) => {
+                              const active = !!item.href && pathname === item.href
+                              const inner = (
+                                 <div className="flex items-center gap-3 px-2 py-2.5 rounded-lg group-hover:bg-[#fff5f2] transition-colors">
+                                    <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-colors ${active ? 'bg-[#ff4f00]' : 'bg-[#f5f5f5] group-hover:bg-[#ff4f00]/10'}`}>
+                                       <img src={item.logo} alt={item.title} className="h-5 w-auto object-contain" />
+                                    </div>
+                                    <div>
+                                       <span className={`font-semibold text-sm transition-colors ${active ? 'text-[#ff4f00]' : 'text-[#1A1A1A] group-hover:text-[#ff4f00]'}`}>
+                                          {item.title}
+                                       </span>
+                                       {active && <div className="h-px bg-[#ff4f00] mt-0.5" />}
+                                    </div>
+                                 </div>
+                              )
+                              return item.href && item.href !== '#' ? (
+                                 <Link key={item.title} to={item.href} onClick={() => setOpenDropdown(null)} className="group no-underline">
+                                    {inner}
+                                 </Link>
+                              ) : (
+                                 <a key={item.title} href="#" className="group no-underline">{inner}</a>
+                              )
+                           })}
+                        </div>
+                     </div>
+                  ) : (
+                     <div className="py-3 divide-y divide-gray-100">
+                        {dropdownData[openDropdown].map((item) => (
+                           <DropdownItem
+                              key={item.title}
+                              item={item}
+                              onClose={() => setOpenDropdown(null)}
+                              isActive={!!item.href && pathname === item.href}
+                           />
+                        ))}
+                     </div>
+                  )}
                </div>
                <div className="fixed inset-0 top-25 bg-black/65 z-80" onMouseEnter={scheduleClose} />
             </>
@@ -254,29 +291,54 @@ const Header = () => {
                >
                   {mobileSubmenu && (
                      <div className="flex flex-col px-5 pt-4">
-                        <div className="border border-[#ff4f00]/20 rounded-xl overflow-hidden bg-white">
-                           {dropdownData[mobileSubmenu].map((item, idx) => {
-                              const active = !!item.href && pathname === item.href
-                              const cls = `flex items-start gap-3 px-4 py-4 no-underline ${idx < dropdownData[mobileSubmenu].length - 1 ? 'border-b border-gray-100' : ''}`
-                              const inner = (
-                                 <>
-                                    <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0
-                                       ${active ? 'bg-[#ff4f00] text-white' : 'bg-[#fff5f2] text-[#ff4f00]'}`}>
-                                       {item.icon}
-                                    </div>
-                                    <div>
+                        {mobileSubmenu === 'solutions' ? (
+                           <div className="border border-[#ff4f00]/20 rounded-xl overflow-hidden bg-white">
+                              <div className="px-4 pt-3 pb-1">
+                                 <p className="text-[10px] font-bold text-[#ff4f00] uppercase tracking-widest">By software</p>
+                              </div>
+                              {dropdownData.solutions.map((item, idx) => {
+                                 const active = !!item.href && pathname === item.href
+                                 const cls = `flex items-center gap-3 px-4 py-3.5 no-underline ${idx < dropdownData.solutions.length - 1 ? 'border-b border-gray-100' : ''}`
+                                 const inner = (
+                                    <>
+                                       <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0 ${active ? 'bg-[#ff4f00]' : 'bg-[#f5f5f5]'}`}>
+                                          <img src={item.logo} alt={item.title} className="h-5 w-auto object-contain" />
+                                       </div>
                                        <p className={`font-semibold text-sm m-0 ${active ? 'text-[#ff4f00]' : 'text-[#1A1A1A]'}`}>{item.title}</p>
-                                       <p className="text-xs text-gray-500 mt-0.5 m-0">{item.description}</p>
-                                    </div>
-                                 </>
-                              )
-                              return item.href ? (
-                                 <Link key={item.title} to={item.href} className={cls} onClick={closeMobile}>{inner}</Link>
-                              ) : (
-                                 <a key={item.title} href="#" className={cls}>{inner}</a>
-                              )
-                           })}
-                        </div>
+                                    </>
+                                 )
+                                 return item.href && item.href !== '#' ? (
+                                    <Link key={item.title} to={item.href} className={cls} onClick={closeMobile}>{inner}</Link>
+                                 ) : (
+                                    <a key={item.title} href="#" className={cls}>{inner}</a>
+                                 )
+                              })}
+                           </div>
+                        ) : (
+                           <div className="border border-[#ff4f00]/20 rounded-xl overflow-hidden bg-white">
+                              {dropdownData[mobileSubmenu].map((item, idx) => {
+                                 const active = !!item.href && pathname === item.href
+                                 const cls = `flex items-start gap-3 px-4 py-4 no-underline ${idx < dropdownData[mobileSubmenu].length - 1 ? 'border-b border-gray-100' : ''}`
+                                 const inner = (
+                                    <>
+                                       <div className={`w-9 h-9 rounded-lg flex items-center justify-center shrink-0
+                                          ${active ? 'bg-[#ff4f00] text-white' : 'bg-[#fff5f2] text-[#ff4f00]'}`}>
+                                          {item.icon}
+                                       </div>
+                                       <div>
+                                          <p className={`font-semibold text-sm m-0 ${active ? 'text-[#ff4f00]' : 'text-[#1A1A1A]'}`}>{item.title}</p>
+                                          <p className="text-xs text-gray-500 mt-0.5 m-0">{item.description}</p>
+                                       </div>
+                                    </>
+                                 )
+                                 return item.href ? (
+                                    <Link key={item.title} to={item.href} className={cls} onClick={closeMobile}>{inner}</Link>
+                                 ) : (
+                                    <a key={item.title} href="#" className={cls}>{inner}</a>
+                                 )
+                              })}
+                           </div>
+                        )}
                      </div>
                   )}
                </div>

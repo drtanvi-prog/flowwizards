@@ -76,7 +76,14 @@ const Footer = () => {
       buttonText: 'Schedule your free discovery session',
    };
 
-   if (pathname === '/about') {
+   if (pathname === '/airtable-consultant') {
+      ctaProps = {
+         heading: <>Airtable can do wonders for your business<br /><span style={{ opacity: 0.75 }}>Let us show you how</span></>,
+         subtext: '',
+         buttonText: 'Schedule your free discovery session',
+         bgColor: '#E84040',
+      };
+   } else if (pathname === '/about') {
       ctaProps = {
          heading: <>Now, let's get to <span style={{ opacity: 0.75 }}>know you.</span></>,
          subtext: '',
@@ -102,6 +109,13 @@ const Footer = () => {
          </>,
          subtext: '',
          buttonText: 'Schedule free discovery session',
+         bgColor: '#E84040',
+      };
+   } else if (pathname === '/jotform-consultant') {
+      ctaProps = {
+         heading: <>Jotform can do wonders for your business<br /><span style={{ opacity: 0.75 }}>Let us show you how</span></>,
+         subtext: '',
+         buttonText: 'Schedule your free discovery session',
          bgColor: '#E84040',
       };
    } else if (pathname === '/pricing') {
