@@ -14,6 +14,7 @@ const PremiumQuoteStack = ({
   quotes = QUOTES,
   badge,
   heading,
+  subheading,
   ctaHeading,
   ctaLabel,
   ctaHref = '#',
@@ -36,11 +37,18 @@ const PremiumQuoteStack = ({
           {heading && (
             <motion.h2
               {...fadeUp(0.07)}
-              className="font-extrabold text-[#1A1A1A] leading-[1.1] whitespace-pre-line"
+              className="font-extrabold text-[#1A1A1A] leading-[1.1]"
               style={{ fontSize: 'clamp(2rem, 5.5vw, 3.5rem)' }}
+              dangerouslySetInnerHTML={{ __html: heading }}
+            />
+          )}
+          {subheading && (
+            <motion.p
+              {...fadeUp(0.13)}
+              className="text-[#666] text-sm sm:text-base mt-4"
             >
-              {heading}
-            </motion.h2>
+              {subheading}
+            </motion.p>
           )}
         </div>
       )}

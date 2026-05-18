@@ -16,6 +16,10 @@ import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
 import AirtableConsultantPage from './pages/AirtableConsultantPage';
 import JotformConsultantPage from './pages/JotformConsultantPage';
+import HubspotConsultantPage from './pages/HubspotConsultantPage';
+import PipedriveConsultantPage from './pages/PipedriveConsultantPage';
+import ZapierConsultantPage from './pages/ZapierConsultantPage'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation()
@@ -49,6 +53,10 @@ const App = () => (
           <Route path="/about" element={<AboutPage />} />
           <Route path="/airtable-consultant" element={<AirtableConsultantPage />} />
           <Route path="/jotform-consultant" element={<JotformConsultantPage />} />
+          <Route path="/hubspot-consultant" element={<HubspotConsultantPage />} />
+          <Route path="/pipedrive-consultant" element={<PipedriveConsultantPage />} />
+          <Route path="/zapier-consultant" element={<ZapierConsultantPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         </Routes>
       </Layout>
     </SmoothScroll>

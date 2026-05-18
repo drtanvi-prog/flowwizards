@@ -1,183 +1,143 @@
-import { useRef } from 'react'
-import { motion } from 'framer-motion'
-import Button from '@/components/ui/Button'
-import { Cursor } from './HeroCursors'
-import { HWord } from './HeroHeading'
-import './hero.css'
+import { useRef } from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import Button from "@/components/ui/Button";
+import { Cursor } from "./HeroCursors";
+import { HWord } from "./HeroHeading";
+import "./hero.css";
 
-const ease = [0.22, 1, 0.36, 1]
+const ease = [0.22, 1, 0.36, 1];
 
 const fadeUp = (delay = 0, distance = 32) => ({
-   initial: { opacity: 0, y: distance },
-   animate: { opacity: 1, y: 0 },
-   transition: { duration: 0.75, delay, ease },
-})
+  initial: { opacity: 0, y: distance },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.75, delay, ease },
+});
+
+const stats = [
+  { value: "500+", label: "5-star reviews" },
+  { value: "2,400+", label: "Workflows built" },
+  { value: "18 hrs", label: "Saved per week" },
+];
 
 const Hero = () => {
-   const sectionRef = useRef(null)
-   const badgeRef = useRef(null)
-   const bizRef = useRef(null)
-   const eveRef = useRef(null)
-   const contentRef = useRef(null)
+  const sectionRef = useRef(null);
+  const bizRef = useRef(null);
+  const eveRef = useRef(null);
 
-   const svg = { vb: '0 0 375 600', l1: '', l2: '' }
+  return (
+    <section
+      ref={sectionRef}
+      className="bg-[#FEF6F5] relative overflow-hidden flex items-center justify-center
+        px-5 sm:px-10 xl:px-16
+        pt-12 pb-16 sm:pt-18 sm:pb-22 lg:pt-24 lg:pb-28"
+    >
+      {/* Blobs */}
+      <div className="absolute -top-28 left-1/2 -translate-x-1/2 w-[560px] h-[320px] bg-[#ff4f00]/6 rounded-full blur-[90px] pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4  w-56 h-56 bg-[#ff4f00]/5 rounded-full blur-[70px] pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-56 h-56 bg-[#ff4f00]/5 rounded-full blur-[70px] pointer-events-none" />
 
-   // const recalc = useCallback(() => {
-   //    const S  = sectionRef.current?.getBoundingClientRect()
-   //    const B  = badgeRef.current?.getBoundingClientRect()
-   //    const Bz = bizRef.current?.getBoundingClientRect()
-   //    const Ev = eveRef.current?.getBoundingClientRect()
-   //    if (!S || !B || !Bz || !Ev) return
+      {/* Dot grid */}
+      <div
+        className="absolute inset-0 pointer-events-none opacity-[0.04]"
+        style={{
+          backgroundImage: "radial-gradient(#ff4f00 1.5px, transparent 1.5px)",
+          backgroundSize: "28px 28px",
+        }}
+      />
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-[#FEF6F5] via-transparent to-[#FEF6F5]" />
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-[#FEF6F5] via-transparent to-[#FEF6F5]" />
 
-   //    const r = rect => ({
-   //       l:  rect.left   - S.left,
-   //       r:  rect.right  - S.left,
-   //       t:  rect.top    - S.top,
-   //       b:  rect.bottom - S.top,
-   //       cx: (rect.left  + rect.right)  / 2 - S.left,
-   //       cy: (rect.top   + rect.bottom) / 2 - S.top,
-   //    })
+      {/* Cursors — desktop only */}
+      <Cursor id="ruben" color="#ff4f00" name="Ruben" top="37%" left="69%" />
+      <Cursor id="james" color="#FC6E32" name="James" top="54%" left="22%" />
 
-   //    const bdg = r(B)
-   //    const biz = r(Bz)
-   //    const eve = r(Ev)
+      {/* Content */}
+      <div className="relative z-10 w-full max-w-[680px] lg:max-w-4xl mx-auto flex flex-col items-center text-center gap-5 sm:gap-6 lg:gap-7">
 
-   //    const W = S.width
+        {/* Badge */}
+        <motion.div {...fadeUp(0.05)}>
+          <span className="inline-flex items-center gap-2 bg-white border border-[#ff4f00]/20 rounded-md px-3 py-1.5 sm:px-4 sm:py-2 shadow-sm">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ff4f00] animate-pulse shrink-0 hidden sm:block" />
+            <span className="text-[10px] sm:text-[12px] lg:text-[13px] font-semibold text-[#1A1A1A] leading-snug">
+              Business Process &amp; Workflow Automation Consultants
+            </span>
+          </span>
+        </motion.div>
 
-   //    const CR  = 10
-   //    const GAP = 12
+        {/* Heading */}
+        <motion.h1
+          {...fadeUp(0.15, 40)}
+          className="text-[2rem] xs:text-[2.3rem] sm:text-[3rem] lg:text-[3.8rem] xl:text-[4.4rem]
+            font-extrabold leading-[1.12] text-[#1A1A1A] m-0 tracking-tight"
+        >
+          <span className="block">
+            Become the{" "}
+            <HWord id="business" innerRef={bizRef}>business</HWord>
+          </span>
+          <span className="block mt-3 sm:mt-4 lg:mt-5">
+            <HWord id="everyone" innerRef={eveRef}>everyone</HWord>
+            {" "}wants to beat
+          </span>
+        </motion.h1>
 
-   //    /* l1 — left horizontal from screen edge to badge left */
-   //    const l1 = `M 0 ${bdg.cy} H ${bdg.l - GAP}`
+        {/* Body */}
+        <motion.p
+          {...fadeUp(0.28)}
+          className="text-[13px] sm:text-[15px] lg:text-[17px] text-[#555]
+            max-w-[300px] sm:max-w-md lg:max-w-2xl leading-relaxed m-0"
+        >
+          <strong className="text-[#1A1A1A]">
+            Your software tools should help you work smarter.
+          </strong>{" "}
+          We fine-tune your tech stack so you move faster, wow your customers — and leave the competition scrambling.
+        </motion.p>
 
-   //    /* l2 — S-curve: badge-right → right of business → left of everyone
-   //             → centre of everyone → downward arrow                      */
-   //    const xRight    = Math.min(biz.r + GAP, W - 16)
-   //    const xLeft     = eve.l - GAP
-   //    const yAboveBiz = bdg.b  + GAP
-   //    const yBelowBiz = biz.b  + GAP
-   //    const yBelowEve = eve.b  + 8
-   //    const yArrow    = yBelowEve + 20
+        {/* CTAs */}
+        <motion.div
+          {...fadeUp(0.38)}
+          className="flex flex-wrap items-center justify-center gap-3 mt-1"
+        >
+          <Button
+            variant="secondary"
+            size="md"
+            className="px-5! py-2.5! sm:px-6! sm:py-3.5! text-[13px]! sm:text-[14px]! font-semibold!"
+          >
+            Schedule a free discovery session
+          </Button>
+          <Link
+            to="/case-studies"
+            className="no-underline inline-flex items-center gap-1.5 text-[13px] sm:text-[14px] font-semibold text-[#1A1A1A] hover:text-[#ff4f00] transition-colors duration-150 group"
+          >
+            See our results
+            <ArrowRight size={14} className="transition-transform duration-150 group-hover:translate-x-0.5" />
+          </Link>
+        </motion.div>
 
-   //    const l2 = [
-   //       `M ${bdg.r + GAP} ${bdg.cy}`,
-   //       `V ${yAboveBiz - CR}`,
-   //       `Q ${bdg.r + GAP} ${yAboveBiz} ${bdg.r + GAP + CR} ${yAboveBiz}`,
-   //       `H ${xRight - CR}`,
-   //       `Q ${xRight} ${yAboveBiz} ${xRight} ${yAboveBiz + CR}`,
-   //       `V ${yBelowBiz - CR}`,
-   //       `Q ${xRight} ${yBelowBiz} ${xRight - CR} ${yBelowBiz}`,
-   //       `H ${xLeft + CR}`,
-   //       `Q ${xLeft} ${yBelowBiz} ${xLeft} ${yBelowBiz + CR}`,
-   //       `V ${yBelowEve - CR}`,
-   //       `Q ${xLeft} ${yBelowEve} ${xLeft + CR} ${yBelowEve}`,
-   //       `H ${eve.cx - CR}`,
-   //       `Q ${eve.cx} ${yBelowEve} ${eve.cx} ${yBelowEve + CR}`,
-   //       `V ${yArrow}`,
-   //    ].join(' ')
-
-   //    setSvg({ vb: `0 0 ${W} ${S.height}`, l1, l2 })
-   // }, [])
-
-   // useEffect(() => {
-   //    const id = requestAnimationFrame(() => requestAnimationFrame(recalc))
-   //    window.addEventListener('resize', recalc)
-   //    return () => { cancelAnimationFrame(id); window.removeEventListener('resize', recalc) }
-   // }, [recalc])
-
-   return (
-      <section ref={sectionRef}
-         className="bg-[#FEF6F5] relative overflow-hidden flex items-center justify-center pt-10 pb-16 sm:pt-14 sm:pb-20 px-5 sm:px-8 xl:px-16">
-
-         {/* Static connector lines — mobile / tablet only */}
-         <svg
-            className="absolute inset-0 w-full h-full pointer-events-none lg:hidden"
-            style={{ zIndex: 5, overflow: 'visible' }}
-            viewBox={svg.vb}
-            fill="none"
-         >
-            <defs>
-               <marker id="ha" markerWidth="10" markerHeight="8"
-                  refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse">
-                  <path d="M1 1 L9 4 L1 7" stroke="#1A1A1A" strokeWidth="1.5"
-                     fill="none" strokeLinecap="round" strokeLinejoin="round" />
-               </marker>
-            </defs>
-            <path d={svg.l1} stroke="#1A1A1A" strokeWidth="1.8" strokeLinecap="round" />
-            <path d={svg.l2} stroke="#1A1A1A" strokeWidth="1.8" strokeLinecap="round"
-               markerEnd="url(#ha)" />
-         </svg>
-
-         {/* Cursors — desktop only */}
-         <Cursor id="ruben" color="#ff4f00" name="Ruben" top="37%" left="69%" />
-         <Cursor id="james" color="#FC6E32" name="James" top="54%" left="22%" />
-
-         {/* Content */}
-         <div ref={contentRef} className="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center text-center gap-6">
-
-            {/* Badge */}
-            <motion.div
-               ref={badgeRef}
-               {...fadeUp(0.05)}
-               className="inline-flex items-center border-2 border-[#1A1A1A] rounded-lg px-3 py-1.5 sm:px-5 sm:py-2.5 bg-white"
+        {/* Stats — always 3 col grid, never wraps */}
+        <motion.div
+          {...fadeUp(0.48)}
+          className="grid grid-cols-3 w-full max-w-[300px] sm:max-w-sm lg:max-w-md mt-2 sm:mt-3 pt-5 sm:pt-6 border-t border-[#1A1A1A]/10"
+        >
+          {stats.map(({ value, label }, i) => (
+            <div
+              key={label}
+              className={`flex flex-col items-center gap-1 ${i > 0 ? "border-l border-[#1A1A1A]/10" : ""}`}
             >
-               <span className="whitespace-nowrap text-[10px] sm:text-[13px] lg:text-[14px] font-medium text-[#1A1A1A]">
-                  Your business process &amp; workflow automation consultants
-               </span>
-            </motion.div>
+              <span className="text-[1.2rem] sm:text-[1.5rem] lg:text-[1.75rem] font-extrabold text-[#1A1A1A] leading-none">
+                {value}
+              </span>
+              <span className="text-[9px] sm:text-[11px] lg:text-[12px] text-[#777] leading-snug text-center px-1">
+                {label}
+              </span>
+            </div>
+          ))}
+        </motion.div>
 
-            {/* Heading */}
-            <motion.h1
-               {...fadeUp(0.18, 40)}
-               className="text-[1.5rem] sm:text-[2.2rem] lg:text-[3.4rem] xl:text-[3.8rem] font-extrabold leading-[1.2] text-[#1A1A1A] m-0 tracking-tight"
-            >
-               <span className="block">
-                  Become the{' '}
-                  <HWord id="business" innerRef={bizRef}>business</HWord>
-               </span>
-               <span className="block mt-5 sm:mt-4 lg:mt-4">
-                  <HWord id="everyone" innerRef={eveRef}>everyone</HWord>
-                  {' '}wants to beat
-               </span>
-            </motion.h1>
+      </div>
+    </section>
+  );
+};
 
-            {/* Body copy */}
-            <motion.p
-               {...fadeUp(0.32)}
-               className="text-[13px] sm:text-[15px] lg:text-[17px] text-[#4A4A4A] max-w-[78vw] sm:max-w-xl leading-relaxed m-0"
-            >
-               <strong className="text-[#1A1A1A]">Your software tools should help you work smarter.</strong>{' '}
-               Or you risk getting lost in the noise. We'll fine-tune your tech stack so you can
-               start moving faster, wowing your customers — and worrying your competition.
-            </motion.p>
-
-            {/* CTA */}
-            <motion.div {...fadeUp(0.44)} className="mt-2">
-               <Button
-                  variant="secondary"
-                  size="md"
-                  className="
-                     px-3! py-1.5!
-                     sm:px-5! sm:py-3!
-                     text-[11px]! sm:text-sm!
-                   "
-               >
-                  Schedule a free discovery session
-               </Button>
-            </motion.div>
-
-            {/* Social proof */}
-            <motion.div {...fadeUp(0.54)} className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 mt-1">
-               <span className="text-[22px] leading-none">⭐</span>
-               <span className="font-extrabold text-[15px] text-[#1A1A1A]">5.0</span>
-               <span className="text-[11px] sm:text-[13px] lg:text-[14px] text-[#4A4A4A] text-center sm:text-left">
-                  500+ five-star client reviews across partner directories
-               </span>
-            </motion.div>
-
-         </div>
-      </section>
-   )
-}
-
-export default Hero
+export default Hero;

@@ -4,6 +4,31 @@ import Button from '@/components/ui/Button'
 import Chip from '@/components/ui/Chip'
 import { SHWord } from '@/components/sections/service-page-hero/ServicePageHero'
 import WorkflowFramework from '@/components/sections/workflow-automation/WorkflowFramework'
+import PremiumQuoteStack from '@/components/sections/quotes'
+
+const JOTFORM_QUOTES = [
+   {
+      text: 'Nathan helped me get up and running with my Jotform and Keap integration in a single session. I will be back for more.',
+      author: 'Herman Lefkowitz, Peirock Hardware',
+      bg: '#eef5e0',
+      border: '#b5c86a',
+      quoteColor: '#7a8c00',
+   },
+   {
+      text: 'Thanks to Flow Digital, our Jotform setup and integration took our data collection to new heights! Their super cool team was incredibly responsive and made quick work of the task.',
+      author: 'Yakov Josephy, TYH',
+      bg: '#ffedef',
+      border: '#ff9aaa',
+      quoteColor: '#E84040',
+   },
+   {
+      text: 'The integration of Jotform with Airtable and Paymo has streamlined our workflow, improved our productivity, and allowed us to serve our clients more effectively. Thanks to Flow Digital, we\'ve elevated our business to new heights.',
+      author: 'Faigy Akda',
+      bg: '#fff8f0',
+      border: '#f5d5b0',
+      quoteColor: '#f07020',
+   },
+]
 
 const ease = [0.22, 1, 0.36, 1]
 const fadeUp = (delay = 0) => ({
@@ -232,8 +257,14 @@ const JotformConsultantPage = () => (
       <WorkflowFramework
          steps={JOTFORM_STEPS}
          chip="Our Jotform implementation process"
-         heading="From frustration to flow — here's how it works"
+         heading="From frustration to flow - here's how it works"
          hideDescription
+      />
+      <PremiumQuoteStack
+         quotes={JOTFORM_QUOTES}
+         badge="What clients say about our Jotform experts"
+         heading={`Better Forms =\nBetter Data =\nBetter Business`}
+         subheading="It's as simple as that. But we'll let our clients do the talking"
       />
    </>
 )

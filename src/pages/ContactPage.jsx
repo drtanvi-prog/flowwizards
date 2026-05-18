@@ -36,7 +36,7 @@ const ContactPage = () => {
                      initial={{ opacity: 0, x: -20 }}
                      animate={{ opacity: 1, x: 0 }}
                      transition={{ duration: 0.65, delay: 0.1 }}
-                     className="hidden lg:flex items-center justify-center"
+                     className="hidden lg:flex items-center"
                   >
                      <DotLottieReact
                         src={anim1}
