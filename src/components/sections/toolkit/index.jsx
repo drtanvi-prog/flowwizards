@@ -8,7 +8,7 @@ import { CELLS, MOBILE_CELLS } from './gridConfig'
 
 const DefaultHeading = () => (
   <>
-    Your automation toolkit,<br />
+    Your automation toolkit,{' '}
     <span style={{ color: '#ff4f00' }}>unlocked</span>
   </>
 )
@@ -95,44 +95,42 @@ const ToolkitSection = ({
 
         {/* Heading row */}
         {(heading || subText || descriptionContent) && (
-          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-12">
-            <div className="flex-1 min-w-0">
-              {heading && (
-                <motion.h2
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.08 }}
-                  className="text-3xl sm:text-4xl md:text-[3rem] font-extrabold text-[#1A1A1A] leading-tight"
-                  style={{ letterSpacing: '-0.03em' }}
-                >
-                  {heading}
-                </motion.h2>
-              )}
-
-              {descriptionContent && (
-                <motion.div
-                  initial={{ opacity: 0, y: 12 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.15 }}
-                  className="mt-6"
-                >
-                  {descriptionContent}
-                </motion.div>
-              )}
-            </div>
+          <div className="flex flex-col gap-4 mb-12 max-w-2xl">
+            {heading && (
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.08 }}
+                className="text-3xl sm:text-4xl md:text-[3rem] font-extrabold text-[#1A1A1A] leading-tight"
+                style={{ letterSpacing: '-0.03em' }}
+              >
+                {heading}
+              </motion.h2>
+            )}
 
             {subText && (
               <motion.p
-                initial={{ opacity: 0, x: 16 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.15 }}
-                className="text-[14px] text-[#777] max-w-sm leading-relaxed lg:text-right shrink-0"
+                className="text-[14px] text-[#777] leading-relaxed"
               >
                 {subText}
               </motion.p>
+            )}
+
+            {descriptionContent && (
+              <motion.div
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.15 }}
+                className="mt-2"
+              >
+                {descriptionContent}
+              </motion.div>
             )}
           </div>
         )}

@@ -19,6 +19,14 @@ const Navbar = ({ openDropdown, onNavMouseEnter, onNavMouseLeave }) => {
     onNavMouseEnter(link.key, e.currentTarget.getBoundingClientRect())
   }
 
+  const itemClass = (highlighted) =>
+    `inline-flex items-center gap-1 px-3.5 py-2 rounded-lg text-[13.5px] font-medium whitespace-nowrap no-underline
+     transition-all duration-150 cursor-pointer
+     ${highlighted
+       ? 'text-[#ff4f00] bg-[#fff3ee]'
+       : 'text-[#3D3D3D] hover:text-[#ff4f00] hover:bg-[#fff3ee]'
+     }`
+
   return (
     <ul className="flex items-center gap-0.5 list-none m-0 p-0">
       {navLinks.map((link) => {
@@ -26,23 +34,11 @@ const Navbar = ({ openDropdown, onNavMouseEnter, onNavMouseLeave }) => {
         const isOpen = openDropdown === link.key
         const highlighted = isActive || isOpen
 
-        const label = (
-          <span
-            className={`flex items-center gap-1 px-3.5 py-2 rounded-lg text-[13.5px] font-medium whitespace-nowrap
-              transition-all duration-150
-              ${highlighted
-                ? 'text-[#ff4f00] bg-[#fff3ee]'
-                : 'text-[#3D3D3D] hover:text-[#ff4f00] hover:bg-[#fff3ee]'
-              }`}
-          >
-            {link.label}
-            {link.hasDropdown && (
-              isOpen
-                ? <ChevronUp size={13} strokeWidth={2.5} className="mt-px" />
-                : <ChevronDown size={13} strokeWidth={2.5} className="mt-px" />
-            )}
-          </span>
-        )
+        const chevron = link.hasDropdown
+          ? isOpen
+            ? <ChevronUp size={13} strokeWidth={2.5} className="mt-px shrink-0" />
+            : <ChevronDown size={13} strokeWidth={2.5} className="mt-px shrink-0" />
+          : null
 
         return (
           <li
@@ -51,12 +47,14 @@ const Navbar = ({ openDropdown, onNavMouseEnter, onNavMouseLeave }) => {
             onMouseLeave={onNavMouseLeave}
           >
             {link.href ? (
-              <Link to={link.href} className="no-underline">
-                {label}
+              <Link to={link.href} className={itemClass(highlighted)}>
+                {link.label}
+                {chevron}
               </Link>
             ) : (
-              <a href="#" className="no-underline">
-                {label}
+              <a href="#" className={itemClass(highlighted)}>
+                {link.label}
+                {chevron}
               </a>
             )}
           </li>

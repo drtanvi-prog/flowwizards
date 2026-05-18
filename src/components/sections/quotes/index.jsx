@@ -18,7 +18,7 @@ const PremiumQuoteStack = ({
   ctaHeading,
   ctaLabel,
   ctaHref = '#',
-  containerClass = 'max-w-360 px-8 xl:px-16',
+  containerClass = 'max-w-360 px-5 sm:px-8 xl:px-16',
 }) => (
   <section
     className="relative w-full bg-white"

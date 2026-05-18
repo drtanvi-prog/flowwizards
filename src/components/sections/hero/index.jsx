@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
-import { Cursor } from "./HeroCursors";
+// import { Cursor } from "./HeroCursors";
 import { HWord } from "./HeroHeading";
 import "./hero.css";
 
@@ -31,7 +31,8 @@ const Hero = () => {
       ref={sectionRef}
       className="bg-[#FEF6F5] relative overflow-hidden flex items-center justify-center
         px-5 sm:px-10 xl:px-16
-        pt-12 pb-16 sm:pt-18 sm:pb-22 lg:pt-24 lg:pb-28"
+        min-h-[calc(100vh-80px)] xl:min-h-[calc(100vh-100px)]
+        py-16 sm:py-20"
     >
       {/* Blobs */}
       <div className="absolute -top-28 left-1/2 -translate-x-1/2 w-[560px] h-[320px] bg-[#ff4f00]/6 rounded-full blur-[90px] pointer-events-none" />
@@ -50,16 +51,14 @@ const Hero = () => {
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-[#FEF6F5] via-transparent to-[#FEF6F5]" />
 
       {/* Cursors — desktop only */}
-      <Cursor id="ruben" color="#ff4f00" name="Ruben" top="37%" left="69%" />
-      <Cursor id="james" color="#FC6E32" name="James" top="54%" left="22%" />
+      {/* <Cursor id="ruben" color="#ff4f00" name="Ruben" top="37%" left="69%" /> */}
+      {/* <Cursor id="james" color="#FC6E32" name="James" top="54%" left="22%" /> */}
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-[680px] lg:max-w-4xl mx-auto flex flex-col items-center text-center gap-5 sm:gap-6 lg:gap-7">
-
         {/* Badge */}
         <motion.div {...fadeUp(0.05)}>
           <span className="inline-flex items-center gap-2 bg-white border border-[#ff4f00]/20 rounded-md px-3 py-1.5 sm:px-4 sm:py-2 shadow-sm">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ff4f00] animate-pulse shrink-0 hidden sm:block" />
             <span className="text-[10px] sm:text-[12px] lg:text-[13px] font-semibold text-[#1A1A1A] leading-snug">
               Business Process &amp; Workflow Automation Consultants
             </span>
@@ -74,11 +73,15 @@ const Hero = () => {
         >
           <span className="block">
             Become the{" "}
-            <HWord id="business" innerRef={bizRef}>business</HWord>
+            <HWord id="business" innerRef={bizRef}>
+              business
+            </HWord>
           </span>
           <span className="block mt-3 sm:mt-4 lg:mt-5">
-            <HWord id="everyone" innerRef={eveRef}>everyone</HWord>
-            {" "}wants to beat
+            <HWord id="everyone" innerRef={eveRef}>
+              everyone
+            </HWord>{" "}
+            wants to beat
           </span>
         </motion.h1>
 
@@ -91,7 +94,8 @@ const Hero = () => {
           <strong className="text-[#1A1A1A]">
             Your software tools should help you work smarter.
           </strong>{" "}
-          We fine-tune your tech stack so you move faster, wow your customers — and leave the competition scrambling.
+          We fine-tune your tech stack so you move faster, wow your customers -
+          and leave the competition scrambling.
         </motion.p>
 
         {/* CTAs */}
@@ -106,13 +110,6 @@ const Hero = () => {
           >
             Schedule a free discovery session
           </Button>
-          <Link
-            to="/case-studies"
-            className="no-underline inline-flex items-center gap-1.5 text-[13px] sm:text-[14px] font-semibold text-[#1A1A1A] hover:text-[#ff4f00] transition-colors duration-150 group"
-          >
-            See our results
-            <ArrowRight size={14} className="transition-transform duration-150 group-hover:translate-x-0.5" />
-          </Link>
         </motion.div>
 
         {/* Stats — always 3 col grid, never wraps */}
@@ -134,7 +131,6 @@ const Hero = () => {
             </div>
           ))}
         </motion.div>
-
       </div>
     </section>
   );

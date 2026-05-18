@@ -156,12 +156,12 @@ const Header = () => {
     <>
       <header
         ref={headerRef}
-        className="sticky top-0 z-100 px-4 xl:px-16 transition-colors duration-200"
+        className="sticky top-0 z-100 transition-colors duration-200"
         style={{ backgroundColor: openDropdown ? "#ffffff" : "#FEF6F5" }}
       >
-        <div className="max-w-360 mx-auto flex xl:grid xl:grid-cols-3 items-center justify-between h-20 xl:h-25 w-full">
+        <div className="max-w-360 mx-auto px-5 sm:px-8 xl:px-16 relative flex items-center justify-between h-20 xl:h-25 w-full">
           {/* Logo — left */}
-          <Link to="/" className="select-none no-underline justify-self-start">
+          <Link to="/" className="select-none no-underline relative z-10">
             <img
               src={logo}
               alt="Flow Wizards"
@@ -169,8 +169,8 @@ const Header = () => {
             />
           </Link>
 
-          {/* Desktop Nav — true center */}
-          <div className="hidden xl:flex justify-center">
+          {/* Desktop Nav — absolutely centered, never overlaps logo or CTA */}
+          <div className="hidden xl:flex absolute left-1/2 -translate-x-1/2">
             <Navbar
               openDropdown={openDropdown}
               onNavMouseEnter={handleNavEnter}
@@ -179,7 +179,7 @@ const Header = () => {
           </div>
 
           {/* Right side — CTA + mobile hamburger */}
-          <div className="flex items-center justify-end">
+          <div className="flex items-center relative z-10">
             <div className="hidden xl:block">
               <Button variant="primary" size="md" className="text-sm! px-5! py-3!">
                 Schedule a complimentary call
