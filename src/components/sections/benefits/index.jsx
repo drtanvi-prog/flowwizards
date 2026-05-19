@@ -48,8 +48,8 @@ const BenefitsSection = ({ image }) => {
 
             <motion.h2
               {...fadeUp(0.1)}
-              className="font-extrabold leading-[1.12] mb-6"
-              style={{ fontSize: 'clamp(2rem, 4vw, 3.4rem)', color: '#111111', letterSpacing: '-0.03em' }}
+              className="text-[2rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold leading-[1.12] mb-6"
+              style={{ color: '#111111', letterSpacing: '-0.03em' }}
             >
               Turn your business into a{' '}
               <span style={{
@@ -64,7 +64,7 @@ const BenefitsSection = ({ image }) => {
 
             <motion.p
               {...fadeUp(0.18)}
-              className="text-base leading-relaxed mb-10"
+              className="text-[14px] sm:text-[15px] lg:text-[16px] leading-relaxed mb-10"
               style={{ color: '#6B6B6B', maxWidth: '480px' }}
             >
               As business ops and automation experts, we do so much more than automate your

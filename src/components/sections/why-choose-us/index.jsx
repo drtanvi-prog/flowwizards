@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mb-5 flex justify-center sm:justify-start"
+            className="mb-5 flex justify-center"
           >
             <Chip>Why choose Flow Wizards as your workflow consultants</Chip>
           </motion.div>
@@ -65,8 +65,8 @@ const WhyChooseUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.08 }}
-            className="font-extrabold leading-[1.08]"
-            style={{ fontSize: 'clamp(2rem, 5vw, 3.8rem)', letterSpacing: '-0.035em', color: '#1a1a1a' }}
+            className="text-[2rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold leading-[1.12] text-center"
+            style={{ letterSpacing: '-0.03em', color: '#1a1a1a' }}
           >
             We turn messy manual tasks{' '}
             <motion.span

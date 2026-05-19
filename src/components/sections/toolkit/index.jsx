@@ -87,7 +87,7 @@ const ToolkitSection = ({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mb-5"
+            className="mb-5 flex justify-center"
           >
             <Chip className="border border-[#ff4f00]">{badge}</Chip>
           </motion.div>
@@ -95,14 +95,14 @@ const ToolkitSection = ({
 
         {/* Heading row */}
         {(heading || subText || descriptionContent) && (
-          <div className="flex flex-col gap-4 mb-12 max-w-2xl">
+          <div className="flex flex-col gap-4 mb-12 text-center">
             {heading && (
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.08 }}
-                className="text-3xl sm:text-4xl md:text-[3rem] font-extrabold text-[#1A1A1A] leading-tight"
+                className="text-[2rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-[#1A1A1A] leading-[1.12]"
                 style={{ letterSpacing: '-0.03em' }}
               >
                 {heading}
@@ -115,7 +115,7 @@ const ToolkitSection = ({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.15 }}
-                className="text-[14px] text-[#777] leading-relaxed"
+                className="text-[14px] sm:text-[15px] lg:text-[16px] text-[#777] leading-relaxed max-w-xl mx-auto"
               >
                 {subText}
               </motion.p>

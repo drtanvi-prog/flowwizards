@@ -35,7 +35,7 @@ const HowCanWeHelp = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-4"
+          className="mb-4 flex justify-center"
         >
           <Chip>Our workflow automation services</Chip>
         </motion.div>
@@ -45,54 +45,48 @@ const HowCanWeHelp = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.08 }}
-          className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-10 sm:mb-14 leading-tight"
+          className="text-[2rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold mb-10 sm:mb-14 leading-[1.12] text-center"
           style={{ color: '#1a1a1a', letterSpacing: '-0.03em' }}
         >
           How can we help?
         </motion.h2>
 
-        <div className="flex flex-col md:flex-row md:gap-10 lg:gap-16">
-          {/* Left column*/}
-          <div className="hidden md:block md:w-5/12 lg:w-2/5 flex-shrink-0" />
-
-          {/* Right accordion */}
-          <div className="flex-1">
-            <div className="flex flex-col">
-              {services.map((item, index) => (
-                <AccordionItem
-                  key={item.id}
-                  item={item}
-                  index={index}
-                  isOpen={openId === item.id}
-                  onToggle={() => toggle(item.id)}
-                />
-              ))}
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="mt-8"
-            >
-              <motion.a
-                href="#"
-                className="inline-flex items-center gap-2 text-sm font-semibold"
-                style={{ color: '#1a1a1a' }}
-                whileHover={{ x: 4 }}
-                transition={{ type: 'spring', stiffness: 300 }}
-              >
-                View all services
-                <motion.span
-                  animate={{ x: [0, 4, 0] }}
-                  transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-                >
-                  <ArrowRight size={15} />
-                </motion.span>
-              </motion.a>
-            </motion.div>
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-col">
+            {services.map((item, index) => (
+              <AccordionItem
+                key={item.id}
+                item={item}
+                index={index}
+                isOpen={openId === item.id}
+                onToggle={() => toggle(item.id)}
+              />
+            ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="mt-8"
+          >
+            <motion.a
+              href="#"
+              className="inline-flex items-center gap-2 text-sm font-semibold"
+              style={{ color: '#1a1a1a' }}
+              whileHover={{ x: 4 }}
+              transition={{ type: 'spring', stiffness: 300 }}
+            >
+              View all services
+              <motion.span
+                animate={{ x: [0, 4, 0] }}
+                transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
+              >
+                <ArrowRight size={15} />
+              </motion.span>
+            </motion.a>
+          </motion.div>
         </div>
       </div>
     </section>

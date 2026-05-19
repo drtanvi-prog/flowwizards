@@ -65,7 +65,7 @@ const ServicesSection = ({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mb-4"
+            className="mb-4 flex justify-center"
           >
             <span
               className="inline-block rounded-lg font-poppins font-bold"
@@ -87,9 +87,8 @@ const ServicesSection = ({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.08 }}
-            className="font-extrabold leading-[1.1] mb-3"
+            className="text-[2rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold leading-[1.12] mb-3 text-center"
             style={{
-              fontSize: 'clamp(1.1rem, 4.5vw, 3.8rem)',
               letterSpacing: '-0.03em',
               color: isDark ? '#fff' : '#1A1A1A',
               whiteSpace: 'pre-line',
@@ -105,7 +104,7 @@ const ServicesSection = ({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.15 }}
-              className="text-sm sm:text-[15px] max-w-2xl leading-relaxed mb-8 sm:mb-10"
+              className="text-[14px] sm:text-[15px] lg:text-[16px] max-w-2xl mx-auto leading-relaxed mb-8 sm:mb-10 text-center"
               style={{ color: isDark ? 'rgba(255,255,255,0.42)' : '#4A4A4A' }}
             >
               {resolvedSubheading}

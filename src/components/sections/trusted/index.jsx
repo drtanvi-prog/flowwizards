@@ -55,12 +55,12 @@ const TrustedSection = ({ hideBottom = false }) => (
                      whileInView={{ opacity: 1, y: 0 }}
                      viewport={{ once: true }}
                      transition={{ duration: 0.4, ease }}
-                     className="mb-6 sm:mb-8"
+                     className="mb-6 sm:mb-8 flex justify-center"
                   >
                      <Chip>The problem</Chip>
                   </motion.div>
 
-                  <div className="flex flex-col gap-6 max-w-2xl">
+                  <div className="flex flex-col gap-6 max-w-3xl mx-auto text-center">
 
                      {/* Heading */}
                      <motion.h3
@@ -68,8 +68,9 @@ const TrustedSection = ({ hideBottom = false }) => (
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, ease }}
-                        className="text-[1.75rem] sm:text-[2.5rem] lg:text-[3rem] xl:text-[3.4rem]
-                           font-extrabold text-[#1A1A1A] leading-[1.15] m-0 text-balance"
+                        className="text-[2rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem]
+                           font-extrabold text-[#1A1A1A] leading-[1.12] m-0 text-balance"
+                        style={{ letterSpacing: '-0.03em' }}
                      >
                         You know automation is no longer a nice-to-have
                      </motion.h3>

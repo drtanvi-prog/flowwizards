@@ -9,7 +9,7 @@ import "./hero.css";
 
 const ease = [0.22, 1, 0.36, 1];
 
-const fadeUp = (delay = 0, distance = 32) => ({
+const fadeUp = (delay = 0, distance = 0) => ({
   initial: { opacity: 0, y: distance },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.75, delay, ease },
@@ -67,7 +67,7 @@ const Hero = () => {
 
         {/* Heading */}
         <motion.h1
-          {...fadeUp(0.15, 40)}
+          {...fadeUp(0.15, 0)}
           className="text-[2rem] xs:text-[2.3rem] sm:text-[3rem] lg:text-[3.8rem] xl:text-[4.4rem]
             font-extrabold leading-[1.12] text-[#1A1A1A] m-0 tracking-tight"
         >

@@ -38,34 +38,31 @@ const Testimonials = ({ heading }) => (
 
     {/* Header */}
     <div className="relative max-w-7xl mx-auto px-6 xl:px-16 mb-14 sm:mb-16">
-      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
+      <div className="flex flex-col items-center text-center gap-5">
 
-        <div>
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="mb-5 flex justify-center sm:justify-start"
-          >
-            <Chip style={{ background: 'rgba(255,255,255,0.07)', color: 'rgba(255,255,255,0.55)' }}>
-              What our clients say
-            </Chip>
-          </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <Chip style={{ background: 'rgba(255,255,255,0.07)', color: 'rgba(255,255,255,0.55)' }}>
+            What our clients say
+          </Chip>
+        </motion.div>
 
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.08 }}
-            className="font-extrabold leading-[1.08] text-center sm:text-left"
-            style={{ fontSize: 'clamp(1.5rem, 6vw, 3.5rem)', letterSpacing: '-0.035em', color: '#fff' }}
-          >
-            {heading ?? (
-              <><span style={{ color: '#E85C41' }}>"Genius"</span>{' '}automation consultants</>
-            )}
-          </motion.h2>
-        </div>
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.08 }}
+          className="text-[2rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold leading-[1.12]"
+          style={{ letterSpacing: '-0.03em', color: '#fff' }}
+        >
+          {heading ?? (
+            <><span style={{ color: '#E85C41' }}>"Genius"</span>{' '}automation consultants</>
+          )}
+        </motion.h2>
 
         {/* Rating + hint */}
         <motion.div
@@ -73,7 +70,7 @@ const Testimonials = ({ heading }) => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex flex-col gap-2.5 sm:items-end shrink-0"
+          className="flex flex-col items-center gap-2"
         >
           <div
             className="inline-flex items-center gap-3 px-4 py-2.5 rounded-md"
@@ -98,11 +95,6 @@ const Testimonials = ({ heading }) => (
               100+ verified reviews
             </span>
           </div>
-          <p style={{ fontSize: '0.68rem', color: 'rgba(255,255,255,0.25)' }}
-            className='hidden md:block'
-          >
-            Drag cards to explore ↔
-          </p>
         </motion.div>
 
       </div>
