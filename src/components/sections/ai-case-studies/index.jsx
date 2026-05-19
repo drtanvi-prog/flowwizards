@@ -160,7 +160,7 @@ const AICaseStudies = () => (
     <div className="max-w-7xl mx-auto">
 
       {/* Header */}
-      <div className="flex flex-col items-center text-center mb-14">
+      <div className="flex flex-col items-start mb-14">
         <motion.div {...fadeUp(0)} className="mb-4">
           <Chip>AI Automation Case Studies</Chip>
         </motion.div>

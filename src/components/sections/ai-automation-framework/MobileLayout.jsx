@@ -5,17 +5,15 @@ import ShapeEl from './ShapeEl'
 const MobileLayout = () => (
   <div className="lg:hidden bg-[#FEF6F5]">
     <div className="px-6 pt-12 pb-8">
-      <Chip className="mb-4">Our AI Automation Delivery Framework</Chip>
+      <Chip className="mb-4">How We Work</Chip>
       <h2
         className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-[#1A1A1A] leading-tight sm:leading-[1.12] m-0 mb-3"
         style={{ letterSpacing: '-0.03em' }}
       >
-        Effective automation follows a system.
+        We don't start by building. We start by listening.
       </h2>
       <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-[#4A4A4A] leading-relaxed m-0">
-        Without one, workflows become difficult to manage and hard to scale. We follow a proven,
-        structured delivery framework designed to move from clarity to execution, while keeping
-        outcomes and accountability front and center.
+        Most automation projects fail because someone skipped the discovery. We've seen it enough times to know: the best-built workflow for the wrong problem is still a waste. Our process is designed to get the diagnosis right before a single trigger is written.
       </p>
     </div>
 

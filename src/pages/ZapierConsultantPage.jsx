@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check, X, ChevronDown } from "lucide-react";
+import TwoColumnFAQ from "@/components/sections/faq/TwoColumnFAQ";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import Chip from "@/components/ui/Chip";
@@ -815,93 +816,16 @@ const PricingSection = () => (
 
 // ── FAQ ───────────────────────────────────────────────────────────────────────
 
-const FaqSection = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  return (
-    <section className="bg-white py-16 sm:py-20 lg:py-28">
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 xl:px-16">
-
-        <motion.div {...fadeUp(0)} className="mb-5">
-          <Chip style={{ background: "#fff0ec", color: "#E8521A" }}>
-            Zapier FAQs
-          </Chip>
-        </motion.div>
-
-        <motion.h2
-          {...fadeUp(0.07)}
-          className="font-extrabold text-[#1A1A1A] tracking-tight leading-tight mb-4 text-[1.8rem] sm:text-[2.5rem] lg:text-[3.5rem] max-w-3xl"
-        >
-          Everything you need to know
-        </motion.h2>
-
-        <motion.p {...fadeUp(0.12)} className="text-[#666] text-sm sm:text-base mb-10 sm:mb-14 max-w-2xl">
-          Common questions about our Zapier consulting and automation services.
-        </motion.p>
-
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 items-start">
-          {[FAQS.filter((_, i) => i % 2 === 0), FAQS.filter((_, i) => i % 2 === 1)].map(
-            (col, colIdx) => (
-              <div key={colIdx} className="flex-1 w-full flex flex-col gap-4 sm:gap-5">
-                {col.map((faq) => {
-                  const i = FAQS.indexOf(faq);
-                  const color = FAQ_COLORS[i % 3];
-                  const isOpen = openIndex === i;
-                  return (
-                    <motion.div
-                      key={i}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true, margin: "-40px" }}
-                      transition={{ duration: 0.5, delay: i * 0.05, ease }}
-                      className="rounded-2xl border-2 overflow-hidden"
-                      style={{ borderColor: color.border, background: color.bg }}
-                    >
-                      <button
-                        onClick={() => setOpenIndex(isOpen ? null : i)}
-                        className="w-full flex items-start gap-4 p-6 text-left"
-                      >
-                        <p className="flex-1 font-bold text-[#1A1A1A] text-sm sm:text-base leading-snug m-0">
-                          {faq.q}
-                        </p>
-                        <motion.div
-                          animate={{ rotate: isOpen ? 180 : 0 }}
-                          transition={{ duration: 0.25, ease }}
-                          className="shrink-0 w-7 h-7 rounded-full border border-[#1A1A1A]/25 flex items-center justify-center mt-0.5"
-                        >
-                          <ChevronDown size={15} className="text-[#1A1A1A]" strokeWidth={1.8} />
-                        </motion.div>
-                      </button>
-
-                      <AnimatePresence initial={false}>
-                        {isOpen && (
-                          <motion.div
-                            key="answer"
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
-                            className="overflow-hidden"
-                          >
-                            <div className="px-6 pb-6">
-                              <div className="h-px mb-4" style={{ background: color.border }} />
-                              <p className="text-sm text-[#444] leading-relaxed m-0">{faq.a}</p>
-                            </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </motion.div>
-                  );
-                })}
-              </div>
-            )
-          )}
-        </div>
-
-      </div>
-    </section>
-  );
-};
+const FaqSection = () => (
+  <TwoColumnFAQ
+    faqs={FAQS}
+    chip="Zapier FAQs"
+    heading="Everything you need to know"
+    subheading="Common questions about our Zapier consulting and automation services."
+    chipStyle={{ background: "#fff0ec", color: "#E8521A" }}
+    colors={FAQ_COLORS}
+  />
+);
 
 // ── Final CTA ─────────────────────────────────────────────────────────────────
 

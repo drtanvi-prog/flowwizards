@@ -8,6 +8,7 @@ import PremiumQuoteStack from '@/components/sections/quotes'
 import ToolkitSection from '@/components/sections/toolkit'
 import FAQSection from '@/components/sections/ai-faq/FAQSection'
 import AICTABanner from '@/components/sections/ai-cta-banner'
+import FooterCTA from '@/components/common/FooterCTA'
 import ServicesSection from '../components/sections/services'
 import { useCaseCategories } from '../data/aiUseCasesData'
 import { aiTools, aiCells, aiMobileCells, aiBadgeMap } from '../data/aiToolkitData'
@@ -19,13 +20,13 @@ const AIAutomationPage = () => (
       badge="AI Automation Services"
       heading={
         <>
-          <SHWord>AI consulting</SHWord>, implementation,{' '}
-          and ongoing <SHWord>optimization</SHWord>{' '}
-          for revenue, operations,{' '}
-          and data workflows.
+          Stop doing <SHWord>manually</SHWord> what{' '}
+          AI can handle <SHWord>automatically</SHWord>{' '}
+          - faster, smarter,{' '}
+          and without the overhead.
         </>
       }
-      body="Your team is doing work that AI can do. At Flow Wizards, we design and implement custom AI automations and workflows that eliminate manual work, accelerate operations, and deliver measurable ROI across sales, ops, support, and internal systems."
+      body="Most teams are still running on spreadsheets, copy-paste workflows, and manual handoffs that eat hours every week. Flow Wizards builds AI-powered systems that take that work off your plate - freeing your team to focus on what actually moves the needle."
     />
     <AIAutomationCover />
     <AIAutomationFramework />
@@ -34,7 +35,7 @@ const AIAutomationPage = () => (
     <ServicesSection
       categories={useCaseCategories}
       badge="AI Automation Use Cases"
-      heading={"From sales to ops to finance,\nwe'll help you put AI to work."}
+      heading={"From sales to ops to finance -\nhere's where we've seen AI make the biggest dent."}
       subheading=""
       variant="dark"
     />
@@ -44,23 +45,17 @@ const AIAutomationPage = () => (
       quotes={aiReviews}
       badge='"Absolute Rockstars"'
       heading={'And 500+ (and counting) other\n5-star reviews'}
-      ctaHeading="Want results like these?"
-      ctaLabel="Start with a Discovery Call"
+      // ctaHeading="Want results like these?"
+      // ctaLabel="Start with a Discovery Call"
     />
     <ToolkitSection
       badge="Automation Platforms & AI Stack"
-      heading={<>If you've got any of these tools (and a whole lot more), we can make your workflow more efficient</>}
+      heading={<>Already using some of these? Good - we know them well.</>}
       subText={null}
       descriptionContent={
-        <div className="max-w-2xl">
-          <p className="text-sm font-bold text-[#1a1a1a] mb-2">Custom Workflow Automation Integrations</p>
-          <p className="text-sm text-[#555] leading-relaxed mb-2">
-            At Flow Wizards, our approach is simple: design workflows around how your business operates, not around forcing you into a specific platform.
-          </p>
-          <p className="text-sm text-[#555] leading-relaxed">
-            When off-the-shelf integrations aren't enough, we work with custom APIs and internal systems to automate complex, business-specific workflows.
-          </p>
-        </div>
+        <p className="text-sm text-[#555] leading-relaxed max-w-sm">
+          We build around your stack. If native connectors run short, we use APIs and webhooks to fill the gap.
+        </p>
       }
       toolsList={aiTools}
       badgeMap={aiBadgeMap}
@@ -72,14 +67,14 @@ const AIAutomationPage = () => (
     />
     <AIEngagements />
     <AICTABanner
-      heading="But first, let’s get to know each other."
+      heading="Before we scope anything, we want to understand your operation."
       buttonLabel="Book a Discovery Call"
       showSubtext={false} />
     <FAQSection />
-    <AICTABanner
-      heading="AI is just a tool. Better operations are the outcome."
-      buttonLabel="It starts with a Discovery Call"
-      showSubtext={false}
+    <FooterCTA
+      heading="The goal isn’t more automation. It’s a business that runs without you babysitting it."
+      subtext="Let’s map out what that looks like for your operation."
+      buttonText="Let’s talk about what that looks like"
     />
   </>
 )

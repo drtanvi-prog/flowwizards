@@ -3,14 +3,14 @@ import { ChevronDown } from "lucide-react";
 
 const ease = [0.22, 1, 0.36, 1]
 
-function FAQCard({ faq, isOpen, isMirror, onClick, color }) {
-  const expanded = isOpen || isMirror;
+function FAQCard({ faq, isOpen, onClick, color }) {
+  const expanded = isOpen;
 
   return (
     <motion.div
       whileHover={{ y: -3, boxShadow: '0 8px 28px rgba(0,0,0,0.07)' }}
       transition={{ duration: 0.22 }}
-      className={`h-full rounded-2xl border p-7 cursor-pointer transition-colors duration-300 ${color}`}
+      className={`rounded-2xl border p-7 cursor-pointer transition-colors duration-300 ${color}`}
       onClick={onClick}
     >
       <div className="flex items-start justify-between gap-5">

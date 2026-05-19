@@ -14,29 +14,29 @@ const fadeUp = (delay = 0, y = 28) => ({
 
 const services = [
   {
-    title: 'AI Automation Consulting',
+    title: 'Workflow Discovery & Opportunity Mapping',
     description:
-      'Process discovery, workflow mapping, and ROI modeling to identify where automation can bring you the most impact.',
+      'We dig into how your team actually works — not how the org chart says it does — to find where time is being lost and where automation pays off fastest.',
   },
   {
-    title: 'Business Process Automation',
+    title: 'Cross-Team Process Automation',
     description:
-      'Automating handoffs, approvals, follow-ups, and internal workflows across teams.',
+      'Sales handoffs, approval chains, follow-up sequences, internal routing — we automate the in-between steps that nobody owns but everyone touches.',
   },
   {
-    title: 'Systems, CRM, and Data Integration',
+    title: 'Tool & Data Integration',
     description:
-      'Connecting tools and creating a reliable source of truth across platforms.',
+      'We wire your existing stack together so data moves where it needs to go, automatically, without manual exports or copy-paste between platforms.',
   },
   {
-    title: 'AI-Assisted Workflows',
+    title: 'AI-Powered Decision Layers',
     description:
-      'Using AI for routing, classification, summarization, extraction, and structured decision support.',
+      'We add AI where rules alone fall short — reading emails, classifying tickets, pulling key details from documents, and surfacing what needs attention.',
   },
   {
-    title: 'Governance and Secure Implementation',
+    title: 'Safe, Auditable Deployment',
     description:
-      'Clear permissions, audit logs, monitoring, and quality control built into every workflow.',
+      'Every workflow we build includes error handling, access controls, and logging — so you always know what ran, what changed, and who touched what.',
   },
 ]
 
@@ -44,8 +44,8 @@ const AIAutomationCover = () => (
   <section className="bg-white px-6 sm:px-10 xl:px-16 py-16 sm:py-24">
     <div className="max-w-7xl mx-auto">
 
-      {/* Header — centered */}
-      <div className="flex flex-col items-center text-center mb-10 sm:mb-14">
+      {/* Header */}
+      <div className="flex flex-col items-start mb-10 sm:mb-14">
         <motion.div {...fadeUp(0)} className="mb-4">
           <Chip>What We Cover</Chip>
         </motion.div>
@@ -54,21 +54,20 @@ const AIAutomationCover = () => (
           className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-[#1A1A1A] leading-tight sm:leading-[1.12]"
           style={{ letterSpacing: '-0.03em' }}
         >
-          What AI Automation Services Cover
+          Here's what we actually build for you.
         </motion.h2>
       </div>
 
-      {/* Body copy — centered */}
-      <motion.div {...fadeUp(0.1)} className="max-w-2xl mx-auto text-center mb-10 sm:mb-14">
+      {/* Body copy */}
+      <motion.div {...fadeUp(0.1)} className="max-w-2xl mb-10 sm:mb-14">
         <p className="text-[14px] sm:text-[15px] lg:text-[16px] font-bold text-[#1A1A1A] m-0 mb-3">
-          Business growth starts with operations that can handle it.
+          Every engagement is scoped around your actual bottlenecks - not a template.
         </p>
         <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-[#4A4A4A] leading-relaxed m-0 mb-4">
-          As volume increases, teams rely on manual steps, disconnected systems, and workarounds
-          that slow execution and create gaps — making it harder to scale without adding headcount.
+          We've seen enough operations to know that no two teams break the same way. So before we build anything, we spend time understanding where your process actually falls apart - then design around that.
         </p>
         <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-[#4A4A4A] leading-relaxed m-0">
-          Our work typically includes:
+          Most projects touch some combination of these areas:
         </p>
       </motion.div>
 
@@ -93,10 +92,10 @@ const AIAutomationCover = () => (
             </motion.div>
 
             {/* Title & description — centered */}
-            <p className="text-[15px] sm:text-[16px] font-semibold text-[#1A1A1A] m-0 mb-3 text-center">
+            <p className="text-[15px] sm:text-[16px] font-semibold text-[#1A1A1A] m-0 mb-3">
               {service.title}
             </p>
-            <p className="text-[13px] sm:text-[14px] text-[#4A4A4A] leading-relaxed m-0 text-center">
+            <p className="text-[13px] sm:text-[14px] text-[#4A4A4A] leading-relaxed m-0">
               {service.description}
             </p>
           </motion.div>

@@ -28,7 +28,7 @@ const PremiumQuoteStack = ({
 
       {/* Optional header */}
       {(badge || heading) && (
-        <div className="mb-14 flex flex-col items-center text-center">
+        <div className="mb-14 flex flex-col items-start">
           {badge && (
             <motion.div {...fadeUp(0)} className="mb-4">
               <Chip>{badge}</Chip>

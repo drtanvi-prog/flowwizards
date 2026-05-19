@@ -13,32 +13,32 @@ const fadeUp = (delay = 0) => ({
 const ENGAGEMENTS = [
   {
     icon: ScanSearch,
-    title: 'AI Automation Audit & Strategy',
+    title: 'Automation Audit & Roadmap',
     accent: '#D42B2B',
     iconBg: '#FEF5F5',
     borderColor: '#D42B2B',
-    bestFor: 'Teams who want clarity before committing to any build work.',
-    description: 'A fixed-scope engagement to review your workflows, identify automation opportunities, and define where effort will have the most impact.',
+    bestFor: 'Teams that want a clear picture before committing budget to a build.',
+    description: 'We walk through your workflows, map where time is leaking, and deliver a prioritized roadmap with specific recommendations - so you know exactly what to do next and why.',
     engagementType: 'Fixed Scope',
   },
   {
     icon: Zap,
-    title: 'AI Implementation Sprints',
+    title: 'Dedicated Build Sprints',
     accent: '#C27D00',
     iconBg: '#FFFBF0',
     borderColor: '#F59E0B',
-    bestFor: 'Teams ready to move from planning to execution within a defined scope.',
-    description: 'Focused build phases where specific workflows are designed, implemented, and refined.',
+    bestFor: 'Teams with a defined problem and ready to move.',
+    description: 'We scope a focused block of work, build the workflows, test them, and hand them off running. No drawn-out timelines - you see results in weeks, not quarters.',
     engagementType: 'Hourly Packages',
   },
   {
     icon: RefreshCw,
-    title: 'Ongoing AI Automation Support',
+    title: 'Continuous Automation Partner',
     accent: '#5A7A00',
     iconBg: '#F6FAE8',
     borderColor: '#7A9A01',
-    bestFor: 'Teams that want consistent progress without restarting or rescoping each initiative.',
-    description: 'Continuous optimization and expansion of workflows over time.',
+    bestFor: 'Growing teams that want automation to keep pace as the business changes.',
+    description: 'A dedicated monthly engagement where we continue expanding, optimizing, and maintaining your automation stack as your tools, team, and processes evolve.',
     engagementType: 'Monthly Retainer',
   },
 ]
@@ -107,7 +107,7 @@ const AIEngagements = () => (
   <section className="bg-white px-6 sm:px-10 xl:px-16 pt-4 pb-16 sm:pt-6 sm:pb-24">
     <div className="max-w-7xl mx-auto">
 
-      <div className="flex flex-col items-center text-center mb-12">
+      <div className="flex flex-col items-start mb-12">
         <motion.div {...fadeUp(0)} className="mb-4">
           <Chip>Engagement Models</Chip>
         </motion.div>
@@ -116,7 +116,7 @@ const AIEngagements = () => (
           className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-[#1A1A1A] leading-tight sm:leading-[1.12]"
           style={{ letterSpacing: '-0.03em' }}
         >
-          We offer 3 types of engagements
+          Pick the engagement that fits where you are right now.
         </motion.h2>
       </div>
 

@@ -1,32 +1,32 @@
 export const STEPS = [
   {
     num: "01",
-    title: "Automation and AI Readiness Audit",
-    desc: "We start by looking at your systems, data, and day-to-day workflows. Where work slows down. Where handoffs break. Where manual effort piles up. This gives us a clear picture of what's worth automating and what isn't.",
+    title: "Process Walkthrough",
+    desc: "We trace your real workflows — not the documented version. Every manual step and missed handoff becomes a data point.",
   },
   {
     num: "02",
-    title: "ROI-Driven Roadmap",
-    desc: "Not everything should be automated at once. We rank opportunities by time saved and business impact, so effort goes into top-priority workflows.",
+    title: "Build the Hit List",
+    desc: "We rank opportunities by time saved and business impact so effort goes to the workflows that matter most.",
   },
   {
     num: "03",
-    title: "Workflow Design",
-    desc: "Each workflow is designed end to end, with triggers, logic, approvals, exception handling, and points of human involvement defined upfront. This ensures consistent behavior, clear ownership, and predictable execution across your teams.",
+    title: "Blueprint Before We Build",
+    desc: "We map every step, branch, and failure case before writing a single trigger. Surprises on paper are free.",
   },
   {
     num: "04",
-    title: "Implementation",
-    desc: "Automations are built using the appropriate mix of no-code, low-code, and custom logic, based on the needs of the workflow and the systems involved.",
+    title: "Build It Right",
+    desc: "We use the right mix of Make, n8n, Zapier, APIs, or custom code — based on what the workflow needs.",
   },
   {
     num: "05",
-    title: "Testing and Rollout",
-    desc: "Workflows are tested before launch, with safeguards in place to handle errors and prevent issues after deployment.",
+    title: "Test Until It's Boring",
+    desc: "Edge cases, bad inputs, and real-world volume get tested before launch. If it can break, we find it first.",
   },
   {
     num: "06",
-    title: "Ongoing Optimization",
-    desc: "As usage increases and priorities change, workflows are adjusted or expanded to match how the business operates.",
+    title: "Keep It Working",
+    desc: "As your tools and team evolve, we adjust the automations so they keep pace with the business.",
   },
 ];

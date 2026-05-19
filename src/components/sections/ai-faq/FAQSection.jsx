@@ -1,111 +1,22 @@
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import { faqData } from "../../../data/aiFaqSectionData";
-import FAQCard from "./FAQCard";
-import Chip from "@/components/ui/Chip";
+import TwoColumnFAQ from "@/components/sections/faq/TwoColumnFAQ";
 
-const ease = [0.22, 1, 0.36, 1]
+const faqs = faqData.map((item) => ({ q: item.question, a: item.answer }));
 
-const leftFaqs = faqData.filter((item) => item.side === "left");
-const rightFaqs = faqData.filter((item) => item.side === "right");
-
-const LEFT_COLORS = ["border-[#ff4f00] bg-[#FFF5F0]", "border-[#f59e0b] bg-[#FFFBEB]"];
-const RIGHT_COLORS = ["border-[#fb923c] bg-[#FFF7ED]", "border-[#84cc16] bg-[#F7FEE7]"];
-
-const rows = Math.max(leftFaqs.length, rightFaqs.length);
+const AI_COLORS = [
+  { bg: "#ffedef", border: "#ff9aaa" },
+  { bg: "#eef5e0", border: "#b5c86a" },
+  { bg: "#fff8f0", border: "#f5d5b0" },
+];
 
 export default function FAQSection() {
-  const [activeRow, setActiveRow] = useState(null);
-  const [activeSide, setActiveSide] = useState(null);
-  const [activeMobileId, setActiveMobileId] = useState(null);
-  const [isMobile, setIsMobile] = useState(() => window.innerWidth < 1024);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 1023px)");
-    const handler = (e) => setIsMobile(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, []);
-
-  const handleClick = (row, side) => {
-    if (activeRow === row && activeSide === side) {
-      setActiveRow(null);
-      setActiveSide(null);
-    } else {
-      setActiveRow(row);
-      setActiveSide(side);
-    }
-  };
-
-  const handleMobileClick = (id) => {
-    setActiveMobileId((prev) => (prev === id ? null : id));
-  };
-
   return (
-    <section className="py-10 lg:py-20 px-6">
-      <div className="max-w-7xl mx-auto">
-
-        {/* Header — centered */}
-        <div className="flex flex-col items-center text-center mb-10 sm:mb-14">
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, ease }}
-            className="mb-4"
-          >
-            <Chip>Frequently Asked Questions</Chip>
-          </motion.div>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.08, ease }}
-            className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-[#1A1A1A] leading-tight sm:leading-[1.12]"
-            style={{ letterSpacing: '-0.03em' }}
-          >
-            FAQs
-          </motion.h2>
-        </div>
-
-        <div className="flex flex-col gap-6">
-          {Array.from({ length: rows }).map((_, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 28 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.06, ease }}
-              className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch"
-            >
-              {leftFaqs[i] ? (
-                <FAQCard
-                  faq={leftFaqs[i]}
-                  isOpen={isMobile ? activeMobileId === leftFaqs[i].id : activeRow === i && activeSide === "left"}
-                  isMirror={isMobile ? false : activeRow === i && activeSide === "right"}
-                  onClick={isMobile ? () => handleMobileClick(leftFaqs[i].id) : () => handleClick(i, "left")}
-                  color={LEFT_COLORS[i % LEFT_COLORS.length]}
-                />
-              ) : (
-                <div />
-              )}
-
-              {rightFaqs[i] ? (
-                <FAQCard
-                  faq={rightFaqs[i]}
-                  isOpen={isMobile ? activeMobileId === rightFaqs[i].id : activeRow === i && activeSide === "right"}
-                  isMirror={isMobile ? false : activeRow === i && activeSide === "left"}
-                  onClick={isMobile ? () => handleMobileClick(rightFaqs[i].id) : () => handleClick(i, "right")}
-                  color={RIGHT_COLORS[i % RIGHT_COLORS.length]}
-                />
-              ) : (
-                <div />
-              )}
-            </motion.div>
-          ))}
-        </div>
-
-      </div>
-    </section>
+    <TwoColumnFAQ
+      faqs={faqs}
+      chip="Frequently Asked Questions"
+      heading="FAQs"
+      subheading="Everything you need to know about our AI automation services."
+      colors={AI_COLORS}
+    />
   );
 }

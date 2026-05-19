@@ -21,7 +21,7 @@ export const aiReviews = [
     quoteColor: "#c49a2a",
   },
   {
-    text: "Excellent service from start to finish — professional, responsive, and delivered great results. Highly recommended!",
+    text: "Excellent service from start to finish - professional, responsive, and delivered great results. Highly recommended!",
     author: "- Christine R.",
     border: "#a3c44a",
     bg: "#f6fbee",

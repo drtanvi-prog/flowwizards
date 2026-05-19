@@ -53,7 +53,7 @@ const AIAutomationFramework = () => {
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 className="mb-3 sm:mb-4"
               >
-                <Chip>Our AI Automation Delivery Framework</Chip>
+                <Chip>How We Work</Chip>
               </motion.div>
 
               <motion.h2
@@ -63,7 +63,7 @@ const AIAutomationFramework = () => {
                 className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-[#1A1A1A] leading-tight sm:leading-[1.12] m-0 mb-2 sm:mb-3"
                 style={{ letterSpacing: '-0.03em' }}
               >
-                Effective automation follows a system.
+                We don't start by building. We start by listening.
               </motion.h2>
 
               <motion.p
@@ -72,9 +72,7 @@ const AIAutomationFramework = () => {
                 transition={{ duration: 0.6, delay: 0.16, ease: [0.22, 1, 0.36, 1] }}
                 className="text-[14px] sm:text-[15px] lg:text-[16px] text-[#4A4A4A] leading-relaxed m-0 max-w-2xl"
               >
-                Without one, workflows become difficult to manage and hard to scale. We follow a proven,
-                structured delivery framework designed to move from clarity to execution, while keeping
-                outcomes and accountability front and center.
+                Most automation projects fail because someone skipped the discovery. We've seen it enough times to know: the best-built workflow for the wrong problem is still a waste. Our process is designed to get the diagnosis right before a single trigger is written.
               </motion.p>
 
               <motion.div

@@ -68,7 +68,7 @@ const defaultReviews = [
   },
   {
     quote:
-      'Excellent service from start to finish — professional, responsive, and delivered great results. Highly recommended!',
+      'Excellent service from start to finish - professional, responsive, and delivered great results. Highly recommended!',
     author: '- Christine R.',
   },
 ]

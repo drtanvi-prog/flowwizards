@@ -157,6 +157,21 @@ const Footer = () => {
         "Now let’s turn it into a mean, dark-green, deal-closing machine.",
       buttonText: "Schedule your free discovery session",
     };
+  } else if (pathname === "/ai-automation-services") {
+    ctaProps = {
+      heading: (
+        <>
+          The goal isn’t more automation. It’s a business that runs without you babysitting it.
+        </>
+      ),
+      subtext: (
+        <>
+          <b>Bonus:</b> You’ll leave your competitors wondering how you make it
+          look so effortless.
+        </>
+      ),
+      buttonText: "Let’s talk about what that looks like",
+    };
   } else if (pathname === "/fractional-chief-automation") {
     ctaProps = {
       heading: (
@@ -232,25 +247,37 @@ const Footer = () => {
       {/* ── Main Footer ── */}
       <div style={{ background: "#161615" }}>
         <div className="max-w-360 mx-auto px-5 sm:px-8 xl:px-16 pt-14 pb-10">
-
           {/* ── Top section: Brand + 3 nav cols ── */}
           <div className="grid grid-cols-1 lg:grid-cols-[1.8fr_1fr_1fr_1.4fr] gap-10 lg:gap-8 xl:gap-12 pb-10">
-
             {/* Col 1 — Brand */}
             <div className="flex flex-col gap-5">
               <div className="select-none">
                 <img
                   src={logo}
                   alt="Flow Wizards"
-                  style={{ width: "120px", height: "auto", filter: "brightness(0) invert(1)" }}
+                  style={{
+                    width: "120px",
+                    height: "auto",
+                    filter: "brightness(0) invert(1)",
+                  }}
                 />
               </div>
-              <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)", lineHeight: 1.85 }}>
+              <p
+                style={{
+                  fontSize: "0.8rem",
+                  color: "rgba(255,255,255,0.5)",
+                  lineHeight: 1.85,
+                }}
+              >
                 Certified workflow, sales, and marketing automation specialists
                 helping businesses simplify processes, streamline operations,
                 and scale their profits.
               </p>
-              <Button variant="primary" size="md" className="self-start text-[11px]! sm:text-sm! px-3! py-1.5! sm:px-5! sm:py-2.5!">
+              <Button
+                variant="primary"
+                size="md"
+                className="self-start text-[11px]! sm:text-sm! px-3! py-1.5! sm:px-5! sm:py-2.5!"
+              >
                 Schedule a complimentary call
               </Button>
               {/* Socials inline */}
@@ -259,9 +286,14 @@ const Footer = () => {
                   <a
                     key={s}
                     href="#"
-                    style={{ fontSize: "0.78rem", color: "rgba(255,255,255,0.4)" }}
-                    onMouseEnter={e => e.target.style.color = "#F07020"}
-                    onMouseLeave={e => e.target.style.color = "rgba(255,255,255,0.4)"}
+                    style={{
+                      fontSize: "0.78rem",
+                      color: "rgba(255,255,255,0.4)",
+                    }}
+                    onMouseEnter={(e) => (e.target.style.color = "#F07020")}
+                    onMouseLeave={(e) =>
+                      (e.target.style.color = "rgba(255,255,255,0.4)")
+                    }
                     className="transition-colors duration-200"
                   >
                     {s}
@@ -304,18 +336,39 @@ const Footer = () => {
               <ColHead>Get in Touch</ColHead>
               <div className="flex flex-col gap-4">
                 <div className="flex items-start gap-3">
-                  <MapPin size={13} style={{ color: "#F07020", marginTop: 3, flexShrink: 0 }} />
-                  <span style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)", lineHeight: 1.75 }}>
-                    300 Kent Avenue #9<br />Brooklyn, NY 11249<br />United States
+                  <MapPin
+                    size={13}
+                    style={{ color: "#F07020", marginTop: 3, flexShrink: 0 }}
+                  />
+                  <span
+                    style={{
+                      fontSize: "0.8rem",
+                      color: "rgba(255,255,255,0.5)",
+                      lineHeight: 1.75,
+                    }}
+                  >
+                    300 Kent Avenue #9
+                    <br />
+                    Brooklyn, NY 11249
+                    <br />
+                    United States
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Phone size={13} style={{ color: "#F07020", flexShrink: 0 }} />
+                  <Phone
+                    size={13}
+                    style={{ color: "#F07020", flexShrink: 0 }}
+                  />
                   <a
                     href="tel:+13476974846"
-                    style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)" }}
-                    onMouseEnter={e => e.target.style.color = "#fff"}
-                    onMouseLeave={e => e.target.style.color = "rgba(255,255,255,0.5)"}
+                    style={{
+                      fontSize: "0.8rem",
+                      color: "rgba(255,255,255,0.5)",
+                    }}
+                    onMouseEnter={(e) => (e.target.style.color = "#fff")}
+                    onMouseLeave={(e) =>
+                      (e.target.style.color = "rgba(255,255,255,0.5)")
+                    }
                     className="transition-colors duration-200"
                   >
                     +1 (347) 697-4846
@@ -325,9 +378,14 @@ const Footer = () => {
                   <Mail size={13} style={{ color: "#F07020", flexShrink: 0 }} />
                   <a
                     href="mailto:hello@flowwizards.com"
-                    style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.5)" }}
-                    onMouseEnter={e => e.target.style.color = "#fff"}
-                    onMouseLeave={e => e.target.style.color = "rgba(255,255,255,0.5)"}
+                    style={{
+                      fontSize: "0.8rem",
+                      color: "rgba(255,255,255,0.5)",
+                    }}
+                    onMouseEnter={(e) => (e.target.style.color = "#fff")}
+                    onMouseLeave={(e) =>
+                      (e.target.style.color = "rgba(255,255,255,0.5)")
+                    }
                     className="transition-colors duration-200"
                   >
                     hello@flowwizards.com
@@ -335,7 +393,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -357,7 +414,10 @@ const Footer = () => {
                   >
                     |
                   </span>
-                  <NavLink href={link.href} style={{ fontSize: "0.82rem", color: "#fff" }}>
+                  <NavLink
+                    href={link.href}
+                    style={{ fontSize: "0.82rem", color: "#fff" }}
+                  >
                     {link.label}
                   </NavLink>
                 </span>
@@ -378,7 +438,10 @@ const Footer = () => {
                       |
                     </span>
                   )}
-                  <NavLink href={link.href} style={{ fontSize: "0.82rem", color: "#fff" }}>
+                  <NavLink
+                    href={link.href}
+                    style={{ fontSize: "0.82rem", color: "#fff" }}
+                  >
                     {link.label}
                   </NavLink>
                 </span>

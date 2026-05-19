@@ -21,7 +21,7 @@ const AIValueProp = () => (
         <div className="flex-1 min-w-0">
 
           <motion.div {...fadeUp(0)} className="mb-5">
-            <Chip>AI Automation Consulting Services</Chip>
+            <Chip>Why Teams Work With Us</Chip>
           </motion.div>
 
           <motion.h2
@@ -29,7 +29,7 @@ const AIValueProp = () => (
             className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-[#1A1A1A] leading-tight sm:leading-[1.12] m-0 mb-6"
             style={{ letterSpacing: '-0.03em' }}
           >
-            AI lets your business run closer to how you've always dreamed.
+            Your team shouldn't be the glue holding your tech stack together.
           </motion.h2>
 
           {/* Body */}
@@ -37,9 +37,7 @@ const AIValueProp = () => (
             {...fadeUp(0.14)}
             className="text-[14px] sm:text-[15px] lg:text-[16px] text-[#4A4A4A] leading-relaxed m-0 max-w-md"
           >
-            AI helps increase what your business can handle as it grows. Manage volume, keep work
-            moving — all without adding noise or headcount. The result? An operation that stays
-            controlled, responsive, and clear even as demand increases.
+            When your tools don't talk to each other, your team fills the gap — manually. Copying data, chasing approvals, re-entering the same info in three places. We build the connections that make that work disappear, so your people spend time on things that actually require a human.
           </motion.p>
         </div>
 

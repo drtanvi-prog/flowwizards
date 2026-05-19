@@ -11,7 +11,7 @@ const AICTABanner = ({
 }) => (
   <section className="relative overflow-hidden" style={{ background: '#ff4f00' }}>
 
-    <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 xl:px-16 py-16 sm:py-20">
+    <div className="relative z-10 max-w-360 mx-auto px-5 sm:px-8 xl:px-16 pt-14 pb-10">
       {!showImage && showSubtext && (
         <motion.p
           initial={{ opacity: 0, y: 16 }}
