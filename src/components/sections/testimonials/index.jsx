@@ -38,13 +38,14 @@ const Testimonials = ({ heading }) => (
 
     {/* Header */}
     <div className="relative max-w-7xl mx-auto px-6 xl:px-16 mb-14 sm:mb-16">
-      <div className="flex flex-col items-center text-center gap-5">
+      <div className="flex flex-col items-center text-center">
 
         <motion.div
-          initial={{ opacity: 0, y: -10 }}
+          initial={{ opacity: 0, y: -12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
+          className="mb-3 sm:mb-4 flex justify-center"
         >
           <Chip style={{ background: 'rgba(255,255,255,0.07)', color: 'rgba(255,255,255,0.55)' }}>
             What our clients say
@@ -56,7 +57,7 @@ const Testimonials = ({ heading }) => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.08 }}
-          className="text-[2rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold leading-[1.12]"
+          className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold leading-tight sm:leading-[1.12] mb-5"
           style={{ letterSpacing: '-0.03em', color: '#fff' }}
         >
           {heading ?? (

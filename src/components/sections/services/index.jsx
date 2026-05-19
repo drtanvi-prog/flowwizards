@@ -25,7 +25,7 @@ const ServicesSection = ({
 
   const resolvedBadge = badge ?? 'What workflow automation consultants can do for you'
   const resolvedHeading = heading ?? "Which business process would you\nprefer not to think about?"
-  const resolvedSubheading = subheading ?? "We'll put your business operations into a Flow state — automating them all so you barely have to lift a finger."
+  const resolvedSubheading = subheading ?? "We'll put your business operations into a Flow state - automating them all so you barely have to lift a finger."
 
   return (
     <>
@@ -87,7 +87,7 @@ const ServicesSection = ({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.08 }}
-            className="text-[2rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold leading-[1.12] mb-3 text-center"
+            className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold leading-tight sm:leading-[1.12] mb-3 text-center"
             style={{
               letterSpacing: '-0.03em',
               color: isDark ? '#fff' : '#1A1A1A',

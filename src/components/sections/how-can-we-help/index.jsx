@@ -35,9 +35,9 @@ const HowCanWeHelp = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-4 flex justify-center"
+          className="mb-3 sm:mb-4 flex justify-center"
         >
-          <Chip>Our workflow automation services</Chip>
+          <Chip>Automation services</Chip>
         </motion.div>
 
         <motion.h2
@@ -45,7 +45,7 @@ const HowCanWeHelp = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.08 }}
-          className="text-[2rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold mb-10 sm:mb-14 leading-[1.12] text-center"
+          className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold mb-10 sm:mb-14 leading-tight sm:leading-[1.12] text-center"
           style={{ color: '#1a1a1a', letterSpacing: '-0.03em' }}
         >
           How can we help?

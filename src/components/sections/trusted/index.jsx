@@ -46,7 +46,7 @@ const TrustedSection = ({ hideBottom = false }) => (
       {!hideBottom && (
          <>
             {/* Copy section */}
-            <div className="w-full border-t border-gray-100 py-14 sm:py-20 lg:py-24 px-5 sm:px-8 xl:px-16">
+            <div className="w-full border-t border-gray-100 py-10 sm:py-20 lg:py-24 px-4 sm:px-8 xl:px-16">
                <div className="max-w-360 mx-auto">
 
                   {/* Top label */}
@@ -55,12 +55,12 @@ const TrustedSection = ({ hideBottom = false }) => (
                      whileInView={{ opacity: 1, y: 0 }}
                      viewport={{ once: true }}
                      transition={{ duration: 0.4, ease }}
-                     className="mb-6 sm:mb-8 flex justify-center"
+                     className="mb-3 sm:mb-4 flex justify-center"
                   >
                      <Chip>The problem</Chip>
                   </motion.div>
 
-                  <div className="flex flex-col gap-6 max-w-3xl mx-auto text-center">
+                  <div className="flex flex-col gap-5 max-w-3xl mx-auto text-center">
 
                      {/* Heading */}
                      <motion.h3
@@ -68,9 +68,9 @@ const TrustedSection = ({ hideBottom = false }) => (
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, ease }}
-                        className="text-[2rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem]
-                           font-extrabold text-[#1A1A1A] leading-[1.12] m-0 text-balance"
-                        style={{ letterSpacing: '-0.03em' }}
+                        className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem]
+                           font-extrabold text-[#1A1A1A] leading-[1.25] sm:leading-[1.12] m-0 text-balance"
+                        style={{ letterSpacing: '-0.02em' }}
                      >
                         You know automation is no longer a nice-to-have
                      </motion.h3>

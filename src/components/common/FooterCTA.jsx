@@ -7,7 +7,7 @@ const FooterCTA = ({ heading, subtext, buttonText }) => (
       className="relative overflow-hidden"
       style={{ background: '#F07020' }}
    >
-      <div className="relative z-10 max-w-7xl mx-auto px-6 xl:px-16 pt-10 pb-8 sm:pb-16" style={{ minHeight: '0' }}>
+      <div className="relative z-10 max-w-360 mx-auto px-5 sm:px-8 xl:px-16 pt-10 pb-8 sm:pb-16" style={{ minHeight: '0' }}>
          <div className="max-w-lg">
             <motion.h2
                initial={{ opacity: 0, y: 24 }}

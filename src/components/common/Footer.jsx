@@ -224,7 +224,7 @@ const Footer = () => {
 
       {/* ── Main Footer ── */}
       <div style={{ background: "#161615" }}>
-        <div className="max-w-7xl mx-auto px-6 xl:px-16 py-12 lg:py-16">
+        <div className="max-w-360 mx-auto px-5 sm:px-8 xl:px-16 py-12 lg:py-16">
           {/*mobile screen layout */}
           <div className="lg:hidden">
             <div
@@ -429,7 +429,7 @@ const Footer = () => {
 
         {/* ── Bottom bar ── */}
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-          <div className="max-w-7xl mx-auto px-6 xl:px-16 py-5 flex flex-col gap-2 items-center text-center">
+          <div className="max-w-360 mx-auto px-5 sm:px-8 xl:px-16 py-5 flex flex-col gap-2 items-center text-center">
             <div className="flex flex-wrap items-center justify-center gap-y-1">
               <span style={{ fontSize: "0.82rem", color: "#fff" }}>
                 © 2026 ALL RIGHTS RESERVED.

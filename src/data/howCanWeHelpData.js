@@ -32,7 +32,7 @@ export const services = [
     gradientTo: "#A8BC2A",
     text: 'I wish we had a team responsible for making sure all our tools actually work."',
     description:
-      "Stop firefighting and start thriving. We'll be your dedicated tech operations team — monitoring, maintaining, and optimizing all your tools so you can focus on what matters.",
+      "Stop firefighting and start thriving. We'll be your dedicated tech operations team - monitoring, maintaining, and optimizing all your tools so you can focus on what matters.",
     cta: "Managed tech operations",
     ctaBg: "#F5F7E8",
     ctaColor: "#5C6B10",

@@ -24,7 +24,7 @@ export const serviceCategories = [
     bg: '#FFFBF0',
     heading: 'Streamline and optimise\nyour data management',
     description:
-      "Turn that jumble of data into a roadmap for decision-making — without spending hours crunching numbers, setting up spreadsheets, and hunting for that one eye-twitching error. Let your data organise itself into a clear, accurate, and easy-to-read format that points the way to profit and success.",
+      "Turn that jumble of data into a roadmap for decision-making - without spending hours crunching numbers, setting up spreadsheets, and hunting for that one eye-twitching error. Let your data organise itself into a clear, accurate, and easy-to-read format that points the way to profit and success.",
     examples: [
       'Automate data entry from multiple sources for seamless data consolidation',
       'Enable cross-platform data integration for a unified view of your business',
@@ -42,7 +42,7 @@ export const serviceCategories = [
     bg: '#FFF7F0',
     heading: 'Make your projects run\nlike clockwork',
     description:
-      "Keep your team on track and your projects moving forward — and say goodbye to manual task assignments, endless status updates, and last-minute scrambles to meet deadlines. It's like having a dedicated project manager who never sleeps (but way less creepy).",
+      "Keep your team on track and your projects moving forward - and say goodbye to manual task assignments, endless status updates, and last-minute scrambles to meet deadlines. It's like having a dedicated project manager who never sleeps (but way less creepy).",
     examples: [
       'Automate task creation and assignment based on predefined rules',
       'Track time and calculate billable hours effortlessly',

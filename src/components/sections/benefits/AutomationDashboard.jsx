@@ -1,178 +1,226 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import {
-  CheckCircle2,
-  Mail, CalendarCheck, Database, Send, Bell,
-} from 'lucide-react'
-import { GearLogo } from './GearLogo'
+import { Globe, Database, Mail, Users, Star, Clock, TrendingUp, Zap, CheckCheck } from 'lucide-react'
 import CountUp from './CountUp'
 
 const STEPS = [
-  { Icon: Mail, label: 'Lead captured from website', color: '#4F6BFF', bg: '#EEF2FF' },
-  { Icon: CheckCircle2, label: 'Lead qualified & scored', color: '#22C55E', bg: '#F0FDF4' },
-  { Icon: Send, label: 'Welcome email sent', color: '#ff4f00', bg: '#FFF5F0' },
-  { Icon: Database, label: 'CRM contact created', color: '#A855F7', bg: '#FAF5FF' },
-  { Icon: CalendarCheck, label: 'Discovery call scheduled', color: '#14B8A6', bg: '#F0FDFA' },
-  { Icon: Bell, label: 'Sales team notified', color: '#F59E0B', bg: '#FFFBEB' },
+  { icon: Globe,    label: 'Lead Detected', color: '#ff4f00', glow: 'rgba(255,79,0,0.18)'   },
+  { icon: Database, label: 'CRM Created',   color: '#4F6BFF', glow: 'rgba(79,107,255,0.18)' },
+  { icon: Mail,     label: 'Email Sent',    color: '#22C55E', glow: 'rgba(34,197,94,0.18)'  },
+  { icon: Users,    label: 'Team Notified', color: '#A855F7', glow: 'rgba(168,85,247,0.18)' },
+  { icon: Star,     label: 'Deal Opened',   color: '#F59E0B', glow: 'rgba(245,158,11,0.18)' },
 ]
 
-export const STEP_MS = 700 // ms per step
+const METRICS = [
+  { icon: Clock,      end: 18,   suffix: ' hrs', label: 'saved per week',  color: '#ff4f00', bg: '#FFF5F0' },
+  { icon: TrendingUp, end: 99,   suffix: '%',    label: 'success rate',    color: '#22C55E', bg: '#F0FDF4' },
+  { icon: Zap,        end: 2400, suffix: '+',    label: 'flows automated', color: '#4F6BFF', bg: '#EEF2FF' },
+]
 
-/* ── Live automation feed card ── */
 export const AutomationDashboard = () => {
-  const [current, setCurrent] = useState(0)
-  const [done, setDone] = useState([])
+  const [active, setActive] = useState(0)
+  const [done,   setDone]   = useState([])
 
   useEffect(() => {
-    if (current < STEPS.length) {
+    if (active < STEPS.length) {
       const t = setTimeout(() => {
-        setDone(prev => [...prev, current])
-        setCurrent(prev => prev + 1)
-      }, STEP_MS)
-      return () => clearTimeout(t)
-    } else {
-      const t = setTimeout(() => { setDone([]); setCurrent(0) }, 1000)
+        setDone(p => [...p, active])
+        setActive(p => p + 1)
+      }, 1000)
       return () => clearTimeout(t)
     }
-  }, [current])
+    const t = setTimeout(() => { setDone([]); setActive(0) }, 2400)
+    return () => clearTimeout(t)
+  }, [active])
 
-  const completedCount = done.length
-  const progressPct = Math.round((completedCount / STEPS.length) * 100)
+  const currentStep  = STEPS[Math.min(active, STEPS.length - 1)]
+  const fillPct      = done.length === 0 ? 0 : (done.length / (STEPS.length - 1)) * 100
+  const dotLeftPct   = Math.min(active, STEPS.length - 1) / (STEPS.length - 1) * 100
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 32 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
-      className="w-full max-w-full sm:max-w-sm rounded-2xl p-6 bg-white"
-      style={{ boxShadow: '0 8px 48px rgba(255,79,0,0.10), 0 2px 12px rgba(0,0,0,0.06)', border: '1.5px solid #FFE8D0' }}
-    >
-      {/* Header */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2">
-          <GearLogo />
-          <div>
-            <p className="text-xs sm:text-sm font-bold text-[#111] leading-none whitespace-nowrap">Live Automation</p>
-            <p className="text-[9px] sm:text-[10px] text-[#999] mt-0.5 whitespace-nowrap">Flow Wizard Engine</p>
+    <div className="relative">
+
+      {/* Decorative blobs */}
+      <div className="absolute -top-20 -right-20 w-96 h-96 rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(255,79,0,0.06) 0%, transparent 70%)', filter: 'blur(55px)' }} />
+      <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(79,107,255,0.06) 0%, transparent 70%)', filter: 'blur(45px)' }} />
+
+      {/* Card */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        className="relative"
+      >
+
+        {/* ── Header ── */}
+        <div className="flex items-center justify-between pt-2 pb-6">
+          <div className="flex items-center gap-2.5">
+            <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full" style={{ background: '#F0FDF4' }}>
+              <motion.span
+                animate={{ opacity: [1, 0.25, 1] }}
+                transition={{ duration: 1.3, repeat: Infinity }}
+                className="w-1.5 h-1.5 rounded-full bg-green-500 shrink-0"
+              />
+              <span className="text-[10px] font-bold text-green-600 uppercase tracking-widest">Live</span>
+            </div>
+            <span className="text-[14px] font-semibold text-[#1A1A1A]">
+              Workflow automation in action
+            </span>
+          </div>
+          <div className="hidden sm:flex px-3 py-1.5 rounded-full text-[11px] font-semibold"
+            style={{ background: '#FFF5F0', color: '#ff4f00', border: '1px solid rgba(255,79,0,0.15)' }}>
+            5 steps · 0.3s avg
           </div>
         </div>
-        <span
-          className="inline-flex items-center gap-1 px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[9px] sm:text-sm font-semibold whitespace-nowrap"
-          style={{ background: '#F0FDF4', color: '#16A34A' }}
-        >
-          <motion.span
-            animate={{ opacity: [1, 0.2, 1] }}
-            transition={{ duration: 1.1, repeat: Infinity, ease: 'easeInOut' }}
-            className="inline-block w-1.5 h-1.5 rounded-full bg-green-500 shrink-0"
-          />
-          Running
-        </span>
-      </div>
 
-      {/* Overall progress bar */}
-      <div className="mb-4">
-        <div className="flex items-center justify-between mb-1.5">
-          <span className="text-[10px] font-semibold text-[#AAA] uppercase tracking-wide">Progress</span>
-          <span className="text-[10px] font-bold" style={{ color: '#ff4f00' }}>{progressPct}%</span>
-        </div>
-        <div className="h-1.5 rounded-full bg-[#F0EDE8] overflow-hidden">
-          <motion.div
-            className="h-full rounded-full"
-            style={{ background: 'linear-gradient(90deg, #ff4f00, #FC6E32)' }}
-            animate={{ width: `${progressPct}%` }}
-            transition={{ duration: 0.4, ease: 'easeOut' }}
-          />
-        </div>
-      </div>
+        {/* ── Horizontal flow ── */}
+        <div className="pb-6">
+          <div className="relative flex justify-between items-start">
 
-      {/* Steps */}
-      <div className="space-y-2">
-        {STEPS.map((s, i) => {
-          const isDone = done.includes(i)
-          const isActive = i === current && current < STEPS.length
-          const isPending = !isDone && !isActive
-          return (
+            {/* ── Connector line (sits at vertical centre of icons) ── */}
             <div
-              key={i}
-              className="relative flex items-center gap-3 px-3 py-2.5 rounded-xl overflow-hidden"
-              style={{
-                background: isActive ? s.bg : isDone ? '#FAFAFA' : '#F5F5F5',
-                transition: 'background 0.25s ease',
-              }}
+              className="absolute"
+              style={{ top: 20, left: '9%', right: '9%', height: 2, zIndex: 0 }}
             >
-              {/* Step fill progress bar (runs for STEP_MS on active) */}
-              {isActive && (
+              {/* Track */}
+              <div className="w-full h-full rounded-full" style={{ background: '#F0EDE8' }} />
+
+              {/* Fill */}
+              <motion.div
+                className="absolute inset-y-0 left-0 rounded-full"
+                style={{
+                  background: `linear-gradient(90deg, ${STEPS[0].color}, ${currentStep.color})`,
+                  transformOrigin: 'left center',
+                }}
+                animate={{ scaleX: fillPct / 100 }}
+                transition={{ duration: 0.45, ease: 'easeOut' }}
+              />
+
+              {/* Glowing travelling dot */}
+              {active < STEPS.length && (
                 <motion.div
-                  key={`bar-${i}`}
-                  className="absolute inset-0 rounded-xl pointer-events-none"
-                  style={{ background: s.color, opacity: 0.08, transformOrigin: 'left center' }}
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                  transition={{ duration: STEP_MS / 1000, ease: 'linear' }}
+                  className="absolute top-1/2 -translate-y-1/2 w-3 h-3 rounded-full"
+                  style={{
+                    background: currentStep.color,
+                    boxShadow: `0 0 10px ${currentStep.color}, 0 0 22px ${currentStep.glow}`,
+                    marginLeft: -6,
+                  }}
+                  animate={{ left: `${dotLeftPct}%` }}
+                  transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
                 />
               )}
-
-              {/* Icon */}
-              <div
-                className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0"
-                style={{
-                  background: isActive || isDone ? s.bg : '#EEEEEE',
-                  transition: 'background 0.25s ease',
-                }}
-              >
-                <s.Icon size={13} color={isActive || isDone ? s.color : '#BDBDBD'} strokeWidth={2} />
-              </div>
-
-              {/* Label */}
-              <span
-                className="text-xs font-medium flex-1"
-                style={{ color: isPending ? '#BDBDBD' : '#222', transition: 'color 0.25s ease' }}
-              >
-                {s.label}
-              </span>
-
-              {/* Status */}
-              <div className="shrink-0 w-5 h-5 flex items-center justify-center">
-                {isDone && (
-                  <motion.div
-                    initial={{ scale: 0, rotate: -45 }}
-                    animate={{ scale: 1, rotate: 0 }}
-                    transition={{ type: 'spring', stiffness: 500, damping: 20 }}
-                  >
-                    <CheckCircle2 size={16} color="#22C55E" strokeWidth={2.5} />
-                  </motion.div>
-                )}
-                {isActive && (
-                  <motion.div
-                    className="w-4 h-4 rounded-full border-2 border-t-transparent"
-                    style={{ borderColor: s.color, borderTopColor: 'transparent' }}
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 0.7, repeat: Infinity, ease: 'linear' }}
-                  />
-                )}
-                {isPending && <div className="w-1.5 h-1.5 rounded-full bg-[#E0E0E0]" />}
-              </div>
             </div>
-          )
-        })}
-      </div>
 
-      {/* Footer stats */}
-      <div className="mt-4 pt-4 border-t border-gray-100 grid grid-cols-3 gap-2 text-center">
-        {[
-          { end: 1247, label: 'Tasks / day', color: '#111', formattingFn: v => v.toLocaleString() },
-          { end: 99, label: 'Success rate', color: '#22C55E', formattingFn: v => `${v}%` },
-          { end: -80, label: 'Time saved', color: '#ff4f00', formattingFn: v => `${v}%` },
-        ].map((stat) => (
-          <div key={stat.label}>
-            <p className="text-base font-extrabold" style={{ color: stat.color, letterSpacing: '-0.02em' }}>
-              <CountUp end={stat.end} duration={1.8} formattingFn={stat.formattingFn} />
-            </p>
-            <p className="text-[9px] font-semibold text-[#AAA] uppercase tracking-wide mt-0.5">{stat.label}</p>
+            {/* ── Step nodes ── */}
+            {STEPS.map((step, i) => {
+              const isDone    = done.includes(i)
+              const isActive  = active === i
+              const isPending = !isDone && !isActive
+
+              return (
+                <motion.div
+                  key={step.label}
+                  className="relative z-10 flex flex-col items-center gap-2"
+                  style={{ width: '20%' }}
+                  initial={{ opacity: 0, y: 12 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.45, delay: 0.1 + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  {/* Icon bubble */}
+                  <div className="relative">
+                    {/* Pulse ring */}
+                    {isActive && (
+                      <motion.div
+                        className="absolute inset-0 rounded-xl sm:rounded-2xl"
+                        style={{ border: `2px solid ${step.color}` }}
+                        animate={{ scale: [1, 1.75], opacity: [0.65, 0] }}
+                        transition={{ duration: 1.1, repeat: Infinity, ease: 'easeOut' }}
+                      />
+                    )}
+
+                    <motion.div
+                      animate={{
+                        background: isDone
+                          ? step.color
+                          : isActive
+                          ? step.glow
+                          : '#F5F5F5',
+                        boxShadow: isDone
+                          ? `0 4px 16px ${step.glow}`
+                          : isActive
+                          ? `0 0 22px ${step.glow}`
+                          : 'none',
+                        opacity: isPending ? 0.4 : 1,
+                      }}
+                      transition={{ duration: 0.4 }}
+                      className="w-10 h-10 rounded-xl sm:rounded-2xl flex items-center justify-center"
+                    >
+                      {isDone ? (
+                        <motion.div
+                          initial={{ scale: 0, rotate: -20 }}
+                          animate={{ scale: 1, rotate: 0 }}
+                          transition={{ type: 'spring', stiffness: 480, damping: 22 }}
+                        >
+                          <CheckCheck size={17} color="#fff" strokeWidth={2.5} />
+                        </motion.div>
+                      ) : (
+                        <step.icon
+                          size={17}
+                          color={isActive ? step.color : '#C0C0C0'}
+                          strokeWidth={1.75}
+                        />
+                      )}
+                    </motion.div>
+                  </div>
+
+                  {/* Label */}
+                  <motion.p
+                    animate={{
+                      opacity: isPending ? 0.32 : 1,
+                      color: isDone ? step.color : '#1A1A1A',
+                    }}
+                    transition={{ duration: 0.35 }}
+                    className="text-[9px] sm:text-[11px] font-semibold text-center leading-tight"
+                    style={{ maxWidth: 68 }}
+                  >
+                    {step.label}
+                  </motion.p>
+                </motion.div>
+              )
+            })}
           </div>
-        ))}
-      </div>
-    </motion.div>
+        </div>
+
+        {/* ── Metric badges ── */}
+        <div
+          className="flex flex-wrap gap-2.5 pt-5 pb-2"
+          style={{ borderTop: '1px solid rgba(0,0,0,0.06)', marginTop: 8 }}
+        >
+          {METRICS.map(({ icon: Icon, end, suffix, label, color, bg }, i) => (
+            <motion.div
+              key={label}
+              initial={{ opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.55 + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
+              className="flex items-center gap-2 px-4 py-2 rounded-full"
+              style={{ background: bg, border: `1px solid ${color}22` }}
+            >
+              <Icon size={12} color={color} strokeWidth={2.5} />
+              <span className="text-[12px] font-extrabold" style={{ color, letterSpacing: '-0.02em' }}>
+                <CountUp end={end} duration={2} formattingFn={v => `${Math.round(v)}${suffix}`} />
+              </span>
+              <span className="text-[11px] font-medium" style={{ color: `${color}99` }}>
+                {label}
+              </span>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+    </div>
   )
 }

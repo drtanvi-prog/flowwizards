@@ -76,7 +76,7 @@ const CaseStudies = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-5 flex justify-center"
+          className="mb-3 sm:mb-4 flex justify-center"
         >
           <Chip>"Genius" automation consultants</Chip>
         </motion.div>
@@ -86,7 +86,7 @@ const CaseStudies = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.08 }}
-          className="text-[2rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold leading-[1.12]"
+          className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold leading-tight sm:leading-[1.12]"
           style={{
             letterSpacing: '-0.03em',
             color: '#1a1a1a',

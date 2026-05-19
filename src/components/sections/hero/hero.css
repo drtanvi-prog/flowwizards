@@ -1,24 +1,112 @@
-/* ── Word drop entrance ────────────────────────── */
-@keyframes hwWordDrop {
-   0%   { transform: translateY(-520px); opacity: 0; animation-timing-function: cubic-bezier(0.55, 0, 1, 0.55); }
-   30%  { opacity: 1; }
-   62%  { transform: translateY(0px);    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1); }
-   71%  { transform: translateY(22px);   animation-timing-function: cubic-bezier(0.55, 0, 0.45, 1); }
-   80%  { transform: translateY(-10px);  animation-timing-function: cubic-bezier(0.55, 0, 0.45, 1); }
-   88%  { transform: translateY(5px);    animation-timing-function: ease-out; }
-   94%  { transform: translateY(-2px); }
-   100% { transform: translateY(0px); opacity: 1; }
+/* ── Word drop entrance ────────────────────────────────────────────────────
+   Two separate keyframes so each word carries its own tilt direction.
+   Physics sequence:
+     1. Off-screen — high speed fall, tilted like a tossed card
+     2. Arrives at position — still carrying slight rotation
+     3. Overshoots — punches through the target, counter-rotation (impact torque)
+     4. Spring back — bounces upward, rotation corrects toward zero
+     5. Micro-settle — tiny secondary oscillation then perfectly straight rest
+   ──────────────────────────────────────────────────────────────────────── */
+
+/* "business" — starts tilted left (−8°), counter-rotates right on impact */
+@keyframes hwWordDropBusiness {
+   0% {
+      transform: translateY(-640px) rotate(-8deg) scale(0.94);
+      opacity: 0;
+      filter: drop-shadow(0 70px 40px rgba(0, 0, 0, 0.03));
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.55);
+   }
+   20% {
+      /* fade in while still falling — card becomes visible mid-drop */
+      opacity: 1;
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.55);
+   }
+   60% {
+      /* arrives at resting position — still carrying approach rotation */
+      transform: translateY(0px) rotate(-4deg) scale(0.97);
+      filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.22));
+      animation-timing-function: cubic-bezier(0.3, 0, 0.1, 1);
+   }
+   70% {
+      /* overshoot + impact torque flips tilt to opposite side */
+      transform: translateY(26px) rotate(4.5deg) scale(1.025);
+      filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.2));
+      animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+   }
+   80% {
+      /* spring back upward — rotation swings back past zero */
+      transform: translateY(-11px) rotate(-1.5deg) scale(0.99);
+      filter: drop-shadow(0 20px 24px rgba(0, 0, 0, 0.14));
+      animation-timing-function: ease-out;
+   }
+   88% {
+      /* micro-settle — small secondary dip */
+      transform: translateY(4px) rotate(0.4deg) scale(1.008);
+      filter: drop-shadow(0 7px 13px rgba(0, 0, 0, 0.12));
+   }
+   94% {
+      transform: translateY(-1px) rotate(0deg) scale(1);
+      filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.09));
+   }
+   100% {
+      transform: translateY(0px) rotate(0deg) scale(1);
+      opacity: 1;
+      filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.07));
+   }
 }
 
-/* opacity:0 as base style ensures words are invisible even before fill-mode:backwards kicks in */
+/* "everyone" — starts tilted right (+9°), counter-rotates left on impact */
+@keyframes hwWordDropEveryone {
+   0% {
+      transform: translateY(-640px) rotate(9deg) scale(0.94);
+      opacity: 0;
+      filter: drop-shadow(0 70px 40px rgba(0, 0, 0, 0.03));
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.55);
+   }
+   20% {
+      opacity: 1;
+      animation-timing-function: cubic-bezier(0.5, 0, 1, 0.55);
+   }
+   60% {
+      transform: translateY(0px) rotate(4deg) scale(0.97);
+      filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.22));
+      animation-timing-function: cubic-bezier(0.3, 0, 0.1, 1);
+   }
+   70% {
+      /* counter-rotation goes to the opposite (left) side */
+      transform: translateY(26px) rotate(-4.5deg) scale(1.025);
+      filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.2));
+      animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
+   }
+   80% {
+      transform: translateY(-11px) rotate(1.5deg) scale(0.99);
+      filter: drop-shadow(0 20px 24px rgba(0, 0, 0, 0.14));
+      animation-timing-function: ease-out;
+   }
+   88% {
+      transform: translateY(4px) rotate(-0.4deg) scale(1.008);
+      filter: drop-shadow(0 7px 13px rgba(0, 0, 0, 0.12));
+   }
+   94% {
+      transform: translateY(-1px) rotate(0deg) scale(1);
+      filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.09));
+   }
+   100% {
+      transform: translateY(0px) rotate(0deg) scale(1);
+      opacity: 1;
+      filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.07));
+   }
+}
+
+/* opacity:0 base ensures words are invisible before fill-mode:both kicks in */
 .hw-word-business {
    opacity: 0;
-   animation: hwWordDrop 1.25s linear 0.35s both;
+   animation: hwWordDropBusiness 1.35s linear 0.28s both;
 }
 
 .hw-word-everyone {
    opacity: 0;
-   animation: hwWordDrop 1.25s linear 0.62s both;
+   animation: hwWordDropEveryone 1.35s linear 0.55s both;
 }
 
 /* ── Box one-time appear (sweeps in from the side, stays forever) ── */
@@ -27,33 +115,39 @@
    to   { transform: scaleX(1); }
 }
 
-/* "business" box: hidden by default, sweeps from right as word lands */
+/* Both boxes fill left → right for a consistent liquid-sweep direction */
 .hw-box-business {
    transform: scaleX(0);
-   transform-origin: right center;
-   animation: hwBoxAppear 0.45s cubic-bezier(0.22, 1, 0.36, 1) 1.1s forwards;
+   transform-origin: left center;
+   animation: hwBoxAppear 0.9s cubic-bezier(0.4, 0, 0.2, 1) 1.1s forwards;
 }
 
-/* "everyone" box: hidden by default, sweeps from left as word lands */
 .hw-box-everyone {
    transform: scaleX(0);
    transform-origin: left center;
-   animation: hwBoxAppear 0.45s cubic-bezier(0.22, 1, 0.36, 1) 1.35s forwards;
+   animation: hwBoxAppear 0.9s cubic-bezier(0.4, 0, 0.2, 1) 1.35s forwards;
 }
 
-/* Text: dark during drop, flips to white exactly when box finishes filling */
-@keyframes hwTxtToWhite {
-   to { color: #ffffff; }
+/* Base text stays black — the white overlay handles the reveal */
+.hw-txt-business { color: #1A1A1A; }
+.hw-txt-everyone { color: #1A1A1A; }
+
+/* ── Liquid fill: white text revealed left → right in sync with box sweep ── */
+/* clip-path inset(top right bottom left): shrinking the right-side clip
+   exposes the text from left to right, perfectly tracking the box fill.    */
+@keyframes hwFillClip {
+   from { clip-path: inset(0 100% 0 0); }
+   to   { clip-path: inset(0 0%   0 0); }
 }
 
-.hw-txt-business {
-   color: #1A1A1A;
-   animation: hwTxtToWhite 0.01s linear 1.55s forwards;
+.hw-fill-business {
+   clip-path: inset(0 100% 0 0);
+   animation: hwFillClip 0.9s cubic-bezier(0.4, 0, 0.2, 1) 1.1s  both;
 }
 
-.hw-txt-everyone {
-   color: #1A1A1A;
-   animation: hwTxtToWhite 0.01s linear 1.8s forwards;
+.hw-fill-everyone {
+   clip-path: inset(0 100% 0 0);
+   animation: hwFillClip 0.9s cubic-bezier(0.4, 0, 0.2, 1) 1.35s both;
 }
 
 /* ── OLD looping box animations (kept for reference) ────────────── */
