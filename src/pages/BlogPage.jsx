@@ -62,7 +62,7 @@ const BlogPage = () => (
       <ServicePageHero
          badge="Blog"
          heading={<>
-            Knowledge is <SHWord>power&nbsp;—</SHWord>
+            Knowledge is <SHWord>power&nbsp;-</SHWord>
             <br className="hidden sm:block" />
             {' '}once you <SHWord>automate</SHWord> it
             <br className="hidden sm:block" />

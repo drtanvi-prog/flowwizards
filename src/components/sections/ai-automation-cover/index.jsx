@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Check } from 'lucide-react'
 import Button from '@/components/ui/Button'
+import Chip from '@/components/ui/Chip'
 
 const ease = [0.22, 1, 0.36, 1]
 
@@ -43,30 +44,30 @@ const AIAutomationCover = () => (
   <section className="bg-white px-6 sm:px-10 xl:px-16 py-16 sm:py-24">
     <div className="max-w-7xl mx-auto">
 
-      {/* Heading */}
-      <motion.h2
-        {...fadeUp(0)}
-        className="text-[1.75rem] sm:text-[2.8rem] lg:text-[3.5rem] xl:text-[4rem] font-extrabold text-[#1A1A1A] leading-[1.15] m-0 mb-8 sm:mb-10"
-      >
-        What AI Automation Services Cover
-      </motion.h2>
+      {/* Header — centered */}
+      <div className="flex flex-col items-center text-center mb-10 sm:mb-14">
+        <motion.div {...fadeUp(0)} className="mb-4">
+          <Chip>What We Cover</Chip>
+        </motion.div>
+        <motion.h2
+          {...fadeUp(0.07)}
+          className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-[#1A1A1A] leading-tight sm:leading-[1.12]"
+          style={{ letterSpacing: '-0.03em' }}
+        >
+          What AI Automation Services Cover
+        </motion.h2>
+      </div>
 
-      {/* Body copy */}
-      <motion.div {...fadeUp(0.1)} className="max-w-3xl mb-10 sm:mb-14">
-        <p className="text-[14px] sm:text-[15px] font-bold text-[#1A1A1A] m-0 mb-4">
+      {/* Body copy — centered */}
+      <motion.div {...fadeUp(0.1)} className="max-w-2xl mx-auto text-center mb-10 sm:mb-14">
+        <p className="text-[14px] sm:text-[15px] lg:text-[16px] font-bold text-[#1A1A1A] m-0 mb-3">
           Business growth starts with operations that can handle it.
         </p>
-        <p className="text-[14px] sm:text-[15px] text-[#4A4A4A] leading-relaxed m-0 mb-3">
+        <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-[#4A4A4A] leading-relaxed m-0 mb-4">
           As volume increases, teams rely on manual steps, disconnected systems, and workarounds
-          that slow execution and create gaps. Information lives in too many places. Follow-ups get
-          missed. Decisions take longer than they should.
+          that slow execution and create gaps — making it harder to scale without adding headcount.
         </p>
-        <p className="text-[14px] sm:text-[15px] text-[#4A4A4A] leading-relaxed m-0 mb-3">
-          AI automation brings structure, speed, and consistency to how work can move through your
-          business. Think efficient, automated workflows that connect systems, radically reduce
-          manual effort, and support better decisions across revenue, operations, and support.
-        </p>
-        <p className="text-[14px] sm:text-[15px] text-[#4A4A4A] leading-relaxed m-0">
+        <p className="text-[14px] sm:text-[15px] lg:text-[16px] text-[#4A4A4A] leading-relaxed m-0">
           Our work typically includes:
         </p>
       </motion.div>

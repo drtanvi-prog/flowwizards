@@ -20,6 +20,8 @@ import HubspotConsultantPage from './pages/HubspotConsultantPage';
 import PipedriveConsultantPage from './pages/PipedriveConsultantPage';
 import ZapierConsultantPage from './pages/ZapierConsultantPage'
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import MsaPage from './pages/MsaPage';
+import TermsPage from './pages/TermsPage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation()
@@ -57,6 +59,8 @@ const App = () => (
           <Route path="/pipedrive-consultant" element={<PipedriveConsultantPage />} />
           <Route path="/zapier-consultant" element={<ZapierConsultantPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/msa" element={<MsaPage />} />
+          <Route path="/terms-of-service" element={<TermsPage />} />
         </Routes>
       </Layout>
     </SmoothScroll>

@@ -33,7 +33,7 @@ const TrustedSection = ({ hideBottom = false }) => (
                      whileInView={{ opacity: 1, y: 0 }}
                      viewport={{ once: true }}
                      transition={{ duration: 0.4, delay: i * 0.06, ease }}
-                     className="h-10 sm:h-14 lg:h-16 w-auto object-contain select-none
+                     className="h-14 sm:h-18 lg:h-20 w-auto object-contain select-none
                         grayscale opacity-60 hover:grayscale-0 hover:opacity-100
                         transition-all duration-300 cursor-pointer"
                   />

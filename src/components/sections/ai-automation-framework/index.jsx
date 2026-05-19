@@ -53,15 +53,15 @@ const AIAutomationFramework = () => {
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 className="mb-3 sm:mb-4"
               >
-                <Chip className="border border-[#ff4f00]">Our AI Automation Delivery Framework</Chip>
+                <Chip>Our AI Automation Delivery Framework</Chip>
               </motion.div>
 
               <motion.h2
                 initial={{ opacity: 0, y: 18 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.65, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-                className="font-extrabold text-[#1A1A1A] leading-tight m-0 mb-2 sm:mb-3"
-                style={{ fontSize: 'clamp(1.4rem, 3vw, 2.8rem)' }}
+                className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-[#1A1A1A] leading-tight sm:leading-[1.12] m-0 mb-2 sm:mb-3"
+                style={{ letterSpacing: '-0.03em' }}
               >
                 Effective automation follows a system.
               </motion.h2>
@@ -70,8 +70,7 @@ const AIAutomationFramework = () => {
                 initial={{ opacity: 0, y: 14 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.16, ease: [0.22, 1, 0.36, 1] }}
-                className="text-[#4A4A4A] leading-relaxed m-0 max-w-2xl"
-                style={{ fontSize: 'clamp(0.72rem, 1.3vw, 0.9rem)' }}
+                className="text-[14px] sm:text-[15px] lg:text-[16px] text-[#4A4A4A] leading-relaxed m-0 max-w-2xl"
               >
                 Without one, workflows become difficult to manage and hard to scale. We follow a proven,
                 structured delivery framework designed to move from clarity to execution, while keeping

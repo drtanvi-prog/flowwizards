@@ -160,17 +160,18 @@ const AICaseStudies = () => (
     <div className="max-w-7xl mx-auto">
 
       {/* Header */}
-      <motion.div {...fadeUp(0)} className="mb-4">
-        <Chip className="border border-[#ff4f00]">AI Automation Case Studies</Chip>
-      </motion.div>
-
-      <motion.h2
-        {...fadeUp(0.07)}
-        className="font-extrabold text-[#1A1A1A] leading-[1.1] mb-14"
-        style={{ fontSize: 'clamp(2rem, 5.5vw, 3.5rem)' }}
-      >
-        Real Results of AI-Powered Growth
-      </motion.h2>
+      <div className="flex flex-col items-center text-center mb-14">
+        <motion.div {...fadeUp(0)} className="mb-4">
+          <Chip>AI Automation Case Studies</Chip>
+        </motion.div>
+        <motion.h2
+          {...fadeUp(0.07)}
+          className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-[#1A1A1A] leading-tight sm:leading-[1.12]"
+          style={{ letterSpacing: '-0.03em' }}
+        >
+          Real Results of AI-Powered Growth
+        </motion.h2>
+      </div>
 
       {/* Cards grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

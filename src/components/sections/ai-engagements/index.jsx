@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { ScanSearch, Zap, RefreshCw } from 'lucide-react'
+import Chip from '@/components/ui/Chip'
 
 const ease = [0.22, 1, 0.36, 1]
 const fadeUp = (delay = 0) => ({
@@ -77,7 +78,7 @@ const EngagementCard = ({ card, index }) => {
         {/* Best for */}
         <div className="flex gap-3 mb-4">
           <div
-            className="flex-shrink-0 w-1 rounded-full self-stretch"
+            className="shrink-0 w-1 rounded-full self-stretch"
             style={{ background: card.accent }}
           />
           <p className="text-[14px] font-semibold text-[#1a1a1a] leading-snug m-0">
@@ -106,13 +107,18 @@ const AIEngagements = () => (
   <section className="bg-white px-6 sm:px-10 xl:px-16 pt-4 pb-16 sm:pt-6 sm:pb-24">
     <div className="max-w-7xl mx-auto">
 
-      <motion.h2
-        {...fadeUp(0)}
-        className="font-extrabold text-[#1A1A1A] leading-[1.08] mb-12"
-        style={{ fontSize: 'clamp(2rem, 5.5vw, 3.75rem)', letterSpacing: '-0.03em' }}
-      >
-        We offer 3 types of engagements
-      </motion.h2>
+      <div className="flex flex-col items-center text-center mb-12">
+        <motion.div {...fadeUp(0)} className="mb-4">
+          <Chip>Engagement Models</Chip>
+        </motion.div>
+        <motion.h2
+          {...fadeUp(0.07)}
+          className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-[#1A1A1A] leading-tight sm:leading-[1.12]"
+          style={{ letterSpacing: '-0.03em' }}
+        >
+          We offer 3 types of engagements
+        </motion.h2>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {ENGAGEMENTS.map((card, i) => (

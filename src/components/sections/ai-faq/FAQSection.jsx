@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { faqData } from "../../../data/aiFaqSectionData";
 import FAQCard from "./FAQCard";
+import Chip from "@/components/ui/Chip";
 
 const ease = [0.22, 1, 0.36, 1]
 
@@ -44,21 +45,30 @@ export default function FAQSection() {
     <section className="py-10 lg:py-20 px-6">
       <div className="max-w-7xl mx-auto">
 
-        <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-12 items-start">
+        {/* Header — centered */}
+        <div className="flex flex-col items-center text-center mb-10 sm:mb-14">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7, ease }}
+            transition={{ duration: 0.5, ease }}
+            className="mb-4"
           >
-            <h2 className="text-[2rem] lg:text-[70px] leading-none font-black tracking-tight text-black m-0">
-              FAQs
-            </h2>
+            <Chip>Frequently Asked Questions</Chip>
           </motion.div>
-          <div className="hidden lg:block h-[90px]" />
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.08, ease }}
+            className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-[#1A1A1A] leading-tight sm:leading-[1.12]"
+            style={{ letterSpacing: '-0.03em' }}
+          >
+            FAQs
+          </motion.h2>
         </div>
 
-        <div className="mt-8 lg:ml-[232px] flex flex-col gap-6">
+        <div className="flex flex-col gap-6">
           {Array.from({ length: rows }).map((_, i) => (
             <motion.div
               key={i}

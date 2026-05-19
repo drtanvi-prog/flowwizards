@@ -28,24 +28,24 @@ const PremiumQuoteStack = ({
 
       {/* Optional header */}
       {(badge || heading) && (
-        <div className="mb-14">
+        <div className="mb-14 flex flex-col items-center text-center">
           {badge && (
             <motion.div {...fadeUp(0)} className="mb-4">
-              <Chip className="border border-[#ff4f00]">{badge}</Chip>
+              <Chip>{badge}</Chip>
             </motion.div>
           )}
           {heading && (
             <motion.h2
               {...fadeUp(0.07)}
-              className="font-extrabold text-[#1A1A1A] leading-[1.1]"
-              style={{ fontSize: 'clamp(2rem, 5.5vw, 3.5rem)' }}
+              className="text-[1.3rem] sm:text-[2.75rem] lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold text-[#1A1A1A] leading-tight sm:leading-[1.12]"
+              style={{ letterSpacing: '-0.03em' }}
               dangerouslySetInnerHTML={{ __html: heading }}
             />
           )}
           {subheading && (
             <motion.p
               {...fadeUp(0.13)}
-              className="text-[#666] text-sm sm:text-base mt-4"
+              className="text-[14px] sm:text-[15px] lg:text-[16px] text-[#666] leading-relaxed mt-4 max-w-2xl"
             >
               {subheading}
             </motion.p>
