@@ -18,10 +18,10 @@ const BusinessBelovedSection = () => (
                   style={{ fontSize: 'clamp(1.8rem, 4.5vw, 3.5rem)' }}
                >
                   <span className="text-[#1A1A1A] line-through decoration-[3px]">
-                     Business-friendly
+                     Just another agency
                   </span>
                   <br />
-                  <span style={{ color: '#F07020' }}>Business-beloved</span>
+                  <span style={{ color: '#F07020' }}>Your automation partner</span>
                </motion.h2>
 
                <motion.p
@@ -32,8 +32,7 @@ const BusinessBelovedSection = () => (
                   className="text-[#4A4A4A] leading-relaxed mx-auto lg:mx-0 max-w-md"
                   style={{ fontSize: 'clamp(0.88rem, 1.5vw, 1.05rem)' }}
                >
-                  Businesses of all sizes love us for making their jobs easier, more efficiently
-                  and more enjoyable. And the customer experience ain't too shabby either.
+                  From solo operators to scaling teams, our clients keep coming back because we don't just set things up and disappear — we build systems that genuinely change how work gets done.
                </motion.p>
             </div>
 

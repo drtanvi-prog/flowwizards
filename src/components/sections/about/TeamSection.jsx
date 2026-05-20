@@ -40,14 +40,13 @@ const TeamSection = () => (
             className="mb-8 sm:mb-12"
          >
             <p className="text-sm sm:text-[0.95rem] font-semibold text-[#1A1A1A] leading-relaxed mb-3">
-               Some call us Software <span style={{ color: '#F07020' }}>Magicians.</span><br />
-               Other call us Automation <span style={{ color: '#F07020' }}>Wizards.</span>
+               Automation specialists. Integration architects. <span style={{ color: '#F07020' }}>Problem solvers.</span>
             </p>
             <h2
                className="font-extrabold text-[#1A1A1A] leading-tight tracking-tight"
                style={{ fontSize: 'clamp(1.8rem, 5vw, 3.5rem)' }}
             >
-               Here are our alter egos:
+               The team behind the magic:
             </h2>
          </motion.div>
 

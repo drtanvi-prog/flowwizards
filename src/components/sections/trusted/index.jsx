@@ -42,14 +42,11 @@ const TrustedSection = ({ hideBottom = false }) => (
          </div>
       </div>
 
-      {/* ── Bottom copy + quotes ── */}
-      {!hideBottom && (
+      {/* {!hideBottom && (
          <>
-            {/* Copy section */}
             <div className="w-full border-t border-gray-100 py-10 sm:py-20 lg:py-24 px-4 sm:px-8 xl:px-16">
                <div className="max-w-360 mx-auto">
 
-                  {/* Top label */}
                   <motion.div
                      initial={{ opacity: 0, y: 10 }}
                      whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +59,6 @@ const TrustedSection = ({ hideBottom = false }) => (
 
                   <div className="flex flex-col gap-5 max-w-3xl mx-auto text-center">
 
-                     {/* Heading */}
                      <motion.h3
                         initial={{ opacity: 0, y: 24 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +71,6 @@ const TrustedSection = ({ hideBottom = false }) => (
                         You know automation is no longer a nice-to-have
                      </motion.h3>
 
-                     {/* Body */}
                      <motion.div
                         initial={{ opacity: 0, y: 16 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -97,10 +92,9 @@ const TrustedSection = ({ hideBottom = false }) => (
                </div>
             </div>
 
-            {/* Quote stack */}
-            <PremiumQuoteStack />
          </>
-      )}
+      )} */}
+      <PremiumQuoteStack />
 
    </section>
 )

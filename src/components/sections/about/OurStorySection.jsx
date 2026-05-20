@@ -37,7 +37,7 @@ const OurStorySection = () => (
                   className="mb-5 sm:mb-7"
                >
                   <Chip style={{ background: 'rgba(255,255,255,0.07)', color: 'rgba(255,255,255,0.55)', border: '1px solid rgba(255,255,255,0.12)' }}>
-                     Record scratch
+                     Our story
                   </Chip>
                </motion.div>
 
@@ -49,9 +49,9 @@ const OurStorySection = () => (
                   className="font-extrabold leading-[1.08] tracking-tight"
                   style={{ fontSize: 'clamp(1.8rem, 5vw, 3.8rem)', letterSpacing: '-0.03em' }}
                >
-                  <span style={{ color: '#fff' }}>You're probably</span>
+                  <span style={{ color: '#fff' }}>Built by operators,</span>
                   <br />
-                  <span style={{ color: '#E85C41' }}>wondering how we<br className="hidden sm:block" /> got here.</span>
+                  <span style={{ color: '#E85C41' }}>for teams who are<br className="hidden sm:block" /> done doing it manually.</span>
                </motion.h2>
             </div>
 
@@ -65,10 +65,7 @@ const OurStorySection = () => (
                   className="leading-relaxed text-sm sm:text-base"
                   style={{ color: 'rgba(255,255,255,0.72)' }}
                >
-                  Like most businesses, Flow Wizards got its start out of necessity. A decade ago,
-                  our founder was the Director of Operations for an NYC-based agency. Frustrated by
-                  how tedious and time-consuming so many necessary business tasks were, he had this
-                  nagging feeling that there had to be a better way.
+                  Flow Wizards was born from a simple frustration: too much time spent on work that software should be doing. Our founders spent years inside operations-heavy businesses watching talented people waste hours on repetitive, manual tasks — and decided to fix that.
                </motion.p>
 
                <motion.p
@@ -79,13 +76,7 @@ const OurStorySection = () => (
                   className="leading-relaxed text-sm sm:text-base"
                   style={{ color: 'rgba(255,255,255,0.72)' }}
                >
-                  That's when he discovered the burgeoning world of SaaS tools that helped the
-                  company operate more efficiently. Tools like Zapier, Keap (formerly Infusionsoft),
-                  and Pipedrive — it was love at first click. Originally launched as a one-man side
-                  project, Flow Wizards now employs 15+ experts (and counting) helping hundreds of
-                  companies optimize their business processes and workflows by choosing, implementing
-                  and automating the right software for their business. In a world that's only getting
-                  more fast-paced and tech-reliant, we provide much-needed clarity, efficiency, and simplicity.
+                  What started as a small team helping clients untangle their tool stacks has grown into a full automation practice. Today, Flow Wizards works with businesses across industries — connecting their tools, eliminating the manual steps in between, and building the kind of systems that let teams focus on the work that actually matters. We're not a software company. We're the people who make your software work together.
                </motion.p>
             </div>
 

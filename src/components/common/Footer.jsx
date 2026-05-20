@@ -347,9 +347,9 @@ const Footer = () => {
                       lineHeight: 1.75,
                     }}
                   >
-                    300 Kent Avenue #9
+                    31500 Grape St Ste 3-118
                     <br />
-                    Brooklyn, NY 11249
+                    Lake Elsinore, CA 92532
                     <br />
                     United States
                   </span>
@@ -377,7 +377,7 @@ const Footer = () => {
                 <div className="flex items-center gap-3">
                   <Mail size={13} style={{ color: "#F07020", flexShrink: 0 }} />
                   <a
-                    href="mailto:hello@flowwizards.com"
+                    href="mailto:sales@tuesdaywizards.com"
                     style={{
                       fontSize: "0.8rem",
                       color: "rgba(255,255,255,0.5)",
@@ -388,7 +388,7 @@ const Footer = () => {
                     }
                     className="transition-colors duration-200"
                   >
-                    hello@flowwizards.com
+                    sales@tuesdaywizards.com
                   </a>
                 </div>
               </div>

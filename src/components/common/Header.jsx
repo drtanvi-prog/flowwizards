@@ -14,10 +14,10 @@ import Navbar from "./Navbar";
 import Button from "../ui/Button";
 import logo from "../../assets/logo.png";
 import logoAirtable from "@assets/software/s8.png";
-import logoJotform from "@assets/software/s4.webp";
+import logoJotform from "@assets/jot-icon.png";
 import logoHubSpot from "@assets/software/s2.svg";
-import logoPipedrive from "@assets/software/s6.webp";
-import logoZapier from "@assets/software/s1.webp";
+import logoPipedrive from "@assets/pipedrive-icon.png";
+import logoZapier from "@assets/zapier-icon.svg";
 
 const dropdownData = {
   services: [
@@ -218,7 +218,7 @@ const Header = () => {
                             ${active ? "bg-[#fff3ee]" : "group-hover:bg-[#fff3ee]"}`}
                       >
                         <div
-                          className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-all duration-200 ${active ? "bg-[#ff4f00]" : "bg-[#f5f5f5] group-hover:bg-[#ff4f00]/10"}`}
+                          className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 transition-all duration-200 ${active ? "bg-[#f5f5f5]" : "bg-[#f5f5f5] group-hover:bg-[#ff4f00]/10"}`}
                         >
                           <img
                             src={item.logo}

@@ -9,39 +9,46 @@ import PremiumQuoteStack from '@/components/sections/quotes'
 
 const AIRTABLE_QUOTES = [
    {
-      text: 'The Flow Wizards team exceeded our expectations with their support for setting up an Airtable database and integrating it with Zapier and Salesforce. Their attention to detail and commitment to security protocols set them apart. My clients appreciated the seamless process, and I couldn\'t have asked for a more dedicated team.',
-      author: 'D. Braunstein, Founder, Nexus Global',
+      text: 'Our Airtable setup finally works the way our business does',
+      body: 'We had a messy database that nobody trusted. Flow Wizards rebuilt it from scratch, integrated it with Zapier and Salesforce, and now our whole team actually uses it. The security protocols and clean structure gave us confidence we never had before.',
       bg: '#eef5e0',
       border: '#b5c86a',
       quoteColor: '#7a8c00',
    },
    {
-      text: 'We were nervous about outsourcing our Shopify and Airtable integrations, but Flow Wizards made it a breeze. Their team took care of everything securely, and the results exceeded our expectations. They really listened to our needs and delivered a solution that works seamlessly.',
-      author: 'Lipa Pollak, Owner, Legend Cookware',
+      text: 'We were nervous about outsourcing - we shouldn\'t have been',
+      body: 'Handing over access to our Shopify and Airtable felt risky at first. Flow Wizards handled everything securely, kept us in the loop at every step, and delivered something that works better than anything we could have built ourselves.',
       bg: '#ffedef',
       border: '#ff9aaa',
       quoteColor: '#E84040',
    },
    {
-      text: 'Flow Wizards made our Airtable setup for project management smooth and hassle-free. They really understood how we work and created a system that saves us time every day. Their attention to detail and the ease of transition for our team were impressive. Highly recommend their services!',
-      author: 'David Botvinnikov, Managing Director, Olivera Health',
+      text: 'Our team actually adopted it - that\'s the real win',
+      body: 'We\'ve had systems built before that nobody used. Flow Wizards took the time to understand how we actually work and built around that. The transition was smooth, training was minimal, and adoption was instant.',
       bg: '#fff5ef',
       border: '#ffb380',
       quoteColor: '#f07020',
    },
    {
-      text: 'Flow Wizards provided top-notch service from start to finish on our Airtable setup. Their team was professional, responsive, and made sure every detail aligned with our goals.',
-      author: 'M. Landau, Founder, HeartWorks',
+      text: 'Professional, fast, and they didn\'t cut corners',
+      body: 'From the first call to the final handoff, everything was handled with care. Every detail aligned with what we asked for - and then some. They flagged things we hadn\'t even thought about and fixed them proactively.',
       bg: '#eef5e0',
       border: '#b5c86a',
       quoteColor: '#7a8c00',
    },
    {
-      text: 'Flow Wizards was extremely helpful! I don\'t know how they do their magic, but they were fast and didn\'t stop until they had everything working just right. I couldn\'t be happier.',
-      author: 'Michael Hyatt, CEO & Founder, Full Focus',
+      text: 'I don\'t know how they do it, but it just works',
+      body: 'Our Airtable was a nightmare - custom fields everywhere, broken automations, duplicate records. Flow Wizards untangled it all and delivered something clean. They didn\'t stop until every edge case was handled.',
       bg: '#fff0f0',
       border: '#ff9aaa',
       quoteColor: '#E84040',
+   },
+   {
+      text: 'Cut our reporting time from hours to minutes',
+      body: 'We were pulling data manually from three different places every week to build one report. Now it all flows into Airtable automatically and the report builds itself. That alone was worth the entire engagement.',
+      bg: '#fff5ef',
+      border: '#ffb380',
+      quoteColor: '#f07020',
    },
 ]
 

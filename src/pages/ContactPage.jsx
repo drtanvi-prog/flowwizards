@@ -22,9 +22,9 @@ const ContactPage = () => {
    return (
       <>
          <ServicePageHero
-            badge="Contact Us"
-            heading={<>Wondering if we can <SHWord>help?</SHWord></>}
-            body="You can spend the next 3 days wondering, or you could have your automation problems long gone by then. Just get in touch to find out."
+            badge="Get In Touch"
+            heading={<>Got a process that needs <SHWord>fixing?</SHWord></>}
+            body="Tell us what's slowing you down. We'll take a look, ask the right questions, and come back with a clear path forward - no fluff, no hard sell."
          />
 
          <section className="bg-[#FEF6F5] pb-14 sm:pb-16 lg:pb-20">
@@ -59,16 +59,15 @@ const ContactPage = () => {
                         {sent ? (
                            <div className="flex flex-col items-center text-center py-10 gap-4">
                               <CheckCircle2 size={52} color="#22C55E" strokeWidth={1.5} />
-                              <h3 className="font-extrabold text-xl text-[#1A1A1A]">Message sent!</h3>
+                              <h3 className="font-extrabold text-xl text-[#1A1A1A]">We've got your message.</h3>
                               <p className="text-[#444] text-sm leading-relaxed max-w-xs">
-                                 We read every message personally and will get back to you within 24 hours.
+                                 Someone from our team will review it and follow up within one business day.
                               </p>
                            </div>
                         ) : (
                            <>
                               <p className="text-[0.85rem] text-[#333] font-medium mb-6 leading-relaxed">
-                                 Attach a 4-minute Loom video walking us through your issue, and
-                                 we'll let you know if we can take care of it — at no cost or commitment.
+                                 Drop us a message with what you're working on. We respond to every inquiry personally - usually within one business day.
                               </p>
 
                               <form onSubmit={handleSubmit} className="flex flex-col gap-3.5">
@@ -94,7 +93,7 @@ const ContactPage = () => {
                                     value={form.issue}
                                     onChange={handleChange}
                                     required
-                                    placeholder="Describe the issue you're facing"
+                                    placeholder="What are you working on or trying to solve?"
                                     rows={4}
                                     className={`${inputCls} resize-none`}
                                  />
@@ -102,7 +101,7 @@ const ContactPage = () => {
                                     name="loom"
                                     value={form.loom}
                                     onChange={handleChange}
-                                    placeholder="Paste your Loom video link here (optional)"
+                                    placeholder="Link to any relevant doc, tool, or resource (optional)"
                                     className={inputCls}
                                  />
                                  <Button
@@ -111,7 +110,7 @@ const ContactPage = () => {
                                     size="md"
                                     className="mt-1 w-full py-3.5!"
                                  >
-                                    Get in touch
+                                    Send message
                                  </Button>
                               </form>
                            </>

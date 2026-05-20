@@ -5,7 +5,7 @@ import { AutomationDashboard } from './AutomationDashboard'
 
 const CHECKS = [
   { title: 'Custom strategy',       desc: 'Automation tailored to your exact business processes and goals.' },
-  { title: 'Seamless integration',  desc: 'Works with the tools you already use — no ripping and replacing.' },
+  { title: 'Seamless integration',  desc: 'Works with the tools you already use - no ripping and replacing.' },
   { title: 'Ongoing support',       desc: 'Dedicated account management, optimisation & continuous improvement.' },
 ]
 

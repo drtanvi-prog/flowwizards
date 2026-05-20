@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import Button from '@/components/ui/Button'
 
 const ease = [0.22, 1, 0.36, 1]
-const fadeUp = (delay = 0, y = 28) => ({
-  initial: { opacity: 0, y },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.72, delay, ease },
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  transition: { duration: 0.55, delay, ease },
 })
 
 export const SHWord = ({ children }) => (
@@ -31,7 +31,7 @@ const ServicePageHero = ({ badge, heading, body, ctaText, centered }) => (
 
       {/* Heading */}
       <motion.h1
-        {...fadeUp(0.15, 36)}
+        {...fadeUp(0.15)}
         className="m-0 font-extrabold text-[#1A1A1A] tracking-tight leading-[1.6] sm:leading-[1.4] text-[1.4rem] sm:text-[2rem] lg:text-[3.2rem] xl:text-[4.5rem]"
       >
         {heading}
@@ -39,7 +39,7 @@ const ServicePageHero = ({ badge, heading, body, ctaText, centered }) => (
 
       {/* Body */}
       <motion.p
-        {...fadeUp(0.28, 16)}
+        {...fadeUp(0.28)}
         className="m-0 text-[#4A4A4A] leading-relaxed mt-5 sm:mt-8"
         style={{ fontSize: 'clamp(0.8rem, 2.5vw, 0.95rem)', maxWidth: '560px' }}
       >

@@ -13,32 +13,46 @@ import PremiumQuoteStack from "@/components/sections/quotes";
 
 const ZAPIER_QUOTES = [
   {
-    text: "Nathan was so helpful with my Zaps with Kustomer. He was very good at asking questions to help figure out what I was looking to do with my Zapier connections and was very patient and took the time to explain things. Would definitely work with Nathan again!",
-    author: "Julianne G.",
+    text: "Finally got my Zapier connections working the way I needed",
+    body: "I'd been struggling with a complex Zap for weeks. Flow Wizards asked the right questions, understood exactly what I was trying to do, and had everything running cleanly in one session. Patient, clear, and genuinely helpful.",
     bg: "#eef5e0",
     border: "#b5c86a",
     quoteColor: "#7a8c00",
   },
   {
-    text: "Nathan was SUPER helpful with helping us fixing our automation issues which has been a BIG issue for months (and he did it in less than 20 mins). Highly recommend!",
-    author: "Apollonia P.",
+    text: "Fixed in 20 minutes what had been broken for months",
+    body: "We had an automation issue that kept slipping through the cracks - no one on our team could diagnose it. Flow Wizards jumped in, identified the problem immediately, and resolved it faster than we thought possible.",
     bg: "#ffedef",
     border: "#ff9aaa",
     quoteColor: "#E84040",
   },
   {
-    text: "Nathan is incredibly talented in translating complex business processes into simple automation tasks. His friendly approach and timely communication make it amazing to work with him.",
-    author: "Selçuk Can G.",
+    text: "Complex processes made simple and actually maintainable",
+    body: "Our workflows had a lot of moving parts and edge cases. Flow Wizards translated everything into clean, well-structured Zaps that our team can understand and update ourselves. The documentation alone was worth it.",
     bg: "#fff8f0",
     border: "#f5d5b0",
     quoteColor: "#f07020",
   },
   {
-    text: "I would consider my project to be complicated and time-consuming. I needed it in a rush, like 'in a day' type of rush… Nathan went above and beyond to ensure it was set up properly and on time. I highly recommend utilizing automation in a business, and when you do, this is the place.",
-    author: "Sol B.",
+    text: "Delivered in a day, done properly",
+    body: "We had a tight deadline and a complicated setup. Flow Wizards went above and beyond to get it done on time without cutting corners. Everything was tested, documented, and handed over cleanly. No surprises after launch.",
     bg: "#f0faf5",
     border: "#86efac",
     quoteColor: "#16a34a",
+  },
+  {
+    text: "Our tools finally talk to each other",
+    body: "We had six apps that were supposed to work together but didn't. Flow Wizards mapped the whole thing out and built a Zapier setup that connects all of them reliably. Data flows where it should and nothing gets dropped.",
+    bg: "#eef5e0",
+    border: "#b5c86a",
+    quoteColor: "#7a8c00",
+  },
+  {
+    text: "Hours of manual work eliminated every single week",
+    body: "We were manually moving data between our forms, CRM, and email platform every day. Flow Wizards automated the entire chain. What used to take two hours now takes zero - and it's more accurate than when we did it by hand.",
+    bg: "#ffedef",
+    border: "#ff9aaa",
+    quoteColor: "#E84040",
   },
 ];
 

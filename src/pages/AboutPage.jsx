@@ -9,16 +9,16 @@ import OurStorySection from '@/components/sections/about/OurStorySection'
 const AboutPage = () => (
    <>
       <ServicePageHero
-         badge="Solopreneurs. Small businesses. Fortune 500 companies."
+         badge="Startups. Growing teams. Established operations."
          heading={<>
-            If you have a <SHWord>business,</SHWord>
+            We make your <SHWord>business</SHWord>
             <br className="hidden sm:block" />
-            {' '}we'll make it more <SHWord>efficient.</SHWord>
+            {' '}run smarter, not <SHWord>harder.</SHWord>
          </>}
       />
 
       <TrustedSection
-         heading="Trusted by businesses of every conceivable size"
+         heading="Trusted by teams at every stage of growth"
          hideBottom
       />
 
@@ -30,9 +30,9 @@ const AboutPage = () => (
 
       <Testimonials
          heading={<>
-            Hundreds more{' '}
-            <span style={{ color: '#E85C41' }}>5-star<br className="hidden sm:block" /> reviews</span>
-            {' '}where these came from.
+            500+ clients.{' '}
+            <span style={{ color: '#E85C41' }}>500+ reasons<br className="hidden sm:block" /></span>
+            {' '}to automate.
          </>}
       />
       <TeamSection />

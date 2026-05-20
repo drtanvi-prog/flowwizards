@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import logoZapier from '@assets/software/s2.svg';
 import logoTypespot from '@assets/software/s3.webp';
-import logoJotform from '@assets/software/s4.webp';
+import logoJotform from '@assets/software/s4.png';
 import logoAirtable from '@assets/software/s5.webp';
 import logoPipedrive from '@assets/software/s6.webp';
 import logoKeep from '@assets/software/s7.webp';
