@@ -284,14 +284,31 @@ const TermsPage = () => (
           </P>
 
           <H2>Contact Information</H2>
-          <P>
-            Flow Wizards, a Company of Tuesday Wizard<br />
-            Diddly LLC<br />
-            31500 Grape St Ste 3-118<br />
-            Lake Elsinore, CA 92532<br /><br />
-            Website: https://flowwizards.io<br />
-            Email: sales@tuesdaywizards.com
-          </P>
+          <div className="mt-4 rounded-xl border border-gray-200 bg-gray-50 p-6 space-y-4">
+            <div>
+              <p className="text-[#1A1A1A] font-semibold text-sm">Flow Wizards, a Company of Tuesday Wizard</p>
+              <p className="text-[#666] text-sm">Diddly LLC</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <svg className="w-4 h-4 text-[#666] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+              <a
+                href="https://maps.google.com/?q=31500+Grape+St+Ste+3-118+Lake+Elsinore+CA+92532"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#444] hover:text-[#1A1A1A] transition-colors text-sm leading-relaxed"
+              >
+                31500 Grape St Ste 3-118<br />Lake Elsinore, CA 92532
+              </a>
+            </div>
+            <div className="flex items-center gap-3">
+              <svg className="w-4 h-4 text-[#666] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+              <a href="https://flowwizards.io" target="_blank" rel="noopener noreferrer" className="text-[#444] hover:text-[#1A1A1A] transition-colors text-sm">flowwizards.io</a>
+            </div>
+            <div className="flex items-center gap-3">
+              <svg className="w-4 h-4 text-[#666] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+              <a href="mailto:sales@tuesdaywizards.com" className="text-[#444] hover:text-[#1A1A1A] transition-colors text-sm">sales@tuesdaywizards.com</a>
+            </div>
+          </div>
           <P className="text-[#888]">© 2026 Flow Wizards, a Company of Tuesday Wizard. All Rights Reserved.</P>
         </motion.div>
       </div>
