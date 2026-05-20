@@ -60,7 +60,7 @@ const Hero = () => {
         <motion.div {...fadeUp(0.05)}>
           <span className="inline-flex items-center gap-2 bg-white border border-[#ff4f00]/20 rounded-md px-3 py-1.5 sm:px-4 sm:py-2 shadow-sm">
             <span className="text-[10px] sm:text-[12px] lg:text-[13px] font-semibold text-[#1A1A1A] leading-snug">
-              Business Process &amp; Workflow Automation Consultants
+              Powered by Tuesday Wizard
             </span>
           </span>
         </motion.div>

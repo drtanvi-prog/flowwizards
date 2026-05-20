@@ -165,7 +165,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Flow Wizards"
-              className="h-10 xl:h-14 w-auto object-contain"
+              className="h-10 xl:h-18 w-auto object-contain"
             />
           </Link>
 

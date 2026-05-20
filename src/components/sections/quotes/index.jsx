@@ -195,7 +195,7 @@ const PremiumQuoteStack = ({
   const cards = quotes.slice(0, CARD_CONFIG.length)
 
   return (
-    <section style={{ background: '#fafaf9', overflow: 'hidden', paddingTop: 'clamp(4rem, 7vw, 6rem)', paddingBottom: 'clamp(4rem, 7vw, 6rem)' }}>
+    <section style={{ background: '#fafaf9', overflow: 'hidden', paddingTop: 'clamp(4rem, 7vw, 6rem)'}}>
       <div className={`${containerClass} mx-auto`}>
 
         {/* Header */}

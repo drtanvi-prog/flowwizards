@@ -59,8 +59,7 @@ const BenefitsSection = ({ image }) => {
             className="text-[14px] sm:text-[15px] lg:text-[16px] leading-relaxed mt-5 max-w-xl"
             style={{ color: '#6B6B6B' }}
           >
-            We do so much more than automate your processes - we understand your big picture,
-            strategise the best solutions, and implement them seamlessly so you move faster than ever.
+            We do more than automate workflows. We analyze your business, understand your goals, design scalable solutions, and implement seamless automation systems that help you save time, boost efficiency, and accelerate growth.
           </motion.p>
         </div>
 
