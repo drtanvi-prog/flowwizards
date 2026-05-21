@@ -50,7 +50,7 @@ export const PLANS = [
     },
     price: "$1,950",
     pricePrefix: "Hourly Packages start at",
-    cta: "Book a 20 minute discovery Session",
+    cta: "Book a 30 minute discovery Session",
   },
   {
     name: "Fractional CAO (Unlimited Automation)",

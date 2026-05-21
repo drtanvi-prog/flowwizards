@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { openCalendly } from '@/utils/calendly';
 import {
   Sun,
   UserCog,
@@ -181,7 +182,7 @@ const Header = () => {
           {/* Right side — CTA + mobile hamburger */}
           <div className="flex items-center relative z-10">
             <div className="hidden xl:block">
-              <Button variant="primary" size="md" className="text-sm! px-5! py-3!">
+              <Button variant="primary" size="md" className="text-sm! px-5! py-3!" onClick={openCalendly}>
                 Schedule a complimentary call
               </Button>
             </div>
@@ -374,7 +375,7 @@ const Header = () => {
                 );
               })}
               <div className="pt-4 pb-8">
-                <Button variant="primary" size="md" className="w-full! text-sm!">
+                <Button variant="primary" size="md" className="w-full! text-sm!" onClick={openCalendly}>
                   Schedule a complimentary call
                 </Button>
               </div>

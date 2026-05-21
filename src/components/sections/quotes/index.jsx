@@ -1,4 +1,5 @@
 import { useRef, useCallback, useEffect } from 'react'
+import { openCalendly } from '@/utils/calendly'
 import { motion, useMotionValue, useSpring } from 'framer-motion'
 import { QUOTES } from '../../../data/quotesData'
 import Chip from '@/components/ui/Chip'
@@ -311,7 +312,7 @@ const PremiumQuoteStack = ({
             style={{ marginTop: '2rem', textAlign: 'center' }}
           >
             <p style={{ fontWeight: 700, color: '#18181b', fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)', marginBottom: '1rem' }}>{ctaHeading}</p>
-            <a href={ctaHref} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem', fontWeight: 600, color: '#E85C41', textDecoration: 'none' }}>
+            <a onClick={openCalendly} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem', fontWeight: 600, color: '#E85C41', textDecoration: 'none', cursor: 'pointer' }}>
               {ctaLabel}
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />

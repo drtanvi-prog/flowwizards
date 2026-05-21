@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import Button from '@/components/ui/Button'
+import { openCalendly } from '@/utils/calendly'
 
 const FractionalSupportSection = () => {
    return (
@@ -31,12 +32,13 @@ const FractionalSupportSection = () => {
                className="bg-[#181818] bg-opacity-90 rounded-2xl shadow-xl p-6 md:p-10 w-full max-w-xl border border-orange-900/20 mx-auto"
             >
                <p className="text-white text-base md:text-lg mb-6">
-                  Hey, we get it. Maybe your automation wishlist is limited in scope—or you want to get your feet wet before diving in headfirst. We've got your back with our <a href="#" className="underline text-orange-400 hover:text-orange-500 transition">hourly packages</a>. You'll get the same high-level automation support from our team of experts, just with a cap on the hours.
+                  Hey, we get it. Maybe your automation wishlist is limited in scope-or you want to get your feet wet before diving in headfirst. We've got your back with our hourly packages. You'll get the same high-level automation support from our team of experts, just with a cap on the hours.
                </p>
                <Button
                   variant="primary"
                   size="md"
                   className="text-base px-6 py-2 font-semibold bg-orange-500 hover:bg-orange-600 border-0"
+                  onClick={openCalendly}
                >
                   Explore Other Packages
                </Button>

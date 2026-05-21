@@ -7,8 +7,9 @@ import CustomIntegrationsSection from '@/components/sections/workflow-automation
 import AllToolsSection from '@/components/sections/workflow-automation/AllToolsSection';
 import TeamExamplesSection from '@/components/sections/workflow-automation/TeamExamplesSection';
 import AICTABanner from '@/components/sections/ai-cta-banner';
-import { ToolsWeAutomate, WorkflowFAQ } from '@/components/sections/workflow-automation/WorkflowToolsAndFAQ';
+import { ToolsWeAutomate } from '@/components/sections/workflow-automation/WorkflowToolsAndFAQ';
 import WorkflowIncludedSection from '@/components/sections/workflow-automation/WorkflowIncludedSection';
+import TwoColumnFAQ from '@/components/sections/faq/TwoColumnFAQ';
 
 const steps = [
   {
@@ -68,7 +69,18 @@ const WorkflowAutomationPage = () => (
       steps={steps}
     />
     <ToolsWeAutomate />
-    <WorkflowFAQ />
+    <TwoColumnFAQ
+      chip="FAQ"
+      heading="Workflow Automation Services FAQ"
+      faqs={[
+        { q: "What types of workflows can you automate?", a: "We can automate sales, marketing, support, operations, and more—across nearly any business tool or platform." },
+        { q: "Which tools do you work with?", a: "We work with 100+ leading SaaS tools, including Zapier, HubSpot, Airtable, n8n, and more." },
+        { q: "Do you offer ongoing support?", a: "Yes! We provide ongoing support, optimization, and maintenance for all automations we build." },
+        { q: "How fast can you start?", a: "We can typically start within a week, depending on your requirements." },
+        { q: "How do you handle security and access?", a: "We use secure, best-practice methods for all integrations and never store your credentials." },
+        { q: "What's the difference between workflow automation and BPA?", a: "Workflow automation focuses on automating specific processes, while BPA (Business Process Automation) is a broader approach to automating entire business operations." },
+      ]}
+    />
     <AllToolsSection />
     <CustomIntegrationsSection />
     <TeamExamplesSection />

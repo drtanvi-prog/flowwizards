@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { openCalendly } from '@/utils/calendly'
 import Chip from '../../ui/Chip'
 
 const CARD_COLORS = [
@@ -121,8 +122,8 @@ const ReviewsSection = ({
             {ctaHeading}
           </p>
           <a
-            href={ctaHref}
-            className="inline-flex items-center gap-2 text-sm font-semibold text-[#1a1a1a] hover:gap-3 transition-all duration-200"
+            onClick={openCalendly}
+            className="inline-flex items-center gap-2 text-sm font-semibold text-[#1a1a1a] hover:gap-3 transition-all duration-200 cursor-pointer"
           >
             {ctaLabel}
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

@@ -53,15 +53,14 @@ const TEAM_CATEGORIES = [
 ];
 
 
-function TeamFAQCard({ name, desc, isOpen, isMirror, onClick, color }) {
-   const expanded = isOpen || isMirror;
+function TeamFAQCard({ name, desc, isOpen, onClick, color }) {
    return (
       <div
-         className={`h-full rounded-2xl border p-7 cursor-pointer transition-colors duration-300 ${color} bg-[#181212] border-[#ff4f00]`}
+         className={`rounded-2xl border p-7 cursor-pointer transition-colors duration-300 ${color} bg-[#181212] border-[#ff4f00] w-full`}
          onClick={onClick}
       >
          <div className="flex items-start justify-between gap-5">
-            <h3 className="text-lgmd:text-[20px] leading-[1.35] font-bold text-white max-w-[85%]">
+            <h3 className="text-lg md:text-[20px] leading-[1.35] font-bold text-white max-w-[85%]">
                {name}
             </h3>
             <div
@@ -71,17 +70,17 @@ function TeamFAQCard({ name, desc, isOpen, isMirror, onClick, color }) {
             </div>
          </div>
          <div
-            className={`grid ${expanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+            className={`grid ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
             style={{
                transitionProperty: "grid-template-rows, margin-top",
                transitionDuration: "0.38s",
                transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)",
-               marginTop: expanded ? 20 : 0,
+               marginTop: isOpen ? 20 : 0,
             }}
          >
             <div className="overflow-hidden">
                <ul className="text-[15px] leading-[1.7] text-[#ffe3d6] space-y-1">
-                  {isOpen && desc.map((d, i) => (
+                  {desc.map((d, i) => (
                      <li key={i}>{d}</li>
                   ))}
                </ul>
@@ -128,35 +127,33 @@ export default function TeamExamplesSection() {
                From growth to operations to scale,<br />
                workflow automation <span className="text-[#ff4f00] font-bold">unleashes</span> the full power of your operations
             </p>
-            <div className="flex flex-col gap-6">
-               {Array.from({ length: rows }).map((_, i) => (
-                  <div key={i} className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-                     {leftTeams[i] ? (
-                        <TeamFAQCard
-                           name={leftTeams[i].name}
-                           desc={leftTeams[i].desc}
-                           isOpen={activeRow === i && activeSide === "left"}
-                           isMirror={activeRow === i && activeSide === "right"}
-                           onClick={() => handleClick(i, "left")}
-                           color=""
-                        />
-                     ) : (
-                        <div />
-                     )}
-                     {rightTeams[i] ? (
-                        <TeamFAQCard
-                           name={rightTeams[i].name}
-                           desc={rightTeams[i].desc}
-                           isOpen={activeRow === i && activeSide === "right"}
-                           isMirror={activeRow === i && activeSide === "left"}
-                           onClick={() => handleClick(i, "right")}
-                           color=""
-                        />
-                     ) : (
-                        <div />
-                     )}
-                  </div>
-               ))}
+            <div className="flex flex-col md:flex-row gap-6 items-start">
+               {/* Left column */}
+               <div className="flex flex-col gap-6 flex-1">
+                  {leftTeams.map((team, i) => (
+                     <TeamFAQCard
+                        key={team.name}
+                        name={team.name}
+                        desc={team.desc}
+                        isOpen={activeRow === i && activeSide === "left"}
+                        onClick={() => handleClick(i, "left")}
+                        color=""
+                     />
+                  ))}
+               </div>
+               {/* Right column */}
+               <div className="flex flex-col gap-6 flex-1">
+                  {rightTeams.map((team, i) => (
+                     <TeamFAQCard
+                        key={team.name}
+                        name={team.name}
+                        desc={team.desc}
+                        isOpen={activeRow === i && activeSide === "right"}
+                        onClick={() => handleClick(i, "right")}
+                        color=""
+                     />
+                  ))}
+               </div>
             </div>
          </div>
       </section>

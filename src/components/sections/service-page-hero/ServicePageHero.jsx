@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { openCalendly } from '@/utils/calendly'
 import Button from '@/components/ui/Button'
 
 const ease = [0.22, 1, 0.36, 1]
@@ -51,6 +52,7 @@ const ServicePageHero = ({ badge, heading, body, ctaText, centered }) => (
         <motion.div {...fadeUp(0.38, 14)} className="mt-8 sm:mt-12 flex md:block items-center justify-center">
           <Button variant="secondary"
             size="md"
+            onClick={openCalendly}
             className="
             sm:px-5! sm:py-3!
             text-[11px]! sm:text-sm!

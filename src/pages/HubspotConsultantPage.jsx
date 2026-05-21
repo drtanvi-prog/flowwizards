@@ -243,6 +243,7 @@ const HeroSection = () => (
           variant="secondary"
           size="md"
           className="text-[11px]! sm:text-sm! px-3! py-2! sm:px-5! sm:py-3!"
+          onClick={openCalendly}
         >
           Talk with a HubSpot specialist
         </Button>
@@ -461,6 +462,7 @@ const MigrationSection = () => (
               variant="secondary"
               size="md"
               className="text-[11px]! sm:text-sm! px-3! py-2! sm:px-5! sm:py-3!"
+              onClick={openCalendly}
             >
               Start your migration
             </Button>

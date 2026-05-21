@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
+import { openCalendly } from '@/utils/calendly';
 // import { Cursor } from "./HeroCursors";
 import { HWord } from "./HeroHeading";
 import "./hero.css";
@@ -107,6 +108,7 @@ const Hero = () => {
             variant="secondary"
             size="md"
             className="px-5! py-2.5! sm:px-6! sm:py-3.5! text-[13px]! sm:text-[14px]! font-semibold!"
+            onClick={openCalendly}
           >
             Schedule a free discovery session
           </Button>
