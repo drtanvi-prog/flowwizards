@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Check, X } from "lucide-react";
+import { openCalendly } from '@/utils/calendly';
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import Chip from "@/components/ui/Chip";
@@ -77,7 +78,7 @@ const PIPEDRIVE_STEPS = [
     desc: <>
       Pipedrive marketing automation that works tirelessly behind the scenes, nurturing leads, streamlining processes, and boosting your close rates.{" "}
       <br /><br />
-      <a href="#" className="font-bold text-[#1A1A1A] hover:text-[#ff4f00] transition-colors">
+      <a href="https://calendly.com/tuesdaywizard/30min" target="_blank" rel="noopener noreferrer" className="font-bold text-[#1A1A1A] hover:text-[#ff4f00] transition-colors">
         Book a free discovery call →
       </a>
     </>,
@@ -203,7 +204,7 @@ const HeroSection = () => (
       </motion.p>
 
       <motion.div {...fadeUpAnimate(0.32)} className="mt-8 sm:mt-10">
-        <Button variant="secondary" size="md" className="text-[11px]! sm:text-sm! px-3! py-2! sm:px-5! sm:py-3!">
+        <Button variant="secondary" size="md" className="text-[11px]! sm:text-sm! px-3! py-2! sm:px-5! sm:py-3!" onClick={openCalendly}>
           Book a discovery call
         </Button>
       </motion.div>
@@ -318,7 +319,7 @@ const FeaturesSection = () => (
           </motion.p>
         </div>
         <motion.div {...fadeUp(0.18)} className="shrink-0 lg:pt-3">
-          <Button variant="primary" size="lg">
+          <Button variant="primary" size="lg" onClick={openCalendly}>
             Book a discovery call
           </Button>
         </motion.div>
@@ -447,7 +448,7 @@ const CtaSection = () => (
       </motion.p>
 
       <motion.div {...fadeUp(0.18)}>
-        <Button variant="primary" size="lg">
+        <Button variant="primary" size="lg" onClick={openCalendly}>
           Schedule your free discovery session
         </Button>
       </motion.div>

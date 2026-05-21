@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import bgFooter from '@assets/bg-footer.png'
+import { openCalendly } from '@/utils/calendly'
 
 const ease = [0.22, 1, 0.36, 1]
 
@@ -57,6 +58,7 @@ const AICTABanner = ({
                  border-none
                 "
         style={{ background: '#1a1a1a' }}
+        onClick={openCalendly}
       >
         {buttonLabel}
       </motion.button>

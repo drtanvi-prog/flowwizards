@@ -1,4 +1,5 @@
 ﻿import { useState } from 'react'
+import { openCalendly } from '@/utils/calendly'
 import PlanColumn from './PlanColumn'
 import Button from '@/components/ui/Button'
 import { PLANS } from '@/data/plansData'
@@ -85,7 +86,7 @@ const DesktopTable = ({ expanded, toggle }) => (
                      </div>
                   )}
                   {plan.priceSub && <p className="text-xs text-[#999] mb-4">{plan.priceSub}</p>}
-                  <Button variant="secondary" size="lg" className="mt-4 w-full! whitespace-nowrap! leading-snug! text-xs! sm:text-sm!">
+                  <Button variant="secondary" size="lg" className="mt-4 w-full! whitespace-nowrap! leading-snug! text-xs! sm:text-sm!" onClick={openCalendly}>
                      {plan.cta}
                   </Button>
                </div>

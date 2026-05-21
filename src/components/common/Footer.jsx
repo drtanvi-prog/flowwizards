@@ -1,4 +1,5 @@
 import { useLocation, Link } from "react-router-dom";
+import { openCalendly } from '@/utils/calendly';
 import { MapPin, Phone, Mail } from "lucide-react";
 import logo from "../../assets/logo.png";
 import Button from "../ui/Button";
@@ -277,6 +278,7 @@ const Footer = () => {
                 variant="primary"
                 size="md"
                 className="self-start text-[11px]! sm:text-sm! px-3! py-1.5! sm:px-5! sm:py-2.5!"
+                onClick={openCalendly}
               >
                 Schedule a complimentary call
               </Button>
@@ -360,7 +362,7 @@ const Footer = () => {
                     style={{ color: "#F07020", flexShrink: 0 }}
                   />
                   <a
-                    href="tel:+13476974846"
+                    href="tel:+19495912301"
                     style={{
                       fontSize: "0.8rem",
                       color: "rgba(255,255,255,0.5)",
@@ -371,7 +373,7 @@ const Footer = () => {
                     }
                     className="transition-colors duration-200"
                   >
-                    +1 (347) 697-4846
+                    +1 (949) 591-2301
                   </a>
                 </div>
                 <div className="flex items-center gap-3">

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { openCalendly } from '@/utils/calendly'
 import { Check, X } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import Badge from '@/components/ui/Badge'
@@ -66,7 +67,7 @@ const AIRTABLE_STEPS = [
    {
       num: '03',
       title: 'Optimize',
-      desc: <>We conduct periodic reviews to spot any potential problems, troubleshoot issues, and maximize your cost and time savings.<br /><br /><a href="#" className="font-bold text-[#1A1A1A] hover:text-[#ff4f00] transition-colors">Book a free discovery call →</a></>,
+      desc: <>We conduct periodic reviews to spot any potential problems, troubleshoot issues, and maximize your cost and time savings.<br /><br /><a href="https://calendly.com/tuesdaywizard/30min" target="_blank" rel="noopener noreferrer" className="font-bold text-[#1A1A1A] hover:text-[#ff4f00] transition-colors">Book a free discovery call →</a></>,
    },
 ]
 
@@ -122,6 +123,7 @@ const HeroSection = () => (
                variant="secondary"
                size="md"
                className="text-[11px]! sm:text-sm! px-3! py-2! sm:px-5! sm:py-3!"
+               onClick={openCalendly}
             >
                Book a discovery call
             </Button>
@@ -319,7 +321,7 @@ const ProductivitySection = () => (
                </motion.p>
             </div>
             <motion.div {...fadeUp(0.18)} className="shrink-0 lg:pt-3">
-               <Button variant="primary" size="lg">
+               <Button variant="primary" size="lg" onClick={openCalendly}>
                   Book a discovery call
                </Button>
             </motion.div>

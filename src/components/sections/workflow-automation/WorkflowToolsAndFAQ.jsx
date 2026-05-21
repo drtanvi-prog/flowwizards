@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { openCalendly } from '@/utils/calendly';
 import { motion } from "framer-motion";
 import logoZapier from '@assets/software/s2.svg';
 import logoTypespot from '@assets/software/s3.webp';
@@ -111,9 +112,9 @@ export function WorkflowFAQ() {
                ))}
             </div>
             <div className="text-center mt-10">
-               <a href="#" className="font-semibold text-[#ff4f00] hover:underline text-xs sm:text-sm md:text-base inline-flex items-center gap-1 transition-colors">
+               <button onClick={openCalendly} className="font-semibold text-[#ff4f00] hover:underline text-xs sm:text-sm md:text-base inline-flex items-center gap-1 transition-colors bg-transparent border-none cursor-pointer p-0">
                   Book a Free Discovery Call <span aria-hidden>→</span>
-               </a>
+               </button>
             </div>
          </div>
       </section>

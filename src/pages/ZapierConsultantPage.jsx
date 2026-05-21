@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { openCalendly } from '@/utils/calendly';
 import { motion, AnimatePresence } from "framer-motion";
 import { Check, X, ChevronDown } from "lucide-react";
 import TwoColumnFAQ from "@/components/sections/faq/TwoColumnFAQ";
@@ -397,7 +398,7 @@ const HeroSection = () => (
       </motion.p>
 
       <motion.div {...fadeUpAnimate(0.34)} className="mt-8 sm:mt-10">
-        <Button variant="secondary" size="md" className="text-[11px]! sm:text-sm! px-3! py-2! sm:px-5! sm:py-3!">
+        <Button variant="secondary" size="md" className="text-[11px]! sm:text-sm! px-3! py-2! sm:px-5! sm:py-3!" onClick={openCalendly}>
           Book a free discovery call with a Zapier expert
         </Button>
       </motion.div>
@@ -433,7 +434,7 @@ const ServicesSection = () => (
           </motion.p>
         </div>
         <motion.div {...fadeUp(0.18)} className="shrink-0 lg:pt-3">
-          <Button variant="primary" size="lg">
+          <Button variant="primary" size="lg" onClick={openCalendly}>
             Book a discovery call
           </Button>
         </motion.div>
@@ -817,6 +818,7 @@ const PricingSection = () => (
               variant={plan.featured ? "primary" : "secondary"}
               size="md"
               className="text-sm!"
+              onClick={openCalendly}
             >
               {plan.cta}
             </Button>
@@ -921,7 +923,7 @@ const CtaSection = () => (
 
       {/* CTA Button */}
       <motion.div {...fadeUp(0.3)} className="flex justify-center">
-        <Button variant="secondary" size="md">
+        <Button variant="secondary" size="md" onClick={openCalendly}>
           Book a free discovery call
         </Button>
       </motion.div>

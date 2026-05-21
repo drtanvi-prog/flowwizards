@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { openCalendly } from '@/utils/calendly';
 import {
    Rocket,
    RefreshCcw,
@@ -314,8 +315,8 @@ const ResultsSection = () => {
                   How can software setup accelerate your business? Get in touch and let’s find out.
                </h3>
 
-               <motion.a
-                  href="#"
+               <motion.button
+                  onClick={openCalendly}
                   whileHover={{ x: 5 }}
                   transition={{ duration: 0.2 }}
                   className="
@@ -328,11 +329,12 @@ const ResultsSection = () => {
                      text-[#222]
                      hover:text-[#FF8800]
                      transition-colors
+                     bg-transparent border-none cursor-pointer p-0
                   "
                >
                   Book a discovery call
                   <span>→</span>
-               </motion.a>
+               </motion.button>
 
             </motion.div>
 

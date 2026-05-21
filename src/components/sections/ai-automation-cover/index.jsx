@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Check } from 'lucide-react'
 import Button from '@/components/ui/Button'
+import { openCalendly } from '@/utils/calendly'
 import Chip from '@/components/ui/Chip'
 
 const ease = [0.22, 1, 0.36, 1]
@@ -104,7 +105,7 @@ const AIAutomationCover = () => (
 
       {/* CTA */}
       <motion.div {...fadeUp(0.3)} className="flex justify-center">
-        <Button variant="secondary" size="lg" className="text-[11px]! px-3! py-1.5! sm:text-base! sm:px-7! sm:py-3!">Book a Discovery Call</Button>
+        <Button variant="secondary" size="lg" className="text-[11px]! px-3! py-1.5! sm:text-base! sm:px-7! sm:py-3!" onClick={openCalendly}>Book a Discovery Call</Button>
       </motion.div>
 
     </div>

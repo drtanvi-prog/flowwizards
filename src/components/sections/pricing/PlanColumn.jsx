@@ -1,4 +1,5 @@
 import Button from '../../ui/Button'
+import { openCalendly } from '@/utils/calendly'
 
 /* Mobile-only plan card — rendered by PricingSection */
 const PlanColumn = ({ plan, expanded, onToggle, IncludesContent }) => (
@@ -54,7 +55,7 @@ const PlanColumn = ({ plan, expanded, onToggle, IncludesContent }) => (
             </div>
          )}
          {plan.priceSub && <p className="text-xs text-[#4A4A4A] mb-3">{plan.priceSub}</p>}
-         <Button variant="secondary" size="sm" className="mt-3 w-full! whitespace-normal! leading-snug!">
+         <Button variant="secondary" size="sm" className="mt-3 w-full! whitespace-normal! leading-snug!" onClick={openCalendly}>
             {plan.cta}
          </Button>
       </div>

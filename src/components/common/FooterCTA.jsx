@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import bgFooter from '../../assets/bg-footer.png'
+import { openCalendly } from '@/utils/calendly'
 
 
 const FooterCTA = ({ heading, subtext, buttonText }) => (
@@ -38,6 +39,7 @@ const FooterCTA = ({ heading, subtext, buttonText }) => (
                transition={{ duration: 0.45, delay: 0.18 }}
                whileHover={{ scale: 1.03 }}
                whileTap={{ scale: 0.97 }}
+               onClick={openCalendly}
                className="px-3 py-1.5 sm:px-6 sm:py-3.5 rounded-md font-bold text-white text-[11px] sm:text-[0.88rem] whitespace-nowrap hover:bg-[#E04200]! hover:text-white! transition-colors duration-200"
                style={{ background: '#1a1a1a', cursor: 'pointer', border: 'none' }}
             >

@@ -2,9 +2,14 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import { CheckCircle2 } from 'lucide-react'
+import emailjs from '@emailjs/browser'
 import ServicePageHero, { SHWord } from '@/components/sections/service-page-hero/ServicePageHero'
 import Button from '@/components/ui/Button'
 import anim1 from '@assets/lottie/anim1.lottie'
+
+const EMAILJS_SERVICE_ID = 'service_ug95hbq'
+const EMAILJS_TEMPLATE_ID = 'template_q9223eg'
+const EMAILJS_PUBLIC_KEY = 'u17zUoznY9XMTgTsa'
 
 const inputCls =
    'w-full px-4 py-3.5 rounded-xl border-2 border-[#D0D0D0] bg-white text-[#1A1A1A] text-sm placeholder:text-[#888] focus:outline-none focus:border-[#F07020] transition-colors duration-200'
@@ -12,11 +17,28 @@ const inputCls =
 const ContactPage = () => {
    const [form, setForm] = useState({ name: '', email: '', issue: '', loom: '' })
    const [sent, setSent] = useState(false)
+   const [loading, setLoading] = useState(false)
+   const [error, setError] = useState('')
 
    const handleChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-   const handleSubmit = e => {
+
+   const handleSubmit = async e => {
       e.preventDefault()
-      setSent(true)
+      setLoading(true)
+      setError('')
+      try {
+         await emailjs.send(
+            EMAILJS_SERVICE_ID,
+            EMAILJS_TEMPLATE_ID,
+            { name: form.name, email: form.email, issue: form.issue, loom: form.loom },
+            EMAILJS_PUBLIC_KEY
+         )
+         setSent(true)
+      } catch {
+         setError('Something went wrong. Please try again or email us directly.')
+      } finally {
+         setLoading(false)
+      }
    }
 
    return (
@@ -104,13 +126,17 @@ const ContactPage = () => {
                                     placeholder="Link to any relevant doc, tool, or resource (optional)"
                                     className={inputCls}
                                  />
+                                 {error && (
+                                    <p className="text-red-500 text-xs text-center">{error}</p>
+                                 )}
                                  <Button
                                     type="submit"
                                     variant="secondary"
                                     size="md"
                                     className="mt-1 w-full py-3.5!"
+                                    disabled={loading}
                                  >
-                                    Send message
+                                    {loading ? 'Sending...' : 'Send message'}
                                  </Button>
                               </form>
                            </>

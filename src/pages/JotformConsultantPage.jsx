@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { openCalendly } from '@/utils/calendly'
 import { Check, X } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import Chip from '@/components/ui/Chip'
@@ -92,7 +93,7 @@ const HeroSection = () => (
          </motion.p>
 
          <motion.div {...fadeUpAnimate(0.32)} className="mt-8 sm:mt-10">
-            <Button variant="secondary" size="md" className="text-[11px]! sm:text-sm! px-3! py-2! sm:px-5! sm:py-3!">
+            <Button variant="secondary" size="md" className="text-[11px]! sm:text-sm! px-3! py-2! sm:px-5! sm:py-3!" onClick={openCalendly}>
                Book a free discovery call with a Jotform expert
             </Button>
          </motion.div>
@@ -265,7 +266,7 @@ const JOTFORM_STEPS = [
    {
       num: '03',
       title: 'Optimization',
-      desc: <>We conduct periodic reviews to identify potential issues, troubleshoot problems, and maximize your cost and time savings.<br /><br /><a href="#" className="font-bold text-[#1A1A1A] hover:text-[#ff4f00] transition-colors">Book a free discovery call →</a></>,
+      desc: <>We conduct periodic reviews to identify potential issues, troubleshoot problems, and maximize your cost and time savings.<br /><br /><a href="https://calendly.com/tuesdaywizard/30min" target="_blank" rel="noopener noreferrer" className="font-bold text-[#1A1A1A] hover:text-[#ff4f00] transition-colors">Book a free discovery call →</a></>,
    },
 ]
 
