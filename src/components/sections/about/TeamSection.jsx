@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import team1 from '@assets/teams/team1.jpeg'
 import team2 from '@assets/teams/team2.jpeg'
-import team3 from '@assets/teams/team3.jpeg'
+// import team3 from '@assets/teams/team3.jpeg'
 import team4 from '@assets/teams/team4.jpeg'
 import team5 from '@assets/teams/team5.jpeg'
 import team6 from '@assets/teams/team6.jpeg'
@@ -15,7 +15,7 @@ import team12 from '@assets/teams/team12.png'
 const TEAM = [
    { img: team1, name: 'Dr. Tanvi Sachar', role: 'CEO' },
    { img: team2, name: 'Gloria Chinelo', role: 'Integration Expert' },
-   { img: team3, name: 'Kayla Whited', role: 'Marketing' },
+   // { img: team3, name: 'Kayla Whited', role: 'Marketing' },
    { img: team4, name: 'Ada Okoro', role: 'Implementation' },
    { img: team5, name: 'Rizwan Ali', role: 'Automation' },
    { img: team6, name: 'Michael Marcellus', role: 'Sales' },
