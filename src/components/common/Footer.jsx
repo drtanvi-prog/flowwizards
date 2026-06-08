@@ -19,7 +19,10 @@ const RESOURCES = [
 const PORTAL = [
   { label: "Tuesday Wizard", href: "https://tuesdaywizards.com" },
 ];
-const SOCIALS = ["Instagram", "X", "LinkedIn"];
+const SOCIALS = [
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/tuesdaywizard" },
+  { label: "Instagram", href: "https://www.instagram.com/flow_wizards/" },
+];
 
 const ROW1 = [
   { label: "Terms", href: "/terms-of-service" },
@@ -286,8 +289,10 @@ const Footer = () => {
               <div className="flex items-center gap-4 mt-1">
                 {SOCIALS.map((s) => (
                   <a
-                    key={s}
-                    href="#"
+                    key={s.label}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
                       fontSize: "0.78rem",
                       color: "rgba(255,255,255,0.4)",
@@ -298,7 +303,7 @@ const Footer = () => {
                     }
                     className="transition-colors duration-200"
                   >
-                    {s}
+                    {s.label}
                   </a>
                 ))}
               </div>
