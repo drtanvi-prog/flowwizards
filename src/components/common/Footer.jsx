@@ -27,14 +27,9 @@ const SOCIALS = [
 const ROW1 = [
   { label: "Terms", href: "/terms-of-service" },
   { label: "Privacy Policy", href: "/privacy-policy" },
-  // { label: "Cookie Policy", href: "#" },
 ];
 const ROW2 = [
-  // "Consent Preferences",
-  // "Your Privacy Choices",
   { label: "Master Consultant Service Agreement", href: "/msa" },
-  // { label: "Trust Center", href: "#" },
-  // "Accessibility",
 ];
 
 const linkStyle = {
