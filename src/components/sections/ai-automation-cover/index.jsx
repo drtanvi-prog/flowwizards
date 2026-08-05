@@ -17,12 +17,12 @@ const services = [
   {
     title: 'Workflow Discovery & Opportunity Mapping',
     description:
-      'We dig into how your team actually works — not how the org chart says it does — to find where time is being lost and where automation pays off fastest.',
+      'We dig into how your team actually works - not how the org chart says it does - to find where time is being lost and where automation pays off fastest.',
   },
   {
     title: 'Cross-Team Process Automation',
     description:
-      'Sales handoffs, approval chains, follow-up sequences, internal routing — we automate the in-between steps that nobody owns but everyone touches.',
+      'Sales handoffs, approval chains, follow-up sequences, internal routing - we automate the in-between steps that nobody owns but everyone touches.',
   },
   {
     title: 'Tool & Data Integration',
@@ -32,12 +32,12 @@ const services = [
   {
     title: 'AI-Powered Decision Layers',
     description:
-      'We add AI where rules alone fall short — reading emails, classifying tickets, pulling key details from documents, and surfacing what needs attention.',
+      'We add AI where rules alone fall short - reading emails, classifying tickets, pulling key details from documents, and surfacing what needs attention.',
   },
   {
     title: 'Safe, Auditable Deployment',
     description:
-      'Every workflow we build includes error handling, access controls, and logging — so you always know what ran, what changed, and who touched what.',
+      'Every workflow we build includes error handling, access controls, and logging - so you always know what ran, what changed, and who touched what.',
   },
 ]
 
@@ -81,7 +81,7 @@ const AIAutomationCover = () => (
             whileHover={{ y: -4, boxShadow: '0 8px 32px rgba(0,0,0,0.08)' }}
             className="border border-gray-200 rounded-2xl p-8 sm:p-10 flex flex-col"
           >
-            {/* Check icon — top left */}
+            {/* Check icon - top left */}
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
@@ -92,7 +92,7 @@ const AIAutomationCover = () => (
               <Check size={18} color="white" strokeWidth={2.5} />
             </motion.div>
 
-            {/* Title & description — centered */}
+            {/* Title & description - centered */}
             <p className="text-[15px] sm:text-[16px] font-semibold text-[#1A1A1A] m-0 mb-3">
               {service.title}
             </p>

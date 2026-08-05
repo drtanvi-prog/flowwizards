@@ -27,7 +27,7 @@ const OurStorySection = () => (
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 xl:px-16">
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-start">
 
-            {/* Left — badge + heading */}
+            {/* Left - badge + heading */}
             <div>
                <motion.div
                   initial={{ opacity: 0, y: -10 }}
@@ -55,7 +55,7 @@ const OurStorySection = () => (
                </motion.h2>
             </div>
 
-            {/* Right — story paragraphs */}
+            {/* Right - story paragraphs */}
             <div className="flex flex-col gap-5 sm:gap-6">
                <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ const OurStorySection = () => (
                   className="leading-relaxed text-sm sm:text-base"
                   style={{ color: 'rgba(255,255,255,0.72)' }}
                >
-                  Flow Wizards was born from a simple frustration: too much time spent on work that software should be doing. Our founders spent years inside operations-heavy businesses watching talented people waste hours on repetitive, manual tasks — and decided to fix that.
+                  Flow Wizards was born from a simple frustration: too much time spent on work that software should be doing. Our founders spent years inside operations-heavy businesses watching talented people waste hours on repetitive, manual tasks - and decided to fix that.
                </motion.p>
 
                <motion.p
@@ -76,7 +76,7 @@ const OurStorySection = () => (
                   className="leading-relaxed text-sm sm:text-base"
                   style={{ color: 'rgba(255,255,255,0.72)' }}
                >
-                  What started as a small team helping clients untangle their tool stacks has grown into a full automation practice. Today, Flow Wizards works with businesses across industries — connecting their tools, eliminating the manual steps in between, and building the kind of systems that let teams focus on the work that actually matters. We're not a software company. We're the people who make your software work together.
+                  What started as a small team helping clients untangle their tool stacks has grown into a full automation practice. Today, Flow Wizards works with businesses across industries - connecting their tools, eliminating the manual steps in between, and building the kind of systems that let teams focus on the work that actually matters. We're not a software company. We're the people who make your software work together.
                </motion.p>
             </div>
 

@@ -231,7 +231,7 @@ const PremiumQuoteStack = ({
           </p>
         </motion.div>
 
-        {/* Desktop floating canvas — 1280px+ */}
+        {/* Desktop floating canvas - 1280px+ */}
         <div
           ref={containerRef}
           className="magnetic-canvas"
@@ -242,7 +242,7 @@ const PremiumQuoteStack = ({
           ))}
         </div>
 
-        {/* Tablet grid — 640px–1279px */}
+        {/* Tablet grid - 640px–1279px */}
         <div className="tablet-quotes" style={{ display: 'none', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.25rem' }}>
           {cards.map((q, i) => (
             <motion.div
@@ -272,7 +272,7 @@ const PremiumQuoteStack = ({
           ))}
         </div>
 
-        {/* Mobile stack — below 640px */}
+        {/* Mobile stack - below 640px */}
         <div className="mobile-quotes" style={{ display: 'none', flexDirection: 'column', gap: '1rem' }}>
           {cards.map((q, i) => (
             <motion.div

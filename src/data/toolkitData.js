@@ -1,5 +1,13 @@
 export const tools = [
   {
+    id: 'n8n',
+    name: 'n8n',
+    tagline: 'Certified Consulting Partner',
+    accentColor: '#EA4B71',
+    description: "n8n is a powerful open-source workflow automation platform that gives you full control over your data and integrations. As expert n8n consultants, we design, build, and deploy sophisticated n8n automations and self-hosted workflows that connect your entire tech stack - from CRMs to APIs to databases - without the per-task pricing of other tools. Whether you're migrating from Zapier or starting fresh, we make n8n work hard for your business.",
+    featured: true,
+  },
+  {
     id: 'zapier',
     name: 'Zapier',
     tagline: 'Premier Expert',
@@ -11,7 +19,7 @@ export const tools = [
     name: 'HubSpot',
     tagline: 'Certified Partner',
     accentColor: '#FF7A59',
-    description: "HubSpot is the all-in-one CRM powerhouse for marketing, sales, and service. As certified HubSpot partners, we configure and automate your entire customer journey — from first touch to long-term loyalty — so your team closes more deals with less effort.",
+    description: "HubSpot is the all-in-one CRM powerhouse for marketing, sales, and service. As certified HubSpot partners, we configure and automate your entire customer journey - from first touch to long-term loyalty - so your team closes more deals with less effort.",
   },
   {
     id: 'typeform',

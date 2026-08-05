@@ -1,12 +1,11 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
 import Button from "@/components/ui/Button";
 import { openCalendly } from '@/utils/calendly';
 // import { Cursor } from "./HeroCursors";
 import { HWord } from "./HeroHeading";
 import "./hero.css";
+
 
 const ease = [0.22, 1, 0.36, 1];
 
@@ -22,6 +21,13 @@ const stats = [
   { value: "18 hrs", label: "Saved per week" },
 ];
 
+const FEATURED_SERVICES = [
+  { label: "n8n Consulting", highlight: true },
+  { label: "n8n Automation" },
+  { label: "Zapier Workflows" },
+  { label: "AI Automation" },
+];
+
 const Hero = () => {
   const sectionRef = useRef(null);
   const bizRef = useRef(null);
@@ -31,7 +37,7 @@ const Hero = () => {
     <section
       ref={sectionRef}
       className="bg-[#FEF6F5] relative overflow-hidden flex items-center justify-center
-        px-5 sm:px-10 xl:px-16
+        px-4 sm:px-10 xl:px-16
         min-h-[calc(100vh-80px)] xl:min-h-[calc(100vh-100px)]
         py-16 sm:py-20"
     >
@@ -51,7 +57,7 @@ const Hero = () => {
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-[#FEF6F5] via-transparent to-[#FEF6F5]" />
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-[#FEF6F5] via-transparent to-[#FEF6F5]" />
 
-      {/* Cursors — desktop only */}
+      {/* Cursors - desktop only */}
       {/* <Cursor id="ruben" color="#ff4f00" name="Ruben" top="37%" left="69%" /> */}
       {/* <Cursor id="james" color="#FC6E32" name="James" top="54%" left="22%" /> */}
 
@@ -90,7 +96,7 @@ const Hero = () => {
         <motion.p
           {...fadeUp(0.28)}
           className="text-[13px] sm:text-[15px] lg:text-[17px] text-[#555]
-            max-w-[300px] sm:max-w-md lg:max-w-2xl leading-relaxed m-0"
+            w-full sm:max-w-md lg:max-w-2xl leading-relaxed m-0 px-1"
         >
           <strong className="text-[#1A1A1A]">
             Your software tools should help you work smarter.
@@ -99,9 +105,67 @@ const Hero = () => {
           and leave the competition scrambling.
         </motion.p>
 
+        {/* Pricing card + service chips */}
+        <motion.div
+          {...fadeUp(0.34)}
+          className="flex flex-col items-center gap-3 w-full"
+        >
+          {/* Pricing pill - single unified element */}
+          <div
+            className="inline-flex items-center gap-0 rounded-full"
+            style={{
+              outline: "1.5px solid rgba(255,79,0,0.28)",
+              background: "#fff9f7",
+              boxShadow: "0 1px 6px rgba(255,79,0,0.08)",
+              overflow: "hidden",
+            }}
+          >
+            {/* Left: label */}
+            <div className="flex items-center gap-2 px-4 py-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#ff4f00] animate-pulse shrink-0" />
+              <span className="text-[12px] sm:text-[13px] font-semibold text-[#6b2500] whitespace-nowrap">
+                n8n &amp; Automation Consulting
+              </span>
+            </div>
+            {/* Divider */}
+            <div style={{ width: "1.5px", alignSelf: "stretch", background: "rgba(255,79,0,0.28)" }} />
+            {/* Right: price */}
+            <div
+              className="px-4 py-2 flex items-center"
+              style={{ background: "#ff4f00" }}
+            >
+              <span className="text-[13px] sm:text-[14px] text-white whitespace-nowrap" style={{ fontWeight: 600 }}>
+                $25/hr
+              </span>
+            </div>
+          </div>
+
+          {/* Service chips */}
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            {FEATURED_SERVICES.map(({ label, highlight }) => (
+              <span
+                key={label}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] sm:text-[12px] font-semibold"
+                style={{
+                  background: highlight ? "#ff4f00" : "rgba(255,255,255,0.9)",
+                  border: `1.5px solid ${highlight ? "#ff4f00" : "rgba(255,79,0,0.2)"}`,
+                  color: highlight ? "#fff" : "#c43800",
+                }}
+              >
+                <svg className="w-2.5 h-2.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                {label}
+              </span>
+            ))}
+          </div>
+        </motion.div>
+
+
+
         {/* CTAs */}
         <motion.div
-          {...fadeUp(0.38)}
+          {...fadeUp(0.44)}
           className="flex flex-wrap items-center justify-center gap-3 mt-1"
         >
           <Button
@@ -114,9 +178,9 @@ const Hero = () => {
           </Button>
         </motion.div>
 
-        {/* Stats — always 3 col grid, never wraps */}
+        {/* Stats - always 3 col grid, never wraps */}
         <motion.div
-          {...fadeUp(0.48)}
+          {...fadeUp(0.54)}
           className="grid grid-cols-3 w-full max-w-[300px] sm:max-w-sm lg:max-w-md mt-2 sm:mt-3 pt-5 sm:pt-6 border-t border-[#1A1A1A]/10"
         >
           {stats.map(({ value, label }, i) => (

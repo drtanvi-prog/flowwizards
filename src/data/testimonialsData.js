@@ -85,6 +85,6 @@ export const testimonials = [
     color: "#E9C46A",
     stars: 5,
     title: "Worth every penny and then some",
-    body: "I was hesitant about the cost. Two months later I'd pay triple — we eliminated an entire manual reporting process that was costing us 15 hours a week.",
+    body: "I was hesitant about the cost. Two months later I'd pay triple - we eliminated an entire manual reporting process that was costing us 15 hours a week.",
   },
 ];

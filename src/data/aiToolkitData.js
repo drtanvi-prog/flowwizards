@@ -8,7 +8,7 @@ export const aiTools = [
     tagline: "Premier Expert",
     accentColor: "#FF4A00",
     description:
-      "Zapier is the connective tissue of your AI automation stack. We'll build multi-step Zaps that link your CRM, support desk, and data tools into fully automated pipelines — no code required, no manual steps left behind.",
+      "Zapier is the connective tissue of your AI automation stack. We'll build multi-step Zaps that link your CRM, support desk, and data tools into fully automated pipelines - no code required, no manual steps left behind.",
   },
   {
     id: "hubspot",
@@ -56,7 +56,7 @@ export const aiTools = [
     tagline: "AI Automation",
     accentColor: "#7C3AED",
     description:
-      "Gumloop is a next-generation AI automation platform built for complex, AI-native workflows. We use it to build pipelines that read, reason over, and act on unstructured data — turning raw inputs into structured business outcomes.",
+      "Gumloop is a next-generation AI automation platform built for complex, AI-native workflows. We use it to build pipelines that read, reason over, and act on unstructured data - turning raw inputs into structured business outcomes.",
   },
   {
     id: "jotform",
@@ -64,7 +64,7 @@ export const aiTools = [
     tagline: "Expert Partner",
     accentColor: "#0075FF",
     description:
-      "Jotform is your intake layer for AI automation. We build smart forms that capture leads, orders, and requests — then wire them directly into your CRM, operations, and AI workflows the moment a submission arrives.",
+      "Jotform is your intake layer for AI automation. We build smart forms that capture leads, orders, and requests - then wire them directly into your CRM, operations, and AI workflows the moment a submission arrives.",
   },
 ];
 

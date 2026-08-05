@@ -17,7 +17,7 @@ export const reasons = [
     id: 3,
     title: "We're part of your team. No, really.",
     description:
-      "We don't just set up your automations and ride off into the sunset. We're with you for the long haul. Add us to your Slack channels, CC us on emails, and connect us with your vendors. Until you've understood how to get the most out of your workflows — and get 100% cool with using them — our job is not done.",
+      "We don't just set up your automations and ride off into the sunset. We're with you for the long haul. Add us to your Slack channels, CC us on emails, and connect us with your vendors. Until you've understood how to get the most out of your workflows - and get 100% cool with using them - our job is not done.",
     color: '#C0497A',
   },
   {

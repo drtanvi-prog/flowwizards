@@ -19,7 +19,7 @@ const SoftwareSetupPage = () => (
           you've already won.
         </>
       }
-      body="We'll handle it start to finish — you just get ready for efficiency like you've never seen before. Not sure if software setup is what you need?"
+      body="We'll handle it start to finish - you just get ready for efficiency like you've never seen before. Not sure if software setup is what you need?"
       ctaText="Set up and optimize my software"
       disableHover={true}
     />

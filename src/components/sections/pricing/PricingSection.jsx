@@ -11,7 +11,7 @@ const IncludesContent = ({ content, dotColor }) => {
          {content.intro && <p className="text-xs sm:text-sm text-[#1A1A1A] font-semibold">{content.intro}</p>}
          {content.items.map((item, i) =>
             item.or ? (
-               <p key={i} className="text-xs font-bold text-[#888] pl-1">— OR —</p>
+               <p key={i} className="text-xs font-bold text-[#888] pl-1">- OR -</p>
             ) : item.groupLabel ? (
                <p key={i} className="text-xs sm:text-sm font-bold text-[#1A1A1A] pt-1">{item.groupLabel}</p>
             ) : (
@@ -68,7 +68,7 @@ const DesktopTable = ({ expanded, toggle }) => (
                   </button>
                   {expanded[idx] && <IncludesContent content={plan.includesContent} dotColor={plan.dotColor} />}
                </div>
-               {/* Price + CTA — flows directly below includes */}
+               {/* Price + CTA - flows directly below includes */}
                <div className="px-7 py-7 border-t-2 border-[#1A1A1A]">
                   {plan.taskInfo && (
                      <div className="mb-5 border-l-[3px] pl-3" style={{ borderColor: plan.dotColor }}>

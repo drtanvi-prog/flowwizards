@@ -28,6 +28,7 @@ import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import MsaPage from "./pages/MsaPage";
 import TermsPage from "./pages/TermsPage";
 import ThankYouPage from "./pages/ThankYouPage";
+import N8nConsultingPage from "./pages/N8nConsultingPage";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -89,6 +90,7 @@ const App = () => (
             element={<PipedriveConsultantPage />}
           />
           <Route path="/zapier-consultant" element={<ZapierConsultantPage />} />
+          <Route path="/n8n-consulting" element={<N8nConsultingPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/msa" element={<MsaPage />} />
           <Route path="/terms-of-service" element={<TermsPage />} />

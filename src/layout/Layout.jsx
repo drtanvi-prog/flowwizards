@@ -2,6 +2,7 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 import Footer from '@/components/common/Footer'
 import Header from '@/components/common/Header'
+import SEO from '@/components/common/SEO'
 
 const Layout = ({ children }) => {
    const { pathname } = useLocation()
@@ -12,6 +13,7 @@ const Layout = ({ children }) => {
 
    return (
       <div>
+         <SEO />
          {!shouldHideLayout && <Header />}
 
          <main>

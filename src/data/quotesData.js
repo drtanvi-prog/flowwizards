@@ -29,7 +29,7 @@ export const QUOTES = [
   },
   {
     text: "We onboarded HubSpot a year ago. Half the team still uses Gmail to track deals.",
-    body: "We spent weeks on the migration and hours on training. The problem isn't the tool — it's that nobody trusted the system enough to actually use it.",
+    body: "We spent weeks on the migration and hours on training. The problem isn't the tool - it's that nobody trusted the system enough to actually use it.",
     border: "#f5a97a",
     bg: "#fff4ee",
     quoteColor: "#e07540",
@@ -50,7 +50,7 @@ export const QUOTES = [
   },
   {
     text: "The automation runs. I just have no idea what it does or what happens when it stops.",
-    body: "It was set up by a freelancer two years ago. When it failed last month, we didn't even notice for a week. That's not a system — that's a liability.",
+    body: "It was set up by a freelancer two years ago. When it failed last month, we didn't even notice for a week. That's not a system - that's a liability.",
     border: "#f5a97a",
     bg: "#fff4ee",
     quoteColor: "#e07540",

@@ -37,7 +37,7 @@ export const GearLogo = () => (
       </radialGradient>
     </defs>
 
-    {/* Outer orbit ring + 4 coloured dots — all rotate together */}
+    {/* Outer orbit ring + 4 coloured dots - all rotate together */}
     <motion.g
       animate={{ rotate: 360 }}
       transition={{ duration: 14, repeat: Infinity, ease: 'linear' }}
@@ -45,18 +45,18 @@ export const GearLogo = () => (
     >
       <circle cx={100} cy={100} r={86}
         stroke="#FC6E32" strokeWidth="1.5" strokeDasharray="5 4" fill="none" />
-      {/* 12 o'clock — deep orange */}
+      {/* 12 o'clock - deep orange */}
       <circle cx={100} cy={14}  r={5.5} fill="#ff4f00" />
-      {/* 3 o'clock — dark burnt orange */}
+      {/* 3 o'clock - dark burnt orange */}
       <circle cx={186} cy={100} r={4.5} fill="#C2410C" />
-      {/* 6 o'clock — peach target */}
+      {/* 6 o'clock - peach target */}
       <circle cx={100} cy={186} r={12}  fill="#FFD4B3" />
       <circle cx={100} cy={186} r={6}   fill="#EA580C" />
-      {/* 9 o'clock — light peach */}
+      {/* 9 o'clock - light peach */}
       <circle cx={14}  cy={100} r={6}   fill="#FDBA74" />
     </motion.g>
 
-    {/* Gear body — rotates clockwise */}
+    {/* Gear body - rotates clockwise */}
     <motion.path
       d={GEAR_PATH}
       fill="#FFE0CC"
@@ -65,7 +65,7 @@ export const GearLogo = () => (
       style={{ transformOrigin: '100px 100px' }}
     />
 
-    {/* Inner dashed ring + orange dot — counter-rotates */}
+    {/* Inner dashed ring + orange dot - counter-rotates */}
     <motion.g
       animate={{ rotate: -360 }}
       transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
@@ -77,7 +77,7 @@ export const GearLogo = () => (
       <circle cx={148} cy={100} r={5} fill="#ff4f00" />
     </motion.g>
 
-    {/* Center gradient hub — static, covers gear centre */}
+    {/* Center gradient hub - static, covers gear centre */}
     <circle cx={100} cy={100} r={36} fill="url(#glHubGrad)" />
   </svg>
 )

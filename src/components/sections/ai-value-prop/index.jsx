@@ -37,7 +37,7 @@ const AIValueProp = () => (
             {...fadeUp(0.14)}
             className="text-[14px] sm:text-[15px] lg:text-[16px] text-[#4A4A4A] leading-relaxed m-0 max-w-md"
           >
-            When your tools don't talk to each other, your team fills the gap — manually. Copying data, chasing approvals, re-entering the same info in three places. We build the connections that make that work disappear, so your people spend time on things that actually require a human.
+            When your tools don't talk to each other, your team fills the gap - manually. Copying data, chasing approvals, re-entering the same info in three places. We build the connections that make that work disappear, so your people spend time on things that actually require a human.
           </motion.p>
         </div>
 

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://www.flowwizards.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/" />
+  </url>
+
+  <!-- n8n Consulting (highest-priority new page) -->
+  <url>
+    <loc>https://www.flowwizards.com/n8n-consulting</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/n8n-consulting" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/n8n-consulting" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/n8n-consulting" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/n8n-consulting" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/n8n-consulting" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/n8n-consulting" />
+  </url>
+
+  <!-- Zapier Consultant -->
+  <url>
+    <loc>https://www.flowwizards.com/zapier-consultant</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/zapier-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/zapier-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/zapier-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/zapier-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/zapier-consultant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/zapier-consultant" />
+  </url>
+
+  <!-- AI Automation Services -->
+  <url>
+    <loc>https://www.flowwizards.com/ai-automation-services</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/ai-automation-services" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/ai-automation-services" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/ai-automation-services" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/ai-automation-services" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/ai-automation-services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/ai-automation-services" />
+  </url>
+
+  <!-- Workflow Automation -->
+  <url>
+    <loc>https://www.flowwizards.com/workflow-automation</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/workflow-automation" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/workflow-automation" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/workflow-automation" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/workflow-automation" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/workflow-automation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/workflow-automation" />
+  </url>
+
+  <!-- Fractional CAO -->
+  <url>
+    <loc>https://www.flowwizards.com/fractional-chief-automation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/fractional-chief-automation" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/fractional-chief-automation" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/fractional-chief-automation" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/fractional-chief-automation" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/fractional-chief-automation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/fractional-chief-automation" />
+  </url>
+
+  <!-- Software Setup -->
+  <url>
+    <loc>https://www.flowwizards.com/software-setup-services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/software-setup-services" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/software-setup-services" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/software-setup-services" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/software-setup-services" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/software-setup-services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/software-setup-services" />
+  </url>
+
+  <!-- HubSpot Consultant -->
+  <url>
+    <loc>https://www.flowwizards.com/hubspot-consultant</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/hubspot-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/hubspot-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/hubspot-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/hubspot-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/hubspot-consultant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/hubspot-consultant" />
+  </url>
+
+  <!-- Airtable Consultant -->
+  <url>
+    <loc>https://www.flowwizards.com/airtable-consultant</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/airtable-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/airtable-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/airtable-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/airtable-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/airtable-consultant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/airtable-consultant" />
+  </url>
+
+  <!-- Pipedrive Consultant -->
+  <url>
+    <loc>https://www.flowwizards.com/pipedrive-consultant</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/pipedrive-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/pipedrive-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/pipedrive-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/pipedrive-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/pipedrive-consultant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/pipedrive-consultant" />
+  </url>
+
+  <!-- Jotform Consultant -->
+  <url>
+    <loc>https://www.flowwizards.com/jotform-consultant</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/jotform-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/jotform-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/jotform-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/jotform-consultant" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/jotform-consultant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/jotform-consultant" />
+  </url>
+
+  <!-- Pricing -->
+  <url>
+    <loc>https://www.flowwizards.com/pricing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/pricing" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/pricing" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/pricing" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/pricing" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/pricing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/pricing" />
+  </url>
+
+  <!-- Case Studies -->
+  <url>
+    <loc>https://www.flowwizards.com/case-studies</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/case-studies" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/case-studies" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/case-studies" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/case-studies" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/case-studies" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/case-studies" />
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://www.flowwizards.com/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/blog" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/blog" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/blog" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/blog" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/blog" />
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://www.flowwizards.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/about" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/about" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/about" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/about" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/about" />
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://www.flowwizards.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://www.flowwizards.com/contact" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.flowwizards.com/contact" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.flowwizards.com/contact" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.flowwizards.com/contact" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.flowwizards.com/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.flowwizards.com/contact" />
+  </url>
+
+</urlset>

@@ -248,7 +248,7 @@ const Footer = () => {
         <div className="max-w-360 mx-auto px-5 sm:px-8 xl:px-16 pt-14 pb-10">
           {/* ── Top section: Brand + 3 nav cols ── */}
           <div className="grid grid-cols-1 lg:grid-cols-[1.8fr_1fr_1fr_1.4fr] gap-10 lg:gap-8 xl:gap-12 pb-10">
-            {/* Col 1 — Brand */}
+            {/* Col 1 - Brand */}
             <div className="flex flex-col gap-5">
               <div className="select-none">
                 <img
@@ -304,7 +304,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Col 2 — Solutions */}
+            {/* Col 2 - Solutions */}
             <div>
               <ColHead>Solutions</ColHead>
               <ul className="flex flex-col gap-3">
@@ -316,7 +316,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Col 3 — Company */}
+            {/* Col 3 - Company */}
             <div>
               <ColHead>Company</ColHead>
               <ul className="flex flex-col gap-3">
@@ -333,7 +333,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Col 4 — Get in Touch */}
+            {/* Col 4 - Get in Touch */}
             <div>
               <ColHead>Get in Touch</ColHead>
               <div className="flex flex-col gap-4">

@@ -6,7 +6,7 @@ const faqs = [
    {
       question: "What types of automations are included?",
       answer:
-         "We handle all types of automations—from streamlining workflows and integrating CRMs to enhancing marketing efforts and managing data. Have a specific requirement? We can explore it during your consultation.",
+         "We handle all types of automations-from streamlining workflows and integrating CRMs to enhancing marketing efforts and managing data. Have a specific requirement? We can explore it during your consultation.",
    },
    {
       question: "How fast do you solve requests?",

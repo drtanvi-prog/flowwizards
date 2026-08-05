@@ -26,7 +26,7 @@ const TrustedLogos = () => (
         Trusted by
       </motion.p>
 
-      {/* Logos — desktop */}
+      {/* Logos - desktop */}
       <div className="hidden md:flex items-center justify-center gap-14 lg:gap-20 w-full flex-wrap">
         {brands.map((brand, i) => (
           <motion.div
@@ -46,7 +46,7 @@ const TrustedLogos = () => (
         ))}
       </div>
 
-      {/* Logos — mobile 2-col */}
+      {/* Logos - mobile 2-col */}
       <div className="grid grid-cols-2 gap-x-10 gap-y-8 w-full max-w-xs md:hidden">
         {brands.map((brand, i) => (
           <motion.div

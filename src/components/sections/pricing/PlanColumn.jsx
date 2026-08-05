@@ -1,7 +1,7 @@
 import Button from '../../ui/Button'
 import { openCalendly } from '@/utils/calendly'
 
-/* Mobile-only plan card — rendered by PricingSection */
+/* Mobile-only plan card - rendered by PricingSection */
 const PlanColumn = ({ plan, expanded, onToggle, IncludesContent }) => (
    <div className="border-2 border-[#1A1A1A] rounded-xl overflow-hidden flex flex-col">
 
@@ -23,7 +23,7 @@ const PlanColumn = ({ plan, expanded, onToggle, IncludesContent }) => (
          </ul>
       </div>
 
-      {/* Includes — expandable */}
+      {/* Includes - expandable */}
       <div className="px-5 py-5 border-b border-gray-200">
          <p className="font-semibold text-xs text-[#1A1A1A] mb-1">{plan.includesLabel}</p>
          {expanded && <IncludesContent content={plan.includesContent} dotColor={plan.dotColor} />}

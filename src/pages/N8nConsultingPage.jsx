@@ -12,301 +12,306 @@ import PremiumQuoteStack from "@/components/sections/quotes";
 
 // ── Data ──────────────────────────────────────────────────────────────────────
 
-const ZAPIER_QUOTES = [
+const N8N_QUOTES = [
   {
-    text: "Finally got my Zapier connections working the way I needed",
-    body: "I'd been struggling with a complex Zap for weeks. Flow Wizards asked the right questions, understood exactly what I was trying to do, and had everything running cleanly in one session. Patient, clear, and genuinely helpful.",
-    bg: "#eef5e0",
-    border: "#b5c86a",
-    quoteColor: "#7a8c00",
+    text: "Finally moved off Zapier - wish we'd done it sooner",
+    body: "We were hitting Zapier's task limits every month and paying a fortune. Flow Wizards migrated all our workflows to n8n in under two weeks. Everything runs faster, we own our data, and our bill dropped dramatically.",
+    bg: "#f0f4ff",
+    border: "#93b4ff",
+    quoteColor: "#2563eb",
   },
   {
-    text: "Fixed in 20 minutes what had been broken for months",
-    body: "We had an automation issue that kept slipping through the cracks - no one on our team could diagnose it. Flow Wizards jumped in, identified the problem immediately, and resolved it faster than we thought possible.",
-    bg: "#ffedef",
+    text: "Complex multi-step pipelines built cleanly and fast",
+    body: "We needed an n8n workflow that touched our CRM, a custom API, two databases, and Slack. Flow Wizards designed and deployed the whole thing in a few days. The documentation they handed over was genuinely useful.",
+    bg: "#fff0f3",
     border: "#ff9aaa",
     quoteColor: "#E84040",
   },
   {
-    text: "Complex processes made simple and actually maintainable",
-    body: "Our workflows had a lot of moving parts and edge cases. Flow Wizards translated everything into clean, well-structured Zaps that our team can understand and update ourselves. The documentation alone was worth it.",
+    text: "Self-hosted n8n set up properly - no drama",
+    body: "We wanted to self-host n8n on our own server and couldn't figure out the SSL, reverse proxy, and credential setup. Flow Wizards sorted everything from scratch. Rock-solid, secure, and running smoothly.",
     bg: "#fff8f0",
     border: "#f5d5b0",
     quoteColor: "#f07020",
   },
   {
-    text: "Delivered in a day, done properly",
-    body: "We had a tight deadline and a complicated setup. Flow Wizards went above and beyond to get it done on time without cutting corners. Everything was tested, documented, and handed over cleanly. No surprises after launch.",
+    text: "Best decision we made for our ops team",
+    body: "Our ops team was drowning in manual handoffs between tools. Flow Wizards built n8n automations that handle the entire chain - from intake to delivery - without anyone touching a thing. Saves us 20+ hours a week.",
     bg: "#f0faf5",
     border: "#86efac",
     quoteColor: "#16a34a",
   },
   {
-    text: "Our tools finally talk to each other",
-    body: "We had six apps that were supposed to work together but didn't. Flow Wizards mapped the whole thing out and built a Zapier setup that connects all of them reliably. Data flows where it should and nothing gets dropped.",
-    bg: "#eef5e0",
-    border: "#b5c86a",
-    quoteColor: "#7a8c00",
+    text: "AI-powered workflows that actually work in production",
+    body: "We needed GPT to categorize and route incoming support tickets automatically. Flow Wizards built the full pipeline in n8n - form → AI → routing → ticketing system. It's been running flawlessly for three months.",
+    bg: "#f0f4ff",
+    border: "#93b4ff",
+    quoteColor: "#2563eb",
   },
   {
-    text: "Hours of manual work eliminated every single week",
-    body: "We were manually moving data between our forms, CRM, and email platform every day. Flow Wizards automated the entire chain. What used to take two hours now takes zero - and it's more accurate than when we did it by hand.",
-    bg: "#ffedef",
+    text: "Zapier → n8n migration done without a hitch",
+    body: "We had 40+ active Zaps and were nervous about migrating. Flow Wizards audited everything, rebuilt the workflows in n8n, tested thoroughly, and cut over with zero downtime. Couldn't have done it without them.",
+    bg: "#fff0f3",
     border: "#ff9aaa",
     quoteColor: "#E84040",
   },
 ];
 
-const ZAPIER_STEPS = [
+const N8N_STEPS = [
   {
     num: "01",
-    title: "Audit + Planning",
-    desc: "We take a thorough look at your business and help you figure out where we can utilize Zapier to get rid of manual labor and time-sucking, repetitive tasks.",
+    title: "Discovery & Audit",
+    desc: "We review your current tools, data flows, and manual processes to identify exactly where n8n can deliver the biggest impact.",
   },
   {
     num: "02",
-    title: "Build",
-    desc: "We fix broken zaps and solve your thorniest problems with seamless flows that do exactly what you need, every time.",
+    title: "Workflow Design",
+    desc: "We design your n8n workflows end-to-end - mapping triggers, logic, error handling, and integrations before a single node is placed.",
   },
   {
     num: "03",
-    title: "Handoff + Monitoring",
-    desc: "Once your automation is live, we'll conduct periodic maintenance reviews to spot any potential problems, fix broken zaps, and maximize cost and time savings.",
+    title: "Build & Test",
+    desc: "We build your workflows in n8n, test every edge case, and set up monitoring so problems get caught before they affect your business.",
+  },
+  {
+    num: "04",
+    title: "Handoff & Documentation",
+    desc: "You get clean documentation, a walkthrough of what was built, and the confidence to maintain it - or we can stay on as your automation partner.",
   },
 ];
 
 const SERVICES = [
   {
+    badge: "Consulting",
+    badgeVariant: "orange",
+    title: "n8n workflow consulting & strategy",
+    desc: "We assess your business, map your processes, and design an n8n automation strategy tailored to your goals - before a single line of code is written.",
+  },
+  {
     badge: "Implementation",
-    badgeVariant: "orange",
-    title: "Zapier implementation (new or improved workflows)",
-    desc: "Designing and building new Zaps that connect your tools and remove manual steps from your day-to-day operations.",
-  },
-  {
-    badge: "Troubleshooting",
     badgeVariant: "amber",
-    title: "Fixing broken Zaps & troubleshooting",
-    desc: "Diagnosing failed automations, cleaning up logic errors, fixing delays, and getting things back online fast.",
+    title: "n8n workflow design & implementation",
+    desc: "From simple triggers to complex multi-step pipelines, we build n8n workflows that connect your tools and eliminate manual work reliably.",
   },
   {
-    badge: "Optimization",
+    badge: "Self-Hosted",
     badgeVariant: "olive",
-    title: "Optimization & performance tuning",
-    desc: "Improving speed, reliability, and error handling so automations don't quietly fail in the background.",
+    title: "n8n self-hosted setup & configuration",
+    desc: "We deploy and configure n8n on your own server or cloud infrastructure - including SSL, reverse proxy, credential management, and security hardening.",
   },
   {
-    badge: "Advanced",
+    badge: "Migration",
     badgeVariant: "orange",
-    title: "Advanced workflows (webhooks, APIs, multi-step logic)",
-    desc: "Handling more complex use cases when native Zapier actions aren't enough.",
+    title: "Zapier / Make → n8n migration",
+    desc: "We audit your existing automations, rebuild them in n8n, and manage the cutover - so you keep your workflows and cut your per-task costs.",
   },
   {
-    badge: "Training",
+    badge: "AI Pipelines",
     badgeVariant: "amber",
-    title: "Documentation & team training",
-    desc: "Clear documentation and walkthroughs so your team understands what was built and how to maintain it.",
+    title: "AI-powered n8n automation",
+    desc: "We connect OpenAI, Claude, and other AI models into your n8n workflows - for intelligent routing, classification, content generation, and more.",
   },
   {
-    badge: "Retainers",
+    badge: "Maintenance",
     badgeVariant: "olive",
-    title: "Ongoing optimization & maintenance",
-    desc: "Retainer support for teams that rely on automation and need someone actively monitoring and improving it.",
+    title: "Ongoing support & maintenance",
+    desc: "Retainer support for teams that rely on n8n - proactive monitoring, updates, new workflows, and fast fixes when something breaks.",
   },
 ];
 
 const RESULTS = [
   {
+    stat: "0¢",
+    title: "Per-task fees eliminated",
+    desc: "n8n has no per-task pricing. Run a million executions a month and pay the same flat rate.",
+  },
+  {
+    stat: "100%",
+    title: "Data ownership",
+    desc: "Self-hosted n8n means your data never leaves your infrastructure. Full control, full compliance.",
+  },
+  {
+    stat: "10x",
+    title: "More integrations possible",
+    desc: "n8n supports custom HTTP requests and full code nodes - connect anything with an API, not just pre-built connectors.",
+  },
+  {
     stat: "80%",
-    title: "Boost Efficiency",
-    desc: "No more bottlenecks and backlogs, as repetitive tasks no longer require human intervention.",
+    title: "Reduction in manual work",
+    desc: "Teams with properly designed n8n workflows eliminate the majority of their manual, repetitive operational tasks.",
   },
   {
-    stat: "500hrs",
-    title: "Reclaim hundreds of hours a year",
-    desc: "Teams with optimized Zapier workflows regain at least 500 hours of productive work - per employee.",
+    stat: "~2 wks",
+    title: "Average time to first automation",
+    desc: "Most clients go from discovery call to live, production-ready workflows within two weeks.",
   },
   {
-    stat: "95%",
-    title: "Reduce manual errors",
-    desc: "Less reliance on manual handling means fewer breakdowns as volume increases.",
-  },
-  {
-    stat: "7x",
-    title: "Accelerate response time, boost conversions",
-    desc: "Teams with fast, automated lead qualifying are 7x more likely to convert.",
-  },
-  {
-    stat: "∞",
-    title: "Get your tools talking",
-    desc: "Work arrives ready to act on, without endless back-and-forth between apps.",
-  },
-  {
-    stat: "0%",
-    title: "Growth, not growing pains",
-    desc: "Scale exponentially without increasing operational overhead.",
+    stat: "$25",
+    title: "Starting rate per hour",
+    desc: "Expert n8n consulting and automation starting at $25/hr - flexible hourly packages available.",
   },
 ];
 
 const CASE_STUDIES = [
   {
     chipVariant: "orange",
-    title: "Ecommerce Zapier Consulting",
-    headline: "26,000 line items processed. Zero manual hours spent.",
-    industry: "E-Commerce",
+    title: "SaaS Lead Routing - n8n Automation",
+    headline: "4,000+ leads routed automatically. Zero manual triage.",
+    industry: "SaaS",
     problem:
-      "An eCommerce brand selling handcrafted products had messy product data buried in order descriptions - someone had to manually reformat every single order before production could begin.",
-    tools: ["Shopify", "Zapier AI", "Monday.com"],
+      "A SaaS company had sales reps manually reviewing every inbound lead, copying data into their CRM, and assigning follow-up tasks. With growing volume, leads were slipping through daily.",
+    tools: ["Typeform", "n8n", "HubSpot", "Slack"],
     results: [
-      "Eliminated manual data parsing entirely",
-      "Saved dozens of hours per week across operations",
-      "54.62% increase in orders handled",
+      "Eliminated 15+ hours/week of manual lead triage",
+      "100% of leads now auto-enriched, scored, and routed",
+      "Response time cut from hours to under 3 minutes",
     ],
   },
   {
     chipVariant: "amber",
-    title: "SaaS Zapier Consulting",
-    headline: "2,000 tasks automated. No more missed leads.",
-    industry: "SaaS",
+    title: "Agency Client Reporting - n8n Automation",
+    headline: "Weekly reports delivered automatically. No spreadsheets touched.",
+    industry: "Marketing Agency",
     problem:
-      "Every lead a global SaaS company received required manual review, routing, CRM entry, and follow-up - resulting in inefficient focus and prospects constantly slipping through the cracks.",
-    tools: ["Gravity Forms", "Pipedrive", "Autopilot", "Slack"],
+      "A digital marketing agency was manually pulling data from Google Ads, Meta, and GA4 every week, compiling reports in spreadsheets, and emailing them to clients - taking 6–8 hours per week per account manager.",
+    tools: ["Google Ads API", "Meta API", "Google Analytics", "n8n", "Notion"],
     results: [
-      "800+ minutes saved monthly (and counting)",
-      "Zero leads lost to manual handoff errors",
-      "Sales team freed from data entry to focus on closing",
+      "Saved 30+ hours/week across account management team",
+      "Reports delivered automatically every Monday at 8am",
+      "Error rate dropped to zero - no more copy-paste mistakes",
     ],
   },
   {
     chipVariant: "olive",
-    title: "Travel Zapier Consulting",
-    headline: "Making luxury travel even more luxurious (and automating 125,000 tasks in the process)",
-    industry: "Luxury Travel",
+    title: "E-commerce Order Processing - n8n Automation",
+    headline: "8,000 orders/month processed without a single manual step.",
+    industry: "E-Commerce",
     problem:
-      "A luxury travel company planning once-in-a-lifetime trips had hundreds of details per trip requiring manual tracking before, during, and after travel.",
-    tools: ["Pipedrive CRM", "Zapier", "8+ apps via custom API"],
+      "An e-commerce brand had a complex fulfilment process requiring order data from Shopify to be reformatted, split by vendor, and sent to three separate suppliers - all done manually by staff.",
+    tools: ["Shopify", "n8n", "Google Sheets", "SendGrid"],
     results: [
-      "125,000+ tasks automated monthly",
-      "Transformed CRM from pre-sale to full journey management",
-      "Team freed to focus on personalization",
+      "Fully automated order-to-supplier pipeline",
+      "Processing time reduced from 4hrs/day to under 5 minutes",
+      "Scaled from 2,000 to 8,000 orders/month without hiring",
     ],
   },
 ];
 
 const AUTOMATIONS = [
   {
-    tab: "Sales Process",
-    label: "Zapier-\nEnhanced\nSales",
-    title: "Lead capture to instant sales handoff",
-    color: "#c0392b",
+    tab: "Lead Management",
+    label: "n8n\nPowered\nLead Flow",
+    title: "Form submission to CRM - fully enriched",
+    color: "#EA4B71",
     steps: [
-      "Website form submission triggers contact enrichment via Clearbit (company size, industry, tech stack)",
-      "Enriched data creates or updates HubSpot contact with full profile and lead score",
-      "Instant Slack notification to sales team with context",
-      "Follow-up sequence begins automatically based on lead qualification tier",
+      "Form submission triggers n8n workflow and pulls enrichment data via Clearbit or Apollo",
+      "Lead is scored based on company size, industry, and behaviour signals",
+      "HubSpot or Pipedrive contact created/updated with full profile and score",
+      "Sales team notified via Slack with lead summary and one-click meeting link",
     ],
   },
   {
-    tab: "Finance",
-    label: "Zapier-\nEnhanced\nFinance",
-    title: "Payment to accounting closed loop",
-    color: "#d97706",
+    tab: "AI Support Triage",
+    label: "n8n\nPowered\nAI Support",
+    title: "Ticket received to resolved - AI-routed",
+    color: "#7C3AED",
     steps: [
-      "Stripe payment confirmation triggers QuickBooks invoice generation with line items",
-      "Invoice auto-syncs to accounting system with proper categorization and tags",
-      "Customer receives professional receipt email with invoice attached",
-      "Payment recorded in CRM deal timeline",
+      "Support email or form submission triggers n8n workflow",
+      "GPT-4 classifies ticket by category, urgency, and sentiment",
+      "Ticket automatically created in Intercom/Zendesk and routed to correct team",
+      "SLA timer starts - auto-escalation kicks in if ticket is unresolved after threshold",
     ],
   },
   {
-    tab: "Sales Meetings",
-    label: "Zapier-\nEnhanced\nSales Meetings",
-    title: "Appointment booked to show-up ready",
-    color: "#ea580c",
+    tab: "Finance Ops",
+    label: "n8n\nPowered\nFinance",
+    title: "Payment received to books reconciled",
+    color: "#D97706",
     steps: [
-      "Calendly booking creates calendar event and sends confirmation email instantly",
-      "Asana prep checklist auto-generates with meeting-specific tasks assigned to team",
-      "Automated reminder sequence sends prep materials and meeting link at intervals",
-      "No-show triggers rescheduling sequence; attended meetings log notes to CRM",
+      "Stripe payment confirmation triggers n8n workflow",
+      "Invoice generated in QuickBooks with correct line items and categories",
+      "Customer receives PDF receipt via email automatically",
+      "Payment logged to CRM deal and Slack notification sent to finance channel",
     ],
   },
   {
-    tab: "Customer Support",
-    label: "Zapier-\nEnhanced\nCustomer Support",
-    title: "Support request to tracked resolution",
-    color: "#4d7c0f",
+    tab: "Client Onboarding",
+    label: "n8n\nPowered\nOnboarding",
+    title: "Deal won to client fully onboarded",
+    color: "#059669",
     steps: [
-      "Form submission creates help desk ticket with customer history pulled automatically",
-      "AI or rules-based routing assigns ticket by issue type, priority, and team capacity",
-      "SLA tracking begins - auto-escalation kicks in if unresolved after 24 hours",
-      "Resolution closes ticket, updates customer, and logs satisfaction score",
+      "CRM deal marked 'Closed Won' triggers n8n onboarding workflow",
+      "Welcome email sequence initiated and client added to project management tool",
+      "DocuSign contract sent automatically with deal-specific terms populated",
+      "Internal team notified with client context - kickoff call scheduled automatically",
     ],
   },
   {
-    tab: "Data",
-    label: "Zapier-\nEnhanced\nData",
-    title: "Spreadsheet entry to system of record",
-    color: "#dc2626",
+    tab: "Data Sync",
+    label: "n8n\nPowered\nData Sync",
+    title: "One source of truth across all tools",
+    color: "#2563EB",
     steps: [
-      "New Google Sheets row triggers Airtable record creation with mapped fields",
-      "Data syncs across platforms - one source of truth, multiple views",
-      "Team gets Slack notification with relevant details and link to full record",
-      "Dashboard updates in real-time so leadership sees current state without manual reports",
+      "Record created or updated in primary system triggers n8n sync workflow",
+      "Data validated, transformed, and pushed to all connected platforms",
+      "Conflicts detected and flagged with resolution logic applied automatically",
+      "Audit log updated - every change tracked with timestamp and source",
     ],
   },
   {
-    tab: "Customer Success",
-    label: "Zapier-\nEnhanced\nCustomer Success",
-    title: "Deal won to customer activated",
-    color: "#b45309",
+    tab: "Reporting",
+    label: "n8n\nPowered\nReporting",
+    title: "Automated reports delivered on schedule",
+    color: "#EA580C",
     steps: [
-      "CRM deal marked 'won' triggers personalized contract generation with deal terms",
-      "DocuSign sends for signature with auto-reminders until completed",
-      "Signed contract kicks off welcome email sequence and onboarding task assignment",
-      "Customer success gets notified with account context for seamless handoff",
+      "Scheduled n8n trigger fires at configured time (daily, weekly, monthly)",
+      "Data pulled from APIs - Google Analytics, Ads, CRM, finance tools",
+      "Report compiled, formatted, and pushed to Notion, Google Sheets, or Slack",
+      "Stakeholders receive email summary with key metrics and trend annotations",
     ],
   },
 ];
 
 const PRICING_PLANS = [
   {
-    label: "Implementation Session",
-    badge: "Perfect For: Quick fixes and/or Zapier strategy",
+    label: "Strategy Session",
+    badge: "Perfect For: Quick audit or n8n advice",
     price: "$297",
-    period: "per session",
+    period: "per session (75 min)",
     features: [
-      "Live troubleshooting or strategy session",
-      "Fix broken Zaps or optimize workflows",
-      "Expert guidance on automation roadmap",
-      "Immediate problem-solving",
+      "Live strategy or troubleshooting session",
+      "n8n workflow audit & recommendations",
+      "Migration planning from Zapier/Make",
+      "Expert guidance on your automation roadmap",
     ],
-    cta: "Book an Implementation Session",
+    cta: "Book a Strategy Session",
     featured: false,
   },
   {
     label: "Hourly Packages",
-    badge: "Perfect For: Teams with specific automation needs",
-    price: "$1,950",
-    period: "starting at",
+    badge: "Perfect For: Teams with specific n8n needs",
+    price: "$25",
+    period: "per hour - packages from $500",
     features: [
-      "Workflow design & implementation",
-      "AI-powered automation",
-      "API integrations",
-      "Documentation & training",
+      "n8n workflow design & implementation",
+      "AI-powered automation pipelines",
+      "API & webhook integrations",
+      "Self-hosted n8n setup & config",
+      "Documentation & team handoff",
       "Dedicated project lead",
-      "Shared progress portal",
     ],
     cta: "Book a Discovery Call",
     featured: true,
   },
   {
     label: "Monthly Retainers",
-    badge: "Perfect For: Teams with ongoing automation needs",
+    badge: "Perfect For: Teams with ongoing n8n needs",
     price: "Custom",
     period: "tailored to your team",
     features: [
       "Priority project scheduling",
       "Proactive monitoring & maintenance",
-      "Dedicated project manager",
+      "Dedicated automation engineer",
       "Private Slack channel",
       "Scheduled strategy sessions",
     ],
@@ -315,43 +320,43 @@ const PRICING_PLANS = [
   },
 ];
 
-const GOODBYE_ITEMS = ["Stunted growth", "Wasted time and energy", "Frustrated employees"];
-const HELLO_ITEMS = ["Easy automation", "Headache-free growth", "Increased profits"];
+const GOODBYE_ITEMS = ["Per-task fees eating your budget", "Data locked in third-party servers", "Workflows breaking silently"];
+const HELLO_ITEMS = ["Unlimited executions, flat cost", "Full data ownership & compliance", "Reliable automations with error alerts"];
 
 const FAQ_COLORS = [
-  { bg: "#ffedef", border: "#ff9aaa" },
-  { bg: "#eef5e0", border: "#b5c86a" },
+  { bg: "#f0f4ff", border: "#93b4ff" },
+  { bg: "#fff0f3", border: "#ff9aaa" },
   { bg: "#fff8f0", border: "#f5d5b0" },
 ];
 
 const FAQS = [
   {
+    q: "What is n8n and how is it different from Zapier?",
+    a: "n8n is an open-source workflow automation platform. Unlike Zapier, it charges a flat monthly rate (or free if self-hosted) rather than per-task - so there are no surprise bills as your volume grows. It also supports custom code nodes, complex branching logic, and connects to any API, making it far more powerful for advanced use cases.",
+  },
+  {
+    q: "Do I need to host n8n myself?",
+    a: "No. n8n offers a cloud-hosted option (n8n.cloud) so you can get started immediately without managing any infrastructure. Self-hosting is available for teams that want full data control, custom environments, or lower long-term costs - and we handle the full setup if you go that route.",
+  },
+  {
+    q: "Can you migrate our existing Zapier or Make workflows to n8n?",
+    a: "Yes, migration is one of our most common services. We audit all your existing automations, rebuild them cleanly in n8n, test thoroughly, and manage the cutover - so your operations stay uninterrupted throughout.",
+  },
+  {
     q: "How soon can you start?",
-    a: "Most projects can start within 1-5 business days after the discovery call, depending on scope and access.",
+    a: "Most projects can begin within 1–5 business days after the discovery call, depending on scope and access requirements.",
   },
   {
-    q: "Can you fix broken Zaps quickly?",
-    a: "Yes. For many issues, broken or failing Zaps can be addressed during a paid 75-minute implementation session. If the issue requires additional investigation or rebuilding, our team will assess the scope and recommend the right path forward.",
+    q: "Can you connect n8n to tools that don't have native integrations?",
+    a: "Yes. n8n's HTTP Request node and Code node allow us to connect to virtually any tool with an API - even internal systems, custom databases, or less common SaaS products that aren't in any integration library.",
   },
   {
-    q: "Do you work with existing accounts?",
-    a: "Yes. We regularly work inside existing Zapier accounts - including auditing and fixing broken Zaps, optimizing performance and error handling, refactoring complex workflows, and documenting existing automations for your internal team.",
-  },
-  {
-    q: "What access do you need?",
-    a: "At minimum, we typically need Zapier credentials or a seat, plus access to the connected apps involved in the workflows (e.g. CRM, forms, support tools).",
-  },
-  {
-    q: "Do you document and train the team?",
-    a: "Absolutely. We provide documentation for the automations we build so your team understands how everything works. We also offer training sessions to walk through the workflows, explain key logic, and answer questions as part of the handoff or ongoing support.",
-  },
-  {
-    q: "What's the difference between Zapier and Make?",
-    a: "Both are automation platforms with different strengths. Zapier is simpler, easier to set up, and great for straightforward workflows and business apps. Make (formerly Integromat) offers more complex logic, conditional paths, and data transformations - useful for advanced integrations.",
+    q: "Do you provide documentation and training?",
+    a: "Absolutely. Every project includes documentation covering what was built, how it works, and how to maintain it. We also offer walkthrough sessions for your team as part of the handoff - or ongoing support if you'd rather leave the maintenance to us.",
   },
   {
     q: "What if something breaks after you build it?",
-    a: "We build automations to be reliable and include error handling to catch issues before they become problems. If something does break, we're available to diagnose and fix it. Clients on ongoing support packages get proactive monitoring; project-based clients have access to hourly support after launch.",
+    a: "We build with error handling and alerting built in - so issues surface immediately rather than failing silently. If something breaks, clients on retainers get proactive monitoring and fast fixes. Project-based clients have access to hourly support after launch.",
   },
 ];
 
@@ -370,6 +375,11 @@ const fadeUpAnimate = (delay = 0) => ({
   transition: { duration: 0.72, delay, ease },
 });
 
+// ── Accent colour ─────────────────────────────────────────────────────────────
+// n8n brand is a deep pink/red - we use it as the page accent alongside the
+// site's primary orange so the page feels distinct but consistent.
+const ACCENT = "#EA4B71";
+
 // ── Hero ──────────────────────────────────────────────────────────────────────
 
 const HeroSection = () => (
@@ -379,7 +389,7 @@ const HeroSection = () => (
       <motion.div {...fadeUpAnimate(0.05)} className="flex items-center gap-4 mb-8 sm:mb-10">
         <div className="shrink-0 border-[1.5px] border-[#1A1A1A] rounded-lg px-3 py-1 sm:px-5 sm:py-2 bg-[#FEF6F5]">
           <span className="text-[11px] sm:text-[13px] font-medium text-[#1A1A1A] whitespace-nowrap leading-none">
-            Expert Zapier Consultant
+            Expert n8n Consultants
           </span>
         </div>
         <div className="hidden sm:block flex-1 h-px bg-[#1A1A1A]" />
@@ -389,17 +399,36 @@ const HeroSection = () => (
         {...fadeUpAnimate(0.12)}
         className="m-0 font-extrabold text-[#1A1A1A] tracking-tight leading-[1.3] sm:leading-[1.2] text-[2rem] sm:text-[3rem] lg:text-[4.5rem]"
       >
-        Zap your way to <SHWord>happiness</SHWord>
+        n8n automation that{" "}
+        <SHWord>actually</SHWord>{" "}works
       </motion.h1>
 
-      <motion.p {...fadeUpAnimate(0.26)} className="mt-4 sm:mt-6 text-[#4A4A4A] leading-relaxed max-w-lg text-sm sm:text-[0.95rem]">
-        Zapier is a powerhouse automation tool, but mastering it is not for the fainthearted - or the busy.{" "}
-        <strong>Leave the zapping to the experts (that's us). So you can focus on what you do best.</strong>
+      <motion.p {...fadeUpAnimate(0.26)} className="mt-4 sm:mt-6 text-[#4A4A4A] leading-relaxed max-w-xl text-sm sm:text-[0.95rem]">
+        n8n is the most powerful workflow automation platform available - but configuring it properly takes real expertise.{" "}
+        <strong>Leave the nodes and logic to us, so you get clean, reliable automations that run without babysitting.</strong>
       </motion.p>
 
-      <motion.div {...fadeUpAnimate(0.34)} className="mt-8 sm:mt-10">
+      {/* Pricing pill */}
+      <motion.div {...fadeUpAnimate(0.32)} className="mt-5 sm:mt-6 inline-flex items-center gap-0 rounded-full overflow-hidden"
+        style={{ outline: `1.5px solid rgba(234,75,113,0.3)`, background: "#fff9f7", boxShadow: "0 1px 6px rgba(234,75,113,0.1)" }}
+      >
+        <div className="flex items-center gap-2 px-4 py-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#EA4B71] animate-pulse shrink-0" />
+          <span className="text-[12px] sm:text-[13px] font-semibold text-[#6b2500] whitespace-nowrap">
+            n8n Consulting &amp; Automation
+          </span>
+        </div>
+        <div style={{ width: "1.5px", alignSelf: "stretch", background: "rgba(234,75,113,0.3)" }} />
+        <div className="px-4 py-2 flex items-center" style={{ background: ACCENT }}>
+          <span className="text-[13px] sm:text-[14px] text-white whitespace-nowrap" style={{ fontWeight: 600 }}>
+            $25/hr
+          </span>
+        </div>
+      </motion.div>
+
+      <motion.div {...fadeUpAnimate(0.4)} className="mt-8 sm:mt-10">
         <Button variant="secondary" size="md" className="text-[11px]! sm:text-sm! px-3! py-2! sm:px-5! sm:py-3!" onClick={openCalendly}>
-          Book a free discovery call with a Zapier expert
+          Book a free n8n discovery call
         </Button>
       </motion.div>
 
@@ -412,25 +441,26 @@ const HeroSection = () => (
 const ServicesSection = () => (
   <section className="relative bg-[#0f0f0f] py-16 sm:py-20 lg:py-28 overflow-hidden">
 
-    <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-150 h-75 bg-[#ff4f00]/10 rounded-full blur-3xl" />
+    <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-150 h-75 rounded-full blur-3xl"
+      style={{ background: `${ACCENT}18` }} />
 
     <div className="relative max-w-7xl mx-auto px-6 sm:px-10 xl:px-16">
 
       <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 mb-14 sm:mb-18">
         <div className="flex-1">
           <motion.div {...fadeUp(0)} className="mb-5">
-            <Chip style={{ background: "rgba(255,79,0,0.15)", color: "#ff6830" }}>
-              Zapier services we deliver
+            <Chip style={{ background: "rgba(234,75,113,0.15)", color: "#EA4B71" }}>
+              n8n services we deliver
             </Chip>
           </motion.div>
           <motion.h2
             {...fadeUp(0.07)}
             className="font-extrabold text-white tracking-tight leading-[1.1] text-[2rem] sm:text-[2.8rem] lg:text-[3.5rem] max-w-2xl m-0"
           >
-            Get Zapier working<br />the way it's supposed to
+            Get n8n working<br />the way it's supposed to
           </motion.h2>
           <motion.p {...fadeUp(0.13)} className="text-white/45 text-sm sm:text-base mt-4 max-w-md m-0">
-            Reliably, cleanly, and without constant babysitting.
+            Reliably, securely, and without constant firefighting.
           </motion.p>
         </div>
         <motion.div {...fadeUp(0.18)} className="shrink-0 lg:pt-3">
@@ -453,7 +483,7 @@ const ServicesSection = () => (
             style={{ boxShadow: "0 1px 0 rgba(255,255,255,0.04) inset" }}
           >
             <div className="flex items-center gap-3">
-              <div className="w-6 h-0.5 bg-[#ff4f00] rounded-full shrink-0" />
+              <div className="w-6 h-0.5 rounded-full shrink-0" style={{ background: ACCENT }} />
               <Badge variant={s.badgeVariant}>{s.badge}</Badge>
             </div>
             <div className="flex flex-col gap-2.5">
@@ -475,7 +505,7 @@ const ResultsSection = () => (
     <div className="max-w-7xl mx-auto px-6 sm:px-10 xl:px-16">
 
       <motion.div {...fadeUp(0)} className="mb-5">
-        <Chip style={{ background: "#fff0ec", color: "#E8521A" }}>
+        <Chip style={{ background: "#fff0f3", color: ACCENT }}>
           Results You Can Expect
         </Chip>
       </motion.div>
@@ -484,11 +514,11 @@ const ResultsSection = () => (
         {...fadeUp(0.07)}
         className="font-extrabold text-[#1A1A1A] tracking-tight leading-tight mb-4 text-[1.8rem] sm:text-[2.5rem] lg:text-[3.5rem] max-w-3xl"
       >
-        Automation magic + our Zapier expertise<br />= your business transformed
+        n8n's power + our expertise<br />= your operations transformed
       </motion.h2>
 
       <motion.p {...fadeUp(0.12)} className="text-[#666] text-sm sm:text-base mb-10 sm:mb-14 max-w-2xl">
-        Zapier's thousands of integrations provide nearly endless opportunities to improve your workflow efficiency. Pair that with the world's premier Zapier consultants and here's what your business ops look like:
+        n8n gives you more flexibility than any other automation platform - and when paired with experts who know it inside-out, here's what that looks like for your business:
       </motion.p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
@@ -504,8 +534,8 @@ const ResultsSection = () => (
             style={{ boxShadow: "0 2px 16px rgba(0,0,0,0.05)" }}
           >
             <span
-              className="font-extrabold text-[#ff4f00] leading-none"
-              style={{ fontSize: "clamp(2rem, 4vw, 2.8rem)" }}
+              className="font-extrabold leading-none"
+              style={{ fontSize: "clamp(2rem, 4vw, 2.8rem)", color: ACCENT }}
             >
               {r.stat}
             </span>
@@ -529,8 +559,8 @@ const CaseStudiesSection = () => {
       <div className="max-w-7xl mx-auto px-6 sm:px-10 xl:px-16">
 
         <motion.div {...fadeUp(0)} className="mb-5">
-          <Chip style={{ background: "#fff0ec", color: "#E8521A" }}>
-            Zapier Case Studies
+          <Chip style={{ background: "#fff0f3", color: ACCENT }}>
+            n8n Case Studies
           </Chip>
         </motion.div>
 
@@ -542,7 +572,7 @@ const CaseStudiesSection = () => {
         </motion.h2>
 
         <motion.p {...fadeUp(0.12)} className="text-[#666] text-sm sm:text-base mb-10 sm:mb-14 max-w-2xl">
-          Here's what happens when expert Zapier automation meets the right business processes.
+          Here's what happens when expert n8n automation meets the right business processes.
         </motion.p>
 
         <motion.div {...fadeUp(0.16)} className="flex flex-col divide-y divide-[#e0e0e0] border-t border-[#e0e0e0]">
@@ -550,7 +580,6 @@ const CaseStudiesSection = () => {
             const isOpen = openIndex === i;
             return (
               <div key={i}>
-                {/* Accordion trigger */}
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                   className="w-full flex items-start gap-5 py-7 sm:py-8 text-left group"
@@ -572,7 +601,6 @@ const CaseStudiesSection = () => {
                   </motion.div>
                 </button>
 
-                {/* Accordion content */}
                 <AnimatePresence initial={false}>
                   {isOpen && (
                     <motion.div
@@ -584,29 +612,24 @@ const CaseStudiesSection = () => {
                       className="overflow-hidden"
                     >
                       <div className="pb-8 sm:pb-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-                        {/* Left: problem */}
                         <div>
                           <p className="text-xs font-semibold text-[#aaa] uppercase tracking-widest mb-3">The Challenge</p>
                           <p className="text-sm sm:text-base text-[#555] leading-relaxed m-0">{cs.problem}</p>
                           <div className="mt-6 flex flex-wrap gap-2">
                             {cs.tools.map((t, j) => (
-                              <span
-                                key={j}
-                                className="text-xs font-medium text-[#666] bg-white border border-[#e0e0e0] rounded-full px-3 py-1"
-                              >
+                              <span key={j} className="text-xs font-medium text-[#666] bg-white border border-[#e0e0e0] rounded-full px-3 py-1">
                                 {t}
                               </span>
                             ))}
                           </div>
                         </div>
-
-                        {/* Right: results */}
                         <div>
                           <p className="text-xs font-semibold text-[#aaa] uppercase tracking-widest mb-4">Key Results</p>
                           <div className="flex flex-col gap-3">
                             {cs.results.map((r, j) => (
                               <div key={j} className="flex items-start gap-3">
-                                <div className="w-5 h-5 rounded-full bg-[#ff4f00] flex items-center justify-center shrink-0 mt-0.5">
+                                <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5"
+                                  style={{ background: ACCENT }}>
                                   <Check size={10} className="text-white" strokeWidth={3} />
                                 </div>
                                 <p className="text-sm text-[#333] leading-snug m-0">{r}</p>
@@ -639,20 +662,19 @@ const AutomationsSection = () => {
       <div className="max-w-7xl mx-auto px-6 sm:px-10 xl:px-16">
 
         <motion.div {...fadeUp(0)} className="mb-5">
-          <Chip style={{ background: "#fff0ec", color: "#E8521A" }}>
-            Common Zapier Automations We Build
+          <Chip style={{ background: "#fff0f3", color: ACCENT }}>
+            Common n8n Automations We Build
           </Chip>
         </motion.div>
 
         <motion.p {...fadeUp(0.07)} className="font-bold text-[#1A1A1A] text-base sm:text-lg mb-2 max-w-3xl">
-          From sales to customer support to finance, we build high-impact, AI-powered automation workflows that reshape your operations.
+          From lead management to AI-powered support, we build high-impact n8n workflows that reshape your operations.
         </motion.p>
 
         <motion.p {...fadeUp(0.12)} className="text-[#666] text-sm sm:text-base mb-8 sm:mb-10">
-          Some examples of Flow Digital's workflow-boosting wizardry:
+          Some examples of what we build for our clients:
         </motion.p>
 
-        {/* Tab buttons */}
         <motion.div {...fadeUp(0.16)} className="flex flex-wrap gap-2 mb-6">
           {AUTOMATIONS.map((a, i) => (
             <button
@@ -661,10 +683,7 @@ const AutomationsSection = () => {
               className="rounded-xl px-4 py-2 text-sm font-semibold text-white transition-all duration-200"
               style={{
                 background: a.color,
-                boxShadow:
-                  activeTab === i
-                    ? `0 0 0 2px white, 0 0 0 4px ${a.color}`
-                    : "none",
+                boxShadow: activeTab === i ? `0 0 0 2px white, 0 0 0 4px ${a.color}` : "none",
                 opacity: activeTab === i ? 1 : 0.75,
               }}
             >
@@ -673,7 +692,6 @@ const AutomationsSection = () => {
           ))}
         </motion.div>
 
-        {/* Content panel */}
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
@@ -684,7 +702,6 @@ const AutomationsSection = () => {
             className="rounded-2xl border border-[#e8e8e8] overflow-hidden flex flex-col lg:flex-row"
             style={{ boxShadow: "0 2px 20px rgba(0,0,0,0.05)" }}
           >
-            {/* Left: category label */}
             <div className="lg:w-56 xl:w-64 shrink-0 bg-white p-8 sm:p-10 flex items-start lg:items-center border-b lg:border-b-0 lg:border-r border-[#e8e8e8]">
               <h3
                 className="font-extrabold text-[#1A1A1A] leading-[1.1] whitespace-pre-line m-0"
@@ -693,9 +710,7 @@ const AutomationsSection = () => {
                 {active.label}
               </h3>
             </div>
-
-            {/* Right: step grid */}
-            <div className="flex-1 bg-[#fff8f5] p-7 sm:p-8">
+            <div className="flex-1 p-7 sm:p-8" style={{ background: "#fff9f7" }}>
               <p className="font-semibold text-[#1A1A1A] text-sm sm:text-base mb-6 m-0">
                 {active.title}
               </p>
@@ -703,9 +718,7 @@ const AutomationsSection = () => {
                 {active.steps.map((step, j) => (
                   <div
                     key={j}
-                    className={`py-5 px-1 sm:px-3 ${
-                      j < active.steps.length - 2 ? "border-b border-[#e8e8e8]" : ""
-                    } ${j % 2 === 0 ? "sm:border-r sm:border-[#e8e8e8] sm:pr-6" : "sm:pl-6"}`}
+                    className={`py-5 px-1 sm:px-3 ${j < active.steps.length - 2 ? "border-b border-[#e8e8e8]" : ""} ${j % 2 === 0 ? "sm:border-r sm:border-[#e8e8e8] sm:pr-6" : "sm:pl-6"}`}
                   >
                     <p className="text-sm text-[#555] leading-relaxed m-0">{step}</p>
                   </div>
@@ -723,12 +736,12 @@ const AutomationsSection = () => {
 // ── Pricing ───────────────────────────────────────────────────────────────────
 
 const PricingSection = () => (
-  <section className="bg-white py-16 sm:py-20 lg:py-28">
+  <section className="bg-[#fafafa] py-16 sm:py-20 lg:py-28">
     <div className="max-w-7xl mx-auto px-6 sm:px-10 xl:px-16">
 
       <motion.div {...fadeUp(0)} className="mb-5">
-        <Chip style={{ background: "#fff0ec", color: "#E8521A" }}>
-          Zapier Automation Pricing
+        <Chip style={{ background: "#fff0f3", color: ACCENT }}>
+          n8n Consulting Pricing
         </Chip>
       </motion.div>
 
@@ -749,42 +762,33 @@ const PricingSection = () => (
             transition={{ duration: 0.6, delay: i * 0.1, ease }}
             className={`rounded-2xl p-7 sm:p-8 flex flex-col gap-6 ${
               plan.featured
-                ? "bg-[#1A1A1A] border-2 border-[#ff4f00]"
-                : "bg-[#fafafa] border border-[#e8e8e8]"
+                ? "bg-[#1A1A1A] border-2"
+                : "bg-white border border-[#e8e8e8]"
             }`}
             style={{
+              borderColor: plan.featured ? ACCENT : undefined,
               boxShadow: plan.featured
-                ? "0 8px 40px rgba(255,79,0,0.18)"
+                ? `0 8px 40px ${ACCENT}30`
                 : "0 2px 16px rgba(0,0,0,0.04)",
             }}
           >
             <div>
-              <p className="text-xs font-semibold text-[#ff4f00] uppercase tracking-widest mb-2">
+              <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: ACCENT }}>
                 {plan.badge}
               </p>
-              <h3
-                className={`font-bold text-xl leading-snug m-0 ${
-                  plan.featured ? "text-white" : "text-[#1A1A1A]"
-                }`}
-              >
+              <h3 className={`font-bold text-xl leading-snug m-0 ${plan.featured ? "text-white" : "text-[#1A1A1A]"}`}>
                 {plan.label}
               </h3>
             </div>
 
             <div>
               <span
-                className={`block font-extrabold leading-none ${
-                  plan.featured ? "text-white" : "text-[#1A1A1A]"
-                }`}
+                className={`block font-extrabold leading-none ${plan.featured ? "text-white" : "text-[#1A1A1A]"}`}
                 style={{ fontSize: "clamp(2rem, 4vw, 2.5rem)" }}
               >
                 {plan.price}
               </span>
-              <p
-                className={`text-sm mt-1 m-0 ${
-                  plan.featured ? "text-white/45" : "text-[#999]"
-                }`}
-              >
+              <p className={`text-sm mt-1 m-0 ${plan.featured ? "text-white/45" : "text-[#999]"}`}>
                 {plan.period}
               </p>
             </div>
@@ -794,20 +798,16 @@ const PricingSection = () => (
                 <div key={j} className="flex items-start gap-2.5">
                   <div
                     className={`w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5 ${
-                      plan.featured ? "bg-[#ff4f00]" : "border-2 border-[#ff4f00]"
+                      plan.featured ? "" : "border-2"
                     }`}
+                    style={{
+                      background: plan.featured ? ACCENT : "transparent",
+                      borderColor: plan.featured ? "transparent" : ACCENT,
+                    }}
                   >
-                    <Check
-                      size={10}
-                      className={plan.featured ? "text-white" : "text-[#ff4f00]"}
-                      strokeWidth={3}
-                    />
+                    <Check size={10} className={plan.featured ? "text-white" : ""} style={{ color: plan.featured ? "white" : ACCENT }} strokeWidth={3} />
                   </div>
-                  <p
-                    className={`text-sm leading-snug m-0 ${
-                      plan.featured ? "text-white/65" : "text-[#555]"
-                    }`}
-                  >
+                  <p className={`text-sm leading-snug m-0 ${plan.featured ? "text-white/65" : "text-[#555]"}`}>
                     {f}
                   </p>
                 </div>
@@ -835,10 +835,10 @@ const PricingSection = () => (
 const FaqSection = () => (
   <TwoColumnFAQ
     faqs={FAQS}
-    chip="Zapier FAQs"
+    chip="n8n FAQs"
     heading="Everything you need to know"
-    subheading="Common questions about our Zapier consulting and automation services."
-    chipStyle={{ background: "#fff0ec", color: "#E8521A" }}
+    subheading="Common questions about our n8n consulting and automation services."
+    chipStyle={{ background: "#fff0f3", color: ACCENT }}
     colors={FAQ_COLORS}
   />
 );
@@ -850,8 +850,8 @@ const CtaSection = () => (
     <div className="max-w-7xl mx-auto px-6 sm:px-10 xl:px-16">
 
       <motion.div {...fadeUp(0)} className="mb-5">
-        <Chip style={{ background: "#fff0ec", color: "#E8521A" }}>
-          Unlock effortless scale with Zapier
+        <Chip style={{ background: "#fff0f3", color: ACCENT }}>
+          Unlock effortless scale with n8n
         </Chip>
       </motion.div>
 
@@ -860,50 +860,42 @@ const CtaSection = () => (
         className="font-extrabold text-[#1A1A1A] leading-[1.05] mb-14 sm:mb-20 max-w-3xl"
         style={{ fontSize: "clamp(2.8rem, 6vw, 5rem)" }}
       >
-        No-code. No headache.
+        No per-task fees.<br />No compromises.
       </motion.h2>
 
-      {/* Cards + SVG connector */}
       <div className="flex flex-col sm:flex-row items-start gap-5 sm:gap-0 mb-12 sm:mb-16">
 
-        {/* Left card */}
         <motion.div
           {...fadeUp(0.12)}
-          className="w-full sm:flex-1 rounded-2xl border-2 border-[#ff4f00] bg-[#fff3ee] p-7 sm:p-8"
+          className="w-full sm:flex-1 rounded-2xl border-2 p-7 sm:p-8"
+          style={{ borderColor: ACCENT, background: "#fff5f7" }}
         >
           <p className="font-bold text-[#1A1A1A] text-sm sm:text-base mb-4 m-0">Say g'bye to:</p>
           {GOODBYE_ITEMS.map((item, i) => (
             <div key={i}>
               <div className="flex items-center gap-3 py-4">
-                <div className="w-6 h-6 rounded-full border-2 border-[#ff4f00] flex items-center justify-center shrink-0">
-                  <X size={10} className="text-[#ff4f00]" strokeWidth={2.5} />
+                <div className="w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0" style={{ borderColor: ACCENT }}>
+                  <X size={10} strokeWidth={2.5} style={{ color: ACCENT }} />
                 </div>
                 <p className="text-sm text-[#333] m-0">{item}</p>
               </div>
-              {i < GOODBYE_ITEMS.length - 1 && <div className="h-px bg-[#f0d0c0]" />}
+              {i < GOODBYE_ITEMS.length - 1 && <div className="h-px" style={{ background: "rgba(234,75,113,0.15)" }} />}
             </div>
           ))}
         </motion.div>
 
-        {/* SVG S-curve connector - desktop only */}
         <div className="hidden sm:block shrink-0" style={{ width: 90 }}>
-          <svg width="90" height="240" viewBox="0 0 90 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M 0 125 C 45 125, 45 205, 90 205"
-              stroke="#1A1A1A"
-              strokeWidth="2"
-              fill="none"
-            />
+          <svg width="90" height="240" viewBox="0 0 90 240" fill="none">
+            <path d="M 0 125 C 45 125, 45 205, 90 205" stroke="#1A1A1A" strokeWidth="2" fill="none" />
             <circle cx="0" cy="125" r="7" fill="white" stroke="#1A1A1A" strokeWidth="2" />
             <circle cx="90" cy="205" r="7" fill="white" stroke="#1A1A1A" strokeWidth="2" />
           </svg>
         </div>
 
-        {/* Right card - offset down on desktop */}
         <motion.div
           {...fadeUp(0.22)}
-          className="w-full sm:flex-1 sm:mt-20 rounded-2xl bg-[#ff4f00] p-7 sm:p-8"
-          style={{ boxShadow: "5px 5px 0px #c0392b" }}
+          className="w-full sm:flex-1 sm:mt-20 rounded-2xl p-7 sm:p-8"
+          style={{ background: ACCENT, boxShadow: "5px 5px 0px #b8274a" }}
         >
           <p className="font-bold text-white text-sm sm:text-base mb-4 m-0">And say hi to:</p>
           {HELLO_ITEMS.map((item, i) => (
@@ -921,10 +913,9 @@ const CtaSection = () => (
 
       </div>
 
-      {/* CTA Button */}
       <motion.div {...fadeUp(0.3)} className="flex justify-center">
         <Button variant="secondary" size="md" onClick={openCalendly}>
-          Book a free discovery call
+          Book a free n8n discovery call
         </Button>
       </motion.div>
 
@@ -934,22 +925,22 @@ const CtaSection = () => (
 
 // ── Page ──────────────────────────────────────────────────────────────────────
 
-const ZapierConsultantPage = () => (
+const N8nConsultingPage = () => (
   <>
     <HeroSection />
     <ServicesSection />
     <ResultsSection />
     <CaseStudiesSection />
     <PremiumQuoteStack
-      quotes={ZAPIER_QUOTES}
-      badge="What Clients Say About Zapier Automation"
-      heading={`We're Zapier's #1 rated\nautomation experts\nfor a reason`}
-      subheading="Here's a small selection of our hundreds of five-star reviews"
+      quotes={N8N_QUOTES}
+      badge="What Clients Say About n8n Automation"
+      heading={`We build n8n workflows\nthat run reliably\nin production`}
+      subheading="Here's what clients say about working with us"
     />
     <WorkflowFramework
-      steps={ZAPIER_STEPS}
-      chip="Our Zapier workflow automation process"
-      heading="Get Zapping (without snapping)"
+      steps={N8N_STEPS}
+      chip="Our n8n automation process"
+      heading="From brief to live automation"
       hideDescription
     />
     <AutomationsSection />
@@ -959,4 +950,4 @@ const ZapierConsultantPage = () => (
   </>
 );
 
-export default ZapierConsultantPage;
+export default N8nConsultingPage;

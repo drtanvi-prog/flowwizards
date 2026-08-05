@@ -1,0 +1,14 @@
+# Flow Wizards — robots.txt
+# https://www.flowwizards.com
+
+User-agent: *
+Allow: /
+
+# Block legal/utility pages from crawlers
+Disallow: /thank-you-page
+Disallow: /privacy-policy
+Disallow: /terms-of-service
+Disallow: /msa
+
+# Sitemap location
+Sitemap: https://www.flowwizards.com/sitemap.xml

@@ -40,6 +40,8 @@ export const PLANS = [
     includesLabel: "Hourly Retainers Include:",
     includesContent: {
       items: [
+        { label: "n8n consulting & automation setup" },
+        { label: "n8n workflow design & deployment" },
         { label: "Workflow strategy & design" },
         { label: "No-code and low-code development" },
         { label: "API development" },
@@ -48,8 +50,10 @@ export const PLANS = [
         { label: "Additional hourly work billed separately" },
       ],
     },
-    price: "$1,950",
-    pricePrefix: "Hourly Packages start at",
+    price: "$25",
+    priceUnit: "/ hour",
+    pricePrefix: "Starting at",
+    priceSub: "Hourly packages & retainers available",
     cta: "Book a 30 minute discovery Session",
   },
   {

@@ -4,7 +4,7 @@ import {
    Clock, Monitor, ClipboardList, Bot, Workflow,
 } from 'lucide-react'
 
-// iconColor and iconBg are no longer used — all cards render with orange (#F07020)
+// iconColor and iconBg are no longer used - all cards render with orange (#F07020)
 
 export const BLOG_POSTS = [
    {

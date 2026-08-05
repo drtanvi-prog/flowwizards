@@ -138,7 +138,7 @@ const ProblemsSection = () => (
          {/* Two-card connected layout */}
          <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-0 mb-10 sm:mb-14">
 
-            {/* Left card — problems */}
+            {/* Left card - problems */}
             <motion.div
                {...fadeUp(0.1)}
                className="w-full lg:w-[42%] rounded-2xl border-2 border-[#ff4f00] bg-[#fff8f5] p-6 sm:p-8 flex flex-col gap-0"
@@ -166,7 +166,7 @@ const ProblemsSection = () => (
                </div>
             </motion.div>
 
-            {/* Right card — consequences */}
+            {/* Right card - consequences */}
             <motion.div
                {...fadeUp(0.22)}
                className="w-full lg:w-[42%] rounded-2xl bg-[#ff4f00] p-6 sm:p-8 flex flex-col gap-0"

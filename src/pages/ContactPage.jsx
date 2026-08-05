@@ -53,7 +53,7 @@ const ContactPage = () => {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 xl:px-12">
                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
-                  {/* Lottie — desktop only */}
+                  {/* Lottie - desktop only */}
                   <motion.div
                      initial={{ opacity: 0, x: -20 }}
                      animate={{ opacity: 1, x: 0 }}

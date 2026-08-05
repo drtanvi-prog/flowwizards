@@ -6,6 +6,7 @@ import {
   UserCog,
   Code2,
   GitFork,
+  Workflow,
   Menu,
   X,
   ChevronRight,
@@ -22,6 +23,13 @@ import logoZapier from "@assets/zapier-icon.svg";
 
 const dropdownData = {
   services: [
+    {
+      icon: <Workflow size={18} strokeWidth={1.8} />,
+      title: "n8n Consulting & Automation",
+      description: "Expert n8n workflows · Starting at $25/hr",
+      href: "/n8n-consulting",
+      highlight: true,
+    },
     {
       icon: <Sun size={18} strokeWidth={1.8} />,
       title: "AI Automation",
@@ -70,28 +78,37 @@ const DropdownItem = ({ item, onClose, isActive }) => {
   const inner = (
     <div
       className={`flex items-center gap-3.5 px-3 py-3 rounded-xl transition-all duration-200
-          ${isActive ? "bg-[#fff3ee]" : "group-hover:bg-[#fff3ee]"}`}
+          ${item.highlight ? "bg-[#fff0f3] border border-[rgba(234,75,113,0.2)]" : isActive ? "bg-[#fff3ee]" : "group-hover:bg-[#fff3ee]"}`}
     >
       <div
         className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-200 shrink-0
-            ${isActive ? "bg-[#ff4f00] text-white" : "bg-[#f5f5f5] text-[#ff4f00] group-hover:bg-[#ff4f00] group-hover:text-white"}`}
+            ${item.highlight
+              ? "bg-[#EA4B71] text-white group-hover:opacity-90"
+              : isActive ? "bg-[#ff4f00] text-white" : "bg-[#f5f5f5] text-[#ff4f00] group-hover:bg-[#ff4f00] group-hover:text-white"}`}
       >
         {item.icon}
       </div>
       <div className="flex flex-col flex-1 min-w-0">
-        <p
-          className={`font-semibold text-sm m-0 leading-snug transition-colors
-               ${isActive ? "text-[#ff4f00]" : "text-[#1A1A1A] group-hover:text-[#ff4f00]"}`}
-        >
-          {item.title}
-        </p>
+        <div className="flex items-center gap-2 flex-wrap">
+          <p
+            className={`font-semibold text-sm m-0 leading-snug transition-colors
+                 ${item.highlight ? "text-[#b8274a]" : isActive ? "text-[#ff4f00]" : "text-[#1A1A1A] group-hover:text-[#ff4f00]"}`}
+          >
+            {item.title}
+          </p>
+          {item.highlight && (
+            <span className="text-[9px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-[#EA4B71] text-white leading-none">
+              Featured
+            </span>
+          )}
+        </div>
         <p className="text-xs text-gray-500 m-0 mt-0.5 leading-relaxed">
           {item.description}
         </p>
       </div>
       <ChevronRight
         size={15}
-        className={`shrink-0 transition-all duration-200 ${isActive ? "text-[#ff4f00] opacity-100" : "text-[#ff4f00] opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0"}`}
+        className={`shrink-0 transition-all duration-200 ${isActive || item.highlight ? "text-[#ff4f00] opacity-100" : "text-[#ff4f00] opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0"}`}
       />
     </div>
   );
@@ -112,6 +129,7 @@ const DropdownItem = ({ item, onClose, isActive }) => {
     </a>
   );
 };
+
 
 const PANEL_WIDTH = 420;
 
@@ -161,7 +179,7 @@ const Header = () => {
         style={{ backgroundColor: openDropdown ? "#ffffff" : "#FEF6F5" }}
       >
         <div className="max-w-360 mx-auto px-5 sm:px-8 xl:px-16 relative flex items-center justify-between h-20 xl:h-25 w-full">
-          {/* Logo — left */}
+          {/* Logo - left */}
           <Link to="/" className="select-none no-underline relative z-10">
             <img
               src={logo}
@@ -170,7 +188,7 @@ const Header = () => {
             />
           </Link>
 
-          {/* Desktop Nav — absolutely centered, never overlaps logo or CTA */}
+          {/* Desktop Nav - absolutely centered, never overlaps logo or CTA */}
           <div className="hidden xl:flex absolute left-1/2 -translate-x-1/2">
             <Navbar
               openDropdown={openDropdown}
@@ -179,7 +197,7 @@ const Header = () => {
             />
           </div>
 
-          {/* Right side — CTA + mobile hamburger */}
+          {/* Right side - CTA + mobile hamburger */}
           <div className="flex items-center relative z-10">
             <div className="hidden xl:block">
               <Button variant="primary" size="md" className="text-sm! px-5! py-3!" onClick={openCalendly}>
@@ -285,13 +303,13 @@ const Header = () => {
         onClick={closeMobile}
       />
 
-      {/* Mobile drawer — slides in from right */}
+      {/* Mobile drawer - slides in from right */}
       <div
         className={`fixed top-0 right-0 h-full w-full bg-[#FEF6F5] z-200 flex flex-col xl:hidden
                transition-transform duration-300 ease-in-out overflow-hidden
                ${mobileOpen ? "translate-x-0" : "translate-x-full"}`}
       >
-        {/* Drawer top bar — same height & padding as header */}
+        {/* Drawer top bar - same height & padding as header */}
         <div className="flex items-center justify-between px-4 h-20 shrink-0 bg-[#FEF6F5]">
           {mobileSubmenu ? (
             <button
@@ -320,7 +338,7 @@ const Header = () => {
 
         {/* Sliding content area */}
         <div className="relative flex-1 overflow-hidden">
-          {/* Main nav — slides out left when submenu opens */}
+          {/* Main nav - slides out left when submenu opens */}
           <div
             className={`absolute inset-0 overflow-y-auto transition-transform duration-300 ease-in-out
                      ${mobileSubmenu ? "-translate-x-full" : "translate-x-0"}`}
@@ -382,7 +400,7 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Submenu — slides in from right */}
+          {/* Submenu - slides in from right */}
           <div
             className={`absolute inset-0 overflow-y-auto transition-transform duration-300 ease-in-out
                      ${mobileSubmenu ? "translate-x-0" : "translate-x-full"}`}

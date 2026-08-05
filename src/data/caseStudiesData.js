@@ -23,7 +23,7 @@ export const caseStudies = [
   },
   {
     id: 3,
-    title: 'How one CEO Turned His Email List Into A Successful Podcast—And Saved 150+ Hours',
+    title: 'How one CEO Turned His Email List Into A Successful Podcast-And Saved 150+ Hours',
     stats: [
       { value: '150+', label: 'hours saved' },
       { value: '70+', label: 'automated guest onboarding flows' },

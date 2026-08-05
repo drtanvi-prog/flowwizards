@@ -2,7 +2,7 @@ export const STEPS = [
   {
     num: "01",
     title: "Process Walkthrough",
-    desc: "We trace your real workflows — not the documented version. Every manual step and missed handoff becomes a data point.",
+    desc: "We trace your real workflows - not the documented version. Every manual step and missed handoff becomes a data point.",
   },
   {
     num: "02",
@@ -17,7 +17,7 @@ export const STEPS = [
   {
     num: "04",
     title: "Build It Right",
-    desc: "We use the right mix of Make, n8n, Zapier, APIs, or custom code — based on what the workflow needs.",
+    desc: "We use the right mix of Make, n8n, Zapier, APIs, or custom code - based on what the workflow needs.",
   },
   {
     num: "05",

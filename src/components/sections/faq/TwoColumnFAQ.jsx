@@ -22,13 +22,13 @@ const DEFAULT_COLORS = [
  * TwoColumnFAQ
  *
  * Props:
- *   faqs        — array of { q, a }
- *   chip        — string label for the chip badge
- *   heading     — heading text / node
- *   subheading  — subheading text / node
- *   chipStyle   — optional style object for Chip
- *   colors      — optional array of { bg, border } (cycles through)
- *   className   — optional extra class on <section>
+ *   faqs        - array of { q, a }
+ *   chip        - string label for the chip badge
+ *   heading     - heading text / node
+ *   subheading  - subheading text / node
+ *   chipStyle   - optional style object for Chip
+ *   colors      - optional array of { bg, border } (cycles through)
+ *   className   - optional extra class on <section>
  */
 export default function TwoColumnFAQ({
   faqs,

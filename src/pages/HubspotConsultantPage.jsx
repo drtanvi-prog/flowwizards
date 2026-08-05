@@ -19,14 +19,14 @@ const HUBSPOT_QUOTES = [
     quoteColor: "#7a8c00",
   },
   {
-    text: "We had HubSpot for two years and barely scratched the surface. Flow Digital came in, audited our setup, and built workflows we didn't even know were possible. Our marketing team now runs campaigns that used to take days — in minutes.",
+    text: "We had HubSpot for two years and barely scratched the surface. Flow Digital came in, audited our setup, and built workflows we didn't even know were possible. Our marketing team now runs campaigns that used to take days - in minutes.",
     author: "James Whitfield, Marketing Director, Kova Labs",
     bg: "#ffedef",
     border: "#ff9aaa",
     quoteColor: "#E84040",
   },
   {
-    text: "The CRM migration from Salesforce was something we had been putting off for years. Flow Digital made it seamless — our data came over clean, our workflows were rebuilt better than before, and the whole team was up and running in under two weeks.",
+    text: "The CRM migration from Salesforce was something we had been putting off for years. Flow Digital made it seamless - our data came over clean, our workflows were rebuilt better than before, and the whole team was up and running in under two weeks.",
     author: "Sarah Okonkwo, COO, Meridian Partners",
     bg: "#fff8f0",
     border: "#f5d5b0",
@@ -234,7 +234,7 @@ const HeroSection = () => (
         the surface of what HubSpot can do.{" "}
         <strong>
           Flow Digital builds the workflows, logic, and structure that unlock
-          its full potential — and yours.
+          its full potential - and yours.
         </strong>
       </motion.p>
 
@@ -262,7 +262,7 @@ const StatsSection = () => (
         className="text-[#666] text-sm sm:text-base mb-10 sm:mb-14 max-w-xl"
       >
         As a top HubSpot automation agency, Flow Digital helps growth-focused
-        businesses unlock the full power of HubSpot — through clean automation,
+        businesses unlock the full power of HubSpot - through clean automation,
         intelligent integrations, and proven RevOps strategies.
       </motion.p>
 

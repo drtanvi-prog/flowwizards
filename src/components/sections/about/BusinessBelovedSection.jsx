@@ -7,7 +7,7 @@ const BusinessBelovedSection = () => (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 xl:px-16">
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
-            {/* Left — text */}
+            {/* Left - text */}
             <div className="text-center lg:text-left">
                <motion.h2
                   initial={{ opacity: 0, y: 24 }}
@@ -32,7 +32,7 @@ const BusinessBelovedSection = () => (
                   className="text-[#4A4A4A] leading-relaxed mx-auto lg:mx-0 max-w-md"
                   style={{ fontSize: 'clamp(0.88rem, 1.5vw, 1.05rem)' }}
                >
-                  From solo operators to scaling teams, our clients keep coming back because we don't just set things up and disappear — we build systems that genuinely change how work gets done.
+                  From solo operators to scaling teams, our clients keep coming back because we don't just set things up and disappear - we build systems that genuinely change how work gets done.
                </motion.p>
             </div>
 

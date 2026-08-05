@@ -140,7 +140,7 @@ const ROI_STATS = [
   {
     value: "3x",
     title: "Quicker lead response time",
-    desc: "Automated triggers respond to new leads instantly — no more delays that cost you the deal.",
+    desc: "Automated triggers respond to new leads instantly - no more delays that cost you the deal.",
   },
   {
     value: "27%",

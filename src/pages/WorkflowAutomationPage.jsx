@@ -49,7 +49,7 @@ const WorkflowAutomationPage = () => (
           but <SHWord>with us,</SHWord> you can.
         </>
       }
-      body="Let Flow Wizards design and implement AI-powered workflow automation services across your CRM, marketing, support, and operations — so your processes run automatically, reliably, and securely."
+      body="Let Flow Wizards design and implement AI-powered workflow automation services across your CRM, marketing, support, and operations - so your processes run automatically, reliably, and securely."
     />
     <WorkflowBenefitsSection />
     <TrustedSection hideBottom heading="Trusted by hundreds of businesses globally" />
@@ -73,7 +73,7 @@ const WorkflowAutomationPage = () => (
       chip="FAQ"
       heading="Workflow Automation Services FAQ"
       faqs={[
-        { q: "What types of workflows can you automate?", a: "We can automate sales, marketing, support, operations, and more—across nearly any business tool or platform." },
+        { q: "What types of workflows can you automate?", a: "We can automate sales, marketing, support, operations, and more-across nearly any business tool or platform." },
         { q: "Which tools do you work with?", a: "We work with 100+ leading SaaS tools, including Zapier, HubSpot, Airtable, n8n, and more." },
         { q: "Do you offer ongoing support?", a: "Yes! We provide ongoing support, optimization, and maintenance for all automations we build." },
         { q: "How fast can you start?", a: "We can typically start within a week, depending on your requirements." },

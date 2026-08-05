@@ -17,7 +17,7 @@ const CASE_STUDIES = [
    },
    {
       image: C3,
-      title: 'How one CEO Turned His Email List Into A Successful Podcast—And Saved 150+ Hours',
+      title: 'How one CEO Turned His Email List Into A Successful Podcast-And Saved 150+ Hours',
       subtitle: 'ptex group',
    },
    {

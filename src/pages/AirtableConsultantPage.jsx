@@ -270,7 +270,7 @@ const SOLUTIONS = [
    {
       num: '02', badge: 'Interface', badgeVariant: 'amber',
       title: 'Intuitive views for effortless data management',
-      desc: 'Grid, Kanban, Calendar, Gantt — the right view for every team, configured for how you work.',
+      desc: 'Grid, Kanban, Calendar, Gantt - the right view for every team, configured for how you work.',
    },
    {
       num: '03', badge: 'Analytics', badgeVariant: 'olive',
@@ -285,7 +285,7 @@ const SOLUTIONS = [
    {
       num: '05', badge: 'Integrations', badgeVariant: 'amber',
       title: 'Seamless connections with your existing tools',
-      desc: 'Connect Airtable to Zapier, Salesforce, Shopify and more — one unified ecosystem, zero friction.',
+      desc: 'Connect Airtable to Zapier, Salesforce, Shopify and more - one unified ecosystem, zero friction.',
    },
    {
       num: '06', badge: 'Security', badgeVariant: 'olive',

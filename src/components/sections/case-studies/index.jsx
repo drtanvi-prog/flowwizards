@@ -30,7 +30,7 @@ const CaseStudies = () => {
     return () => window.removeEventListener('resize', update)
   }, [])
 
-  /* Entrance trigger — cards spread from center on scroll into view */
+  /* Entrance trigger - cards spread from center on scroll into view */
   useEffect(() => {
     const obs = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) setTimeout(() => setEntered(true), 180) },

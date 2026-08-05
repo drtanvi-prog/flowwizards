@@ -40,7 +40,7 @@ const ServicesSection = ({
         style={{ background: isDark ? '#0D0D0F' : '#fff' }}
       >
 
-        {/* Ambient glow — dark only */}
+        {/* Ambient glow - dark only */}
         {isDark && (
           <AnimatePresence mode="wait">
             <motion.div
@@ -191,7 +191,7 @@ const ServicesSection = ({
                   </p>
                 </div>
 
-                {isDark && !active.workflows && (
+                {/* {isDark && !active.workflows && (
                   <div className="relative">
                     <motion.a
                       href="#"
@@ -203,7 +203,7 @@ const ServicesSection = ({
                       Learn more <ArrowRight size={13} />
                     </motion.a>
                   </div>
-                )}
+                )} */}
               </div>
 
               {/* Right panel */}

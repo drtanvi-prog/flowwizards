@@ -43,7 +43,7 @@ const QuoteCard = ({ q, i }) => {
           style={{ filter: `drop-shadow(0 3px 10px ${q.border}bb)`, flexShrink: 0 }}
         />
 
-        {/* Main text — headline or pain point */}
+        {/* Main text - headline or pain point */}
         <span
           style={{
             display: 'block',
@@ -61,7 +61,7 @@ const QuoteCard = ({ q, i }) => {
           {q.text}
         </span>
 
-        {/* Body — only shown on pages like pricing that pass full review text */}
+        {/* Body - only shown on pages like pricing that pass full review text */}
         {hasBody && (
           <p
             style={{

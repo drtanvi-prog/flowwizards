@@ -32,7 +32,7 @@ const BenefitsSection = ({ image }) => {
 
       <div className="max-w-360 mx-auto px-5 sm:px-8 xl:px-16 relative z-10">
 
-        {/* ── Header — centered ── */}
+        {/* ── Header - centered ── */}
         <div className="flex flex-col items-center text-center mb-12 sm:mb-16">
           <motion.div {...fadeUp(0)} className="mb-4">
             <Chip>Benefits of automation</Chip>

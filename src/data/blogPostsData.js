@@ -27,14 +27,14 @@ export const BLOG_POSTS = [
     readTime: "7 min read",
     category: "Marketing Automation",
     excerpt:
-      "Marketing automation solutions help businesses run smarter campaigns, nurture leads, and convert customers — without manually managing every touchpoint.",
+      "Marketing automation solutions help businesses run smarter campaigns, nurture leads, and convert customers - without manually managing every touchpoint.",
     icon: Megaphone,
     content: [
       {
         heading: "What Is Marketing Automation?",
         paragraphs: [
           "Marketing automation refers to software platforms and technologies designed to help businesses market on multiple channels online and automate repetitive tasks. Done well, marketing automation saves time, nurtures leads more effectively, and creates a more consistent customer experience across every touchpoint.",
-          "At its core, marketing automation allows you to set up sequences of actions that trigger based on specific customer behaviours — things like visiting your pricing page, downloading a resource, or abandoning a cart. Rather than manually sending each email or posting each social update, the system does the heavy lifting while you focus on strategy.",
+          "At its core, marketing automation allows you to set up sequences of actions that trigger based on specific customer behaviours - things like visiting your pricing page, downloading a resource, or abandoning a cart. Rather than manually sending each email or posting each social update, the system does the heavy lifting while you focus on strategy.",
         ],
       },
       {
@@ -47,7 +47,7 @@ export const BLOG_POSTS = [
       {
         heading: "Key Use Cases for Marketing Automation",
         paragraphs: [
-          "Lead nurturing is the most widely adopted use case — drip email sequences that warm prospects over days or weeks based on where they are in your funnel. But automation extends far beyond email: automated social posting, retargeting ad audiences, dynamic website personalisation, and SMS follow-ups all fall under the umbrella.",
+          "Lead nurturing is the most widely adopted use case - drip email sequences that warm prospects over days or weeks based on where they are in your funnel. But automation extends far beyond email: automated social posting, retargeting ad audiences, dynamic website personalisation, and SMS follow-ups all fall under the umbrella.",
           "B2B businesses often use automation to score leads automatically, flagging high-intent prospects for the sales team. Ecommerce brands rely heavily on abandoned cart flows, post-purchase sequences, and win-back campaigns. The applications are almost endless once you understand the triggers and logic available to you.",
         ],
       },
@@ -55,14 +55,14 @@ export const BLOG_POSTS = [
         heading: "How to Get Started",
         paragraphs: [
           "Before buying any software, map your current customer journey on paper. Identify the moments where leads fall through the cracks, where repetitive manual tasks slow your team down, and where a timely automated message could make the difference between a lost lead and a conversion.",
-          "Start small. Pick one high-impact workflow — a welcome sequence, a lead magnet follow-up, or an abandoned cart email — and automate it first. Measure the results, refine, and then expand. Building automation incrementally prevents overwhelm and ensures each sequence is dialled in before you add complexity.",
+          "Start small. Pick one high-impact workflow - a welcome sequence, a lead magnet follow-up, or an abandoned cart email - and automate it first. Measure the results, refine, and then expand. Building automation incrementally prevents overwhelm and ensures each sequence is dialled in before you add complexity.",
         ],
       },
       {
         heading: "Working with an Automation Partner",
         paragraphs: [
           "Many businesses find the initial setup of marketing automation daunting. Integrating your CRM, landing pages, email platform, and ad channels into a coherent system requires both technical skill and strategic thinking. That's where a specialist automation consultant can save you months of trial and error.",
-          "Flow Wizards helps businesses configure marketing automation end-to-end — from platform selection and integration to building and testing your first workflows. If you're ready to stop doing things manually and start growing on autopilot, get in touch today.",
+          "Flow Wizards helps businesses configure marketing automation end-to-end - from platform selection and integration to building and testing your first workflows. If you're ready to stop doing things manually and start growing on autopilot, get in touch today.",
         ],
       },
     ],
@@ -81,28 +81,28 @@ export const BLOG_POSTS = [
       {
         heading: "Why Sales Teams Resist Automation",
         paragraphs: [
-          "Sales is inherently human — relationships, trust, and persuasion are hard to replicate with software. That's true. But sales teams spend an alarming amount of their time on tasks that have nothing to do with selling: logging calls, updating CRM records, sending follow-up emails, and chasing prospects who went dark.",
-          "Industry surveys consistently suggest that sales reps spend a surprisingly small portion of their week actually selling — the rest is admin: logging calls, updating records, chasing internal approvals. Automation doesn't replace the relationship — it eliminates the admin that prevents the relationship from happening.",
+          "Sales is inherently human - relationships, trust, and persuasion are hard to replicate with software. That's true. But sales teams spend an alarming amount of their time on tasks that have nothing to do with selling: logging calls, updating CRM records, sending follow-up emails, and chasing prospects who went dark.",
+          "Industry surveys consistently suggest that sales reps spend a surprisingly small portion of their week actually selling - the rest is admin: logging calls, updating records, chasing internal approvals. Automation doesn't replace the relationship - it eliminates the admin that prevents the relationship from happening.",
         ],
       },
       {
         heading: "The Best Starting Points for Pipeline Automation",
         paragraphs: [
-          "Lead assignment is often the first quick win. When a new lead comes in through your website form, automation can instantly assign it to the right rep based on territory, deal size, or industry — no manual triage needed. Pair this with an automatic introductory email from the rep and you've already compressed your response time from hours to seconds.",
+          "Lead assignment is often the first quick win. When a new lead comes in through your website form, automation can instantly assign it to the right rep based on territory, deal size, or industry - no manual triage needed. Pair this with an automatic introductory email from the rep and you've already compressed your response time from hours to seconds.",
           "Follow-up sequences are another high-ROI starting point. Most deals die not because the prospect said no, but because the rep forgot to follow up. Automated sequences ensure every prospect gets consistent touchpoints at the right intervals, regardless of how busy the rep is.",
         ],
       },
       {
         heading: "CRM Data Entry: The Hidden Time Drain",
         paragraphs: [
-          "Nothing kills a salesperson's motivation like spending 30 minutes after every call updating the CRM. Modern automation can log calls automatically, pull email threads into the deal record, and update deal stages based on activity — all without the rep lifting a finger.",
+          "Nothing kills a salesperson's motivation like spending 30 minutes after every call updating the CRM. Modern automation can log calls automatically, pull email threads into the deal record, and update deal stages based on activity - all without the rep lifting a finger.",
           "Tools like Pipedrive, paired with automation platforms like Zapier or Make, can create a self-maintaining CRM that stays accurate without manual input. The result is better data, happier reps, and a sales manager who can actually trust the pipeline reports.",
         ],
       },
       {
         heading: "What NOT to Automate",
         paragraphs: [
-          "Automation works best for repeatable, rules-based tasks. The discovery call itself, negotiating terms, handling objections, and building rapport — these should stay human. Sending a robot-sounding template where a personal message was expected is worse than sending nothing at all.",
+          "Automation works best for repeatable, rules-based tasks. The discovery call itself, negotiating terms, handling objections, and building rapport - these should stay human. Sending a robot-sounding template where a personal message was expected is worse than sending nothing at all.",
           "The goal is to automate everything up to and after the meaningful conversations, so your reps can have more of those conversations every day. Think of automation as the scaffolding around human interaction, not a replacement for it.",
         ],
       },
@@ -123,14 +123,14 @@ export const BLOG_POSTS = [
     readTime: "8 min read",
     category: "HR Automation",
     excerpt:
-      "HR teams are buried in paperwork, onboarding tasks, and repetitive admin. Here's a practical guide to what should be automated — and what shouldn't.",
+      "HR teams are buried in paperwork, onboarding tasks, and repetitive admin. Here's a practical guide to what should be automated - and what shouldn't.",
     icon: Users,
     content: [
       {
         heading: "The State of HR in Most Businesses",
         paragraphs: [
           "Ask any HR manager what takes up most of their week and you'll hear a familiar list: chasing approvals, sending welcome emails, scheduling interviews, updating employee records, and reminding managers about review deadlines. These tasks are essential but almost entirely automatable.",
-          "Meanwhile, the work that truly requires an HR professional — navigating a conflict, coaching a manager, designing a culture initiative — often gets squeezed out. Automation's role in HR is to reclaim that strategic time.",
+          "Meanwhile, the work that truly requires an HR professional - navigating a conflict, coaching a manager, designing a culture initiative - often gets squeezed out. Automation's role in HR is to reclaim that strategic time.",
         ],
       },
       {
@@ -143,15 +143,15 @@ export const BLOG_POSTS = [
       {
         heading: "Recruitment Automation",
         paragraphs: [
-          "Applicant tracking systems (ATS) can automatically screen CVs, send rejection emails, schedule interviews, and move candidates through stages based on recruiter actions. Paired with calendar automation, the back-and-forth of interview scheduling — which can waste hours per hire — disappears entirely.",
+          "Applicant tracking systems (ATS) can automatically screen CVs, send rejection emails, schedule interviews, and move candidates through stages based on recruiter actions. Paired with calendar automation, the back-and-forth of interview scheduling - which can waste hours per hire - disappears entirely.",
           "Tools like Workable, Greenhouse, and even Pipedrive (used creatively as an ATS) can be connected to your calendar, email, and onboarding system via Zapier or Make, creating a seamless pipeline from application to first day.",
         ],
       },
       {
         heading: "Performance Reviews and Compliance",
         paragraphs: [
-          "Sending review reminders, collecting self-assessments, routing forms for sign-off, and filing completed reviews — all of this can be systematised. Automation ensures reviews happen on schedule and the paper trail is maintained without HR chasing everyone individually.",
-          "Leave requests, expense approvals, and policy acknowledgements are similarly automatable. An employee submits a request, it routes to the right approver, the outcome updates the HR system, and the employee is notified — all without HR touching it.",
+          "Sending review reminders, collecting self-assessments, routing forms for sign-off, and filing completed reviews - all of this can be systematised. Automation ensures reviews happen on schedule and the paper trail is maintained without HR chasing everyone individually.",
+          "Leave requests, expense approvals, and policy acknowledgements are similarly automatable. An employee submits a request, it routes to the right approver, the outcome updates the HR system, and the employee is notified - all without HR touching it.",
         ],
       },
       {
@@ -184,7 +184,7 @@ export const BLOG_POSTS = [
       {
         heading: "Company 1: A Marketing Agency Using Recurring Subscription Billing",
         paragraphs: [
-          "A digital marketing agency moved from manual monthly invoicing to a Stripe-based subscription model. Clients pay automatically on the 1st of each month, and a Zapier workflow sends the invoice receipt, updates the accounting system, and tags the client in the CRM as paid — all without anyone in accounts touching anything.",
+          "A digital marketing agency moved from manual monthly invoicing to a Stripe-based subscription model. Clients pay automatically on the 1st of each month, and a Zapier workflow sends the invoice receipt, updates the accounting system, and tags the client in the CRM as paid - all without anyone in accounts touching anything.",
           "Result: payment collection time dropped from 14 days to 0. The agency reclaimed 8 hours of admin per month and late payments became almost non-existent.",
         ],
       },
@@ -198,14 +198,14 @@ export const BLOG_POSTS = [
       {
         heading: "Company 3: A Trades Business Connecting Job Completion to Invoicing",
         paragraphs: [
-          "An electrical contractor used to invoice manually after each job, often days after completion. By connecting their job management software (ServiceM8) to Xero via Zapier, invoices were raised the moment a job was marked complete — including all line items from the job record.",
+          "An electrical contractor used to invoice manually after each job, often days after completion. By connecting their job management software (ServiceM8) to Xero via Zapier, invoices were raised the moment a job was marked complete - including all line items from the job record.",
           "Clients received their invoice within minutes of the job finishing, significantly improving the business's cash flow and meaningfully reducing their average debtor days.",
         ],
       },
       {
         heading: "Lessons from All Six Companies",
         paragraphs: [
-          "Every company that successfully automated billing started by mapping their existing process in detail — understanding exactly what triggered an invoice, what information was needed, and where delays occurred. The automation then followed that map.",
+          "Every company that successfully automated billing started by mapping their existing process in detail - understanding exactly what triggered an invoice, what information was needed, and where delays occurred. The automation then followed that map.",
           "The technology itself is rarely the challenge. Xero, QuickBooks, Stripe, and Zapier all integrate seamlessly. The real work is in defining the process clearly enough that it can be automated without exceptions. Flow Wizards can help you do exactly that.",
         ],
       },
@@ -232,7 +232,7 @@ export const BLOG_POSTS = [
       {
         heading: "How to Audit Your Current Stack",
         paragraphs: [
-          "Start by listing every tool your business pays for, who uses it, and how frequently. Pull login data if you can — most SaaS tools have usage analytics. Tools that fewer than half your intended users log into monthly are candidates for replacement or cancellation.",
+          "Start by listing every tool your business pays for, who uses it, and how frequently. Pull login data if you can - most SaaS tools have usage analytics. Tools that fewer than half your intended users log into monthly are candidates for replacement or cancellation.",
           "Then ask a harder question: of the tools people do use, are they using them to their full potential? A team using ChatGPT only for email drafts when they could be using it for research, summarisation, and workflow automation is leaving enormous value on the table.",
         ],
       },
@@ -247,14 +247,14 @@ export const BLOG_POSTS = [
         heading: "Getting Real ROI from AI Tools",
         paragraphs: [
           "The businesses that extract real value from AI tools are those that treat them as infrastructure rather than novelties. They define specific workflows where AI is applied consistently: every sales email is drafted with AI assistance, every meeting gets an AI summary, every support ticket is triaged by an AI classifier.",
-          "Without that structure, AI tools become toys — interesting but not transformative. Build the habit and the workflow first, then the ROI follows naturally.",
+          "Without that structure, AI tools become toys - interesting but not transformative. Build the habit and the workflow first, then the ROI follows naturally.",
         ],
       },
       {
         heading: "When to Call in a Specialist",
         paragraphs: [
           "If you're spending more than £2,000 per month on software and can't clearly articulate the ROI of each tool, it's time for a tech stack review. An automation consultant can identify redundancies, recommend consolidations, and build the integrations that make your existing tools more valuable.",
-          "Flow Wizards offers tech stack audits as part of our Fractional CAO service. We'll tell you exactly what to cut, what to keep, and what's missing — and then we'll build the workflows to make it all work together.",
+          "Flow Wizards offers tech stack audits as part of our Fractional CAO service. We'll tell you exactly what to cut, what to keep, and what's missing - and then we'll build the workflows to make it all work together.",
         ],
       },
     ],
@@ -267,35 +267,35 @@ export const BLOG_POSTS = [
     readTime: "5 min read",
     category: "AI Strategy",
     excerpt:
-      "Hiring an AI consultant or vendor? Here's a plain-English guide to the buzzwords they'll use — and what they actually mean for your business.",
+      "Hiring an AI consultant or vendor? Here's a plain-English guide to the buzzwords they'll use - and what they actually mean for your business.",
     icon: Cpu,
     content: [
       {
         heading: "Why AI Terminology Is So Confusing",
         paragraphs: [
           'The AI industry has a language problem. Terms like "machine learning", "large language model", "generative AI", "RAG", and "agentic workflows" are thrown around constantly, often imprecisely. For a business owner trying to make a sensible decision, the jargon can feel deliberately obfuscatory.',
-          "This guide won't make you an AI engineer. But it will give you enough vocabulary to have a grounded conversation with any vendor or consultant — and more importantly, to spot when someone is using complexity to hide a lack of substance.",
+          "This guide won't make you an AI engineer. But it will give you enough vocabulary to have a grounded conversation with any vendor or consultant - and more importantly, to spot when someone is using complexity to hide a lack of substance.",
         ],
       },
       {
         heading: "The Terms You'll Hear Most",
         paragraphs: [
           '"Large Language Model (LLM)" simply means an AI trained on vast amounts of text that can generate, summarise, translate, and reason about language. ChatGPT, Claude, and Gemini are all LLMs. When a vendor says they\'re "leveraging LLMs", ask which one, why that one, and how it\'s been configured for your specific context.',
-          '"RAG" stands for Retrieval-Augmented Generation — it\'s a technique where the AI is given access to your specific documents or data before answering questions. This is what makes AI actually useful for your business rather than just generating generic responses. If someone is building a custom AI tool for you, RAG is likely involved.',
+          '"RAG" stands for Retrieval-Augmented Generation - it\'s a technique where the AI is given access to your specific documents or data before answering questions. This is what makes AI actually useful for your business rather than just generating generic responses. If someone is building a custom AI tool for you, RAG is likely involved.',
         ],
       },
       {
         heading: '"Agentic AI" and Automation Workflows',
         paragraphs: [
-          '"Agentic AI" refers to AI systems that can take actions, not just generate text. An agentic workflow might have an AI read an incoming email, determine the intent, look up information in your CRM, draft a reply, and send it — all without human involvement. This is genuinely powerful but also requires careful design and testing.',
-          '"Automation" in the context of AI usually means connecting AI capabilities to existing tools and processes. This is the most immediately practical application for most businesses — using AI as a component in a larger workflow rather than as a standalone tool.',
+          '"Agentic AI" refers to AI systems that can take actions, not just generate text. An agentic workflow might have an AI read an incoming email, determine the intent, look up information in your CRM, draft a reply, and send it - all without human involvement. This is genuinely powerful but also requires careful design and testing.',
+          '"Automation" in the context of AI usually means connecting AI capabilities to existing tools and processes. This is the most immediately practical application for most businesses - using AI as a component in a larger workflow rather than as a standalone tool.',
         ],
       },
       {
         heading: "Red Flags to Watch For",
         paragraphs: [
           "Be wary of vendors who can't explain their approach in plain English. Complexity that can't be simplified is usually not well understood. Similarly, anyone promising specific percentage improvements in productivity or revenue from AI before they've audited your processes is selling you a story rather than a solution.",
-          "Ask for examples of similar work they've done, what the measurable outcomes were, and what went wrong. A good AI consultant will be honest about limitations and failure modes — because these projects have them.",
+          "Ask for examples of similar work they've done, what the measurable outcomes were, and what went wrong. A good AI consultant will be honest about limitations and failure modes - because these projects have them.",
         ],
       },
     ],
@@ -314,7 +314,7 @@ export const BLOG_POSTS = [
       {
         heading: "Defining Sales Automation in 2026",
         paragraphs: [
-          "Sales automation is the use of software to handle repetitive, rules-based tasks that would otherwise occupy a salesperson's time. It covers everything from automatic lead assignment and CRM updates to AI-drafted follow-up emails and intelligent deal scoring. In 2026, it's no longer a competitive advantage — it's a baseline expectation.",
+          "Sales automation is the use of software to handle repetitive, rules-based tasks that would otherwise occupy a salesperson's time. It covers everything from automatic lead assignment and CRM updates to AI-drafted follow-up emails and intelligent deal scoring. In 2026, it's no longer a competitive advantage - it's a baseline expectation.",
           "The distinction between sales automation and broader CRM functionality has blurred significantly. Modern platforms like Pipedrive, Salesforce, and HubSpot now include automation capabilities natively, making it easier than ever for businesses of any size to automate key parts of their sales process.",
         ],
       },
@@ -329,20 +329,20 @@ export const BLOG_POSTS = [
         heading: "CRM Automation and Data Integrity",
         paragraphs: [
           "A CRM is only as useful as the data inside it. Automation keeps data accurate by logging activities (calls, emails, meetings) automatically and updating fields based on actions. This means managers get reliable pipeline visibility without nagging reps to update records.",
-          "Deal stage automation moves a deal forward when specific conditions are met — a proposal sent, a contract signed, a call logged. Combined with AI deal scoring, sales managers can focus attention where it matters most without manually reviewing every open deal.",
+          "Deal stage automation moves a deal forward when specific conditions are met - a proposal sent, a contract signed, a call logged. Combined with AI deal scoring, sales managers can focus attention where it matters most without manually reviewing every open deal.",
         ],
       },
       {
         heading: "AI-Enhanced Sales Automation",
         paragraphs: [
-          "In 2026, the most sophisticated sales automation includes AI components: email personalisation at scale, call transcription and coaching, intent signals from website behaviour, and predictive lead scoring. These capabilities were once available only to enterprise teams with large budgets — today, they're within reach of any growing business.",
+          "In 2026, the most sophisticated sales automation includes AI components: email personalisation at scale, call transcription and coaching, intent signals from website behaviour, and predictive lead scoring. These capabilities were once available only to enterprise teams with large budgets - today, they're within reach of any growing business.",
           "The key is to implement AI capabilities incrementally. Start with the basics, measure the impact, and add complexity only where there's clear evidence of value. An AI tool that isn't embedded in a well-designed process will deliver mediocre results regardless of how sophisticated it is.",
         ],
       },
       {
         heading: "Getting Started: A Practical Roadmap",
         paragraphs: [
-          "Week one: audit your current sales process and identify the three most time-consuming repetitive tasks. Week two: map the logic of each task — what triggers it, what information is needed, and what the output should be. Week three: implement one automation and measure the time saved. Expand from there.",
+          "Week one: audit your current sales process and identify the three most time-consuming repetitive tasks. Week two: map the logic of each task - what triggers it, what information is needed, and what the output should be. Week three: implement one automation and measure the time saved. Expand from there.",
           "If you want expert help building a sales automation system tailored to your business, Flow Wizards offers dedicated sales automation engagements. We work with your existing CRM and tools to build workflows that save real time from day one.",
         ],
       },
@@ -362,7 +362,7 @@ export const BLOG_POSTS = [
       {
         heading: "The Rush to Hire AI Talent",
         paragraphs: [
-          "Every business wants to say they're doing something with AI. The pressure from boards, investors, and competitors is real. But hiring an AI specialist — whether a consultant, an in-house engineer, or a vendor — without being ready to work with them is one of the most common and costly mistakes businesses make right now.",
+          "Every business wants to say they're doing something with AI. The pressure from boards, investors, and competitors is real. But hiring an AI specialist - whether a consultant, an in-house engineer, or a vendor - without being ready to work with them is one of the most common and costly mistakes businesses make right now.",
           "The consultant or engineer can only be as effective as the organisation they're working with. If the business doesn't know what problem it's trying to solve, doesn't have clean data, and hasn't secured internal buy-in for change, even the best AI talent in the world will produce disappointing results.",
         ],
       },
@@ -376,7 +376,7 @@ export const BLOG_POSTS = [
       {
         heading: "Question 2: Do you have the data?",
         paragraphs: [
-          "Most AI applications require data — either to train on, or to retrieve from at runtime. If your processes are largely undocumented, your customer data is scattered across spreadsheets, and your CRM is a graveyard of incomplete records, fix that first. AI applied to bad data produces confident-sounding wrong answers.",
+          "Most AI applications require data - either to train on, or to retrieve from at runtime. If your processes are largely undocumented, your customer data is scattered across spreadsheets, and your CRM is a graveyard of incomplete records, fix that first. AI applied to bad data produces confident-sounding wrong answers.",
           "A good AI consultant should be honest about your data readiness. If they're willing to start building before auditing your data, be cautious.",
         ],
       },
@@ -390,7 +390,7 @@ export const BLOG_POSTS = [
       {
         heading: "Question 4: How will you measure success?",
         paragraphs: [
-          "Define your success metrics before the project starts, not after. Time saved per week, reduction in error rate, improvement in response time, increase in conversion rate — whatever is most relevant to the problem you're solving. Without a baseline and a target, you have no way to know if the investment was worth it.",
+          "Define your success metrics before the project starts, not after. Time saved per week, reduction in error rate, improvement in response time, increase in conversion rate - whatever is most relevant to the problem you're solving. Without a baseline and a target, you have no way to know if the investment was worth it.",
           "Flow Wizards always begins engagements by defining success criteria with clients. It keeps everyone accountable and ensures we're building something that delivers real, measurable value.",
         ],
       },
@@ -410,7 +410,7 @@ export const BLOG_POSTS = [
       {
         heading: "Why Data Security Matters in Automation",
         paragraphs: [
-          "Automation tools work by connecting your apps and passing data between them — your CRM, email platform, accounting software, HR system, and more. That connectivity is what makes automation powerful, but it also creates new attack surfaces and data handling responsibilities that businesses need to take seriously.",
+          "Automation tools work by connecting your apps and passing data between them - your CRM, email platform, accounting software, HR system, and more. That connectivity is what makes automation powerful, but it also creates new attack surfaces and data handling responsibilities that businesses need to take seriously.",
           "Most automation-related data incidents don't come from sophisticated hacks. They come from misconfigured integrations, over-permissioned accounts, and sensitive data being sent to the wrong destination. Understanding the risks is the first step to managing them.",
         ],
       },
@@ -418,20 +418,20 @@ export const BLOG_POSTS = [
         heading: "Use the Principle of Least Privilege",
         paragraphs: [
           "When connecting automation tools to your business systems, grant only the permissions that are strictly necessary. If a Zap only needs to read from your CRM and write to a spreadsheet, don't connect it with admin-level credentials that could also delete records or access billing information.",
-          "Audit the permissions your automation platform has been granted across each connected app. Most businesses that do this audit for the first time find integrations running with far more access than they need. Tighten these permissions — it reduces your risk without impacting functionality.",
+          "Audit the permissions your automation platform has been granted across each connected app. Most businesses that do this audit for the first time find integrations running with far more access than they need. Tighten these permissions - it reduces your risk without impacting functionality.",
         ],
       },
       {
         heading: "Be Careful With Sensitive Data in Automation Flows",
         paragraphs: [
-          "Think carefully before including personally identifiable information (PII), financial data, or health information in automated workflows. Each step in an automation is a potential exposure point — data logged, stored in a third-party system, or sent to an unintended destination.",
+          "Think carefully before including personally identifiable information (PII), financial data, or health information in automated workflows. Each step in an automation is a potential exposure point - data logged, stored in a third-party system, or sent to an unintended destination.",
           "Where possible, use identifiers (like a customer ID) rather than full personal details in automation flows. Retrieve the full record only at the step where it's genuinely needed. This limits how much sensitive data is moving through your automation infrastructure at any one time.",
         ],
       },
       {
         heading: "Review Connected Apps Regularly",
         paragraphs: [
-          "As your business evolves, old automation connections accumulate. A Zap built for a platform you no longer use, an integration connected with a former employee's credentials, a webhook pointing at a decommissioned system — these are all security liabilities that go unnoticed until something goes wrong.",
+          "As your business evolves, old automation connections accumulate. A Zap built for a platform you no longer use, an integration connected with a former employee's credentials, a webhook pointing at a decommissioned system - these are all security liabilities that go unnoticed until something goes wrong.",
           "Set a quarterly reminder to review all active automation connections, API keys, and third-party app permissions. Revoke anything that's no longer needed. This simple habit significantly reduces your exposure without requiring any technical investment.",
         ],
       },
@@ -458,28 +458,28 @@ export const BLOG_POSTS = [
       {
         heading: "Reason 1: You'll Actually Use the CRM",
         paragraphs: [
-          "The number one reason CRM implementations fail is adoption. The system gets set up, the team is trained once, and six months later half the reps are back to their spreadsheets. A consultant doesn't just configure Pipedrive — they design it around how your team actually sells, making it the path of least resistance rather than an extra chore.",
+          "The number one reason CRM implementations fail is adoption. The system gets set up, the team is trained once, and six months later half the reps are back to their spreadsheets. A consultant doesn't just configure Pipedrive - they design it around how your team actually sells, making it the path of least resistance rather than an extra chore.",
           "When the CRM is built to match your process, logging activities feels natural rather than forced. Adoption rates climb and the data in your system becomes genuinely useful for decision-making.",
         ],
       },
       {
         heading: "Reason 2: Automation That Saves Real Hours",
         paragraphs: [
-          "Pipedrive has a powerful workflow automation engine that most users barely touch. A consultant will identify the repetitive tasks in your sales process — follow-up emails, deal stage updates, task creation, notifications — and automate them, saving each rep hours every week.",
-          "A well-configured Pipedrive automation setup can save reps meaningful hours every week by eliminating manual data entry, follow-up reminders, and repetitive email tasks. Across a team of five, those savings compound quickly — often equivalent to a significant portion of a full-time admin role.",
+          "Pipedrive has a powerful workflow automation engine that most users barely touch. A consultant will identify the repetitive tasks in your sales process - follow-up emails, deal stage updates, task creation, notifications - and automate them, saving each rep hours every week.",
+          "A well-configured Pipedrive automation setup can save reps meaningful hours every week by eliminating manual data entry, follow-up reminders, and repetitive email tasks. Across a team of five, those savings compound quickly - often equivalent to a significant portion of a full-time admin role.",
         ],
       },
       {
         heading: "Reason 3: Integrations That Actually Work",
         paragraphs: [
-          "Pipedrive connects to hundreds of tools, but getting those integrations to work correctly — passing the right data, at the right time, in the right format — requires careful configuration. A consultant who has built these integrations dozens of times will get it right the first time.",
+          "Pipedrive connects to hundreds of tools, but getting those integrations to work correctly - passing the right data, at the right time, in the right format - requires careful configuration. A consultant who has built these integrations dozens of times will get it right the first time.",
           "Common integrations include email platforms, proposal tools, calendar systems, accounting software, and marketing automation. Done properly, these integrations create a connected revenue stack where data flows seamlessly and nothing falls through the cracks.",
         ],
       },
       {
         heading: "Reason 4: Reporting That Drives Decisions",
         paragraphs: [
-          "Pipedrive's reporting capabilities are extensive, but only useful if the underlying data is structured correctly. A consultant will design your pipeline stages, custom fields, and activity tracking to capture the data points that matter for your specific business — then build the dashboards that surface actionable insights.",
+          "Pipedrive's reporting capabilities are extensive, but only useful if the underlying data is structured correctly. A consultant will design your pipeline stages, custom fields, and activity tracking to capture the data points that matter for your specific business - then build the dashboards that surface actionable insights.",
           "Sales leaders who work with a Pipedrive consultant typically go from gut-feel pipeline management to data-driven forecasting within the first quarter.",
         ],
       },
@@ -487,7 +487,7 @@ export const BLOG_POSTS = [
         heading: "Reason 5: You'll Avoid Expensive Mistakes",
         paragraphs: [
           "Pipedrive is relatively simple to set up badly and quite complex to set up well. Common mistakes include too many pipeline stages, inconsistently named fields, duplicate contacts, and automation logic that breaks under edge cases. Fixing these problems after months of bad data is painful and expensive.",
-          "A consultant gets the foundations right from the start, saving you the cost and disruption of a data cleanup six months down the line. Flow Wizards has implemented Pipedrive for dozens of businesses — we know exactly what to avoid.",
+          "A consultant gets the foundations right from the start, saving you the cost and disruption of a data cleanup six months down the line. Flow Wizards has implemented Pipedrive for dozens of businesses - we know exactly what to avoid.",
         ],
       },
     ],
@@ -500,20 +500,20 @@ export const BLOG_POSTS = [
     readTime: "7 min read",
     category: "Zapier",
     excerpt:
-      "Zapier is one of the most powerful tools for sales automation — but only if you know how to use it well. Here's what a consultant brings to the table.",
+      "Zapier is one of the most powerful tools for sales automation - but only if you know how to use it well. Here's what a consultant brings to the table.",
     icon: Zap,
     content: [
       {
         heading: "What Zapier Actually Does",
         paragraphs: [
           "Zapier connects over 6,000 apps, allowing data and actions to flow automatically between them without writing code. When something happens in one app (a trigger), Zapier can automatically do something in another app (an action). For sales processes, this creates huge opportunities to eliminate manual data transfer and ensure nothing slips through the cracks.",
-          "The challenge is that Zapier's flexibility is also its complexity. With thousands of apps and countless configuration options, knowing what to build — and building it robustly enough to trust in production — requires experience.",
+          "The challenge is that Zapier's flexibility is also its complexity. With thousands of apps and countless configuration options, knowing what to build - and building it robustly enough to trust in production - requires experience.",
         ],
       },
       {
         heading: "The Sales Workflows That Drive the Most Value",
         paragraphs: [
-          "Inbound lead handling is where Zapier typically delivers the fastest ROI. A lead submits a form, Zapier creates a contact in Pipedrive, assigns it to a rep, sends an automatic acknowledgement to the lead, and creates a follow-up task — all within seconds, 24/7, with no human involvement required.",
+          "Inbound lead handling is where Zapier typically delivers the fastest ROI. A lead submits a form, Zapier creates a contact in Pipedrive, assigns it to a rep, sends an automatic acknowledgement to the lead, and creates a follow-up task - all within seconds, 24/7, with no human involvement required.",
           "Proposal and contract workflows are another high-value area. When a proposal is sent in your quoting tool, Zapier can move the deal to the right stage in your CRM, start a follow-up sequence, and notify the relevant stakeholders. When a contract is signed, it can trigger onboarding workflows in your project management tool.",
         ],
       },
@@ -521,7 +521,7 @@ export const BLOG_POSTS = [
         heading: "Why DIY Zapier Often Disappoints",
         paragraphs: [
           "Many sales managers build their first Zaps with enthusiasm, only to find they break unexpectedly. A field maps incorrectly, a filter doesn't account for an edge case, a step fails silently and no one notices until data is missing. Without proper error handling and monitoring, Zapier automations can become a source of data quality problems rather than a solution to them.",
-          "A Zapier consultant builds automations defensively — with error notifications, fallback paths, and data validation steps. The result is a system you can actually trust rather than one you have to babysit.",
+          "A Zapier consultant builds automations defensively - with error notifications, fallback paths, and data validation steps. The result is a system you can actually trust rather than one you have to babysit.",
         ],
       },
       {
@@ -541,13 +541,13 @@ export const BLOG_POSTS = [
     readTime: "6 min read",
     category: "Workflow Automation",
     excerpt:
-      "Workflow experts don't just implement tools — they redesign processes. Here's what that looks like in practice and why it matters for your business.",
+      "Workflow experts don't just implement tools - they redesign processes. Here's what that looks like in practice and why it matters for your business.",
     icon: Workflow,
     content: [
       {
         heading: "Process Before Technology",
         paragraphs: [
-          "A common mistake businesses make when pursuing efficiency is jumping straight to tools. They buy the software, set it up, and then wonder why things aren't working better. The problem is almost always that the underlying process was broken before the tool was introduced — and automation just made the broken process faster.",
+          "A common mistake businesses make when pursuing efficiency is jumping straight to tools. They buy the software, set it up, and then wonder why things aren't working better. The problem is almost always that the underlying process was broken before the tool was introduced - and automation just made the broken process faster.",
           "Workflow experts start with the process, not the technology. They map what actually happens in your business (not what's supposed to happen) and identify where time is wasted, errors occur, and handoffs break down. The technology comes later, once the process is designed correctly.",
         ],
       },
@@ -555,14 +555,14 @@ export const BLOG_POSTS = [
         heading: "Process Mapping: Seeing Your Business Clearly",
         paragraphs: [
           "Most business owners are surprised by what a process mapping exercise reveals. Steps that were assumed to take minutes actually take hours. Handoffs that were thought to be seamless are consistently dropping the ball. Data that was assumed to be captured is actually missing for 30% of cases.",
-          "A workflow expert conducts this mapping through a combination of observation, interviews, and data analysis. The resulting process map is often the most valuable artefact produced — it creates shared understanding of how the business actually works and gives everyone a common language for discussing improvement.",
+          "A workflow expert conducts this mapping through a combination of observation, interviews, and data analysis. The resulting process map is often the most valuable artefact produced - it creates shared understanding of how the business actually works and gives everyone a common language for discussing improvement.",
         ],
       },
       {
         heading: "Redesigning for Efficiency",
         paragraphs: [
           "Once the current state is clear, the workflow expert redesigns the process to remove waste. This might mean eliminating steps that add no value, restructuring the sequence of activities, reassigning tasks to the most appropriate person or system, or introducing automation at the right points.",
-          "The redesigned process is simpler, more predictable, and more resilient. Edge cases are accounted for. Bottlenecks are eliminated. The work flows more smoothly — and then automation can be layered on top to handle the repeatable parts at scale.",
+          "The redesigned process is simpler, more predictable, and more resilient. Edge cases are accounted for. Bottlenecks are eliminated. The work flows more smoothly - and then automation can be layered on top to handle the repeatable parts at scale.",
         ],
       },
       {
@@ -582,7 +582,7 @@ export const BLOG_POSTS = [
     readTime: "7 min read",
     category: "Workflow Automation",
     excerpt:
-      "Workflow automation and BPM are often confused. Understanding the difference helps you choose the right approach — and avoid investing in the wrong one.",
+      "Workflow automation and BPM are often confused. Understanding the difference helps you choose the right approach - and avoid investing in the wrong one.",
     icon: Settings,
     content: [
       {
@@ -595,14 +595,14 @@ export const BLOG_POSTS = [
       {
         heading: "What Workflow Automation Is",
         paragraphs: [
-          "Workflow automation is the use of software to trigger actions and move work between people or systems according to predefined rules. A form submission triggers an email, a deal stage change triggers a task, an approval updates a record — these are workflow automations. They are specific, tactical, and typically implemented using tools like Zapier, Make, or the native automation features within your CRM or project management software.",
+          "Workflow automation is the use of software to trigger actions and move work between people or systems according to predefined rules. A form submission triggers an email, a deal stage change triggers a task, an approval updates a record - these are workflow automations. They are specific, tactical, and typically implemented using tools like Zapier, Make, or the native automation features within your CRM or project management software.",
           "Workflow automation is excellent for eliminating repetitive manual steps, ensuring consistency, and reducing human error in well-understood processes. It's the right tool when you know exactly what needs to happen and in what sequence.",
         ],
       },
       {
         heading: "What Business Process Management Is",
         paragraphs: [
-          "BPM is a broader discipline that includes not just automation but also process design, monitoring, continuous improvement, and governance. A BPM programme defines how processes are owned, documented, measured, and improved over time. It's more strategic than workflow automation — less about doing things faster and more about ensuring the right things are being done the right way.",
+          "BPM is a broader discipline that includes not just automation but also process design, monitoring, continuous improvement, and governance. A BPM programme defines how processes are owned, documented, measured, and improved over time. It's more strategic than workflow automation - less about doing things faster and more about ensuring the right things are being done the right way.",
           "Enterprise BPM software like Pega, Appian, or Camunda adds modelling, simulation, and analytics capabilities that go well beyond what you'd get from Zapier. These platforms are expensive, complex to implement, and genuinely valuable for large organisations with highly complex, regulated processes.",
         ],
       },
@@ -629,7 +629,7 @@ export const BLOG_POSTS = [
       {
         heading: "Faster Time to Value",
         paragraphs: [
-          "Setting up Pipedrive properly takes time — designing the pipeline, creating custom fields, configuring automations, building integrations, and training the team. Most businesses that do this themselves take three to six months to reach a fully functional setup. Working with a consultant typically compresses this to four to eight weeks.",
+          "Setting up Pipedrive properly takes time - designing the pipeline, creating custom fields, configuring automations, building integrations, and training the team. Most businesses that do this themselves take three to six months to reach a fully functional setup. Working with a consultant typically compresses this to four to eight weeks.",
           "Speed matters because every week your CRM isn't working properly is a week of lost data, missed follow-ups, and decisions made without proper visibility. The faster you reach a working system, the faster you start getting the benefits.",
         ],
       },
@@ -637,7 +637,7 @@ export const BLOG_POSTS = [
         heading: "A System Built for Your Process",
         paragraphs: [
           "Generic Pipedrive setups use default stages, standard fields, and out-of-the-box automation templates. They work for the average sales process, which means they don't work especially well for any specific sales process. A consultant designs the system around your actual sales cycle, your specific deal stages, and the data your team needs to track.",
-          "The result is a CRM that feels like it was made for your business — because it was. Reps understand the stages intuitively, managers get reports that answer their actual questions, and the whole team has more confidence in the system.",
+          "The result is a CRM that feels like it was made for your business - because it was. Reps understand the stages intuitively, managers get reports that answer their actual questions, and the whole team has more confidence in the system.",
         ],
       },
       {
@@ -650,15 +650,15 @@ export const BLOG_POSTS = [
       {
         heading: "Training That Sticks",
         paragraphs: [
-          "The difference between a system that gets adopted and one that gets abandoned is almost always training. A consultant who has designed your system is uniquely qualified to train your team on it — they can explain not just how to use it, but why it was designed the way it was and what happens when things are done correctly versus incorrectly.",
-          "Flow Wizards provides hands-on training sessions tailored to different roles — reps, managers, and admins each get the training relevant to how they use the system. We also provide documentation that teams can reference long after the project is complete.",
+          "The difference between a system that gets adopted and one that gets abandoned is almost always training. A consultant who has designed your system is uniquely qualified to train your team on it - they can explain not just how to use it, but why it was designed the way it was and what happens when things are done correctly versus incorrectly.",
+          "Flow Wizards provides hands-on training sessions tailored to different roles - reps, managers, and admins each get the training relevant to how they use the system. We also provide documentation that teams can reference long after the project is complete.",
         ],
       },
       {
         heading: "Ongoing Optimisation",
         paragraphs: [
           "A well-implemented CRM evolves with your business. As you add products, enter new markets, change your sales approach, or grow the team, your Pipedrive configuration needs to evolve too. Clients who work with Flow Wizards on an ongoing basis get a consistent partner who knows their system and can make changes quickly when needs shift.",
-          "This ongoing relationship is often where the compounding value of a consultant really becomes apparent — each optimisation builds on the last, and your sales system becomes progressively more capable over time.",
+          "This ongoing relationship is often where the compounding value of a consultant really becomes apparent - each optimisation builds on the last, and your sales system becomes progressively more capable over time.",
         ],
       },
     ],
@@ -678,20 +678,20 @@ export const BLOG_POSTS = [
         heading: "Why Most Businesses Underestimate Automation ROI",
         paragraphs: [
           "When business owners think about automation, they often imagine complex, expensive AI systems that take months to implement. The reality is that some of the most impactful automations are simple, quick to set up, and deliver immediate, measurable time savings.",
-          "The key is to focus on high-frequency, repetitive tasks — the things you or your team do multiple times every day. Even saving five minutes on a task done 20 times a day is nearly two hours recovered. Do that across three or four tasks and you've reclaimed a significant portion of your week.",
+          "The key is to focus on high-frequency, repetitive tasks - the things you or your team do multiple times every day. Even saving five minutes on a task done 20 times a day is nearly two hours recovered. Do that across three or four tasks and you've reclaimed a significant portion of your week.",
         ],
       },
       {
         heading: "Automation 1: New Lead Notification and Assignment",
         paragraphs: [
-          "Every time a lead submits a form on your website, someone needs to know about it and someone needs to follow up. If this is currently happening manually — someone checking a form inbox and forwarding leads — automate it. The lead should flow directly into your CRM, be assigned automatically, and trigger an immediate acknowledgement email.",
+          "Every time a lead submits a form on your website, someone needs to know about it and someone needs to follow up. If this is currently happening manually - someone checking a form inbox and forwarding leads - automate it. The lead should flow directly into your CRM, be assigned automatically, and trigger an immediate acknowledgement email.",
           "Time saved: 5-15 minutes per lead. For businesses with 20+ leads per week, this is 2-5 hours recovered weekly.",
         ],
       },
       {
         heading: "Automation 2: Meeting Scheduling",
         paragraphs: [
-          'The back-and-forth of scheduling a meeting — "Does Tuesday work?", "No, how about Thursday?", "Morning or afternoon?" — can consume 15-20 minutes per meeting. A scheduling tool like Calendly or TidyCal, connected to your calendar, eliminates this entirely. Prospects pick a time that works for both parties in under 60 seconds.',
+          'The back-and-forth of scheduling a meeting - "Does Tuesday work?", "No, how about Thursday?", "Morning or afternoon?" - can consume 15-20 minutes per meeting. A scheduling tool like Calendly or TidyCal, connected to your calendar, eliminates this entirely. Prospects pick a time that works for both parties in under 60 seconds.',
           "Beyond the time saving, automated scheduling means prospects can book immediately when their intent is highest, rather than losing momentum during a scheduling email chain that stretches over days.",
         ],
       },
@@ -699,14 +699,14 @@ export const BLOG_POSTS = [
         heading: "Automation 3: Invoice Generation and Chasing",
         paragraphs: [
           "If you are manually creating invoices in accounting software and chasing unpaid invoices by email, you're spending hours per month on work that can be almost entirely automated. Most accounting platforms (Xero, QuickBooks) have automatic invoice generation and payment reminders built in.",
-          "For more complex trigger-based invoicing — when a project milestone is marked complete in your project tool, for instance — Zapier can connect the two systems and raise the invoice automatically.",
+          "For more complex trigger-based invoicing - when a project milestone is marked complete in your project tool, for instance - Zapier can connect the two systems and raise the invoice automatically.",
         ],
       },
       {
         heading: "Automation 4: Social Media Scheduling",
         paragraphs: [
           "Posting to multiple social channels manually is an enormous time sink for marketing teams. A social scheduling tool (Buffer, Later, or Hootsuite) lets you batch-create and schedule content once per week, then forget about it. Pair this with a content calendar and your social presence becomes far more consistent with a fraction of the ongoing effort.",
-          "Advanced setups use automation to repurpose content across formats — turning a blog post into a social post, an email newsletter into a LinkedIn article, and a webinar into a series of short clips — all with minimal manual effort.",
+          "Advanced setups use automation to repurpose content across formats - turning a blog post into a social post, an email newsletter into a LinkedIn article, and a webinar into a series of short clips - all with minimal manual effort.",
         ],
       },
       {
@@ -726,7 +726,7 @@ export const BLOG_POSTS = [
     readTime: "8 min read",
     category: "Business Automation",
     excerpt:
-      "Business process automation isn't just for enterprise companies. Here's why smaller businesses often benefit the most — and the seven advantages they gain.",
+      "Business process automation isn't just for enterprise companies. Here's why smaller businesses often benefit the most - and the seven advantages they gain.",
     icon: Monitor,
     content: [
       {
@@ -739,15 +739,15 @@ export const BLOG_POSTS = [
       {
         heading: "Benefit 1: Time Recovery",
         paragraphs: [
-          "The most immediate benefit of automation is time recovery. Tasks that previously required manual attention — data entry, file creation, email sending, form processing, record updating — happen automatically. The cumulative time saving across an SMB can easily reach 20-50 hours per week.",
-          "This time isn't just saved — it's redirected. Business owners get their evenings back. Sales reps spend more time selling. Operations staff focus on exception handling rather than routine processing.",
+          "The most immediate benefit of automation is time recovery. Tasks that previously required manual attention - data entry, file creation, email sending, form processing, record updating - happen automatically. The cumulative time saving across an SMB can easily reach 20-50 hours per week.",
+          "This time isn't just saved - it's redirected. Business owners get their evenings back. Sales reps spend more time selling. Operations staff focus on exception handling rather than routine processing.",
         ],
       },
       {
         heading: "Benefit 2: Reduced Errors",
         paragraphs: [
           "Manual processes are inherently error-prone. Data gets entered incorrectly, steps get skipped, emails go to the wrong recipient. Automation executes processes the same way every time, eliminating the variability that causes errors.",
-          "For businesses where errors have real consequences — incorrect invoices, missed compliance deadlines, wrong products shipped — this reliability is itself a significant business benefit, independent of the time saving.",
+          "For businesses where errors have real consequences - incorrect invoices, missed compliance deadlines, wrong products shipped - this reliability is itself a significant business benefit, independent of the time saving.",
         ],
       },
       {
@@ -761,7 +761,7 @@ export const BLOG_POSTS = [
         heading: "Benefits 4 Through 7 in Brief",
         paragraphs: [
           "Scalability: automated processes handle ten times the volume with no additional headcount. Cost reduction: fewer manual hours means lower labour costs for routine tasks. Better data: automated data capture means more complete, more accurate records for better decision-making. Employee satisfaction: removing tedious manual work makes jobs more interesting and reduces staff turnover in operations roles.",
-          "The businesses that automate early enjoy compounding returns — each improvement builds on the last, and they grow faster without proportionally growing their costs. The businesses that delay automation find that manual processes become an increasingly painful constraint as they scale.",
+          "The businesses that automate early enjoy compounding returns - each improvement builds on the last, and they grow faster without proportionally growing their costs. The businesses that delay automation find that manual processes become an increasingly painful constraint as they scale.",
         ],
       },
     ],
@@ -788,14 +788,14 @@ export const BLOG_POSTS = [
         heading: "Why Manual CRM Updates Fail",
         paragraphs: [
           "Asking sales reps to keep the CRM updated requires them to context-switch from selling to admin after every interaction. Even the most diligent reps forget steps, abbreviate notes, and skip fields they don't see as immediately relevant. The more fields there are, the worse the completion rate.",
-          "The fundamental problem is that manual CRM updating relies on human discipline, which is finite and inconsistent. Automation, by contrast, is infinitely consistent — it either runs or it doesn't, and if it doesn't, it fails visibly.",
+          "The fundamental problem is that manual CRM updating relies on human discipline, which is finite and inconsistent. Automation, by contrast, is infinitely consistent - it either runs or it doesn't, and if it doesn't, it fails visibly.",
         ],
       },
       {
         heading: "What Can Be Automated",
         paragraphs: [
           "Email integration can automatically log all email correspondence to the relevant contact and deal record. Calendar integration does the same for meetings. Call logging tools capture call duration, outcome notes, and recordings. Form submissions and inbound inquiries create or update records automatically. Deal stage changes trigger based on specific actions rather than requiring manual updates.",
-          "With the right automation in place, a rep can go through their entire week interacting with prospects and customers, and the CRM keeps itself updated in real time — accurately reflecting the state of every deal without the rep ever opening the CRM to update it manually.",
+          "With the right automation in place, a rep can go through their entire week interacting with prospects and customers, and the CRM keeps itself updated in real time - accurately reflecting the state of every deal without the rep ever opening the CRM to update it manually.",
         ],
       },
       {
@@ -828,21 +828,21 @@ export const BLOG_POSTS = [
       {
         heading: "What Makes Pipedrive Different",
         paragraphs: [
-          "Most CRMs were built by people who love databases. Pipedrive was built by people who love selling. The difference shows in the interface. The pipeline view — a visual drag-and-drop board of deals moving through stages — is intuitive in a way that a traditional CRM contact list simply isn't.",
+          "Most CRMs were built by people who love databases. Pipedrive was built by people who love selling. The difference shows in the interface. The pipeline view - a visual drag-and-drop board of deals moving through stages - is intuitive in a way that a traditional CRM contact list simply isn't.",
           "For sales teams, especially those without a dedicated CRM administrator, this ease of use is a decisive factor. A CRM that reps don't find intuitive doesn't get used. Pipedrive has one of the highest adoption rates in its category, which matters more than almost any feature comparison.",
         ],
       },
       {
         heading: "The Pipeline-First Philosophy",
         paragraphs: [
-          "Pipedrive's core philosophy is pipeline management — keeping deals moving, ensuring follow-ups happen, and giving sales managers clear visibility into what's progressing and what's stalled. This focus means the product excels at the things sales teams care about most: deal progression, activity tracking, and forecasting.",
-          "Other CRMs try to be everything — marketing hub, customer service platform, project manager, and CRM in one. Pipedrive stays focused. For pure sales pipeline management, this focus translates into a better, faster experience for the people using it every day.",
+          "Pipedrive's core philosophy is pipeline management - keeping deals moving, ensuring follow-ups happen, and giving sales managers clear visibility into what's progressing and what's stalled. This focus means the product excels at the things sales teams care about most: deal progression, activity tracking, and forecasting.",
+          "Other CRMs try to be everything - marketing hub, customer service platform, project manager, and CRM in one. Pipedrive stays focused. For pure sales pipeline management, this focus translates into a better, faster experience for the people using it every day.",
         ],
       },
       {
         heading: "Automation and Integration Capabilities",
         paragraphs: [
-          "Pipedrive's workflow automation engine handles most common sales automation scenarios natively — stage-based triggers, task creation, email sequences, and field updates. For more complex needs, Pipedrive's extensive API and native Zapier integration connect it to virtually any other tool in your stack.",
+          "Pipedrive's workflow automation engine handles most common sales automation scenarios natively - stage-based triggers, task creation, email sequences, and field updates. For more complex needs, Pipedrive's extensive API and native Zapier integration connect it to virtually any other tool in your stack.",
           "Native integrations include Google Workspace, Microsoft 365, Zoom, Slack, Xero, QuickBooks, Proposify, PandaDoc, and hundreds more. The integration ecosystem is mature and well-documented, making it straightforward to build a connected sales stack around Pipedrive as the core.",
         ],
       },
@@ -857,7 +857,7 @@ export const BLOG_POSTS = [
         heading: "Is Pipedrive Right for Your Business?",
         paragraphs: [
           "Pipedrive is the right CRM if you have a defined sales process with distinct stages, your primary goal is pipeline management and sales activity tracking, and you want something your team will actually use. It's less suited to businesses with very complex service delivery workflows, heavy customer support requirements, or a need for advanced marketing automation built into the CRM.",
-          "Not sure if Pipedrive is right for you? Flow Wizards offers a CRM selection consultation where we review your sales process and recommend the platform that fits best — whether that turns out to be Pipedrive or something else.",
+          "Not sure if Pipedrive is right for you? Flow Wizards offers a CRM selection consultation where we review your sales process and recommend the platform that fits best - whether that turns out to be Pipedrive or something else.",
         ],
       },
     ],
@@ -870,27 +870,27 @@ export const BLOG_POSTS = [
     readTime: "10 min read",
     category: "CRM",
     excerpt:
-      "New to Pipedrive? This comprehensive guide covers everything you need to know — from the basics of how it works to advanced configuration tips for power users.",
+      "New to Pipedrive? This comprehensive guide covers everything you need to know - from the basics of how it works to advanced configuration tips for power users.",
     icon: ClipboardList,
     content: [
       {
         heading: "What is Pipedrive?",
         paragraphs: [
-          "Pipedrive is a cloud-based customer relationship management (CRM) platform designed specifically for sales teams. Founded in 2010 by salespeople who were frustrated with existing CRM tools, it's built around the visual pipeline — a Kanban-style view of deals moving through the stages of your sales process.",
-          "Today, Pipedrive serves over 100,000 companies across more than 170 countries. It's particularly popular with small and medium businesses, sales-led startups, and agencies — any organisation where the sales team is the growth engine and CRM adoption is a genuine challenge.",
+          "Pipedrive is a cloud-based customer relationship management (CRM) platform designed specifically for sales teams. Founded in 2010 by salespeople who were frustrated with existing CRM tools, it's built around the visual pipeline - a Kanban-style view of deals moving through the stages of your sales process.",
+          "Today, Pipedrive serves over 100,000 companies across more than 170 countries. It's particularly popular with small and medium businesses, sales-led startups, and agencies - any organisation where the sales team is the growth engine and CRM adoption is a genuine challenge.",
         ],
       },
       {
         heading: "Core Concepts: Contacts, Deals, and Activities",
         paragraphs: [
-          "Pipedrive organises everything around three core objects. Contacts (people and organisations) represent the humans and companies you sell to. Deals represent the specific sales opportunities you're pursuing — each deal is associated with a contact and sits at a specific stage in your pipeline. Activities are the actions you take to move deals forward: calls, emails, meetings, tasks.",
+          "Pipedrive organises everything around three core objects. Contacts (people and organisations) represent the humans and companies you sell to. Deals represent the specific sales opportunities you're pursuing - each deal is associated with a contact and sits at a specific stage in your pipeline. Activities are the actions you take to move deals forward: calls, emails, meetings, tasks.",
           "The relationship between these three is what makes Pipedrive powerful. Every activity is linked to a deal and a contact, creating a complete history of every interaction. Every deal has a clear status and expected close date, giving management instant visibility into the pipeline.",
         ],
       },
       {
         heading: "Setting Up Your Pipeline",
         paragraphs: [
-          "Your pipeline stages should map to the real stages of your sales process — the meaningful milestones between first contact and closed deal. Common stages include Lead In, Qualified, Demo Scheduled, Proposal Sent, Negotiation, and Won/Lost. The right number of stages varies by sales cycle complexity: too few and you lose visibility, too many and the pipeline becomes unwieldy.",
+          "Your pipeline stages should map to the real stages of your sales process - the meaningful milestones between first contact and closed deal. Common stages include Lead In, Qualified, Demo Scheduled, Proposal Sent, Negotiation, and Won/Lost. The right number of stages varies by sales cycle complexity: too few and you lose visibility, too many and the pipeline becomes unwieldy.",
           "Each pipeline stage can have a probability of closing associated with it, which feeds into Pipedrive's forecasting. Weighted pipeline reports use these probabilities to give you a realistic view of expected revenue, not just a sum of all open deals.",
         ],
       },
@@ -905,7 +905,7 @@ export const BLOG_POSTS = [
         heading: "Reporting and Insights",
         paragraphs: [
           "Pipedrive's reporting suite covers the metrics that matter most to sales leaders: conversion rates between stages, average deal duration, activities completed per rep, revenue per source, and pipeline velocity. The Insights feature allows custom dashboards with real-time data, so managers always have current visibility into team performance.",
-          "Custom reports can be filtered by rep, pipeline, date range, product, or any custom field you've created. If you're tracking deal source, for example, you can see exactly which lead sources produce the highest conversion rates and best deal values — information that directly informs marketing investment decisions.",
+          "Custom reports can be filtered by rep, pipeline, date range, product, or any custom field you've created. If you're tracking deal source, for example, you can see exactly which lead sources produce the highest conversion rates and best deal values - information that directly informs marketing investment decisions.",
         ],
       },
       {
@@ -932,34 +932,34 @@ export const BLOG_POSTS = [
         heading: "The AI Opportunity for Small Businesses",
         paragraphs: [
           "Small businesses have historically been locked out of enterprise technology advantages. The automation tools, analytics platforms, and AI systems that gave large companies a competitive edge required budgets and technical teams that smaller businesses simply didn't have.",
-          "That has changed dramatically. The AI tools available today — accessible via monthly subscription, requiring no coding, and designed for non-technical users — put capabilities in the hands of small businesses that were unimaginable five years ago. The question is no longer whether AI is accessible; it's how to use it wisely.",
+          "That has changed dramatically. The AI tools available today - accessible via monthly subscription, requiring no coding, and designed for non-technical users - put capabilities in the hands of small businesses that were unimaginable five years ago. The question is no longer whether AI is accessible; it's how to use it wisely.",
         ],
       },
       {
         heading: "Start With Where You Spend the Most Time",
         paragraphs: [
-          "The most practical AI strategy for a small business starts with a simple audit: where do you and your team spend the most time on tasks that feel repetitive, knowledge-intensive, or formulaic? Writing, researching, summarising, categorising, drafting — these are all areas where AI can make an immediate, significant difference.",
+          "The most practical AI strategy for a small business starts with a simple audit: where do you and your team spend the most time on tasks that feel repetitive, knowledge-intensive, or formulaic? Writing, researching, summarising, categorising, drafting - these are all areas where AI can make an immediate, significant difference.",
           "Common early applications: using AI to draft first versions of emails, proposals, and social content; using AI to summarise meeting recordings or customer calls; using AI to answer customer queries from a knowledge base; using AI to classify incoming requests and route them to the right person.",
         ],
       },
       {
         heading: "AI Writing and Content Creation",
         paragraphs: [
-          "AI writing tools (ChatGPT, Claude, Gemini) can dramatically accelerate content creation. The key is to use them as a starting point, not an endpoint. AI-generated content should be edited for your voice, fact-checked, and tailored to your audience. The time saving comes from not staring at a blank page — getting a solid draft in 30 seconds that you refine in 10 minutes rather than writing from scratch in 60.",
-          "For businesses that produce a lot of content — blogs, newsletters, social posts, proposals, case studies — this time saving compounds quickly. An hour of AI-assisted content creation can produce what previously took a full day.",
+          "AI writing tools (ChatGPT, Claude, Gemini) can dramatically accelerate content creation. The key is to use them as a starting point, not an endpoint. AI-generated content should be edited for your voice, fact-checked, and tailored to your audience. The time saving comes from not staring at a blank page - getting a solid draft in 30 seconds that you refine in 10 minutes rather than writing from scratch in 60.",
+          "For businesses that produce a lot of content - blogs, newsletters, social posts, proposals, case studies - this time saving compounds quickly. An hour of AI-assisted content creation can produce what previously took a full day.",
         ],
       },
       {
         heading: "AI in Customer Interactions",
         paragraphs: [
-          "AI chatbots have improved dramatically. Modern conversational AI can handle a significant portion of inbound customer queries — answering questions about products, providing order status, troubleshooting common issues — without human involvement. For small businesses, this means availability 24/7 without hiring overnight staff.",
-          "The key is to design the handoff carefully. The AI should handle what it can, and escalate to a human when it can't — not pretend to help when it doesn't know the answer. Well-designed AI customer service actually improves customer experience by giving instant responses, while ensuring humans are available for the conversations that genuinely require a human.",
+          "AI chatbots have improved dramatically. Modern conversational AI can handle a significant portion of inbound customer queries - answering questions about products, providing order status, troubleshooting common issues - without human involvement. For small businesses, this means availability 24/7 without hiring overnight staff.",
+          "The key is to design the handoff carefully. The AI should handle what it can, and escalate to a human when it can't - not pretend to help when it doesn't know the answer. Well-designed AI customer service actually improves customer experience by giving instant responses, while ensuring humans are available for the conversations that genuinely require a human.",
         ],
       },
       {
         heading: "What to Watch Out For",
         paragraphs: [
-          "AI tools can be confidently wrong. They can fabricate facts, misunderstand context, and produce content that sounds right but isn't. For anything consequential — legal documents, financial advice, medical information — AI output needs human review before being used or sent to a customer.",
+          "AI tools can be confidently wrong. They can fabricate facts, misunderstand context, and produce content that sounds right but isn't. For anything consequential - legal documents, financial advice, medical information - AI output needs human review before being used or sent to a customer.",
           "Also be careful with sensitive data. Don't feed confidential customer information into public AI tools unless you've reviewed the privacy terms and are confident the data won't be used for training. Many enterprise AI tools offer data privacy guarantees that consumer tools don't.",
         ],
       },
@@ -973,13 +973,13 @@ export const BLOG_POSTS = [
     readTime: "7 min read",
     category: "Business Automation",
     excerpt:
-      "Most businesses know automation saves time — but few actually measure it. Here's a practical framework for calculating the real return on your automation investment.",
+      "Most businesses know automation saves time - but few actually measure it. Here's a practical framework for calculating the real return on your automation investment.",
     icon: Zap,
     content: [
       {
         heading: "Why Measuring Automation ROI Is Harder Than It Looks",
         paragraphs: [
-          "Automation ROI has two sides: the cost of building and maintaining the automation, and the value it delivers. The cost side is usually straightforward — software subscriptions, consultant fees, and internal time spent on implementation. The value side is where most businesses get fuzzy.",
+          "Automation ROI has two sides: the cost of building and maintaining the automation, and the value it delivers. The cost side is usually straightforward - software subscriptions, consultant fees, and internal time spent on implementation. The value side is where most businesses get fuzzy.",
           'The temptation is to estimate vaguely: "this saves us a few hours a week." But without a precise baseline and a rigorous measurement approach, you can\'t know whether your automation investment is delivering good returns or whether the money would be better spent elsewhere.',
         ],
       },
@@ -993,8 +993,8 @@ export const BLOG_POSTS = [
       {
         heading: "Step 2: Assign a Cost to the Time",
         paragraphs: [
-          "Convert the time saving into a monetary value by using the fully-loaded hourly cost of the people performing the task. If the person doing the manual work costs your business £30 per hour (salary plus employer costs), and the automation saves 5 hours per week, the weekly saving is £150 — or roughly £7,800 per year.",
-          "Don't forget to include the value of time freed for higher-value activities. A salesperson spending 5 fewer hours on admin and 5 more hours selling has an ROI that goes well beyond the simple cost of their time — it potentially translates to additional revenue.",
+          "Convert the time saving into a monetary value by using the fully-loaded hourly cost of the people performing the task. If the person doing the manual work costs your business £30 per hour (salary plus employer costs), and the automation saves 5 hours per week, the weekly saving is £150 - or roughly £7,800 per year.",
+          "Don't forget to include the value of time freed for higher-value activities. A salesperson spending 5 fewer hours on admin and 5 more hours selling has an ROI that goes well beyond the simple cost of their time - it potentially translates to additional revenue.",
         ],
       },
       {
@@ -1008,7 +1008,7 @@ export const BLOG_POSTS = [
         heading: "Step 4: Track and Reassess Quarterly",
         paragraphs: [
           "ROI calculations made at the start of a project are estimates. Measure the actual time saving three months after implementation and compare it to your projection. Automations often save more than expected (because you discover edge cases that were consuming hidden time) or less (because the automation needs refinement).",
-          "Quarterly review also catches automations that have stopped working correctly — a common issue when the apps they connect are updated. Monitoring your automations is not optional; it's part of protecting the investment you've made in building them.",
+          "Quarterly review also catches automations that have stopped working correctly - a common issue when the apps they connect are updated. Monitoring your automations is not optional; it's part of protecting the investment you've made in building them.",
         ],
       },
     ],
@@ -1027,36 +1027,36 @@ export const BLOG_POSTS = [
       {
         heading: "Understanding Triggers and Actions",
         paragraphs: [
-          'Every Zapier automation (called a "Zap") starts with a trigger — an event in one app that starts the workflow. Common triggers include a new form submission, a new row in a spreadsheet, a new email arriving, a deal stage changing in your CRM, or a new customer being created in Stripe. When the trigger fires, the Zap runs.',
-          "After the trigger comes one or more actions — things that happen in other apps as a result. Create a contact in your CRM, send a Slack notification, add a row to a spreadsheet, send an email, create a task in your project management tool. A single trigger can initiate multiple sequential actions.",
+          'Every Zapier automation (called a "Zap") starts with a trigger - an event in one app that starts the workflow. Common triggers include a new form submission, a new row in a spreadsheet, a new email arriving, a deal stage changing in your CRM, or a new customer being created in Stripe. When the trigger fires, the Zap runs.',
+          "After the trigger comes one or more actions - things that happen in other apps as a result. Create a contact in your CRM, send a Slack notification, add a row to a spreadsheet, send an email, create a task in your project management tool. A single trigger can initiate multiple sequential actions.",
         ],
       },
       {
         heading: "Choosing the Right Integration Approach",
         paragraphs: [
-          "Zapier has native integrations for thousands of apps, but the depth of those integrations varies widely. Some integrations expose every field and feature; others cover only the most common use cases. Before building a critical workflow in Zapier, test whether the specific trigger and action you need are actually available — not just the app.",
+          "Zapier has native integrations for thousands of apps, but the depth of those integrations varies widely. Some integrations expose every field and feature; others cover only the most common use cases. Before building a critical workflow in Zapier, test whether the specific trigger and action you need are actually available - not just the app.",
           "For apps that Zapier doesn't natively support, the Webhooks integration allows you to connect to any app with an API. This is more technical but opens up almost unlimited connectivity.",
         ],
       },
       {
         heading: "Data Mapping: Where Most Zaps Go Wrong",
         paragraphs: [
-          "The most common source of Zapier problems is incorrect data mapping — passing the wrong field, in the wrong format, to the wrong destination. A contact's first name going into the \"last name\" field, a date being formatted incorrectly, a numeric field receiving text — these mistakes cause silent failures or bad data that's hard to trace back to the automation.",
+          "The most common source of Zapier problems is incorrect data mapping - passing the wrong field, in the wrong format, to the wrong destination. A contact's first name going into the \"last name\" field, a date being formatted incorrectly, a numeric field receiving text - these mistakes cause silent failures or bad data that's hard to trace back to the automation.",
           "Careful data mapping requires understanding both the source app's data structure and the destination app's requirements. Testing with real-world data (not just the sample data Zapier provides) before activating a Zap in production is essential.",
         ],
       },
       {
         heading: "Filters, Paths, and Formatting",
         paragraphs: [
-          'Zapier\'s power goes beyond simple trigger-action pairs. Filters allow you to run an action only when specific conditions are met — only create a CRM contact if the lead source is "Website", only send a Slack alert if the deal value is over £10,000. Paths (available on higher plans) allow your Zap to branch into different sequences based on conditions.',
-          "Formatter steps transform data within your Zap — splitting a full name into first and last name, reformatting a date, extracting a domain from an email address, or converting text to title case. These transformations are often necessary to make data from one app compatible with another.",
+          'Zapier\'s power goes beyond simple trigger-action pairs. Filters allow you to run an action only when specific conditions are met - only create a CRM contact if the lead source is "Website", only send a Slack alert if the deal value is over £10,000. Paths (available on higher plans) allow your Zap to branch into different sequences based on conditions.',
+          "Formatter steps transform data within your Zap - splitting a full name into first and last name, reformatting a date, extracting a domain from an email address, or converting text to title case. These transformations are often necessary to make data from one app compatible with another.",
         ],
       },
       {
         heading: "Error Handling and Monitoring",
         paragraphs: [
-          "A production Zapier integration needs error handling. What happens when a step fails? Zapier has built-in error notifications, but the default behaviour — pausing the Zap after five errors — may not be appropriate for critical workflows. Configure email alerts for failures and build monitoring into your stack so you know when automations stop working.",
-          "Flow Wizards builds every client integration with error handling and monitoring as standard. We configure alerts, document failure modes, and provide runbooks for common issues — so your automation is reliable, not just functional.",
+          "A production Zapier integration needs error handling. What happens when a step fails? Zapier has built-in error notifications, but the default behaviour - pausing the Zap after five errors - may not be appropriate for critical workflows. Configure email alerts for failures and build monitoring into your stack so you know when automations stop working.",
+          "Flow Wizards builds every client integration with error handling and monitoring as standard. We configure alerts, document failure modes, and provide runbooks for common issues - so your automation is reliable, not just functional.",
         ],
       },
     ],
@@ -1075,7 +1075,7 @@ export const BLOG_POSTS = [
       {
         heading: "Why Editing Live Zaps is Risky",
         paragraphs: [
-          "A live Zap is running in production — it's processing real data for your business. Making changes to it while it's active can cause a range of problems: steps might fail because the data mapping no longer matches, changes might take effect mid-way through a running sequence, or disabling steps might leave data in an inconsistent state.",
+          "A live Zap is running in production - it's processing real data for your business. Making changes to it while it's active can cause a range of problems: steps might fail because the data mapping no longer matches, changes might take effect mid-way through a running sequence, or disabling steps might leave data in an inconsistent state.",
           "The good news is that Zapier handles most edits gracefully, and with the right approach you can make changes safely. The key is understanding what Zapier does with changes and testing carefully before relying on the updated version.",
         ],
       },
@@ -1096,7 +1096,7 @@ export const BLOG_POSTS = [
       {
         heading: "Version Control and Documentation",
         paragraphs: [
-          "Zapier doesn't have built-in version history for Zaps, which means if you make a change and it breaks something, rolling back requires manually recreating the previous configuration. For complex, business-critical Zaps, maintain external documentation of each version — either in a shared document or a project management tool.",
+          "Zapier doesn't have built-in version history for Zaps, which means if you make a change and it breaks something, rolling back requires manually recreating the previous configuration. For complex, business-critical Zaps, maintain external documentation of each version - either in a shared document or a project management tool.",
           "Flow Wizards provides documentation for every automation we build, including the logic behind each step, known edge cases, and change logs. This documentation makes future modifications safer and faster, regardless of who is making the change.",
         ],
       },
@@ -1130,14 +1130,14 @@ export const BLOG_POSTS = [
       {
         heading: "Administrative Process Automation",
         paragraphs: [
-          "Referral management is a significant administrative burden in healthcare. Automated referral workflows can capture the referral details, send them to the right specialist, notify the patient, track the status, and follow up if no appointment has been made — all without administrative staff manually managing each referral.",
+          "Referral management is a significant administrative burden in healthcare. Automated referral workflows can capture the referral details, send them to the right specialist, notify the patient, track the status, and follow up if no appointment has been made - all without administrative staff manually managing each referral.",
           "Insurance verification, prior authorisation requests, and billing workflows are similarly automatable. Connecting practice management software to payer systems via API or integration platforms can eliminate hours of manual work per day while reducing claim rejections caused by human error.",
         ],
       },
       {
         heading: "Compliance and Documentation",
         paragraphs: [
-          "Healthcare compliance involves a significant ongoing documentation burden — policies, procedures, training records, audit trails, incident reports. Automation can manage policy review schedules, send completion reminders for mandatory training, generate compliance reports, and create audit trails automatically.",
+          "Healthcare compliance involves a significant ongoing documentation burden - policies, procedures, training records, audit trails, incident reports. Automation can manage policy review schedules, send completion reminders for mandatory training, generate compliance reports, and create audit trails automatically.",
           "Document management automation ensures that consent forms, test results, and clinical notes are filed correctly and accessible to the right people when needed. This both reduces administrative effort and reduces the risk of documentation failures that can lead to compliance issues or patient safety incidents.",
         ],
       },
@@ -1171,7 +1171,7 @@ export const BLOG_POSTS = [
       {
         heading: "Phase 1: Configuration (Week 1-2)",
         paragraphs: [
-          "Set up your pipeline stages to match your mapped sales process. Create custom fields for the data points that are specific to your business — fields that don't exist in the standard setup but are essential for how you track and manage deals.",
+          "Set up your pipeline stages to match your mapped sales process. Create custom fields for the data points that are specific to your business - fields that don't exist in the standard setup but are essential for how you track and manage deals.",
           "Configure your email integration so that correspondence is automatically logged. Set up calendar integration for meeting tracking. Define your lead sources and ensure they're captured consistently. Configure user roles and permissions so each team member has appropriate access.",
         ],
       },
@@ -1185,14 +1185,14 @@ export const BLOG_POSTS = [
       {
         heading: "Phase 3: Automation Setup (Week 3-4)",
         paragraphs: [
-          "Build your core automations: lead assignment rules, follow-up task creation, email sequences for new enquiries, deal stage-based notifications. Start with the automations that save the most time or prevent the most common errors — don't try to automate everything at once.",
+          "Build your core automations: lead assignment rules, follow-up task creation, email sequences for new enquiries, deal stage-based notifications. Start with the automations that save the most time or prevent the most common errors - don't try to automate everything at once.",
           "Test every automation thoroughly with real scenarios before relying on it. Check what happens in edge cases: what if the contact already exists? What if the deal value is missing? What if the assigned rep is on leave? Designing for edge cases upfront prevents problems later.",
         ],
       },
       {
         heading: "Phase 4: Training and Launch (Week 4-5)",
         paragraphs: [
-          "Train users in small groups based on their role — reps, managers, and admins each need different training. Focus on the workflows they'll use every day rather than every feature the system has. Hands-on practice during training, using real scenarios from your business, is more effective than any amount of passive instruction.",
+          "Train users in small groups based on their role - reps, managers, and admins each need different training. Focus on the workflows they'll use every day rather than every feature the system has. Hands-on practice during training, using real scenarios from your business, is more effective than any amount of passive instruction.",
           "Launch with a clear go-live date and communicate what's changing, what's expected of each user, and where to get help. In the first two weeks post-launch, check CRM data daily to catch any process gaps or adoption problems quickly. Early intervention makes a lasting difference to the quality of your implementation.",
         ],
       },
@@ -1206,14 +1206,14 @@ export const BLOG_POSTS = [
     readTime: "7 min read",
     category: "HR Automation",
     excerpt:
-      "HR automation promises to save time and reduce errors — but only if you approach it correctly. Here's what HR leaders need to know before they start automating.",
+      "HR automation promises to save time and reduce errors - but only if you approach it correctly. Here's what HR leaders need to know before they start automating.",
     icon: Users,
     content: [
       {
         heading: "Setting Realistic Expectations",
         paragraphs: [
           "HR automation delivers enormous value, but it's not instant and it's not effortless. Implementation requires careful process design, configuration, testing, and change management. HR teams who approach automation expecting a quick fix often become disappointed when they discover the upfront work required.",
-          "The organisations that get the most from HR automation are those that approach it as a process improvement initiative with technology as the enabler — not as a technology project that will somehow improve processes by itself. The technology amplifies what's already there; it doesn't fix broken processes on its own.",
+          "The organisations that get the most from HR automation are those that approach it as a process improvement initiative with technology as the enabler - not as a technology project that will somehow improve processes by itself. The technology amplifies what's already there; it doesn't fix broken processes on its own.",
         ],
       },
       {
@@ -1226,7 +1226,7 @@ export const BLOG_POSTS = [
       {
         heading: "Choosing the Right Tools",
         paragraphs: [
-          "HR automation tools range from features within your existing HRIS (HR Information System) to dedicated workflow automation platforms like Zapier or Make. Start by checking what your current HRIS offers — you may have automation capabilities you're not using. If your HRIS is limited, a platform like Zapier can connect it to your other tools and build more sophisticated workflows.",
+          "HR automation tools range from features within your existing HRIS (HR Information System) to dedicated workflow automation platforms like Zapier or Make. Start by checking what your current HRIS offers - you may have automation capabilities you're not using. If your HRIS is limited, a platform like Zapier can connect it to your other tools and build more sophisticated workflows.",
           "For larger organisations, dedicated HR process automation tools like ServiceNow HR or Leapsome offer more sophisticated capabilities including self-service portals, approval workflows, and analytics dashboards. These require more investment but deliver correspondingly greater capabilities.",
         ],
       },
@@ -1254,7 +1254,7 @@ export const BLOG_POSTS = [
     readTime: "8 min read",
     category: "Marketing Automation",
     excerpt:
-      "The best marketing automation isn't theoretical — it's practical, proven, and delivering real results for businesses right now. Here are the top examples worth implementing.",
+      "The best marketing automation isn't theoretical - it's practical, proven, and delivering real results for businesses right now. Here are the top examples worth implementing.",
     icon: Megaphone,
     content: [
       {
@@ -1267,14 +1267,14 @@ export const BLOG_POSTS = [
       {
         heading: "Example 1: The Welcome Sequence",
         paragraphs: [
-          "When someone subscribes to your email list — whether through a lead magnet, a checkout, or a newsletter sign-up form — a welcome sequence is triggered. Day 0: welcome email with the promised content or offer. Day 2: a value-adding email that introduces your expertise with no ask. Day 5: social proof (case study or testimonial). Day 8: a soft pitch with a relevant offer.",
+          "When someone subscribes to your email list - whether through a lead magnet, a checkout, or a newsletter sign-up form - a welcome sequence is triggered. Day 0: welcome email with the promised content or offer. Day 2: a value-adding email that introduces your expertise with no ask. Day 5: social proof (case study or testimonial). Day 8: a soft pitch with a relevant offer.",
           "This sequence runs automatically for every new subscriber, delivering a consistent, thoughtful onboarding experience that builds trust before asking for anything. Businesses that implement a well-designed welcome sequence typically see a 20-30% improvement in engagement rates compared to a single welcome email.",
         ],
       },
       {
         heading: "Example 2: The Abandoned Cart Recovery Sequence",
         paragraphs: [
-          "An ecommerce visitor adds products to their cart but doesn't complete the purchase. One hour after abandonment, an automated email reminds them what they left behind — with an image of the product and a direct link back to their cart. If they still haven't purchased 24 hours later, a second email adds urgency or social proof. At 72 hours, a final email might include a discount code.",
+          "An ecommerce visitor adds products to their cart but doesn't complete the purchase. One hour after abandonment, an automated email reminds them what they left behind - with an image of the product and a direct link back to their cart. If they still haven't purchased 24 hours later, a second email adds urgency or social proof. At 72 hours, a final email might include a discount code.",
           "Average abandoned cart recovery rates for well-executed sequences are 5-15%, representing pure recovered revenue from customers who were already intent on buying. This is one of the highest-ROI automations available to ecommerce businesses.",
         ],
       },
@@ -1295,8 +1295,8 @@ export const BLOG_POSTS = [
       {
         heading: "Example 5: Review and Referral Automation",
         paragraphs: [
-          "Seven days after a purchase or project completion, an automated email asks the customer for a review — with a direct link to Google, Trustpilot, or your review platform of choice. If they complete the review, a follow-up email thanks them and offers an incentive for referring a friend. This turns your happiest customers into a systematic source of social proof and referrals.",
-          "The key is timing. An immediate post-purchase request often catches customers before they've fully experienced the value. Seven to fourteen days later is typically the sweet spot — they've had time to see the results but the experience is still fresh.",
+          "Seven days after a purchase or project completion, an automated email asks the customer for a review - with a direct link to Google, Trustpilot, or your review platform of choice. If they complete the review, a follow-up email thanks them and offers an incentive for referring a friend. This turns your happiest customers into a systematic source of social proof and referrals.",
+          "The key is timing. An immediate post-purchase request often catches customers before they've fully experienced the value. Seven to fourteen days later is typically the sweet spot - they've had time to see the results but the experience is still fresh.",
         ],
       },
     ],

@@ -24,7 +24,7 @@ const tools = [
 const faqs = [
    {
       q: "What types of workflows can you automate?",
-      a: "We can automate sales, marketing, support, operations, and more—across nearly any business tool or platform.",
+      a: "We can automate sales, marketing, support, operations, and more-across nearly any business tool or platform.",
    },
    {
       q: "Which tools do you work with?",

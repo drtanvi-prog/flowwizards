@@ -48,7 +48,7 @@ const FooterCTA = ({ heading, subtext, buttonText }) => (
          </div>
       </div>
 
-      {/* Mobile image — full width below text */}
+      {/* Mobile image - full width below text */}
       <div
          className="block sm:hidden w-full"
          style={{ height: '220px', overflow: 'hidden' }}
@@ -67,7 +67,7 @@ const FooterCTA = ({ heading, subtext, buttonText }) => (
          />
       </div>
 
-      {/* Desktop image — absolute right side */}
+      {/* Desktop image - absolute right side */}
       <img
          src={bgFooter}
          alt=""

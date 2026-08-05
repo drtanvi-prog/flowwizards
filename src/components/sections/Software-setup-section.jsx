@@ -21,7 +21,7 @@ const SoftwareSetupSection = () => (
                   <p className="text-gray-700 text-base md:text-lg mb-6">
                      Maybe you don’t know the first thing about setting up and automating
                      software. But that’s okay. Because we know everything. We’ll get it
-                     set up, fully integrated, and running seamlessly — the first time.
+                     set up, fully integrated, and running seamlessly - the first time.
                      So rather than wasting your time, it can quietly and powerfully
                      support your business in what really moves the needle.
                   </p>
